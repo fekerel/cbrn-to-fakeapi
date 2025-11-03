@@ -1,0 +1,53 @@
+{
+  "correlatedObjectId": "32300000000000380352",
+  "correlatedObjectData": "{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.DataWrapper\",\"data\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.unit.UnitData\",\"commonAttributes\":{\"systemMode\":\"live\",\"createdBy\":{\"userId\":\"2586\",\"userName\":\"apitest_sel_1\"},\"modifiedBy\":{\"userId\":\"2586\",\"userName\":\"apitest_sel_1\"},\"nodeAttributes\":{\"nodeId\":\"32300000000000000000\",\"nodeName\":\"DOOB_LIVE_SEL\"},\"commonUpdateType\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.track.TrackUpdateType\",\"trackUpdateTypeEnum\":\"ADD_TRACK\"}},\"dataAttributes\":{\"objectCore\":{\"class\":\"tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore\",\"objectCoreType\":\"UNIT\",\"paletteMode\":\"app6a\",\"headquarterIndicator\":true,\"planned\":false,\"iffModes\":{},\"objectItemHostilityStatusCodeEnum\":\"HOSTILE\",\"typeId\":\"32300000000000310187\",\"nameText\":\"api-test-correlation\",\"alternateNameText\":\"44\",\"shortCommentText\":\"71\",\"longCommentText\":\"48\",\"objectLabel\":\"11\",\"affiliationGeopoliticalCodeEnum\":\"CAPE_VERDE\",\"unitDesignatorText\":\"88\",\"echelon\":\"COMPANY\",\"geoLocationText\":\"35\",\"combatEffectiveness\":\"1\",\"callSign\":\"14\",\"globalTrackIdentifier\":\"32300000000000380352\"},\"layerIdList\":[\"32300000000000950111\"],\"correlationEnum\":\"CORRELATED\",\"trackSourceTypeSet\":[],\"originalLayerId\":\"32300000000000950111\"},\"referenceAttributes\":{\"referenceDataList\":[]},\"metadataAttributes\":{\"metadata\":{\"temporalValidityAbsoluteTiming\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming\",\"effectiveStartDate\":\"20230921084241.682\"},\"calculatedIntelAppraisal\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.metadata.IntelAppraisal\",\"quality\":0},\"reportingData\":{\"reportingDate\":\"20230921084241.682\",\"reportingAgent\":{\"class\":\"tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore\",\"nameText\":\"DOOB_LIVE_SEL\",\"affiliationGeopoliticalCodeEnum\":\"OMAN\",\"s15Text\":\"S*G*UCI---*****\",\"echelon\":\"CORPS\",\"objectId\":\"32300000000000000000\",\"objectCoreType\":\"UNIT\",\"combatEffectiveness\":\"100\",\"creatorId\":32300000000000000000,\"paletteMode\":\"app6a\",\"headquarterIndicator\":false,\"planned\":false,\"iffModes\":{},\"objectItemHostilityStatusCodeEnum\":\"FRIEND\"}},\"intelAppraisalList\":[]}},\"positionAttributes\":{},\"holdingAttributes\":{\"holdingDataList\":[]},\"objectStatusAttributes\":{\"objectItemStatusBoobyTrapPresenceCodeEnum\":\"UNKNOWN\",\"objectItemStatusEmissionControlCodeEnum\":\"NULL\"},\"organisationAttributes\":{\"organisationCategoryCodeEnum\":\"UNIT\"},\"organisationStatusAttributes\":{\"organisationStatusOperationalStatusCodeEnum\":\"NOT_OPERATIONAL\",\"organisationStatusAvailabilityCodeEnum\":\"AFTER_30_DAYS\",\"organisationStatusCbrnDressCodeEnum\":\"MOPP_1\",\"organisationStatusCommandAndControlRoleCodeEnum\":\"MOBILE_COMMAND_POST\",\"organisationStatusCommitmentStatusCodeEnum\":\"COMMITTED\",\"organisationStatusFireModeCodeEnum\":\"NOT_KNOWN\",\"organisationStatusOperationalStatusQualifierCodeEnum\":\"NULL\",\"organisationStatusReadinessCodeEnum\":\"READY_WITHIN_5_MINUTES\",\"organisationStatusReinforcementCodeEnum\":\"REINFORCED_AND_DETACHED\",\"organisationStatusReserveIndicatorCodeEnum\":\"YES\",\"organisationStatusTrainingCodeEnum\":\"AMBER\",\"organisationStatusUsageStatusCodeEnum\":\"NULL\",\"teskilatDurumuKademeKategoriKoduEnum\":\"NULL\",\"teskilatDurumuTeskilKoduEnum\":\"NULL\",\"organisationStatusReadinessDuration\":31,\"organisationStatusRadiationDoseQuantity\":53},\"unitAttributes\":{\"forceReadinessValue\":78,\"formalAbbreviatedName\":\"75\",\"unitIdentificationText\":\"23\"}},\"typeData\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.unit.UnitTypeData\",\"commonAttributes\":{\"systemMode\":\"live\",\"commonUpdateType\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType\",\"identificationUpdateTypeEnum\":\"ADD_TYPE\"},\"createdBy\":{\"userId\":\"2586\",\"userName\":\"apitest_sel_1\",\"dateTime\":\"21-09-2023 08:23:52.625\"},\"modifiedBy\":{\"userId\":\"2586\",\"userName\":\"apitest_sel_1\",\"dateTime\":\"21-09-2023 08:23:52.619\"},\"nodeAttributes\":{\"nodeId\":\"32300000000000000000\",\"nodeName\":\"DOOB_LIVE_SEL\"}},\"typeAttributes\":{\"typeId\":\"32300000000000310187\",\"objectCoreType\":\"UNIT\"},\"objectTypeAttributes\":{\"objectTypeNameText\":\"unit-api-test-2023-09-21-11-24-19-622-409\",\"decoyIndicatorCode\":\"YES\"},\"organisationTypeAttributes\":{\"organisationTypeDescriptionText\":\"17\",\"commandControlFunction\":\"AIR_CONTROL_CENTRE\",\"commandFunctionIndicatorCode\":\"NO\",\"organisationTypeCategoryCodeEnum\":\"GOVERNMENT_ORGANISATION_TYPE\",\"militaryOrganisationTypeServiceCode\":\"AIR_FORCE\"},\"unitTypeAttributes\":{\"unitTypeCategoryCodeEnum\":\"COMBAT_SUPPORT\",\"unitTypeArmCategoryCodeEnum\":\"INFORMATION_WARFARE\",\"unitTypeArmSpecialisationCodeEnum\":\"NULL\",\"unitTypeSupplementarySpecialisationCodeEnum\":\"GROUND\",\"unitTypeQualifierCodeEnum\":\"NULL\",\"unitTypeGeneralMobilityCodeEnum\":\"AIR\",\"unitTypeSizeCodeEnum\":\"BATTALION\"}},\"commonAttributes\":{\"systemMode\":\"live\",\"createdBy\":{\"userId\":\"2586\",\"userName\":\"apitest_sel_1\"},\"modifiedBy\":{\"userId\":\"2586\",\"userName\":\"apitest_sel_1\"},\"nodeAttributes\":{\"nodeId\":\"32300000000000000000\",\"nodeName\":\"DOOB_LIVE_SEL\"},\"commonUpdateType\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType\",\"identificationUpdateTypeEnum\":\"ADD_IDENTIFICATION\"}}}",
+  "correlationSourceData": [
+    {
+      "objectId": "32300000000000310190",
+      "selectedSourceFieldName": [
+        "data.dataAttributes.objectCore.typeId"
+      ],
+      "linkedSourceFieldName": []
+    },
+    {
+      "objectId": "32300000000000210682",
+      "selectedSourceFieldName": [
+        "data.dataAttributes.objectCore.alternateNameText",
+        "data.dataAttributes.objectCore.shortCommentText",
+        "data.dataAttributes.objectCore.longCommentText",
+        "data.dataAttributes.objectCore.objectLabel",
+        "data.dataAttributes.objectCore.affiliationGeopoliticalCodeEnum",
+        "data.dataAttributes.objectCore.unitDesignatorText",
+        "data.dataAttributes.objectCore.echelon",
+        "data.dataAttributes.objectCore.geoLocationText",
+        "data.dataAttributes.objectCore.combatEffectiveness",
+        "data.dataAttributes.objectCore.callSign",
+        "data.dataAttributes.objectCore.headquarterIndicator",
+        "data.dataAttributes.objectCore.planned",
+        "data.dataAttributes.objectCore.objectItemHostilityStatusCodeEnum",
+        "data.objectStatusAttributes.objectItemStatusBoobyTrapPresenceCodeEnum",
+        "data.objectStatusAttributes.objectItemStatusEmissionControlCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusReadinessDuration",
+        "data.organisationStatusAttributes.organisationStatusRadiationDoseQuantity",
+        "data.organisationStatusAttributes.organisationStatusOperationalStatusCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusAvailabilityCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusCbrnDressCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusCommandAndControlRoleCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusCommitmentStatusCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusFireModeCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusOperationalStatusQualifierCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusReadinessCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusReinforcementCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusReserveIndicatorCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusTrainingCodeEnum",
+        "data.organisationStatusAttributes.organisationStatusUsageStatusCodeEnum",
+        "data.organisationStatusAttributes.teskilatDurumuKademeKategoriKoduEnum",
+        "data.organisationStatusAttributes.teskilatDurumuTeskilKoduEnum",
+        "data.unitAttributes.formalAbbreviatedName",
+        "data.unitAttributes.unitIdentificationText",
+        "data.unitAttributes.forceReadinessValue"
+      ],
+      "linkedSourceFieldName": []
+    }
+  ]
+}

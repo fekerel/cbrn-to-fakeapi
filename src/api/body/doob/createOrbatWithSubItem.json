@@ -1,0 +1,77 @@
+{
+  "name": "test123434",
+  "rootStructureItem": {
+    "id": "fcdbf04-853-ac63-ac86-26d7d08ed4a",
+    "subStructureItems": [
+      {
+        "id": "4e86a83-badf-1a41-3cda-adbf50beb61",
+        "categoryCode": "HAS_AS_A_CONSULTANT",
+        "subCategoryCode": "NULL",
+        "parentStructureItemId": "fcdbf04-853-ac63-ac86-26d7d08ed4a",
+        "temporalValidity": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming",
+          "effectiveEndDate": "15114246DAUG23",
+          "effectiveStartDate": "15114246DAUG23"
+        },
+        "subStructureItems": [],
+        "objectInformation": {
+          "objectId": "32300000000000510026",
+          "objectCoreType": "PERSON",
+          "objectName": "person-api-test-2023-08-15-11-21-48-859-32300000000000510023",
+          "symbolCode": "SFGPE-----**RI*",
+          "symbolCodes": {}
+        }
+      },
+      {
+        "id": "b1e8778-30d0-aaef-377a-fac74d8b4230",
+        "categoryCode": "COMMAND_AND_CONTROL",
+        "subCategoryCode": "HAS_FULL_COMMAND_OF",
+        "parentStructureItemId": "fcdbf04-853-ac63-ac86-26d7d08ed4a",
+        "temporalValidity": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming",
+          "effectiveEndDate": "15114246DAUG23",
+          "effectiveStartDate": "15114246DAUG23"
+        },
+        "subStructureItems": [],
+        "objectInformation": {
+          "objectId": "32300000000000650019",
+          "objectCoreType": "UNIT",
+          "objectName": "unit-api-test-2023-08-15-11-13-46-376-32300000000000650016",
+          "echelonSize": "BRIGADE",
+          "symbolCode": "SFGPUUAD--*HBL*",
+          "symbolCodes": {}
+        }
+      }
+    ],
+    "objectInformation": {
+      "objectId": "32300000000000080479",
+      "objectCoreType": "UNIT",
+      "objectName": "DOOB_LIVE_SEL",
+      "globalTrackIdentifier": "32300000000000260396",
+      "echelonSize": "CORPS",
+      "symbolCode": "SFGPUCI---*JOM*",
+      "symbolCodes": {}
+    }
+  },
+  "hostilityStatus": "FRIEND",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.organisation.structure.OrderOfBattleUpdateType",
+      "orderOfBattleUpdateTypeEnum": "ADD_ORBAT"
+    },
+    "createdBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "nodeAttributes": {
+      "nodeId": "32300000000000000000",
+      "nodeName": "DOOB_LIVE_SEL"
+    }
+  },
+  "type": "tr.com.havelsan.doob.cloud.framework.data.organisation.structure.rest.OrganisationStructureWrapper"
+}

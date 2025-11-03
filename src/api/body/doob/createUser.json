@@ -1,0 +1,13 @@
+{
+  "userState": "ENABLED",
+  "username": "test",
+  "name": "test",
+  "surname": "test",
+  "password": "test",
+  "email": "abc@havelsan.com.tr",
+  "customFields": {
+    "phoneNumber": "111111111",
+    "faxNumber": "",
+    "title": ""
+  }
+}

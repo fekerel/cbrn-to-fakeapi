@@ -1,0 +1,23 @@
+{
+  "channel_id": "id",
+  "message": "message",
+  "props": {
+    "attachments": [
+      {
+        "thumb_url": "url",
+        "fields": [
+          {
+            "title": "Summary",
+            "value": "summary"
+          },
+          {
+            "short": true,
+            "value": "[Report](url)"
+          }
+        ],
+        "actions": [
+        ]
+      }
+    ]
+  }
+}

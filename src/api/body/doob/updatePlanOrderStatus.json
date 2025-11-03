@@ -1,0 +1,22 @@
+{
+  "planOrderId": "32300000000000190047",
+  "planOrderType": "PLAN",
+  "applyChild": true,
+  "commonAttributes": {
+    "systemMode": "live",
+    "createdBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "nodeAttributes": {
+      "nodeId": "32300000000000000000",
+      "nodeName": "DOOB_LIVE_SEL"
+    }
+  },
+  "planStatusDevelopmentStatusCode": "NOT_COMPLETE",
+  "planStatusStateCode": "NULL"
+}

@@ -1,0 +1,184 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.DataWrapper",
+  "data": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.weapon.WeaponData",
+    "commonAttributes": {
+      "systemMode": "live",
+      "commonUpdateType": {
+        "type": "tr.com.havelsan.doob.cloud.framework.data.track.TrackUpdateType",
+        "trackUpdateTypeEnum": "UPDATE_IDENTITY"
+      },
+      "createdBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1",
+        "dateTime": "22-09-2023 07:13:25.629"
+      },
+      "modifiedBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1",
+        "dateTime": "22-09-2023 07:13:31.871"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "DOOB_LIVE_SEL"
+      }
+    },
+    "dataAttributes": {
+      "objectCore": {
+        "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+        "nameText": "RIFLE/AUTOMATIC WEAPON_2",
+        "globalTrackIdentifier": "32300000000000270003",
+        "basicTrackIdentifier": "32300000000000270003",
+        "affiliationGeopoliticalCodeEnum": "TURKEY",
+        "s15Text": "SHGPEWR---**TU*",
+        "objectId": "32300000000000150150",
+        "objectCoreType": "WEAPON",
+        "typeId": "99998010000081000066",
+        "creatorId": 2586,
+        "paletteMode": "app6a",
+        "headquarterIndicator": false,
+        "planned": false,
+        "iffModes": {},
+        "objectItemHostilityStatusCodeEnum": "HOSTILE"
+      },
+      "layerIdList": [
+        "32300000000000230005"
+      ],
+      "originalLayerId": "32300000000000230005",
+      "correlationEnum": "SOURCE",
+      "trackSourceTypeSet": []
+    },
+    "referenceAttributes": {
+      "referenceDataList": []
+    },
+    "metadataAttributes": {
+      "metadata": {
+        "temporalValidityAbsoluteTiming": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming",
+          "effectiveStartDate": "20230922071325.619"
+        },
+        "informationClassification": {},
+        "calculatedIntelAppraisal": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.IntelAppraisal",
+          "quality": 0
+        },
+        "reportingData": {
+          "categoryCode": "REPORTED",
+          "reportingDataCountingIndicatorCode": "YES",
+          "reportingDataRealDataExerciseUseOnlyCode": "REAL",
+          "reportingDate": "20230922071325.620",
+          "reportingAgent": {
+            "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+            "nameText": "DOOB_LIVE_SEL",
+            "affiliationGeopoliticalCodeEnum": "OMAN",
+            "s15Text": "S*G*UCI---*****",
+            "echelon": "CORPS",
+            "objectId": "32300000000000000000",
+            "objectCoreType": "UNIT",
+            "combatEffectiveness": "100",
+            "creatorId": 32300000000000000000,
+            "paletteMode": "app6a",
+            "headquarterIndicator": false,
+            "planned": false,
+            "iffModes": {},
+            "objectItemHostilityStatusCodeEnum": "FRIEND"
+          }
+        },
+        "intelAppraisalList": [
+          {
+            "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.IntelAppraisal",
+            "reportingDataAccuracyCode": "NULL",
+            "reportingDataReliabilityCode": "NULL",
+            "source": {
+              "sourceId": "1",
+              "reportingDataSourceTypeCode": "NULL"
+            },
+            "quality": 0
+          }
+        ],
+        "creatorId": 2586
+      }
+    },
+    "positionAttributes": {
+      "position": {
+        "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.position.PointPosition",
+        "idx": 1,
+        "dateTimeGroup": "",
+        "timeOfOccurrence": 0,
+        "trackQuality": 0,
+        "x": 55.28550673664716,
+        "y": 24.104298503408877,
+        "z": 0
+      }
+    },
+    "holdingAttributes": {
+      "holdingDataList": []
+    },
+    "objectStatusAttributes": {
+      "objectItemStatusBoobyTrapPresenceCodeEnum": "NULL",
+      "objectItemStatusEmissionControlCodeEnum": "NULL"
+    },
+    "materielAttributes": {
+      "materielCategoryCodeEnum": "NOT_OTHERWISE_SPECIFIED"
+    },
+    "materielStatusAttributes": {
+      "materielStatusCategoryCodeEnum": "NOT_OTHERWISE_SPECIFIED",
+      "materielStatusBodyColourCodeEnum": "NULL",
+      "materielStatusMarkingCodeEnum": "NULL",
+      "materielStatusMarkingColourCodeEnum": "NULL",
+      "materielStatusDemolitionStatusCode": "NULL",
+      "materielStatusImoCompliantIndicatorCodeEnum": "NULL",
+      "materielStatusOperationalStatusCodeEnum": "OPERATIONAL",
+      "materielStatusOperationalStatusQualifierCodeEnum": "NULL",
+      "materielStatusOperationalStatusModeCodeEnum": "NULL",
+      "materielStatusReserveIndicatorCodeEnum": "NULL",
+      "materielStatusSafetyStatusCodeEnum": "NULL",
+      "materielStatusUsageStatusCodeEnum": "NULL",
+      "materielStatusBuoyMalfunctionCodeEnum": "NULL"
+    }
+  },
+  "typeData": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.weapon.WeaponTypeData",
+    "commonAttributes": {
+      "systemMode": "live",
+      "commonUpdateType": {
+        "type": "tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType",
+        "identificationUpdateTypeEnum": "ADD_TYPE"
+      },
+      "createdBy": {
+        "userId": "32300000000000000000",
+        "userName": "system",
+        "dateTime": "22-09-2023 06:43:17.874"
+      },
+      "modifiedBy": {
+        "userId": "32300000000000000000",
+        "userName": "system",
+        "dateTime": "22-09-2023 06:43:17.874"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "DOOB_LIVE_SEL"
+      }
+    },
+    "typeAttributes": {
+      "typeId": "99998010000081000066",
+      "objectCoreType": "WEAPON"
+    },
+    "objectTypeAttributes": {
+      "objectTypeNameText": "SMALL ARMS-PISTOL REVOLVER",
+      "decoyIndicatorCode": "NO"
+    },
+    "materielTypeAttributes": {
+      "materielTypeCategoryCodeEnum": "EQUIPMENT_TYPE",
+      "materielTypeSupplyClassCodeEnum": "NULL"
+    },
+    "equipmentTypeAttributes": {
+      "equipmentTypeCategoryCode": "WEAPON_TYPE"
+    },
+    "weaponTypeAttributes": {
+      "weaponTypeCategoryCodeEnum": "SMALL_ARMS",
+      "weaponTypeSubcategoryCodeEnum": "PISTOL_REVOLVER",
+      "weaponTypeFireGuidanceIndicatorCodeEnum": "NULL"
+    }
+  }
+}

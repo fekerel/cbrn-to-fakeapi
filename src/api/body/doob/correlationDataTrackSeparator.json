@@ -1,0 +1,190 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.DataWrapper",
+  "data": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.unit.UnitData",
+    "commonAttributes": {
+      "systemMode": "live",
+      "createdBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1"
+      },
+      "modifiedBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "DOOB_LIVE_SEL"
+      },
+      "commonUpdateType": {
+        "type": "tr.com.havelsan.doob.cloud.framework.data.track.TrackUpdateType",
+        "trackUpdateTypeEnum": "ADD_TRACK"
+      }
+    },
+    "dataAttributes": {
+      "objectCore": {
+        "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+        "objectCoreType": "UNIT",
+        "paletteMode": "app6a",
+        "headquarterIndicator": true,
+        "planned": false,
+        "iffModes": {},
+        "objectItemHostilityStatusCodeEnum": "HOSTILE",
+        "typeId": "32300000000000210702",
+        "alternateNameText": "39",
+        "shortCommentText": "41",
+        "longCommentText": "17",
+        "objectLabel": "62",
+        "affiliationGeopoliticalCodeEnum": "NIUE",
+        "unitDesignatorText": "43",
+        "echelon": "BRIGADE",
+        "geoLocationText": "0",
+        "combatEffectiveness": "95",
+        "callSign": "21",
+        "nameText": "unit-api-test-2"
+      },
+      "layerIdList": [
+        "32300000000000950111"
+      ],
+      "correlationEnum": "CORRELATED",
+      "trackSourceTypeSet": [],
+      "originalLayerId": "32300000000000950111"
+    },
+    "referenceAttributes": {
+      "referenceDataList": []
+    },
+    "metadataAttributes": {
+      "metadata": {
+        "temporalValidityAbsoluteTiming": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming",
+          "effectiveStartDate": "20230921111958.652"
+        },
+        "calculatedIntelAppraisal": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.IntelAppraisal",
+          "quality": 0
+        },
+        "reportingData": {
+          "reportingDate": "20230921111958.652",
+          "reportingAgent": {
+            "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+            "nameText": "DOOB_LIVE_SEL",
+            "affiliationGeopoliticalCodeEnum": "OMAN",
+            "s15Text": "S*G*UCI---*****",
+            "echelon": "CORPS",
+            "objectId": "32300000000000000000",
+            "objectCoreType": "UNIT",
+            "combatEffectiveness": "100",
+            "creatorId": 32300000000000000000,
+            "paletteMode": "app6a",
+            "headquarterIndicator": false,
+            "planned": false,
+            "iffModes": {},
+            "objectItemHostilityStatusCodeEnum": "FRIEND"
+          }
+        },
+        "intelAppraisalList": []
+      }
+    },
+    "positionAttributes": {},
+    "holdingAttributes": {
+      "holdingDataList": []
+    },
+    "objectStatusAttributes": {
+      "objectItemStatusBoobyTrapPresenceCodeEnum": "UNKNOWN",
+      "objectItemStatusEmissionControlCodeEnum": "EMCON_2"
+    },
+    "organisationAttributes": {
+      "organisationCategoryCodeEnum": "UNIT"
+    },
+    "organisationStatusAttributes": {
+      "organisationStatusOperationalStatusCodeEnum": "MARGINALLY_OPERATIONAL",
+      "organisationStatusAvailabilityCodeEnum": "NOT_AVAILABLE",
+      "organisationStatusCbrnDressCodeEnum": "MOPP_1",
+      "organisationStatusCommandAndControlRoleCodeEnum": "PRIMARY_WAR_HEADQUARTERS",
+      "organisationStatusCommitmentStatusCodeEnum": "NULL",
+      "organisationStatusFireModeCodeEnum": "HOLD_FIRE",
+      "organisationStatusOperationalStatusQualifierCodeEnum": "HEAVILY_DAMAGED",
+      "organisationStatusReadinessCodeEnum": "WITHIN_30_DAYS",
+      "organisationStatusReinforcementCodeEnum": "REINFORCED_ONLY",
+      "organisationStatusReserveIndicatorCodeEnum": "YES",
+      "organisationStatusTrainingCodeEnum": "NOT_KNOWN",
+      "organisationStatusUsageStatusCodeEnum": "IN_ACTION",
+      "teskilatDurumuKademeKategoriKoduEnum": "NULL",
+      "teskilatDurumuTeskilKoduEnum": "NULL",
+      "organisationStatusReadinessDuration": 96,
+      "organisationStatusRadiationDoseQuantity": 61
+    },
+    "unitAttributes": {
+      "forceReadinessValue": 27,
+      "formalAbbreviatedName": "39",
+      "unitIdentificationText": "73"
+    }
+  },
+  "typeData": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.unit.UnitTypeData",
+    "commonAttributes": {
+      "systemMode": "live",
+      "commonUpdateType": {
+        "type": "tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType",
+        "identificationUpdateTypeEnum": "ADD_TYPE"
+      },
+      "createdBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1",
+        "dateTime": "21-09-2023 11:18:09.292"
+      },
+      "modifiedBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1",
+        "dateTime": "21-09-2023 11:18:09.292"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "DOOB_LIVE_SEL"
+      }
+    },
+    "typeAttributes": {
+      "typeId": "32300000000000210702",
+      "objectCoreType": "UNIT"
+    },
+    "objectTypeAttributes": {
+      "objectTypeNameText": "unit-api-test-2023-09-21-14-18-36-335-212",
+      "decoyIndicatorCode": "YES"
+    },
+    "organisationTypeAttributes": {
+      "organisationTypeDescriptionText": "29",
+      "commandControlFunction": "DIRECT_AIR_SUPPORT_CENTRE",
+      "commandFunctionIndicatorCode": "YES",
+      "organisationTypeCategoryCodeEnum": "GOVERNMENT_ORGANISATION_TYPE",
+      "militaryOrganisationTypeServiceCode": "NOT_KNOWN"
+    },
+    "unitTypeAttributes": {
+      "unitTypeCategoryCodeEnum": "COMBAT_SUPPORT",
+      "unitTypeArmCategoryCodeEnum": "INTERNAL_SECURITY_FORCES",
+      "unitTypeArmSpecialisationCodeEnum": "NULL",
+      "unitTypeSupplementarySpecialisationCodeEnum": "NAVAL",
+      "unitTypeQualifierCodeEnum": "NULL",
+      "unitTypeGeneralMobilityCodeEnum": "AMPHIBIOUS",
+      "unitTypeSizeCodeEnum": "FLEET"
+    }
+  },
+  "commonAttributes": {
+    "systemMode": "live",
+    "createdBy": {
+      "userId": "2586",
+      "userName": "apitest_sel_1"
+    },
+    "modifiedBy": {
+      "userId": "2586",
+      "userName": "apitest_sel_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32300000000000000000",
+      "nodeName": "DOOB_LIVE_SEL"
+    },
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType",
+      "identificationUpdateTypeEnum": "ADD_IDENTIFICATION"
+    }
+  }
+}

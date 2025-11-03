@@ -1,0 +1,228 @@
+{
+  "dataWrapper": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.DataWrapper",
+    "commonAttributes": {
+      "systemMode": "live",
+      "createdBy": {
+        "dateTime": "02-10-2023 11:18:58.772"
+      },
+      "modifiedBy": {
+        "dateTime": "02-10-2023 11:18:59.843"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "DOOB_LIVE_SEL"
+      }
+    },
+    "typeData": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.vehicle.VehicleTypeData",
+      "commonAttributes": {
+        "systemMode": "live",
+        "commonUpdateType": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType",
+          "identificationUpdateTypeEnum": "ADD_TYPE"
+        },
+        "createdBy": {
+          "userId": "2586",
+          "userName": "apitest_sel_1",
+          "dateTime": "28-09-2023 10:47:59.296"
+        },
+        "modifiedBy": {
+          "userId": "2586",
+          "userName": "apitest_sel_1",
+          "dateTime": "28-09-2023 10:47:59.296"
+        },
+        "nodeAttributes": {
+          "nodeId": "32300000000000000000",
+          "nodeName": "DOOB_LIVE_SEL"
+        }
+      },
+      "typeAttributes": {
+        "typeId": "32300000000000340871",
+        "objectCoreType": "VEHICLE"
+      },
+      "objectTypeAttributes": {
+        "objectTypeNameText": "TROLLEY BUS",
+        "decoyIndicatorCode": "NO"
+      },
+      "materielTypeAttributes": {
+        "materielTypeCategoryCodeEnum": "EQUIPMENT_TYPE",
+        "materielTypeSupplyClassCodeEnum": "NULL"
+      },
+      "equipmentTypeAttributes": {
+        "equipmentTypeCategoryCode": "VEHICLE_TYPE"
+      },
+      "vehicleTypeAttributes": {
+        "vehicleTypeCategoryCodeEnum": "TROLLEY_BUS"
+      }
+    },
+    "data": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.vehicle.VehicleData",
+      "commonAttributes": {
+        "systemMode": "live",
+        "commonUpdateType": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.identification.IdentificationUpdateType",
+          "identificationUpdateTypeEnum": "ADD_IDENTIFICATION"
+        },
+        "createdBy": {
+          "userId": "2586",
+          "userName": "apitest_sel_1",
+          "dateTime": "02-10-2023 11:18:58.772"
+        },
+        "modifiedBy": {
+          "userId": "2586",
+          "userName": "apitest_sel_1",
+          "dateTime": "02-10-2023 11:18:59.880"
+        },
+        "nodeAttributes": {
+          "nodeId": "32300000000000000000",
+          "nodeName": "SEL"
+        }
+      },
+      "dataAttributes": {
+        "objectCore": {
+          "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+          "nameText": "vehicle-BUS-api-test-2023-10-02-14-18-46-428-345",
+          "globalTrackIdentifier": "32300000000000220787",
+          "basicTrackIdentifier": "32300000000000220787",
+          "affiliationGeopoliticalCodeEnum": "NOT_OTHERWISE_SPECIFIED",
+          "s15Text": "SHGAEVUB--**--*",
+          "geometry": "GEN_POINT",
+          "objectId": "32300000000000340873",
+          "objectCoreType": "VEHICLE",
+          "typeId": "32300000000000340871",
+          "creatorId": 2586,
+          "paletteMode": "app6a",
+          "headquarterIndicator": false,
+          "planned": true,
+          "iffModes": {},
+          "objectItemHostilityStatusCodeEnum": "HOSTILE"
+        },
+        "layerIdList": [
+          "32300000000000200705"
+        ],
+        "originalLayerId": "32300000000000200705",
+        "correlationEnum": "SOURCE",
+        "trackSourceTypeSet": []
+      },
+      "referenceAttributes": {
+        "referenceDataList": []
+      },
+      "metadataAttributes": {
+        "metadata": {
+          "temporalValidityAbsoluteTiming": {
+            "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming",
+            "effectiveStartDate": "20231002111858.769"
+          },
+          "informationClassification": {},
+          "calculatedIntelAppraisal": {
+            "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.IntelAppraisal",
+            "quality": 0
+          },
+          "reportingData": {
+            "categoryCode": "PLANNED",
+            "reportingDataCountingIndicatorCode": "YES",
+            "reportingDataRealDataExerciseUseOnlyCode": "REAL",
+            "reportingDate": "20231002111858.769",
+            "reportingAgent": {
+              "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+              "nameText": "DOOB_LIVE_SEL",
+              "affiliationGeopoliticalCodeEnum": "OMAN",
+              "s15Text": "S*G*UCI---*****",
+              "echelon": "CORPS",
+              "objectId": "32300000000000000000",
+              "objectCoreType": "UNIT",
+              "combatEffectiveness": "100",
+              "creatorId": 32300000000000000000,
+              "paletteMode": "app6a",
+              "headquarterIndicator": false,
+              "planned": false,
+              "iffModes": {},
+              "objectItemHostilityStatusCodeEnum": "FRIEND"
+            }
+          },
+          "intelAppraisalList": [
+            {
+              "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.IntelAppraisal",
+              "reportingDataAccuracyCode": "NULL",
+              "reportingDataReliabilityCode": "NULL",
+              "source": {
+                "sourceId": "1",
+                "reportingDataSourceTypeCode": "NULL"
+              },
+              "quality": 0
+            }
+          ],
+          "creatorId": 2586
+        }
+      },
+      "positionAttributes": {
+        "position": {
+          "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.position.PointPosition",
+          "speed": 75,
+          "idx": 1,
+          "dateTimeGroup": "",
+          "timeOfOccurrence": 0,
+          "trackQuality": 0,
+          "x": 56.474545439161865,
+          "y": 24.46935238681449,
+          "z": 0
+        }
+      },
+      "holdingAttributes": {
+        "holdingDataList": []
+      },
+      "objectStatusAttributes": {
+        "objectItemStatusBoobyTrapPresenceCodeEnum": "NULL",
+        "objectItemStatusEmissionControlCodeEnum": "NULL"
+      },
+      "materielAttributes": {
+        "materielCategoryCodeEnum": "NOT_OTHERWISE_SPECIFIED"
+      },
+      "materielStatusAttributes": {
+        "materielStatusCategoryCodeEnum": "NOT_OTHERWISE_SPECIFIED",
+        "materielStatusBodyColourCodeEnum": "NULL",
+        "materielStatusMarkingCodeEnum": "NULL",
+        "materielStatusMarkingColourCodeEnum": "NULL",
+        "materielStatusDemolitionStatusCode": "NULL",
+        "materielStatusImoCompliantIndicatorCodeEnum": "NULL",
+        "materielStatusOperationalStatusCodeEnum": "OPERATIONAL",
+        "materielStatusOperationalStatusQualifierCodeEnum": "NULL",
+        "materielStatusOperationalStatusModeCodeEnum": "NULL",
+        "materielStatusReserveIndicatorCodeEnum": "NULL",
+        "materielStatusSafetyStatusCodeEnum": "NULL",
+        "materielStatusUsageStatusCodeEnum": "NULL",
+        "materielStatusBuoyMalfunctionCodeEnum": "NULL"
+      }
+    }
+  },
+  "feature": {
+    "featureId": "1696246846128",
+    "overlayId": "32300000000000200705",
+    "type": "tactical",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        58.227024016654596,
+        22.156724565090318,
+        0
+      ]
+    },
+    "properties": {
+      "modifiers": {},
+      "selectedIndicator": true,
+      "emergencyIndicator": false,
+      "size": 50,
+      "info": {},
+      "symbolCode": "SHGAEVUB--**--*",
+      "visible": true,
+      "selectable": true,
+      "readOnly": false,
+      "deletable": false,
+      "editableStyle": false,
+      "visibilityAllowedOnFilteredFeature": true,
+      "tooltip": ""
+    }
+  },
+  "featureId": "1696246846128"
+}

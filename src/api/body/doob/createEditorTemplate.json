@@ -1,0 +1,22 @@
+{
+  "dataType": "STATIC",
+  "name": "api-test123",
+  "id": null,
+  "parameters": [
+    {
+      "name": "code",
+      "type": "STRING",
+      "visibleDescription": "Editor Content",
+      "value": "<reportHeader><table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:683px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:677px\">api-test_header</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n</reportHeader><p>api-test_editor</p>\n<reportFooter><p>api-test_footer</p>\n\n<table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:683px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:677px\">&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n</reportFooter>"
+    }
+  ],
+  "permissions": "REPORT_CREATE_PERSONNEL_PERMISSION,REPORT_CREATE_OPERATIONS_PERMISSION,REPORT_CREATE_PERMISSION,REPORT_CREATE_INTELLIGENCE_PERMISSION,REPORT_CREATE_LOGISTICS_PERMISSION,REPORT_CREATE_OTHER_PERMISSION,REPORT_CREATE_GIS_REPORT,REPORT_UPDATE_INTELLIGENCE_PERMISSION,REPORT_UPDATE_OPERATIONS_PERMISSION,REPORT_UPDATE_PERSONNEL_PERMISSION,REPORT_UPDATE_LOGISTICS_PERMISSION,REPORT_UPDATE_OTHER_PERMISSION,REPORT_UPDATE_PERMISSION,REPORT_DELETE_LOGISTICS_PERMISSION,REPORT_DELETE_OTHER_PERMISSION,REPORT_DELETE_PERMISSION,REPORT_DELETE_INTELLIGENCE_PERMISSION,REPORT_DELETE_OPERATIONS_PERMISSION,REPORT_DELETE_PERSONNEL_PERMISSION,REPORT_VIEW_OPERATIONS_PERMISSION,REPORT_VIEW_PERSONNEL_PERMISSION,REPORT_VIEW_OTHER_PERMISSION,REPORT_VIEW_INTELLIGENCE_PERMISSION,REPORT_VIEW_LOGISTICS_PERMISSION,REPORT_VIEW_PERMISSION,REPORT_APPROVE_INTELLIGENCE_PERMISSION,REPORT_APPROVE_OPERATIONS_PERMISSION,REPORT_APPROVE_LOGISTICS_PERMISSION,REPORT_APPROVE_PERMISSION,REPORT_APPROVE_PERSONNEL_PERMISSION,REPORT_APPROVE_OTHER_PERMISSION",
+  "portrait": true,
+  "fileContentAsJrxml": "",
+  "fileContentAsJasper": "",
+  "reportTemplateType": "MASTER",
+  "type": "SYSTEM",
+  "mode": "ADD_NEW_REPORT_TEMPLATE",
+  "htmlCode": "<reportHeader><table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:683px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:677px\">api-test_header</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n</reportHeader><p>api-test_editor</p>\n<reportFooter><p>api-test_footer</p>\n\n<table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:683px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width:677px\">&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n</reportFooter>",
+  "includePageNumber": false
+}

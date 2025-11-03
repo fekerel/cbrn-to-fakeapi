@@ -1,0 +1,161 @@
+{
+  "id": "usVkuwzPljzrtzyo",
+  "type": "ground",
+  "grid": {
+    "x": 20,
+    "y": 20,
+    "width": 600,
+    "height": 597,
+    "workspaceWidth": 2400,
+    "workspaceHeight": 1076
+  },
+  "model": {
+    "global": {
+      "enableEdgeDock": false,
+      "tabEnableClose": false,
+      "tabEnableRename": false,
+      "tabEnableRenderOnDemand": false,
+      "tabSetTabStripHeight": 35,
+      "tabSetMinWidth": 200,
+      "tabSetMinHeight": 200,
+      "borderEnableAutoHide": true
+    },
+    "borders": [
+      {
+        "type": "border",
+        "location": "left",
+        "children": []
+      },
+      {
+        "type": "border",
+        "location": "right",
+        "children": []
+      },
+      {
+        "type": "border",
+        "location": "bottom",
+        "children": []
+      }
+    ],
+    "layout": {
+      "type": "row",
+      "id": "#44d95f60-5294-4f05-b838-9110f72fb518",
+      "children": [
+        {
+          "type": "row",
+          "id": "#63206718-52ee-4ff2-8889-10652f64dea9",
+          "weight": 25,
+          "children": [
+            {
+              "type": "tabset",
+              "id": "#aa90ea54-4df3-473c-8db2-1df26043b532",
+              "weight": 50,
+              "children": [
+                {
+                  "type": "tab",
+                  "id": "#a143404b-b242-4e89-a670-ea4fe2a982a2",
+                  "name": "LayerTree",
+                  "component": "text",
+                  "config": {
+                    "uid": "LayerTree",
+                    "url": "/doob-widget-layer-tree/EXECUTION",
+                    "preferences": {},
+                    "instanceid": "RvMptmBOlkryclmk"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "tabset",
+              "id": "#1d3d2d39-501f-4513-b564-b6d42465b6d5",
+              "weight": 50,
+              "selected": 1,
+              "children": [
+                {
+                  "type": "tab",
+                  "id": "#411a14bd-dbfd-4414-b074-6ab8aa7c53f7",
+                  "name": "ActionsHistory",
+                  "component": "text",
+                  "config": {
+                    "uid": "ActionsHistory",
+                    "url": "/doob-widget-command/",
+                    "preferences": {},
+                    "instanceid": "ZfBJ7971lkryct6c"
+                  }
+                },
+                {
+                  "type": "tab",
+                  "id": "#f4e7b92c-0481-402a-b2aa-fd0b797690c1",
+                  "name": "TrackList",
+                  "component": "text",
+                  "config": {
+                    "uid": "TrackList",
+                    "url": "/doob-widget-track-list/",
+                    "preferences": {},
+                    "instanceid": "YbaYgeT5lkuq0mj6"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "tabset",
+          "id": "#577a88b8-af57-4164-b15e-d24c0d9ccc93",
+          "weight": 25,
+          "children": [
+            {
+              "type": "tab",
+              "id": "#9e1548e1-2aba-4cef-be60-32d5c7b96142",
+              "name": "Palette",
+              "component": "text",
+              "config": {
+                "uid": "Palette",
+                "url": "/doob-widget-palette/",
+                "preferences": {},
+                "instanceid": "jXtjS-r3lkrycf47"
+              }
+            },
+            {
+              "type": "tab",
+              "id": "#6bb8cf00-b5ba-4105-a006-b9df825b86b5",
+              "name": "AlarmFeed",
+              "component": "text",
+              "config": {
+                "uid": "AlarmFeed",
+                "url": "/doob-widget-notification/",
+                "preferences": {},
+                "instanceid": "935Oq7DClluma143"
+              }
+            }
+          ],
+          "active": true
+        },
+        {
+          "type": "tabset",
+          "id": "#d20aa7b6-34e1-45e0-a002-e01aa54bf435",
+          "weight": 25,
+          "children": [
+            {
+              "type": "tab",
+              "id": "#57b4cd68-5c66-4f16-8beb-4cc06e1e5d88",
+              "name": "Map",
+              "component": "text",
+              "config": {
+                "uid": "Map",
+                "url": "/map-widget/",
+                "preferences": {},
+                "instanceid": "JtyQBi7Eljzruejx"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zIndex": 0,
+  "locked": false,
+  "pinned": false,
+  "fullScreen": true,
+  "visible": true
+}

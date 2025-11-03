@@ -1,0 +1,10 @@
+{
+    "eventTypeEnumList": [
+        "CHEM",
+        "BIO",
+        "RAD",
+        "NUC"
+    ],
+    "reportDateStart": null,
+    "reportDateEnd": null
+}

@@ -1,0 +1,7 @@
+{
+    "cbrnMainEventName":"string",
+    "eventType":"string",
+    "eventDate":"string",
+    "cbrnMainEventState":1,
+    "explanation": "Test Data"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "TEST123",
+  "rootStructureItem": {
+    "id": "50eaf87-0f7b-4c88-2c4f-b282a63b0cd5",
+    "subStructureItems": [],
+    "objectInformation": {
+      "objectId": "32100000000000210479",
+      "objectCoreType": "UNIT",
+      "objectName": "DOOB_LIVE_DEV",
+      "globalTrackIdentifier": "32100000000000420202",
+      "echelonSize": "ARMY",
+      "symbolCode": "SFGPUCI---*KTU*",
+      "symbolCodes": {}
+    }
+  },
+  "hostilityStatus": "FRIEND",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.organisation.structure.OrderOfBattleUpdateType",
+      "orderOfBattleUpdateTypeEnum": "ADD_ORBAT"
+    },
+    "createdBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "nodeAttributes": {
+      "nodeId": "32100000000000000000",
+      "nodeName": "DOOB_LIVE_DEV"
+    }
+  },
+  "type": "tr.com.havelsan.doob.cloud.framework.data.organisation.structure.rest.OrganisationStructureWrapper"
+}

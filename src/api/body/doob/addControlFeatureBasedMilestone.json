@@ -1,0 +1,12 @@
+{
+  "dateTime": "20231016130112.712",
+  "milestoneName": "control-feature-api-test-2023-10-16-16-01-57-617-21-32300000000000410207",
+  "relationalControlFeatureId": "32300000000000410210",
+  "type": "tr.com.havelsan.doob.cloud.framework.data.milestone.SystemBasedMilestoneData",
+  "commonAttributes": {
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.milestone.MilestoneUpdateType",
+      "milestoneUpdateTypeEnum": "ADD_MILESTONE"
+    }
+  }
+}

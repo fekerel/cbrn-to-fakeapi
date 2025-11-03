@@ -1,0 +1,24 @@
+{
+  "class": "tr.com.havelsan.doob.cloud.framework.data.display.hierarchy.DisplayUser",
+  "id": "2586",
+  "children": {
+    "layerId": {
+      "class": "tr.com.havelsan.doob.cloud.framework.data.display.hierarchy.DisplayLayer",
+      "id": "layerId",
+      "children": {
+        "objectId": {
+          "class": "tr.com.havelsan.doob.cloud.framework.data.display.hierarchy.DisplayObject",
+          "objectPlotting": false,
+          "id": "objectId"
+        }
+      },
+      "plottingObjectIds": [
+        "objectId"
+      ],
+      "layerPlotting": false
+    }
+  },
+  "plottingLayerIds": [
+    "layerId"
+  ]
+}

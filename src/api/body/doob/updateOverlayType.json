@@ -1,0 +1,28 @@
+[
+  {
+    "id": "32300000000000760017",
+    "name": "admin",
+    "commonAttributes": {
+      "systemMode": "live",
+      "commonUpdateType": {
+        "overlayUpdateTypeEnum": "UPDATE_OVERLAY_TYPE",
+        "type": "tr.com.havelsan.doob.cloud.framework.data.settings.OverlayUpdateType"
+      },
+      "createdBy": {
+        "userId": "2",
+        "userName": "apitest",
+        "dateTime": "02-06-2023 07:20:25.511"
+      },
+      "modifiedBy": {
+        "userId": "2",
+        "userName": "apitest",
+        "dateTime": "02-06-2023 07:20:25.511"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "DOOB_LIVE_SEL"
+      }
+    },
+    "type": "tr.com.havelsan.doob.cloud.framework.data.settings.OverlayTypeData"
+  }
+]

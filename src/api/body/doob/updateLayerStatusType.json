@@ -1,0 +1,11 @@
+[
+  {
+    "userId": "2",
+    "layerId": "32300000000000200016",
+    "layerName": "api-test",
+    "igcTypeEnum": "EXECUTION",
+    "nodeId": "32300000000000000000",
+    "nodeName": "DOOB_LIVE_SEL",
+    "layerStatusType": "ACTIVATED"
+  }
+]

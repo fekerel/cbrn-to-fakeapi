@@ -1,0 +1,25 @@
+{
+  "copiedPlanOrderId": "32400000000000191673",
+  "pastePlanOrderId": "NODE_TYPE|32400000000000000000",
+  "newPlanOrderName": "copied123",
+  "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.wrapper.CopyPastePlanOrderData",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.PlanOrderUpdateType",
+      "planOrderUpdateTypeEnum": "COPY_PASTE_PLAN_ORDER"
+    },
+    "createdBy": {
+      "userId": "91",
+      "userName": "apitest_rao_1"
+    },
+    "modifiedBy": {
+      "userId": "91",
+      "userName": "apitest_rao_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32400000000000000000",
+      "nodeName": "RAO"
+    }
+  }
+}

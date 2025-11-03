@@ -1,0 +1,48 @@
+{
+  "overlayDataList": [
+    {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.content.OverlayData",
+      "overlayId": "32100000000002980214",
+      "overlayName": "api-test-2023-08-19-16-43-59-078-407",
+      "url": "https://dev.doob.k2.net/doob-service-file-storage/rest/query/downloadFile?fileName=live/overlaySnapshots/Screenshot-32100000000002980214.png",
+      "commonAttributes": {
+        "systemMode": "live",
+        "createdBy": {
+          "userId": "64",
+          "userName": "apitest_dev_1",
+          "dateTime": "19-08-2023 13:46:50.713"
+        },
+        "modifiedBy": {
+          "userId": "64",
+          "userName": "apitest_dev_1",
+          "dateTime": "19-08-2023 13:46:50.713"
+        },
+        "nodeAttributes": {
+          "nodeId": "32100000000000000000",
+          "nodeName": "apitest_dev_1"
+        }
+      }
+    }
+  ],
+  "contentId": "32100000000000530962",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.PlanOrderUpdateType",
+      "planOrderUpdateTypeEnum": "ATTACH_PLAN_ORDER"
+    },
+    "createdBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1"
+    },
+    "modifiedBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32100000000000000000",
+      "nodeName": "DOOB_LIVE_DEV"
+    }
+  },
+  "class": "tr.com.havelsan.doob.cloud.framework.data.planorder.display.attachment.overlay.OverlayAttachmentRequestData"
+}

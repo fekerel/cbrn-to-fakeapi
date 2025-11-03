@@ -1,0 +1,13 @@
+{
+  "typeName": "TRACK_ALARM",
+  "userSettings": [
+    {
+      "username": "apitest",
+      "isSms": false,
+      "isMail": false,
+      "isGroup": false,
+      "isPlayAlarm": false,
+      "alarmLocation": "Alarm01.wav"
+    }
+  ]
+}

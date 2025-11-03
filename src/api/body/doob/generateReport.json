@@ -1,0 +1,12 @@
+{
+  "reportGeneratedName": "cctest",
+  "reportName": "api-test",
+  "htmlCode": "<reportHeader></reportHeader><reportFooter></reportFooter>",
+  "approvers": [
+    {
+      "sequenceNumber": 1,
+      "username": "report_admin"
+    }
+  ],
+  "includePageNumber": false
+}

@@ -1,0 +1,42 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreData",
+  "commonAttributes": {
+    "nodeAttributes": {
+      "nodeId": "32700000000000000000",
+      "nodeName": "DOOB_LIVE_SEL-NATIVE"
+    },
+    "createdBy": {
+      "userId": "8c4110e975b94dc59073692e204b7566",
+      "userName": "igd"
+    },
+    "modifiedBy": {
+      "userId": "8c4110e975b94dc59073692e204b7566",
+      "userName": "igd"
+    },
+    "metadataAttributes": {
+      "metadata": {
+        "originatorConfidentialityLabel": {
+          "confidentialityInformation": {
+            "policyIdentifier": { "policyIdentifier": "" },
+            "classification": "UNMARKED"
+          }
+        }
+      }
+    },
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreUpdateType",
+      "informationGroupCoreUpdateTypeEnum": "ADD_IGC"
+    }
+  },
+  "informationGroupCoreAttributes": {
+    "nameText": "testtt",
+    "subInformationGroupCoreIds": [],
+    "objectIds": [],
+    "overlayTypeDataId": "999000000000000000011",
+    "creatorId": "8c4110e975b94dc59073692e204b7566",
+    "parentInformationGroupCoreId": "",
+    "igcType": "EXECUTION",
+    "organisationStructureId": null
+  }
+}

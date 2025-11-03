@@ -1,0 +1,19 @@
+{
+  "reportGeneratedName": "personna_PERSONNEL_STATUS_REPORT_Fri Dec 01 2023 14:42:32 GMT+0300 (GMT+03:00)",
+  "reportName": "PERSONNEL_STATUS_REPORT",
+  "parameters": {
+    "unitID": "32200000000000170483",
+    "description": "",
+    "privacyLevel": "UNMARKED",
+    "preparedBy": "apitest_dev2_1",
+    "approvedBy": "",
+    "logo": "",
+    "reportSystemMode": "live"
+  },
+  "approvers": [
+    {
+      "sequenceNumber": 1,
+      "username": "apitest_dev_1"
+    }
+  ]
+}

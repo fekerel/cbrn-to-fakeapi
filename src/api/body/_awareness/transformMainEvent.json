@@ -1,0 +1,72 @@
+{
+    "idTypeList": [
+        {
+            "id": 12373,
+            "type": "CBRN1"
+        },
+        {
+            "id": 10836,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12374,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12389,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12399,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12489,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12491,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12497,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12501,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12503,
+            "type": "CBRN2"
+        },
+        {
+            "id": 12375,
+            "type": "CBRN3"
+        },
+        {
+            "id": 9914,
+            "type": "CBRN4"
+        },
+        {
+            "id": 10182,
+            "type": "CBRN4"
+        },
+        {
+            "id": 12376,
+            "type": "CBRN4"
+        },
+        {
+            "id": 12377,
+            "type": "CBRN6"
+        }
+    ],
+    "sourceDate": "2019-04-12T08:30:00Z",
+    "destDate": "",
+    "doSave": true,
+    "sourceLoc": {
+        "latitude": 48.001896,
+        "longitude": 1.994536 
+    },
+    "destLoc": null
+}

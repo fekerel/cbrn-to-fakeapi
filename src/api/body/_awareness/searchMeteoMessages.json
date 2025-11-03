@@ -1,0 +1,11 @@
+{
+    "messageTypeList": [
+        "CDR",
+        "BWR",
+        "EDR"
+    ],
+    "isArchived": false,
+    "isDeleted": false,
+    "reportDateStart": null,
+    "reportDateEnd": null
+}

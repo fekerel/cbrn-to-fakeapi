@@ -1,0 +1,13 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.process.PlanOrderProcessData",
+  "processSourceId": "32100000000000540303",
+  "currentSequenceNumber": 1,
+  "approvalStatus": "IN_WAITING_APPROVAL_REQUEST",
+  "approvers": [
+    {
+      "userId": 2,
+      "username": "apitest",
+      "sequenceNumber": 1
+    }
+  ]
+}

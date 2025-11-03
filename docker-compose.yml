@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  apitest:
+#    build: .
+    image: cregistry.k2.net/testmd/cbrn_api_tests-master:1.0.0
+    ulimits:
+      nofile:
+        soft: 98304
+        hard: 98304
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+    volumes:
+      - ${VOLUME_JENKINS_WORKSPACE_DIRECTORY}/${VOLUME_PLUGIN_DIRECTORY}:${TARGET_VOLUME_DIRECTORY}
+    environment:
+      - "DOCKER_PARAMS=${DOCKER_PARAMS}"
+networks:
+  my-network:
+    driver: bridge

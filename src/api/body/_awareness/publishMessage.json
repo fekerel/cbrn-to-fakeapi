@@ -1,0 +1,150 @@
+{
+    "cbrnCommonDto": {
+        "createdDate": "2025-10-16T09:17:26Z",
+        "updatedDate": null,
+        "isDeleted": false,
+        "deletedDate": null,
+        "createdBy": "admin",
+        "updatedBy": "",
+        "deletedBy": null,
+        "unitId": 1,
+        "ownerUsername": "admin",
+        "isArchived": false,
+        "archivedDate": null,
+        "archivedBy": null,
+        "id": 11686,
+        "unitDesignationName": null,
+        "serialNumber": "TUR/MVC/017/B",
+        "status": "APPROVED",
+        "cbrnMessageType": "CBRN2",
+        "eventType": "BIO",
+        "messageSource": "IMPORTED",
+        "cbrnMainEventId": 2,
+        "ulakId": null,
+        "mtf": "MSGID/CBRN 2 BIO/APP-11(D)/ORIGINAL/-/-/-/-/-/NATO/-/-//\nGEODATUM/WGE//\nDTG/121335ZJAN2019//\nALFA/TUR/MVC/017/B//\nDELTA/040600ZJUL2019//\nFOXTROT/MGRS:33SVB3080067200/AA//\nGOLF/OBS/DEV/-/CON/1/SURF//\nINDIA/TS:BIO/NKN/PSDS/IND//\nMIKER/ACTIVE/CLOUD/PUFF//\nTANGO/FLAT/URBAN//\nYANKEE/180DGG/017KPH//\nZULU/4/20.0C/0/0/0//",
+        "reportDate": "2019-01-12T13:35:00Z",
+        "approvalDate": "2025-10-16T09:17:27Z",
+        "publishingDate": null,
+        "informationForMap": {
+            "id": null,
+            "observerLocation": null,
+            "observerDirectionInDgg": null,
+            "eventLocationList": null,
+            "papaaDto": null,
+            "novemberDto": null,
+            "hazardSetList": null,
+            "hazardDistancePointDtoList": null,
+            "contSegmentList": null,
+            "cloudPlotSegmentList": null,
+            "contourSetList": null,
+            "plotForMapDtoList": null,
+            "papabDto": null,
+            "paparDto": null,
+            "cdrPlotForMapDto": null,
+            "bwrPlotForMapDto": null,
+            "edrPlotForMapDto": null,
+            "msd1BoxAreaLocList": null,
+            "msd2BoxAreaLocList": null,
+            "visible": false,
+            "unitedPointList": null,
+            "periodReached": 0,
+            "ergDrawingDetail": null,
+            "metaInf": {
+                "zeroPhase": null,
+                "firstPhase": null,
+                "secondPhase": null,
+                "thirdPhase": null,
+                "fourthPhase": null,
+                "fifthPhase": null,
+                "previousRoundedPolygon": null,
+                "previousOfPreviousRoundedPolygon": null
+            },
+            "featureId": null,
+            "overlayId": null,
+            "simulation": false
+        },
+        "attribute": "CREATED",
+        "notAllocationReason": null,
+        "versionId": null,
+        "versionSequenceNumber": null,
+        "moduleType": "AWARENESS",
+        "isEyeForMapButtonDisabled": null,
+        "cancelReason": null,
+        "cancelDate": null
+    },
+    "publishUnits": [
+        {
+            "cbrnOu": {
+                "dn": "TSKnull",
+                "name": "TSK"
+            },
+            "children": [
+                {
+                    "cbrnOu": {
+                        "dn": "DzKKTSK",
+                        "name": "DzKK"
+                    },
+                    "children": [
+                        {
+                            "cbrnOu": {
+                                "dn": "Donanma K.lığıDzKK",
+                                "name": "Donanma K.lığı"
+                            },
+                            "children": [
+                                {
+                                    "cbrnOu": {
+                                        "dn": "Gölcük Deniz Ana Üs K.lığıDonanma K.lığı",
+                                        "name": "Gölcük Deniz Ana Üs K.lığı"
+                                    },
+                                    "children": [
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "Deniz Hava K.lığıGölcük Deniz Ana Üs K.lığı",
+                                                "name": "Deniz Hava K.lığı"
+                                            },
+                                            "children": null
+                                        },
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "Torpido Test ve Muhimmat Transit Depo K.lığıGölcük Deniz Ana Üs K.lığı",
+                                                "name": "Torpido Test ve Muhimmat Transit Depo K.lığı"
+                                            },
+                                            "children": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cbrnOu": {
+                                        "dn": "Karamürselbey Eğt. Mrk.K.lığıDonanma K.lığı",
+                                        "name": "Karamürselbey Eğt. Mrk.K.lığı"
+                                    },
+                                    "children": [
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "KEMK Karargah Destek Kıtalar K.lığıKaramürselbey Eğt. Mrk.K.lığı",
+                                                "name": "KEMK Karargah Destek Kıtalar K.lığı"
+                                            },
+                                            "children": null
+                                        },
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "Deniz KBRN Savunma ve Eğt.Mrk.KlığıKaramürselbey Eğt. Mrk.K.lığı",
+                                                "name": "Deniz KBRN Savunma ve Eğt.Mrk.Klığı"
+                                            },
+                                            "children": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "willTheHeaderBeOverwritten": null,
+    "publishWithMail": null,
+    "warning": false,
+    "messagePriority": "Z",
+    "willSendAtt": true
+}

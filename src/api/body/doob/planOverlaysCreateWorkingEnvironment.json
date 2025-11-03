@@ -1,0 +1,21 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.inner.profile.dto.WorkingEnvironmentData",
+  "workingEnvironmentAttributes": {
+    "workingEnvironmentName": "default",
+    "workingEnvironmentStructure": "{\"structure\":[],\"selectedIds\":{}}",
+    "workingEnvironmentType": "PLAN"
+  },
+  "defaultWorkingEnvironment": true,
+  "commonAttributes": {
+    "nodeAttributes": {
+      "nodeId": ""
+    },
+    "createdBy": {
+      "userId": "180"
+    },
+    "modifiedBy": {
+      "userId": "180"
+    },
+    "systemMode": "live"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "usVkuwzPljzrtzyo",
+  "type": "ground",
+  "grid": {
+    "x": 20,
+    "y": 20,
+    "width": 600,
+    "height": 597,
+    "workspaceWidth": 2400,
+    "workspaceHeight": 1076
+  },
+  "model": {
+    "global": {
+      "enableEdgeDock": false,
+      "tabEnableClose": false,
+      "tabEnableRename": false,
+      "tabEnableRenderOnDemand": false,
+      "tabSetTabStripHeight": 35,
+      "tabSetMinWidth": 200,
+      "tabSetMinHeight": 200,
+      "borderEnableAutoHide": true
+    },
+    "borders": [
+      {
+        "type": "border",
+        "location": "left",
+        "children": []
+      },
+      {
+        "type": "border",
+        "location": "right",
+        "children": []
+      },
+      {
+        "type": "border",
+        "location": "bottom",
+        "children": []
+      }
+    ],
+    "layout":{
+      "type": "row",
+      "id": "#dc86eaa6-15b1-4a72-a14f-3273b6578db6",
+      "children": [
+        {
+          "type": "tabset",
+          "id": "#6b82db15-e5cf-441f-b472-39d7913564a4",
+          "weight": 34.59915611814346,
+          "children": [
+            {
+              "type": "tab",
+              "id": "#b4312c80-3dd2-4750-8cda-abc0f55d82d1",
+              "name": "LayerTree",
+              "component": "text",
+              "config": {
+                "uid": "LayerTree",
+                "url": "/doob-widget-layer-tree/EXECUTION",
+                "preferences": {},
+                "instanceid": "UfFQSmMblpkv5x1o"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabset",
+          "id": "#b9791803-a460-4c45-8554-8461aa99e163",
+          "weight": 34.67986636834524,
+          "children": [
+            {
+              "type": "tab",
+              "id": "#af20d09c-e6b4-4134-b70d-87a21fa527d9",
+              "name": "Map",
+              "component": "text",
+              "config": {
+                "uid": "Map",
+                "url": "/kasif-app-map-widget/",
+                "preferences": {},
+                "instanceid": "tj342dp1lpkvaqwh"
+              }
+            }
+          ],
+          "active": true
+        },
+        {
+          "type": "tabset",
+          "id": "#6b4c6952-b363-4765-8d97-9affde78e3b9",
+          "weight": 30.720977513511305,
+          "children": [
+            {
+              "type": "tab",
+              "id": "#8755f4ff-74bd-4850-ab8e-ee8d0ac27d11",
+              "name": "AlarmFeed",
+              "component": "text",
+              "config": {
+                "uid": "AlarmFeed",
+                "url": "/doob-widget-notification/",
+                "preferences": {},
+                "instanceid": "HETmEYPDlpkvanbs"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zIndex": 0,
+  "locked": false,
+  "pinned": false,
+  "fullScreen": true,
+  "visible": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.inner.profile.dto.WorkingEnvironmentData",
+  "workingEnvironmentAttributes": {
+    "workingEnvironmentName": "default",
+    "workingEnvironmentStructure": "{\"structure\":[{\"nodeData\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.node.NodeData\",\"baseNodeAttributes\":{\"organisation\":{\"class\":\"tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore\",\"nameText\":\"bb\",\"affiliationGeopoliticalCodeEnum\":\"OMAN\",\"s15Text\":\"S*G*UCI---*****\",\"echelon\":\"ARMY\",\"objectId\":\"32200000000000170017\",\"objectCoreType\":\"UNIT\",\"combatEffectiveness\":\"100\",\"creatorId\":179,\"paletteMode\":\"app6a\",\"headquarterIndicator\":false,\"planned\":false,\"iffModes\":{},\"objectItemHostilityStatusCodeEnum\":\"FRIEND\"}},\"nodeAttributes\":{\"informationGroupCoreIds\":[]}},\"informationGroupCoreChild\":[]}],\"selectedIds\":{}}",
+    "workingEnvironmentType": "EXECUTION"
+  },
+  "defaultWorkingEnvironment": true,
+  "commonAttributes": {
+    "nodeAttributes": {
+      "nodeId": ""
+    },
+    "createdBy": {
+      "userId": "179"
+    },
+    "modifiedBy": {
+      "userId": "179"
+    },
+    "systemMode": "live"
+  }
+}

@@ -1,0 +1,14 @@
+/node_modules/
+allure-report/
+allure-results
+/.idea/
+package-lock.json
+*.iml
+/mochawesome-report/
+trash/
+fails/
+.github/
+*.log
+/src/testConstants/token.json
+/src/misc/JSONdata/servicesData/
+/dist/

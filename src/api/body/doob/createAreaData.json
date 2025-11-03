@@ -1,0 +1,60 @@
+{
+  "createObjectData": {
+    "s15": "M*X*ELIPS-**--*",
+    "objectCoreType": "ANNOTATION",
+    "reportingOrg": null,
+    "creatorId": "2",
+    "paletteMode": "app6a",
+    "systemMode": "live",
+    "name": "api-test",
+    "layerId": "32100000000002970087",
+    "featureId": "11b3e890-3bfa-11ee-81c5-d542cf828a63",
+    "countryCode": "",
+    "hostility": "",
+    "objectType": "",
+    "feature": {
+      "featureId": "11b3e890-3bfa-11ee-81c5-d542cf828a63",
+      "overlayId": "32100000000002970087",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.109343441293156,
+          20.7481325184751,
+          0
+        ]
+      },
+      "properties": {
+        "visible": true,
+        "visibilityAllowedOnFilteredFeature": true,
+        "readOnly": false,
+        "selectable": true,
+        "deletable": false,
+        "editableStyle": true,
+        "tooltip": "",
+        "geometry": "ellipse",
+        "width": 3.58559805265935,
+        "height": 1.5918115770050318,
+        "rotation": 0,
+        "unitType": "deg",
+        "symbolCode": "M*X*ELIPS-**--*",
+        "style": {
+          "fillColor": {
+            "r": 128,
+            "b": 128,
+            "g": 128,
+            "a": 0.75
+          },
+          "strokeColor": {
+            "r": 0,
+            "b": 0,
+            "g": 0,
+            "a": 0.9
+          },
+          "width": 1.5,
+          "strokeDashStyle": []
+        }
+      }
+    }
+  },
+  "messageComplete":{}
+}

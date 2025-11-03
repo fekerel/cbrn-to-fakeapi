@@ -1,0 +1,16 @@
+{
+    "idTypeList": [
+        {
+            "id": 12350,
+            "type": "CBRN3" 
+        }
+    ],
+    "sourceDate": "2019-07-04T06:00:00Z",
+    "destDate": null, 
+    "doSave": true, 
+    "sourceLoc": { 
+        "latitude": 37.649349,
+        "longitude": 14.215548
+    },
+    "destLoc": null 
+}

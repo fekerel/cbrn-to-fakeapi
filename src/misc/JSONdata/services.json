@@ -1,0 +1,143 @@
+[
+  {
+    "serviceName": "action-task",
+    "type": false,
+    "path": [
+      "actionTaskAttributes",
+      "actionTaskActivityCodeEnum"
+    ]
+  },
+  {
+    "serviceName": "action-event",
+    "type": false,
+    "path": [
+      "actionEventDataAttributes",
+      "actionEventCategoryCodeEnum"
+    ]
+  },
+  {
+    "serviceName": "aircraft",
+    "type": true
+  },
+  {
+    "serviceName": "airfield",
+    "type": true
+  },
+  {
+    "serviceName": "ammunition",
+    "type": true
+  },
+  {
+    "serviceName": "bridge",
+    "type": true
+  },
+  {
+    "serviceName": "cbrn-equipment",
+    "type": true
+  },
+  {
+    "serviceName": "chemical-biological-event",
+    "type": false,
+    "path": [
+      "chemicalBiologicalEventAttributes",
+      "chemicalBiologicalEventCategoryCode"
+    ]
+  },
+  {
+    "serviceName": "chemical-materiel",
+    "type": true
+  },
+  {
+    "serviceName": "consumable-materiel",
+    "type": true
+  },
+  {
+    "serviceName": "control-feature",
+    "type": true
+  },
+  {
+    "serviceName": "convoy",
+    "type": true
+  },
+  {
+    "serviceName": "electronic-equipment",
+    "type": true
+  },
+  {
+    "serviceName": "engineering-equipment",
+    "type": true
+  },
+  {
+    "serviceName": "facility",
+    "type": true
+  },
+  {
+    "serviceName": "harbour",
+    "type": true
+  },
+  {
+    "serviceName": "maritime-equipment",
+    "type": true
+  },
+  {
+    "serviceName": "materiel",
+    "type": true
+  },
+  {
+    "serviceName": "military-obstacle",
+    "type": true
+  },
+  {
+    "serviceName": "military-post",
+    "type": true
+  },
+  {
+    "serviceName": "minefield-land",
+    "type": true
+  },
+  {
+    "serviceName": "miscellaneous-equipment",
+    "type": true
+  },
+  {
+    "serviceName": "organisation",
+    "type": true
+  },
+  {
+    "serviceName": "person",
+    "type": true
+  },
+  {
+    "serviceName": "railcar",
+    "type": true
+  },
+  {
+    "serviceName": "route",
+    "type": true
+  },
+  {
+    "serviceName": "subsurface-vessel",
+    "type": true
+  },
+  {
+    "serviceName": "surface-vessel",
+    "type": true
+  },
+  {
+    "serviceName": "unit",
+    "type": true
+  },
+  {
+    "serviceName": "vehicle",
+    "type": true
+  },
+  {
+    "serviceName": "vessel",
+    "type": true
+  },
+  {
+    "serviceName": "weapon",
+    "type": true
+  }
+]
+

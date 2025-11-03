@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2019",
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false,
+    "strictNullChecks": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [ "src/*" ],
+      "@api/*": [ "src/api/*" ],
+      "@testConstants/*": [ "src/testConstants/*" ],
+      "@common/*": ["src/common/*"],
+      "@misc/*": ["src/misc/*"],
+      "@test/*": [ "__tests__/*" ]
+    }
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

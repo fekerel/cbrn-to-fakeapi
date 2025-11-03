@@ -1,0 +1,44 @@
+{
+  "contentId": "32400000000000241421",
+  "referenceDataList": [
+    {
+      "referenceTitleText": "live/doob/PlanReferences/32400000000000241420/14052024144131-CTIS_Intern_ONLINE_Followup_#5.doc",
+      "referenceObjectContent": "live/doob/PlanReferences/32400000000000241420/14052024144131-CTIS_Intern_ONLINE_Followup_#5.doc",
+      "referenceObjectNameText": "CTIS_Intern_ONLINE_Followup_#5.doc",
+      "type": "tr.com.havelsan.doob.cloud.framework.data.ReferenceData",
+      "referenceObjectContentCategoryTypeEnum": "DOC",
+      "referenceObjectCategoryCodeEnum": "NULL",
+      "commonAttributes": {
+        "systemMode": "live",
+        "createdBy": {
+          "userId": "64",
+          "userName": "apitest_dev_1"
+        },
+        "modifiedBy": {
+          "userId": "64",
+          "userName": "apitest_dev_1"
+        },
+        "nodeAttributes": {
+          "nodeId": "32400000000000000001",
+          "nodeName": "RAO"
+        }
+      }
+    }
+  ],
+  "commonAttributes": {
+    "systemMode": "live",
+    "createdBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1"
+    },
+    "modifiedBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32400000000000000001",
+      "nodeName": "RAO"
+    }
+  },
+  "class": "tr.com.havelsan.doob.cloud.framework.data.planorder.display.attachment.reference.ReferenceAttachmentRequestData"
+}

@@ -1,0 +1,71 @@
+{
+  "layerId": "32300000000000200004",
+  "systemMode": "live",
+  "sourceDataList": [
+    {
+      "sourceId": "19",
+      "sourceName": "VMF",
+      "connectionDataWrapperList": [
+        {
+          "topicNames": [
+            "doob-octopus-layer-data-wrapper-topic-live-in-VMF-SEL-27000",
+            "doob-octopus-plan-order-data-wrapper-topic-live-in-vmf-SEL-27000"
+          ],
+          "connectionSourceId": "19",
+          "connectionStatusReport": {
+            "connectionId": "SEL-27000",
+            "connectionName": "SEL-27000",
+            "connectionNetworkName": "SEL",
+            "connectionState": "INACTIVE",
+            "connectionSourceName": "VMF"
+          },
+          "selectedObjectCoreTypeList": []
+        }
+      ],
+      "objectCoreTypeList": [
+        "PERSON",
+        "MATERIEL",
+        "FEATURE",
+        "ORGANISATION",
+        "UNIT",
+        "CONTROL_FEATURE",
+        "GEOGRAPHIC_FEATURE",
+        "FACILITY",
+        "EQUIPMENT",
+        "WEAPON",
+        "ELECTRONIC_EQUIPMENT",
+        "VEHICLE",
+        "MILITARY_OBSTACLE",
+        "ROUTE",
+        "RAILCAR",
+        "AIRFIELD",
+        "BRIDGE",
+        "HARBOUR",
+        "ENGINEERING_EQUIPMENT",
+        "VESSEL",
+        "SURFACE_VESSEL",
+        "TRACK",
+        "SUBSURFACE_VESSEL",
+        "MARITIME_EQUIPMENT",
+        "CBRN_EQUIPMENT",
+        "CONVOY",
+        "CONSUMABLE_MATERIEL",
+        "CHEMICAL_MATERIEL",
+        "AMMUNITION",
+        "MINEFIELD",
+        "MINEFIELD_LAND",
+        "MILITARY_POST",
+        "ANNOTATION",
+        "AIRCRAFT",
+        "ACTION_EVENT",
+        "ACTION_TASK",
+        "RADIOLOGICAL_EVENT",
+        "CHEMICAL_BIOLOGICAL_EVENT",
+        "CBRN_EVENT",
+        "NUCLEAR_EVENT",
+        "RADIOACTIVE_EVENT",
+        "MISCELLANEOUS_EQUIPMENT"
+      ]
+    }
+  ]
+}

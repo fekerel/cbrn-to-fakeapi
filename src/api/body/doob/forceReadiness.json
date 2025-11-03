@@ -1,0 +1,13 @@
+[
+  {
+    "holdingTypeData": {
+      "holdingObjectCoreType": "VEHICLE",
+      "holdingTypeId": "99996000000001000001",
+      "holdingTypeName": "ARMOURED PERSONNEL CARRIER"
+    },
+    "onHandQuantity": 700,
+    "operationalCount": 620,
+    "requiredOnHandQuantity": 700,
+    "critical": true
+  }
+]

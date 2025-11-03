@@ -1,0 +1,14 @@
+.eslintignore
+.eslintrc.json
+.git
+.gitignore
+.husky
+.idea
+README.md
+/allure-report
+/allure-results
+/mochawesome-report
+/node-modules
+package-lock.json
+*.log
+yarn.lock

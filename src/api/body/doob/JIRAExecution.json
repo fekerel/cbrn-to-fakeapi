@@ -1,0 +1,27 @@
+{
+  "fields": {
+    "project": {
+      "id": "id"
+    },
+    "summary": "DOOB-API-AUTOMATION-EXECUTION",
+    "issuetype": {
+      "id": "10302"
+    },
+    "assignee": {
+      "name": "user"
+    },
+    "reporter": {
+      "name": "user"
+    },
+    "labels": [
+      "automation"
+    ],
+
+    "environment": "SEL",
+    "description": "DOOB-SEL automation test execution 'date'",
+
+    "customfield_10333": [
+
+    ]
+  }
+}

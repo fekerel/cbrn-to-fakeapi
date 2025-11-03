@@ -1,0 +1,23 @@
+{
+  "resourceItem": {
+    "objectCore": {
+      "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+      "nameText": "DOOB_LIVE_SEL",
+      "globalTrackIdentifier": "32300000000000230004",
+      "basicTrackIdentifier": "32300000000000230004",
+      "affiliationGeopoliticalCodeEnum": "OMAN",
+      "s15Text": "SFGPUCI---*JOM*",
+      "echelon": "CORPS",
+      "objectId": "32300000000000190479",
+      "objectCoreType": "UNIT",
+      "typeId": "99995000000000000168",
+      "combatEffectiveness": "100",
+      "creatorId": 32300000000000000000,
+      "paletteMode": "app6a",
+      "headquarterIndicator": false,
+      "planned": false,
+      "iffModes": {},
+      "objectItemHostilityStatusCodeEnum": "FRIEND"
+    }
+  }
+}

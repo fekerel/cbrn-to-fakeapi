@@ -1,0 +1,38 @@
+{
+  "type": "ACO",
+  "objects": [
+    {
+      "objectCoreType": "CONTROL_FEATURE",
+      "name": "POLYGON"
+    },
+    {
+      "objectCoreType": "CONTROL_FEATURE",
+      "name": "RADARC1333"
+    },
+    {
+      "objectCoreType": "CONTROL_FEATURE",
+      "name": "LINE1118"
+    },
+    {
+      "objectCoreType": "UNIT",
+      "name": "TOBEREPLACED"
+    },
+    {
+      "objectCoreType": "ACTION_TASK",
+      "name": "POLYGON"
+    },
+    {
+      "objectCoreType": "ACTION_TASK",
+      "name": "RADARC1333"
+    },
+    {
+      "objectCoreType": "ACTION_TASK",
+      "name": "LINE1118"
+    }
+  ],
+  "objectCoreTypes": [
+    "CONTROL_FEATURE",
+    "UNIT",
+    "ACTION_TASK"
+  ]
+}

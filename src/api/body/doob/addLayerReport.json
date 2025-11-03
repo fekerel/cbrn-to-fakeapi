@@ -1,0 +1,27 @@
+{
+  "reportGeneratedName": "Report Name",
+  "reportName": "INTEL_STATUS_SUMMARY_REPORT_EVENT",
+  "approvers": [
+    {
+      "sequenceNumber": 1,
+      "username": "apitest_dev_1"
+    }
+  ],
+  "parameters": {
+    "privacyLevel": "UNMARKED",
+    "description": "",
+    "reportType": "INTEL_STATUS_SUMMARY_REPORT_EVENT",
+    "generalSituation": "",
+    "militarySituation": "",
+    "landSituation": "",
+    "maritimeSituation": "",
+    "airSituation": "",
+    "spaceSituation": "",
+    "securitySituation": "",
+    "otherIntelligenceSituation": "",
+    "areaAssessment": "",
+    "generalAssessment": "",
+    "JsonDataSource": [
+    ]
+  }
+}

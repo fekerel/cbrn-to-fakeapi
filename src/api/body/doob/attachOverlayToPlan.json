@@ -1,0 +1,27 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.inner.layer.plan.PlanOverlayData",
+  "planOrderId": "32100000000000530961",
+  "planOrderName": "test123",
+  "draftLayerIdList": [
+    "32100000000002970329"
+  ],
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreUpdateType",
+      "informationGroupCoreUpdateTypeEnum": "ADD_IGC"
+    },
+    "createdBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1"
+    },
+    "modifiedBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32100000000000000000",
+      "nodeName": "DOOB_LIVE_DEV"
+    }
+  }
+}

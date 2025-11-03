@@ -1,0 +1,25 @@
+{
+  "type": "ACO",
+  "objects": [
+    {
+      "objectCoreType": "UNIT",
+      "name": "TOBEREPLACED"
+    },
+    {
+      "objectCoreType": "UNIT",
+      "name": "ATO TEST3"
+    },
+    {
+      "objectCoreType": "ACTION_TASK",
+      "name": "12312222"
+    },
+    {
+      "objectCoreType": "ACTION_TASK",
+      "name": "Missile Mission Task12312312"
+    }
+  ],
+  "objectCoreTypes": [
+    "UNIT",
+    "ACTION_TASK"
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "TEST",
+    "name": "TEST",
+    "commonAttributes": {
+      "commonUpdateType": {
+        "overlayUpdateTypeEnum": "ADD_OVERLAY_TYPE",
+        "type": "tr.com.havelsan.doob.cloud.framework.data.settings.OverlayUpdateType"
+      }
+    },
+    "type": "tr.com.havelsan.doob.cloud.framework.data.settings.OverlayTypeData"
+  }
+]

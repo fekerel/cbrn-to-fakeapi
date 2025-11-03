@@ -1,0 +1,8 @@
+{
+  "RunGenericTag": "DON NOT CHANGE THE CONTENT OF THIS FILE - 1",
+  "Build": false,
+  "DockerPush": false,
+  "Run": true,
+  "Env": "SEL",
+  "Suite": "userManagement" 
+}

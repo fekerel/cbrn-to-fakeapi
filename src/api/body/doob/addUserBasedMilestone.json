@@ -1,0 +1,12 @@
+{
+  "dateTime": "20231016115627.000",
+  "milestoneName": "deneme123",
+  "id": "",
+  "type": "tr.com.havelsan.doob.cloud.framework.data.milestone.UserBasedMilestoneData",
+  "commonAttributes": {
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.milestone.MilestoneUpdateType",
+      "milestoneUpdateTypeEnum": "ADD_MILESTONE"
+    }
+  }
+}

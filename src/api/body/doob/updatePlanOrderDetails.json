@@ -1,0 +1,53 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.content.ContentData",
+  "contentId": "32100000000000530554",
+  "planOrderId": "32100000000000530553",
+  "bodyData": "{\"blocks\":[{\"key\":\"7mqb8\",\"text\":\"SITUATION\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hrln\",\"text\":\"a.\\tEnemy Forces. Composition, estimated strengths, identification, disposition, current location, movement anticipated, capabilities, and assessment of intentions.\\n\\n                b.\\tFriendly Forces. Information concerning friendly forces other than those covered by the Operation Order, which should directly affect the action of subordinate commanders. Include information on such forces that subordinate commanders need to know in order to accomplish their tasks.\\n\\n                c.\\tAttachments and Detachments. Units attached to or detached from the issuing formation/unit, together with the times they are effective.\\n            \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a6169\",\"text\":\"MISSION\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"88tpo\",\"text\":\"A clear, concise statement of the task(s) to be accomplished by the commander and its purpose. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"14n90\",\"text\":\"EXECUTION\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13snf\",\"text\":\"a. \\tConcept of Operations. Describe, in brief, how the commander visualizes the execution of the operation from start to completion.\\n\\n                b. \\tTasks/Missions to Manoeuvre Units. Subsequent subparagraphs assign specific tasks to each element of the command charged with the execution of tactical duties, and give details of coordination and the task organization.\\n\\n                c. \\tTasks/Missions to Combat Support Units. List CS units in subparagraphs in the same order as they appear in the task organization.\\n\\n                d. \\tCoordinating Instructions. Instructions applicable to two or more elements of the task organization.\\n            \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6avi0\",\"text\":\"ADMINISTRATION AND LOGISTICS\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2sr28\",\"text\":\"a. \\tSupport Concept. Include enough information to make clear the basic concept for logistics support.\\n                b.\\tMateriel and Services. List materiel and services for supply, maintenance, transportation, and construction, and allocation of labor for logistics purposes.\\n\\n                c.\\tMedical Evacuation and Hospitalization. List plans and policies for hospitalization and evacuation of military and civilian personnel.\\n\\n                d. \\tPersonnel. List unit strengths, replacements, and personnel policies and procedures, including those pertaining to civilians and enemy prisoners of war.\\n\\n                e. \\tCivil-Military Cooperation. Describe control of civil population, refugees, and other relevant civil affairs matters.\\n\\n                f. \\tMiscellaneous. In many cases, reference to administrative and logistics policies and procedures in an existing plan as amended by the OPORD will suffice.\\n            \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cime9\",\"text\":\"COMMAND AND SIGNAL\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avvlk\",\"text\":\"a. \\tCommand, Control, and Communications. Give information about pertinent command, control, and communications nets; operating procedures; recognition and identification procedures; electronic emission constraints, etc.\\n\\n                b. \\tCommand. Clearly state all command relationships. Include current and planned command post locations, and alternate command posts with their times of activation and deactivation.\\n            \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ciak1\",\"text\":\"ANNEXES\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "headerData": {
+    "planName": "api-test-2023-08-18-16-30-49-489-67",
+    "classification": "UNMARKED",
+    "codeNo": "Total_number_of_copies",
+    "copyNo": "copy_no_2",
+    "divisionOfTask": "task_org",
+    "issuingAuthority": "issuing_headquertest",
+    "placeOfIssue": "place_of_issue",
+    "planNo": "message_reference_no",
+    "relevantDocument": "references_1",
+    "timeInterval": "D"
+  },
+  "footerData": {
+    "classification": "UNMARKED",
+    "distributionReason": "for_action",
+    "distributionInformation": "for_information",
+    "footerDisplayAnnexData": {
+      "planOrderSubCatType": "ANNEX",
+      "planOrderSubCatNameList": [
+        "INTELLIGENCE ANNEX TO THE OPORD"
+      ]
+    }
+  },
+  "referenceDataList": [],
+  "overlayDataList": [],
+  "taskOrganisationDataList": [],
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.PlanOrderUpdateType",
+      "planOrderUpdateTypeEnum": "UPDATE_CONTENT"
+    },
+    "createdBy": {
+      "userId": "64",
+      "userName": "apitest_dev_1",
+      "dateTime": "18-08-2023 13:30:49.633"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest",
+      "dateTime": "18-08-2023 13:39:18.971"
+    },
+    "nodeAttributes": {
+      "nodeId": "32100000000000000000",
+      "nodeName": "DOOB_LIVE_DEV"
+    }
+  }
+}

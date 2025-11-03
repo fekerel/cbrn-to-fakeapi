@@ -1,0 +1,49 @@
+{
+  "overlayDataList": [
+    {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.content.OverlayData",
+      "commonAttributes": {
+        "systemMode": "live",
+        "createdBy": {
+          "userId": "91",
+          "userName": "apitest_rao_1",
+          "dateTime": "22-08-2023 06:26:37.631"
+        },
+        "modifiedBy": {
+          "userId": "91",
+          "userName": "apitest_rao_1",
+          "dateTime": "22-08-2023 06:26:37.631"
+        },
+        "nodeAttributes": {
+          "nodeId": "32400000000000000000",
+          "nodeName": "RAO"
+        }
+      },
+      "overlayId": "32400000000000580036",
+      "overlayName": "test123",
+      "url": "https://rao.ops.mod/doob-service-file-storage/rest/query/downloadFile?fileName=live/overlaySnapshots/Screenshot-32400000000000580036.png"
+    }
+  ],
+  "contentId": "32400000000000191541",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.PlanOrderUpdateType",
+      "planOrderUpdateTypeEnum": "DETACH_PLAN_ORDER"
+    },
+    "createdBy": {
+      "userId": "91",
+      "userName": "apitest_rao_1",
+      "dateTime": "22-08-2023 06:26:37.631"
+    },
+    "modifiedBy": {
+      "userId": "91",
+      "userName": "apitest_rao_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32400000000000000000",
+      "nodeName": "RAO"
+    }
+  },
+  "class": "tr.com.havelsan.doob.cloud.framework.data.planorder.display.attachment.overlay.OverlayAttachmentRequestData"
+}

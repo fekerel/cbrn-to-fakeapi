@@ -1,0 +1,43 @@
+{
+  "featureId": "7d1428f0-3c1f-11ee-93c5-b98b944c93da",
+  "overlayId": "32100000000002980106",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      58.297021349457886,
+      22.962789945247064,
+      0
+    ]
+  },
+  "properties": {
+    "visible": true,
+    "visibilityAllowedOnFilteredFeature": true,
+    "readOnly": false,
+    "selectable": true,
+    "deletable": false,
+    "editableStyle": true,
+    "tooltip": "",
+    "geometry": "ellipse",
+    "width": 1.5468694541925174,
+    "height": 1.054065886534687,
+    "rotation": 0,
+    "unitType": "deg",
+    "symbolCode": "M*X*ELIPS-**--*",
+    "style": {
+      "fillColor": {
+        "r": 128,
+        "b": 128,
+        "g": 128,
+        "a": 0.75
+      },
+      "strokeColor": {
+        "r": 0,
+        "b": 0,
+        "g": 0,
+        "a": 0.9
+      },
+      "width": 1.5,
+      "strokeDashStyle": []
+    }
+  }
+}

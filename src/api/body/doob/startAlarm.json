@@ -1,0 +1,48 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.alarm.AlarmData",
+  "id": null,
+  "alarmName": "api-test23",
+  "startDate": null,
+  "endDate": null,
+  "alarmType": "TRACK_ALARM",
+  "alarmStateEnum": "ACTIVE",
+  "rule": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.alarm.rule.Rule",
+    "id": "1.692.357.688.913",
+    "left": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.alarm.rule.LeafRule",
+      "id": "",
+      "operator": "and",
+      "left": "AREA_ALARM_ENTERING",
+      "right": "32200000000001410019",
+      "topic": "doob-area-alarm-topic-live"
+    },
+    "right": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.alarm.rule.LeafRule",
+      "id": "1,693,145,368,354",
+      "left": "Hostility",
+      "right": "HOSTILE",
+      "operator": "equal",
+      "topic": "doob-track-alarm-topic-live"
+    },
+    "operator": "and"
+  },
+  "group": "",
+  "category": "ALARM",
+  "modifiedBy": "",
+  "commonAttributes": {
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "createdBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.alarm.AlarmUpdateType",
+      "alarmUpdateTypeEnum": "ADD_ALARM"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "test123",
+  "rootStructureItem": {
+    "id": "2682b4-c568-e7f1-7c8f-d3af10f4bc",
+    "subStructureItems": [
+      {
+        "id": "6af04a1-ae6c-6f20-b06-72b1e8b5ee3a",
+        "categoryCode": "COMMAND_AND_CONTROL",
+        "subCategoryCode": "HAS_FULL_COMMAND_OF",
+        "parentStructureItemId": "2682b4-c568-e7f1-7c8f-d3af10f4bc",
+        "temporalValidity": {
+          "type": "tr.com.havelsan.doob.cloud.framework.data.metadata.TemporalValidityAbsoluteTiming",
+          "effectiveEndDate": "15152620DAUG23",
+          "effectiveStartDate": "15152620DAUG23"
+        },
+        "subStructureItems": [],
+        "objectInformation": {
+          "objectId": "32100000000002540247",
+          "objectCoreType": "UNIT",
+          "objectName": "QUARTERMASTER (SUPPLY)",
+          "globalTrackIdentifier": "32100000000002470722",
+          "echelonSize": "COMPANY",
+          "symbolCode": "SFGPUSAQ--*EOM*",
+          "symbolCodes": {}
+        }
+      }
+    ],
+    "objectInformation": {
+      "objectId": "32100000000000210479",
+      "objectCoreType": "UNIT",
+      "objectName": "DOOB_LIVE_DEV",
+      "globalTrackIdentifier": "32100000000000420202",
+      "echelonSize": "ARMY",
+      "symbolCode": "SFGPUCI---*KTU*",
+      "symbolCodes": {}
+    }
+  },
+  "hostilityStatus": "FRIEND",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.organisation.structure.OrderOfBattleUpdateType",
+      "orderOfBattleUpdateTypeEnum": "ADD_ORBAT"
+    },
+    "createdBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest"
+    },
+    "nodeAttributes": {
+      "nodeId": "32100000000000000000",
+      "nodeName": "DOOB_LIVE_DEV"
+    }
+  },
+  "type": "tr.com.havelsan.doob.cloud.framework.data.organisation.structure.rest.OrganisationStructureWrapper"
+}

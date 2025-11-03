@@ -1,0 +1,111 @@
+{
+    "publishedMessageDto": {
+        "createdDate": null,
+        "updatedDate": null,
+        "isDeleted": false,
+        "deletedDate": null,
+        "createdBy": null,
+        "updatedBy": null,
+        "deletedBy": null,
+        "unitId": 1,
+        "ownerUsername": "admin",
+        "id": 263,
+        "unitName": "TSK",
+        "messageType": "CBRN2",
+        "eventType": "RAD",
+        "mtf": "MSGID/CBRN 2 RAD/APP-11(D)/ORIGINAL/-/-/-/-/-/-/-/-//\nGEODATUM/WGE//\nDTG/121239ZJAN2019//\nALFA/-/-/622/R//\nDELTA/010800ZNOV2019//\nFOXTROT/MGRS:32UMG3500018000/EE//\nGOLF/OBS/DEV/1/NKN/-/-//\nINDIAR/NKN/GAM/-/VBRAD//\nMIKER/ACTIVE/ARDD/PUFF//\nYANKEE/075DGT/012KPH//",
+        "publishedUnitName": "DzKK",
+        "publishedDate": "2025-10-16T09:50:18Z",
+        "messagePriority": "O",
+        "parentPublishMsgId": null,
+        "parentCbrnCommonId": 11755,
+        "status": "PUBLISHED",
+        "withdrawDate": null,
+        "withdrawBy": null,
+        "cancelDate": null,
+        "cancelBy": null,
+        "cancelReason": null,
+        "publishedUnitIdList": [
+            {
+                "id": 263,
+                "unitId": 2,
+                "publishedMsgId": 263
+            }
+        ]
+    },
+    "publishUnits": [
+        {
+            "cbrnOu": {
+                "dn": "TSKnull",
+                "name": "TSK"
+            },
+            "children": [
+                {
+                    "cbrnOu": {
+                        "dn": "DzKKTSK",
+                        "name": "DzKK"
+                    },
+                    "children": [
+                        {
+                            "cbrnOu": {
+                                "dn": "Donanma K.lığıDzKK",
+                                "name": "Donanma K.lığı"
+                            },
+                            "children": [
+                                {
+                                    "cbrnOu": {
+                                        "dn": "Gölcük Deniz Ana Üs K.lığıDonanma K.lığı",
+                                        "name": "Gölcük Deniz Ana Üs K.lığı"
+                                    },
+                                    "children": [
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "Deniz Hava K.lığıGölcük Deniz Ana Üs K.lığı",
+                                                "name": "Deniz Hava K.lığı"
+                                            },
+                                            "children": null
+                                        },
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "Torpido Test ve Muhimmat Transit Depo K.lığıGölcük Deniz Ana Üs K.lığı",
+                                                "name": "Torpido Test ve Muhimmat Transit Depo K.lığı"
+                                            },
+                                            "children": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cbrnOu": {
+                                        "dn": "Karamürselbey Eğt. Mrk.K.lığıDonanma K.lığı",
+                                        "name": "Karamürselbey Eğt. Mrk.K.lığı"
+                                    },
+                                    "children": [
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "KEMK Karargah Destek Kıtalar K.lığıKaramürselbey Eğt. Mrk.K.lığı",
+                                                "name": "KEMK Karargah Destek Kıtalar K.lığı"
+                                            },
+                                            "children": null
+                                        },
+                                        {
+                                            "cbrnOu": {
+                                                "dn": "Deniz KBRN Savunma ve Eğt.Mrk.KlığıKaramürselbey Eğt. Mrk.K.lığı",
+                                                "name": "Deniz KBRN Savunma ve Eğt.Mrk.Klığı"
+                                            },
+                                            "children": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "willTheHeaderBeOverwritten": null,
+    "publishWithMail": null,
+    "warning": false,
+    "messagePriority": "Z",
+    "willSendAtt": true
+}

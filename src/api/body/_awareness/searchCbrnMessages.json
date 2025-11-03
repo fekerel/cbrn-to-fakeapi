@@ -1,0 +1,12 @@
+{
+    "eventTypeEnumList":["CHEM","BIO","RAD","NUC"],
+    "messageTypeList":["CBRN1","CBRN2","CBRN3","CBRN4","CBRN5","CBRN6"],
+    "reportDateStart":null,
+    "reportDateEnd":null,
+    "serialNumber":"",
+    "mtfSearchCriteria":"",
+    "attribute":null,
+    "cbrnMainEventId":null,
+    "isArchived":false,
+    "isDeleted":false
+}

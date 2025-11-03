@@ -1,0 +1,84 @@
+{
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.track.TrackUpdateType",
+      "trackUpdateTypeEnum": "DROP_TRACK_NO_DATA"
+    },
+    "createdBy": {
+      "userId": "2586",
+      "userName": "apitest_sel_1",
+      "dateTime": "29-09-2023 07:10:39.918"
+    },
+    "modifiedBy": {
+      "userId": "2586",
+      "userName": "apitest_sel_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32300000000000000000",
+      "nodeName": "SEL"
+    }
+  },
+  "type": "tr.com.havelsan.doob.cloud.framework.data.DataWrapper",
+  "data": {
+    "type": "tr.com.havelsan.doob.cloud.framework.data.surface.vessel.SurfaceVesselData",
+    "dataAttributes": {
+      "objectCore": {
+        "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore",
+        "nameText": "surface-vessel-CARRIER-api-test-2023-09-29-10-10-29-303-751",
+        "globalTrackIdentifier": "32300000000000300099",
+        "basicTrackIdentifier": "32300000000000300099",
+        "affiliationGeopoliticalCodeEnum": "NOT_OTHERWISE_SPECIFIED",
+        "s15Text": "SHSPCLCV--**--*",
+        "geometry": "GEN_POINT",
+        "objectCoreType": "SURFACE_VESSEL",
+        "typeId": "99994000000001000001",
+        "creatorId": 2586,
+        "paletteMode": "app6a",
+        "headquarterIndicator": false,
+        "planned": false,
+        "iffModes": {},
+        "objectItemHostilityStatusCodeEnum": "HOSTILE"
+      },
+      "layerIdList": [
+        "32300000000000200152"
+      ],
+      "originalLayerId": "32300000000000200152",
+      "correlationEnum": "SOURCE",
+      "trackSourceTypeSet": []
+    },
+    "commonAttributes": {
+      "systemMode": "live",
+      "commonUpdateType": {
+        "type": "tr.com.havelsan.doob.cloud.framework.data.track.TrackUpdateType",
+        "trackUpdateTypeEnum": "DROP_TRACK_NO_DATA"
+      },
+      "createdBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1",
+        "dateTime": "29-09-2023 07:10:39.918"
+      },
+      "modifiedBy": {
+        "userId": "2586",
+        "userName": "apitest_sel_1"
+      },
+      "nodeAttributes": {
+        "nodeId": "32300000000000000000",
+        "nodeName": "SEL"
+      }
+    },
+    "positionAttributes": {
+      "position": {
+        "class": "tr.com.havelsan.doob.cloud.framework.data.core.data.position.PointPosition",
+        "speed": 75,
+        "idx": 1,
+        "dateTimeGroup": "",
+        "timeOfOccurrence": 0,
+        "trackQuality": 0,
+        "x": 56.474545439161865,
+        "y": 24.46935238681449,
+        "z": 0
+      }
+    }
+  }
+}

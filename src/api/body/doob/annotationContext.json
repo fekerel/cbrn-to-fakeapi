@@ -1,0 +1,60 @@
+{
+  "messageId": "08baa9cf-d83f-1003-6704-2d1a771ed1ec",
+  "sender": {},
+  "originatingChannel": "map.feature.draw",
+  "status": "success",
+  "details": {
+    "feature": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.66411516679645,
+          22.875828183576516,
+          0
+        ]
+      },
+      "properties": {
+        "visible": true,
+        "visibilityAllowedOnFilteredFeature": true,
+        "readOnly": false,
+        "selectable": true,
+        "deletable": true,
+        "editableStyle": true,
+        "tooltip": "",
+        "geometry": "ellipse",
+        "width": 4.000000000000000,
+        "height": 2.0000000000000000,
+        "rotation": 0,
+        "unitType": "deg",
+        "symbolCode": "M*X*ELIPS-**--*",
+        "style": {
+          "fillColor": {
+            "r": 128,
+            "b": 128,
+            "g": 128,
+            "a": 0.75
+          },
+          "strokeColor": {
+            "r": 0,
+            "b": 0,
+            "g": 0,
+            "a": 0.9
+          },
+          "width": 1.5,
+          "strokeDashStyle": []
+        }
+      },
+      "featureId": "19ec8160-9290-11ee-8371-872c51d86381",
+      "overlayId": "32300000000000210492",
+      "name": "Ellipse 00491",
+      "format": "geojson",
+      "type": "Feature",
+      "overlayName": "layer"
+    },
+    "properties": {
+      "igcType": ""
+    }
+  },
+  "failures": {},
+  "widgetName": "Map"
+}

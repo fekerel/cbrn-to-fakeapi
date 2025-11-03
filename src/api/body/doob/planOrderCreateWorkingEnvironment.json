@@ -1,0 +1,24 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.inner.profile.dto.WorkingEnvironmentData",
+  "workingEnvironmentAttributes": {
+    "workingEnvironmentName": "DefaultTree",
+    "workingEnvironmentStructure": "{\"treeStructure\":{\"treeData\":[],\"treeDataExpandedStateMap\":{}},\"editorStructure\":[],\"selectedIds\":[],\"activeWorkingEnvironment\":false}",
+    "workingEnvironmentType": "PLAN_ORDER"
+  },
+  "defaultWorkingEnvironment": true,
+  "commonAttributes": {
+    "systemMode": "live",
+    "createdBy": {
+      "userId": "179",
+      "userName": "bb"
+    },
+    "modifiedBy": {
+      "userId": "179",
+      "userName": "bb"
+    },
+    "nodeAttributes": {
+      "nodeId": "32200000000000000000",
+      "nodeName": "RAFO"
+    }
+  }
+}

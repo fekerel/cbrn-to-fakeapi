@@ -1,0 +1,10 @@
+{
+  "permissions":"permList",
+  "userId":"token.userID",
+  "userName":"token.username",
+  "token":"token.access",
+  "type":"tr.com.havelsan.doob.cloud.framework.data.user.DOOBUserData",
+  "commonAttributes": {
+    "systemMode": "token.mode"
+  }
+}

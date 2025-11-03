@@ -1,0 +1,30 @@
+{
+  "featureId": "1686293570515",
+  "overlayId": "32400000000000180872",
+  "type": "tactical",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      56.891684461925436,
+      23.682152131780033,
+      0
+    ]
+  },
+  "properties": {
+    "modifiers": {},
+    "selectedIndicator": true,
+    "emergencyIndicator": false,
+    "size": 32,
+    "info": {},
+    "symbolCode": "SFGPUSAM--*****",
+    "visible": true,
+    "selectable": true,
+    "readOnly": false,
+    "deletable": false,
+    "editableStyle": false,
+    "visibilityAllowedOnFilteredFeature": true,
+    "tooltip": "",
+    "mipGeometry":"",
+    "corridorWidth":0
+  }
+}

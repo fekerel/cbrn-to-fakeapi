@@ -1,0 +1,32 @@
+{
+    "type": "tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreData",
+    "commonAttributes": {
+      "nodeAttributes": {
+        "nodeId": "32700000000000010061",
+        "nodeName": "g3-plan-of"
+      },
+      "createdBy": {
+        "userId": "37d49d6611ba44359d3fae787093e42b"
+      },
+      "modifiedBy": {
+        "userId": "37d49d6611ba44359d3fae787093e42b"
+      },
+      "systemMode": "live",
+      "commonUpdateType": {
+        "type": "tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreUpdateType",
+        "informationGroupCoreUpdateTypeEnum": "ADD_IGC"
+      }
+    },
+    "informationGroupCoreAttributes": {
+      "nameText": "testtest123",
+      "subInformationGroupCoreIds": [],
+      "objectIds": [],
+      "overlayTypeDataId": "999000000000000000010",
+      "securityClassificationLevelCodeEnum": "UNCLASSIFIED",
+      "creatorId": "37d49d6611ba44359d3fae787093e42b",
+      "parentInformationGroupCoreId": "",
+      "igcType": "EXECUTION",
+      "organisationStructureId": null
+    }
+  }
+  

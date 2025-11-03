@@ -1,0 +1,14 @@
+{
+  "id": 5,
+  "reportName": "api-test-2023-08-10-16-10-40-170",
+  "templateName": null,
+  "approver": {
+    "comment": null,
+    "sequenceNumber": 1,
+    "status": "WAITING",
+    "username": "api-test-2023-08-08-10-45-39-661",
+    "active": true
+  },
+  "creator": "apitest_dev_1",
+  "status": "WAITING"
+}

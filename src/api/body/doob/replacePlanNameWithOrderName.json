@@ -1,0 +1,26 @@
+{
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.PlanOrderUpdateType",
+      "planOrderUpdateTypeEnum": "CONVERT_PLAN_TO_ORDER"
+    },
+    "createdBy": {
+      "userId": "2",
+      "userName": "apitest",
+      "dateTime": "16-08-2023 13:03:12.252"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "apitest",
+      "dateTime": "16-08-2023 13:06:04.660"
+    },
+    "nodeAttributes": {
+      "nodeId": "32100000000000000000",
+      "nodeName": "DOOB_LIVE_DEV"
+    }
+  },
+  "planOrderId": "32100000000000540275",
+  "orderName": "test_123_order",
+  "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.wrapper.ConvertPlanToOrderInfoData"
+}

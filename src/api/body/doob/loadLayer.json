@@ -1,0 +1,23 @@
+{
+  "type": "tr.com.havelsan.doob.cloud.framework.data.inner.profile.dto.WorkingEnvironmentData",
+  "commonAttributes": {
+    "systemMode": "live",
+    "createdBy": {
+      "userId": "2",
+      "dateTime": "30-05-2023 10:15:50.192"
+    },
+    "modifiedBy": {
+      "userId": "2",
+      "userName": "",
+      "dateTime": "08-06-2023 05:19:44.590"
+    },
+    "nodeAttributes": {}
+  },
+  "id": "32300000000000190002",
+  "workingEnvironmentAttributes": {
+    "workingEnvironmentName": "default",
+    "workingEnvironmentStructure": "{\"structure\":[{\"informationGroupCoreChild\":[{\"informationGroupCoreData\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreData\",\"commonAttributes\":{\"systemMode\":\"live\",\"commonUpdateType\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.information.group.InformationGroupCoreUpdateType\",\"informationGroupCoreUpdateTypeEnum\":\"ADD_IGC\"},\"createdBy\":{\"userId\":\"5\",\"userName\":\"kagan\",\"dateTime\":\"31-05-2023 12:18:48.458\"},\"modifiedBy\":{\"userId\":\"5\",\"userName\":\"kagan\",\"dateTime\":\"31-05-2023 12:18:48.458\"},\"nodeAttributes\":{\"nodeId\":\"32300000000000000000\",\"nodeName\":\"DOOB_LIVE_SEL\"}},\"informationGroupCoreAttributes\":{\"id\":\"32300000000000200008\",\"nameText\":\"deneme\",\"subInformationGroupCoreIds\":[],\"objectIds\":[\"32300000000000250008\",\"32300000000000250009\",\"32300000000000250060\",\"32300000000000240060\",\"32300000000000250061\"],\"overlayTypeDataId\":\"999000000000000000011\",\"securityClassificationLevelCodeEnum\":\"UNMARKED\",\"creatorId\":\"5\",\"parentInformationGroupCoreId\":\"\",\"igcType\":\"EXECUTION\"}},\"subInformationGroupCoreData\":[]}],\"nodeData\":{\"type\":\"tr.com.havelsan.doob.cloud.framework.data.node.NodeData\",\"baseNodeAttributes\":{\"organisation\":{\"class\":\"tr.com.havelsan.doob.cloud.framework.data.core.data.ObjectCore\",\"nameText\":\"DOOB_LIVE_SEL\",\"affiliationGeopoliticalCodeEnum\":\"OMAN\",\"s15Text\":\"S*G*UCI---*****\",\"echelon\":\"CORPS\",\"objectId\":\"32300000000000000000\",\"objectCoreType\":\"UNIT\",\"combatEffectiveness\":\"100\",\"creatorId\":32300000000000000000,\"paletteMode\":\"app6a\",\"headquarterIndicator\":false,\"planned\":false,\"iffModes\":{},\"objectItemHostilityStatusCodeEnum\":\"FRIEND\"}},\"nodeAttributes\":{\"informationGroupCoreIds\":[\"32300000000000180010\",\"32300000000000200008\",\"32300000000000180014\",\"32300000000000200006\",\"32300000000000200018\",\"32300000000000180035\",\"32300000000000200106\",\"32300000000000200004\",\"32300000000000200016\",\"32300000000000200014\",\"32300000000000200012\",\"32300000000000200100\",\"32300000000000200010\",\"32300000000000200040\",\"32300000000000200150\"]}}}],\"selectedIds\":{}}",
+    "workingEnvironmentType": "EXECUTION"
+  },
+  "defaultWorkingEnvironment": true
+}

@@ -1,0 +1,30 @@
+{
+  "username": "test",
+  "imported": false,
+  "roles": [
+    {
+      "description": "role user",
+      "translation": {
+        "description": {
+          "en": "User Role",
+          "ar": "مستخدم الدور"
+        },
+        "name": {
+          "en": "ROLE_USER",
+          "ar": "مستخدم الدور"
+        }
+      },
+      "name": "ROLE_USER",
+      "id": 10,
+      "translatedName": "ROLE_USER",
+      "translatedDescription": "User Role"
+    }
+  ],
+  "customFields": null,
+  "surname": "testing",
+  "email": null,
+  "userState": "ENABLED",
+  "userSettings": null,
+  "name": "testing1",
+  "id": 102
+}

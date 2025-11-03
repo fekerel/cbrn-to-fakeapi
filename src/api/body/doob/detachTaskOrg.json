@@ -1,0 +1,45 @@
+{
+  "taskOrgDataList": [
+    {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.content.PlanTaskOrgData",
+      "commonAttributes": {
+        "systemMode": "live",
+        "createdBy": {
+          "userId": "91",
+          "userName": "apitest_rao_1"
+        },
+        "modifiedBy": {
+          "userId": "91",
+          "userName": "apitest_rao_1"
+        },
+        "nodeAttributes": {
+          "nodeId": "32400000000000000000",
+          "nodeName": "RAO"
+        }
+      },
+      "taskOrgId": "32423000000000545773",
+      "taskOrgName": "api-test-2024-04-19-08-25-55-905-938"
+    }
+  ],
+  "contentId": "32423000000000231260",
+  "commonAttributes": {
+    "systemMode": "live",
+    "commonUpdateType": {
+      "type": "tr.com.havelsan.doob.cloud.framework.data.planorder.PlanOrderUpdateType",
+      "planOrderUpdateTypeEnum": "DETACH_PLAN_ORDER"
+    },
+    "createdBy": {
+      "userId": "91",
+      "userName": "apitest_rao_1"
+    },
+    "modifiedBy": {
+      "userId": "91",
+      "userName":"apitest_rao_1"
+    },
+    "nodeAttributes": {
+      "nodeId": "32400000000000000000",
+      "nodeName": "RAO"
+    }
+  },
+  "class": "tr.com.havelsan.doob.cloud.framework.data.planorder.display.attachment.taskorg.TaskOrgAttachmentRequestData"
+}

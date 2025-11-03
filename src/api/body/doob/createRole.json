@@ -1,0 +1,9 @@
+{
+  "id": 28,
+  "name": "sampleName",
+  "description": "",
+  "permissions": [],
+  "translation": null,
+  "imported": false,
+  "identifierString": "Role{id=29, name='sampleName'}"
+}
