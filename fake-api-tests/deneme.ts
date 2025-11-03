@@ -1,9 +1,17 @@
 import ApiService from "@/api/ApiService";
+
+import { service } from "@/api/Service";
+
 const { expect } = require('chai');
 
-describe('Fake JSON-Server toy API tests', function () {
+describe.only('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
   let createdUserId = null;
+
+  it.only("Add Users", async() => {
+    const response = await service.addUser();
+    expect(response).to.be.equal(201);
+  })
 
   it('GET /users with nested field and status filter returns matches', async () => {
     const res = await ApiService.getInstance().instance.get(`/users`, {
