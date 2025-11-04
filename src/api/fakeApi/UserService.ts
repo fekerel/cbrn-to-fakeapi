@@ -17,9 +17,50 @@ class UserService {
         return res;
     }
 
-    public async addUserRandom() {
-        const randomCreds = { email: uniqueEmail("user"), password: randomPassword() };
-        return await this.addUser(randomCreds);
+    /**
+     * Create user with auto-generated email/password (can still override).
+     */
+    public async addUserRandom(userData: DeepPartial<typeof addUserJSON> = {}) {
+        const creds = { email: uniqueEmail("user"), password: randomPassword() };
+        const body = merge({}, addUserJSON, creds, userData);
+        const res = await ApiService.getInstance().instance.post("/users", body);
+        return res.data;
+    }
+
+    /**
+     * Get a single user by id.
+     */
+    public async getUser(id: number | string) {
+        const res = await ApiService.getInstance().instance.get(`/users/${id}`);
+        return res.data;
+    }
+
+    /**
+     * List users with optional query params (status, address.city, etc.).
+     */
+    public async listUsers(params: Record<string, any> = {}) {
+        const res = await ApiService.getInstance().instance.get("/users", { params });
+        return res.data;
+    }
+
+    /**
+     * Update (PUT) a user by id with provided patch (merged onto template optional).
+     * If you want PATCH semantics, switch to instance.patch.
+     */
+    public async updateUser(id: number | string, patchData: DeepPartial<typeof addUserJSON>) {
+        const getRes = await ApiService.getInstance().instance.get(`/users/${id}`);
+        const existing = getRes && getRes.data ? getRes.data : {};
+        const body = merge({}, existing, patchData);
+        const res = await ApiService.getInstance().instance.put(`/users/${id}`, body);
+        return res.data;
+    }
+
+    /**
+    * Delete user by id.
+    */
+    public async deleteUser(id: number | string) {
+        const res = await ApiService.getInstance().instance.delete(`/users/${id}`);
+        return res.status === 200 || res.status === 204;
     }
 
     public async createUserThenOrderThenGetUserTotalSpent(
