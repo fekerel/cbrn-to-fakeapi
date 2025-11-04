@@ -1,16 +1,23 @@
 import ApiService from "@/api/ApiService";
 
-import { service } from "@/api/Service";
+import { service } from "@/api/fakeApi/Service";
+import { randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
 
 const { expect } = require('chai');
 
-describe.only('Fake JSON-Server toy API tests', function () {
+describe('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
   let createdUserId = null;
 
-  it.only("Add Users", async() => {
-    const response = await service.addUser();
-    expect(response).to.be.equal(201);
+  it.only("add a user", async() => {
+    const response = await service.addUser(
+      {
+        email: uniqueEmail(),
+        password: randomPassword(),
+        address: { city: "Eskisehir" }
+      }  
+    );
+    expect(response.status).to.be.equal(201);
   })
 
   it('GET /users with nested field and status filter returns matches', async () => {
@@ -59,8 +66,6 @@ describe.only('Fake JSON-Server toy API tests', function () {
     });
     expect(res.status).to.equal(200);
     expect(res.data).to.be.an('array');
-    console.log(`Retrieved ${res.data[0]}`);
-    console.log(JSON.stringify(res.data, null, 2));
     // if there are results, assert they match expected filters
     if (res.data.length > 0) {
       for (const p of res.data) {

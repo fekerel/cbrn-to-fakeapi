@@ -1,11 +1,10 @@
 {
-      "email": "uniqueEmail",
-      "password": "P@ssw0rd!",
+      "email": null,
+      "password": null,
       "firstName": null,
       "lastName": null,
-      "role": null,
+      "role": "buyer",
       "address": { "street":null, "city": null, "country": null, "zipCode": null },
       "phone": null,
-      "createdAt": null,
       "status": "active"
 }
