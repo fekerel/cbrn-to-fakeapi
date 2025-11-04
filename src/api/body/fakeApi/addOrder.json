@@ -1,0 +1,23 @@
+{
+      "userId": null,
+      "items": [
+        {
+          "productId": null,
+          "variantId": null,
+          "quantity": null,
+          "price": null
+        }
+      ],
+      "totalAmount": null,
+      "shippingAddress": {
+        "street": null,
+        "city": null,
+        "country": null,
+        "zipCode": null
+      },
+      "payment": {
+        "method": null,
+        "status": null
+      },
+      "status": null
+    }

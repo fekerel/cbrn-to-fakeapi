@@ -1,7 +1,7 @@
 import ApiService from "@/api/ApiService";
 
-import { service } from "@/api/fakeApi/Service";
-import { randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
+import { userService } from "@/api/fakeApi/UserService";
+import { randomAmount, randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
 
 const { expect } = require('chai');
 
@@ -9,8 +9,8 @@ describe('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
   let createdUserId = null;
 
-  it.only("add a user", async() => {
-    const response = await service.addUser(
+  it("add a user", async() => {
+    const response = await userService.addUser(
       {
         email: uniqueEmail(),
         password: randomPassword(),
@@ -18,6 +18,12 @@ describe('Fake JSON-Server toy API tests', function () {
       }  
     );
     expect(response.status).to.be.equal(201);
+  })
+
+  it.only("createUserThenOrderThenGetUserTotalSpent", async() => {
+    const randomTotalAmount = randomAmount();
+    const responseTotal = await userService.createUserThenOrderThenGetUserTotalSpent(randomTotalAmount);
+    expect(responseTotal).to.be.equal(randomTotalAmount);
   })
 
   it('GET /users with nested field and status filter returns matches', async () => {

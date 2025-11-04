@@ -29,3 +29,8 @@ export function uniquePhone() {
     100 + Math.random() * 900
   )}-${Math.floor(1000 + Math.random() * 9000)}`;
 }
+
+export function randomAmount(min = 1, max = 1000): number {
+  const v = Math.random() * (max - min) + min;
+  return parseFloat(v.toFixed(2));
+}
