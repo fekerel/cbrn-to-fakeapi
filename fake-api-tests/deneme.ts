@@ -5,10 +5,10 @@ import { randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
 
 const { expect } = require('chai');
 
-describe.only('Fake JSON-Server toy API tests', function () {
+describe('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
   
-  it.only("createUserThenOrderThenGetUserTotalSpent", async() => {
+  it("createUserThenOrderThenGetUserTotalSpent", async() => {
     const { requestedTotal, apiTotal } = await userService.createUserThenOrderThenGetUserTotalSpent();
     expect(apiTotal).to.be.equal(requestedTotal);
   })

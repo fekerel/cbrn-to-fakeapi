@@ -38,4 +38,9 @@ describe("UserService (fakeapi) - basic CRUD", function () {
     const res = await ApiService.getInstance().instance.get(`/users/${createdId}`, { validateStatus: null });
     expect(res.status).to.equal(404);
   });
+
+  it("Get All Users", async () => {
+    const response = await userService.getAllUsers();
+    expect(response).to.be.an("array");
+  });
 });

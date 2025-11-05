@@ -4,13 +4,14 @@ import { DeepPartial } from "../../common/fakeApi/Types";
 import merge from "lodash.merge";
 import { uniqueEmail, randomPassword, randomAmount } from "@/common/fakeApi/Utils";
 import { orderService } from "./OrderService";
+import { AxiosResponse } from "axios";
 
 class UserService {
     /**
      * Create a user. `userData` will be deep-merged onto the default template.
      * Use a unique email in tests (timestamp/uuid).
      */
-    public async addUser(userData: DeepPartial<typeof addUserJSON> = {} ) {
+    public async addUser(userData: DeepPartial<typeof addUserJSON> = {}) {
         const overrides = userData;
         const body = merge({}, addUserJSON, overrides);
         const res = await ApiService.getInstance().instance.post("/users", body);
@@ -21,6 +22,7 @@ class UserService {
      * Create user with auto-generated email/password (can still override).
      */
     public async addUserRandom(userData: DeepPartial<typeof addUserJSON> = {}) {
+
         const creds = { email: uniqueEmail("user"), password: randomPassword() };
         const body = merge({}, addUserJSON, creds, userData);
         const res = await ApiService.getInstance().instance.post("/users", body);
@@ -81,6 +83,11 @@ class UserService {
         apiTotal = isNaN(apiTotal) ? -1 : apiTotal;
 
         return { requestedTotal, apiTotal };
+    }
+
+    public async getAllUsers() {
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users`);
+        return response.data;
     }
 }
 

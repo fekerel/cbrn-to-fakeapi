@@ -5,6 +5,8 @@ import fs from 'fs';
 import path from 'path';
 
 class ConfigUtils {
+
+
     public static getTokenJsonPath() {
         return 'src/testConstants/token.json';
     }
@@ -27,6 +29,10 @@ class ConfigUtils {
 
     public static getAllureReportPath() {
         return 'allure-report/';
+    }
+
+    public static deneme(): string {
+        return "demeöe"
     }
 
     public static generateUniqueWord(): string {
