@@ -4,7 +4,12 @@
       "firstName": null,
       "lastName": null,
       "role": "buyer",
-      "address": { "street":null, "city": null, "country": null, "zipCode": null },
+      "address": {
+            "street": null,
+            "city": null,
+            "country": null,
+            "zipCode": null
+      },
       "phone": null,
       "status": "active"
 }

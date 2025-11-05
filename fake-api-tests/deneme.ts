@@ -5,22 +5,22 @@ import { randomAmount, randomPassword, uniqueEmail } from "@/common/fakeApi/Util
 
 const { expect } = require('chai');
 
-describe.skip('Fake JSON-Server toy API tests', function () {
+describe('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
   let createdUserId = null;
 
-  it("add a user", async() => {
+  it("add a user", async () => {
     const response = await userService.addUser(
       {
         email: uniqueEmail(),
         password: randomPassword(),
         address: { city: "Eskisehir" }
-      }  
+      }
     );
     expect(response.status).to.be.equal(201);
   })
 
-  it("createUserThenOrderThenGetUserTotalSpent", async() => {
+  it("createUserThenOrderThenGetUserTotalSpent", async () => {
     const randomTotalAmount = randomAmount();
     const responseTotal = await userService.createUserThenOrderThenGetUserTotalSpent(randomTotalAmount);
     expect(responseTotal).to.be.equal(randomTotalAmount);

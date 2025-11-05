@@ -20,6 +20,11 @@ class CategoryService {
     return res.data;
   }
 
+  public async getAllCategory() {
+    const response = await ApiService.getInstance().instance.get(`/categories`);
+    return response.data;
+  }
+
   /**
    * Create category with auto-generated name (caller can still override).
    */
