@@ -31,8 +31,20 @@ class ConfigUtils {
         return 'allure-report/';
     }
 
-    public static deneme(): string {
-        return "demeöe"
+    public static casting(value: any, type: string): any {
+        let newValue: any;;
+        try {
+            if (value == null)
+                return null;
+            if (typeof value === 'string' && type.toLowerCase() === 'number') {
+                newValue = Number(value);
+                return newValue;
+            }
+            return String(value);
+        }
+        catch (e) {
+            return value;
+        }
     }
 
     public static generateUniqueWord(): string {

@@ -18,7 +18,7 @@ class OrderService {
 
     public async addOrderData() {
         const userList = await userService.getAllUsers();
-        const userID = userList[randomInt(userList.length) - 1].id;
+        const userID = userList[randomInt(userList.length)].id;
         const randomProduct = await productService.randomProduct();
         const items = [{
             productId: randomProduct.id,
@@ -32,6 +32,7 @@ class OrderService {
         const status = ["pending", "processing", "shipped", "delivered", "cancelled"][randomInt(5)];
         const lastStatus = ["delivered", "cancelled", "returned", "failed"][randomInt(4)];
         const addData = {
+            id: null,
             userId: userID,
             items: items,
             totalAmount: totalAmount,
@@ -45,8 +46,8 @@ class OrderService {
     public async createNewOrder() {
         const addData = await this.addOrderData();
         const orderData = merge({}, addOrderJSON, addData);
-        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/orders`, orderData);
-        return response.status;
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/orders`, JSON.parse(JSON.stringify(orderData)));
+        return response;
     }
 
     public async getAllOrders() {
@@ -67,6 +68,7 @@ class OrderService {
             return false;
         return response.data;
     }
+
 
     public async getOrderByID() {
         const randomOrder = await this.randomOrder();
@@ -92,11 +94,8 @@ class OrderService {
     }
 
     public async deleteOrderByID() {
-        console.log("Starting Delete Order By ID");
         const randomOrder = await this.randomOrder();
-        console.log("Deleting Order ID:", randomOrder.id);
         const response: AxiosResponse = await ApiService.getInstance().instance.delete(`/orders/${randomOrder.id}`);
-        console.log("Delete Response Status:", response.status);
         if (response.status !== 200)
             return false;
         const allOrders = await this.getAllOrders();
