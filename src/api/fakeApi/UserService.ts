@@ -2,7 +2,7 @@ import addUserJSON from "@api/body/fakeApi/addUser.json";
 import ApiService from "../ApiService";
 import { DeepPartial } from "../../common/fakeApi/Types";
 import merge from "lodash.merge";
-import { uniqueEmail, randomPassword } from "@/common/fakeApi/Utils";
+import { uniqueEmail, randomPassword, randomAmount } from "@/common/fakeApi/Utils";
 import { orderService } from "./OrderService";
 
 class UserService {
@@ -63,20 +63,24 @@ class UserService {
         return res.status === 200 || res.status === 204;
     }
 
-    public async createUserThenOrderThenGetUserTotalSpent(
-        totalAmount: number | string
-    ): Promise<number> {
+    public async createUserThenOrderThenGetUserTotalSpent(): Promise<{
+        requestedTotal: number;
+        apiTotal: number;
+    }> {
         const createdUserRes = await this.addUserRandom();
         const createdUser = createdUserRes && createdUserRes.data ? createdUserRes.data : createdUserRes;
         const userId = createdUser?.id;
 
-        await orderService.addOrder({ userId, totalAmount: String(totalAmount) });
+        const requestedTotal = randomAmount();
+        await orderService.addOrder({ userId, totalAmount: String(requestedTotal) });
 
         const res = await ApiService.getInstance().instance.get(`/users/${userId}/total-spent`);
         const payload = res && res.data ? res.data : {};
 
-        const totalSpent = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
-        return isNaN(totalSpent) ? -1 : totalSpent;
+        let apiTotal = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
+        apiTotal = isNaN(apiTotal) ? -1 : apiTotal;
+
+        return { requestedTotal, apiTotal };
     }
 }
 
