@@ -26,7 +26,7 @@ describe("Order Test", async () => {
 
     });
 
-    it.only("Delete Order By ID", async () => {
+    it("Delete Order By ID", async () => {
         const response = await orderService.deleteOrderByID();
         expect(response).to.be.equal(200);
 
