@@ -12,3 +12,4 @@ fails/
 /src/testConstants/token.json
 /src/misc/JSONdata/servicesData/
 /dist/
+/test-run-logs/
