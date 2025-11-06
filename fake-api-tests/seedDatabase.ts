@@ -3,7 +3,7 @@ import { categoryService } from "@/api/fakeApi/CategoryService";
 import { productService } from "@/api/fakeApi/ProductsService";
 import { orderService } from "@/api/fakeApi/OrderService";
 
-const COUNT = 10;
+const COUNT = 50;
 
 // Environment'ı FakeAPI olarak ayarla (localhost:8000 için)
 if (!process.argv.includes('--environment=FakeAPI') && !process.argv.includes('--environment=FAKEAPI')) {

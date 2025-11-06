@@ -1,7 +1,7 @@
 import ApiService from "@/api/ApiService";
 
 import { userService } from "@/api/fakeApi/UserService";
-import { randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
+import { randomAmount, randomPassword, uniqueEmail } from "@common/fakeApi/Utils";
 
 const { expect } = require('chai');
 
@@ -20,11 +20,11 @@ describe.skip('Fake JSON-Server toy API tests', function () {
   //   expect(response.status).to.be.equal(201);
   // })
 
-  // it("createUserThenOrderThenGetUserTotalSpent", async () => {
-  //   const randomTotalAmount = randomAmount();
-  //   const responseTotal = await userService.createUserThenOrderThenGetUserTotalSpent(randomTotalAmount);
-  //   expect(responseTotal).to.be.equal(randomTotalAmount);
-  // })
+  it("createUserThenOrderThenGetUserTotalSpent", async () => {
+    const randomTotalAmount = randomAmount();
+    const responseTotal = await userService.createUserThenOrderThenGetUserTotalSpent(randomTotalAmount);
+    expect(responseTotal).to.be.equal(randomTotalAmount);
+  });
 
   // it('GET /users with nested field and status filter returns matches', async () => {
   //   const res = await ApiService.getInstance().instance.get(`/users`, {
