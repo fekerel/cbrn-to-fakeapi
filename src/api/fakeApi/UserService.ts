@@ -1,11 +1,6 @@
-import addUserJSON from "@api/body/fakeApi/addUser.json";
 import ApiService from "../ApiService";
-import { DeepPartial } from "../../common/fakeApi/Types";
-import merge from "lodash.merge";
-import { uniqueEmail, randomPassword, randomAmount } from "@/common/fakeApi/Utils";
-import { orderService } from "./OrderService";
+import { uniqueEmail, randomPassword } from "@/common/fakeApi/Utils";
 import { AxiosResponse } from "axios";
-import { username } from "../_AwarenessMessageService";
 
 class UserService {
     /**

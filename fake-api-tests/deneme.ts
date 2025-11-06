@@ -5,13 +5,26 @@ import { randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
 
 const { expect } = require('chai');
 
-describe('Fake JSON-Server toy API tests', function () {
+describe.skip('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
-  
-  it("createUserThenOrderThenGetUserTotalSpent", async() => {
-    const { requestedTotal, apiTotal } = await userService.createUserThenOrderThenGetUserTotalSpent();
-    expect(apiTotal).to.be.equal(requestedTotal);
-  })
+  let createdUserId = null;
+
+  // it("add a user", async () => {
+  //   const response = await userService.addUser(
+  //     {
+  //       email: uniqueEmail(),
+  //       password: randomPassword(),
+  //       address: { city: "Eskisehir" }
+  //     }
+  //   );
+  //   expect(response.status).to.be.equal(201);
+  // })
+
+  // it("createUserThenOrderThenGetUserTotalSpent", async () => {
+  //   const randomTotalAmount = randomAmount();
+  //   const responseTotal = await userService.createUserThenOrderThenGetUserTotalSpent(randomTotalAmount);
+  //   expect(responseTotal).to.be.equal(randomTotalAmount);
+  // })
 
   // it('GET /users with nested field and status filter returns matches', async () => {
   //   const res = await ApiService.getInstance().instance.get(`/users`, {

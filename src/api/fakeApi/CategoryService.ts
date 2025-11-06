@@ -1,7 +1,4 @@
-import addCategoryJSON from "@api/body/fakeApi/addCategory.json";
 import ApiService from "../ApiService";
-import { DeepPartial } from "../../common/fakeApi/Types";
-import merge from "lodash.merge";
 import ConfigUtils from "@/common/ConfigUtils";
 import { randomInt } from "crypto";
 
