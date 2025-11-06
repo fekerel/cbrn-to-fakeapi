@@ -9,14 +9,13 @@ import ConfigUtils from "@/common/ConfigUtils";
 import { productService } from "./ProductsService";
 
 class OrderService {
-    /*
     public async addOrder(orderData: DeepPartial<typeof addOrderJSON> = {}) {
         const overrides = orderData;
         const body = merge({}, addOrderJSON, overrides);
         const res = await ApiService.getInstance().instance.post("/orders", body);
         return res;
     }
-    */
+
 
     public async addOrderData() {
         const userList = await userService.getAllUsers();

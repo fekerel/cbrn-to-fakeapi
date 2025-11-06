@@ -1,0 +1,1261 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "JSON Server API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Get all users",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "_sort",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Sort by field"
+          },
+          {
+            "in": "query",
+            "name": "_order",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            },
+            "description": "Sort order"
+          },
+          {
+            "in": "query",
+            "name": "_page",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Page number"
+          },
+          {
+            "in": "query",
+            "name": "_limit",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Items per page"
+          },
+          {
+            "in": "query",
+            "name": "id_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum id"
+          },
+          {
+            "in": "query",
+            "name": "id_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum id"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum modifiedAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum modifiedAt"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of users",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/users"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new users",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/users"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created successfully"
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "summary": "Get users by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "users found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/users"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update users by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/users"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "users updated successfully"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete users by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "users deleted successfully"
+          }
+        }
+      }
+    },
+    "/categories": {
+      "get": {
+        "summary": "Get all categories",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "_sort",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Sort by field"
+          },
+          {
+            "in": "query",
+            "name": "_order",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            },
+            "description": "Sort order"
+          },
+          {
+            "in": "query",
+            "name": "_page",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Page number"
+          },
+          {
+            "in": "query",
+            "name": "_limit",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Items per page"
+          },
+          {
+            "in": "query",
+            "name": "id_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum id"
+          },
+          {
+            "in": "query",
+            "name": "id_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum id"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum modifiedAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum modifiedAt"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of categories",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/categories"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new categories",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/categories"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created successfully"
+          }
+        }
+      }
+    },
+    "/categories/{id}": {
+      "get": {
+        "summary": "Get categories by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "categories found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/categories"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update categories by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/categories"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "categories updated successfully"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete categories by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "categories deleted successfully"
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "summary": "Get all products",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "_sort",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Sort by field"
+          },
+          {
+            "in": "query",
+            "name": "_order",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            },
+            "description": "Sort order"
+          },
+          {
+            "in": "query",
+            "name": "_page",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Page number"
+          },
+          {
+            "in": "query",
+            "name": "_limit",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Items per page"
+          },
+          {
+            "in": "query",
+            "name": "id_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum id"
+          },
+          {
+            "in": "query",
+            "name": "id_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum id"
+          },
+          {
+            "in": "query",
+            "name": "sellerId_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum sellerId"
+          },
+          {
+            "in": "query",
+            "name": "sellerId_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum sellerId"
+          },
+          {
+            "in": "query",
+            "name": "categoryId_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum categoryId"
+          },
+          {
+            "in": "query",
+            "name": "categoryId_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum categoryId"
+          },
+          {
+            "in": "query",
+            "name": "price_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum price"
+          },
+          {
+            "in": "query",
+            "name": "price_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum price"
+          },
+          {
+            "in": "query",
+            "name": "stock_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum stock"
+          },
+          {
+            "in": "query",
+            "name": "stock_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum stock"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum modifiedAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum modifiedAt"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of products",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/products"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new products",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/products"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created successfully"
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "summary": "Get products by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "products found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/products"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update products by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/products"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "products updated successfully"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete products by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "products deleted successfully"
+          }
+        }
+      }
+    },
+    "/orders": {
+      "get": {
+        "summary": "Get all orders",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "_sort",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Sort by field"
+          },
+          {
+            "in": "query",
+            "name": "_order",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            },
+            "description": "Sort order"
+          },
+          {
+            "in": "query",
+            "name": "_page",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Page number"
+          },
+          {
+            "in": "query",
+            "name": "_limit",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Items per page"
+          },
+          {
+            "in": "query",
+            "name": "id_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum id"
+          },
+          {
+            "in": "query",
+            "name": "id_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum id"
+          },
+          {
+            "in": "query",
+            "name": "userId_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum userId"
+          },
+          {
+            "in": "query",
+            "name": "userId_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum userId"
+          },
+          {
+            "in": "query",
+            "name": "totalAmount_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum totalAmount"
+          },
+          {
+            "in": "query",
+            "name": "totalAmount_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum totalAmount"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "createdAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum createdAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_gte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Minimum modifiedAt"
+          },
+          {
+            "in": "query",
+            "name": "modifiedAt_lte",
+            "schema": {
+              "type": "number"
+            },
+            "description": "Maximum modifiedAt"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of orders",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orders"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new orders",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orders"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created successfully"
+          }
+        }
+      }
+    },
+    "/orders/{id}": {
+      "get": {
+        "summary": "Get orders by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "orders found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/orders"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update orders by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orders"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "orders updated successfully"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete orders by id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "orders deleted successfully"
+          }
+        }
+      }
+    },
+    "/users/{id}/total-spent": {
+      "get": {
+        "summary": "Return total spent by user",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 12
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User total spent",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserTotalSpent"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "userId": 12,
+                      "ordersCount": 3,
+                      "total": 1599.42
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "user not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "users": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "example": "user+1762406641771366@example.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "yVEtb&onrWtx"
+          },
+          "firstName": {
+            "type": "string",
+            "example": "TestFNJl(Y)"
+          },
+          "lastName": {
+            "type": "string",
+            "example": "TestLNqK73Y"
+          },
+          "role": {
+            "type": "string",
+            "example": "seller"
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "street": {
+                "type": "string",
+                "example": "456 Sample Ave"
+              },
+              "city": {
+                "type": "string",
+                "example": "MockCity"
+              },
+              "country": {
+                "type": "string",
+                "example": "TestCountry"
+              },
+              "zipCode": {
+                "type": "string",
+                "example": "77889"
+              }
+            },
+            "example": {
+              "street": "456 Sample Ave",
+              "city": "MockCity",
+              "country": "TestCountry",
+              "zipCode": "77889"
+            }
+          },
+          "phone": {
+            "type": "string",
+            "example": "+11180035118"
+          },
+          "status": {
+            "type": "string",
+            "example": "inactive"
+          },
+          "createdAt": {
+            "type": "integer",
+            "example": 1762406641882
+          },
+          "modifiedAt": {
+            "type": "integer",
+            "example": 1762406641882
+          }
+        }
+      },
+      "categories": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Süt & Kahvaltılık api-test-2025-11-06-08-24-01-908-467"
+          },
+          "description": {
+            "type": "string",
+            "example": "api-test-2025-11-06-08-24-01-908-222 açıklaması"
+          },
+          "parentId": {
+            "nullable": true,
+            "example": null
+          },
+          "status": {
+            "type": "string",
+            "example": "active"
+          },
+          "createdAt": {
+            "type": "integer",
+            "example": 1762406641932
+          },
+          "modifiedAt": {
+            "type": "integer",
+            "example": 1762406641932
+          }
+        }
+      },
+      "products": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "sellerId": {
+            "type": "integer",
+            "example": 2
+          },
+          "categoryId": {
+            "type": "integer",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "api-test 06/11/2025 08:24"
+          },
+          "description": {
+            "type": "string",
+            "example": "API-TEST-2025-11-06-08-24-02-275"
+          },
+          "price": {
+            "type": "number",
+            "example": 40.59
+          },
+          "stock": {
+            "type": "integer",
+            "example": 2
+          },
+          "variants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "API-TEST-2025-11-06-08-24-02-505"
+                },
+                "color": {
+                  "type": "string",
+                  "example": "yellow"
+                },
+                "size": {
+                  "type": "string",
+                  "example": "S"
+                },
+                "price": {
+                  "type": "number",
+                  "example": 31.41
+                },
+                "stock": {
+                  "type": "integer",
+                  "example": 656
+                }
+              }
+            },
+            "example": [
+              {
+                "id": "API-TEST-2025-11-06-08-24-02-505",
+                "color": "yellow",
+                "size": "S",
+                "price": 31.41,
+                "stock": 656
+              },
+              {
+                "id": "API-TEST-2025-11-06-08-24-02-479",
+                "color": "black",
+                "size": "XS",
+                "price": 44.22,
+                "stock": 627
+              }
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "bestseller",
+              "limited"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "example": "inactive"
+          },
+          "createdAt": {
+            "type": "integer",
+            "example": 1762406642022
+          },
+          "modifiedAt": {
+            "type": "integer",
+            "example": 1762406642022
+          }
+        }
+      },
+      "orders": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "userId": {
+            "type": "integer",
+            "example": 1
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "productId": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "variantId": {
+                  "type": "string",
+                  "example": "API-TEST-2025-11-06-08-24-02-505"
+                },
+                "quantity": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "price": {
+                  "type": "number",
+                  "example": 40.59
+                }
+              }
+            },
+            "example": [
+              {
+                "productId": 1,
+                "variantId": "API-TEST-2025-11-06-08-24-02-505",
+                "quantity": 1,
+                "price": 40.59
+              }
+            ]
+          },
+          "totalAmount": {
+            "type": "number",
+            "example": 33.9867325751727
+          },
+          "shippingAddress": {
+            "type": "object",
+            "properties": {
+              "street": {
+                "type": "string",
+                "example": "456 Sample Ave"
+              },
+              "city": {
+                "type": "string",
+                "example": "MockCity"
+              },
+              "country": {
+                "type": "string",
+                "example": "TestCountry"
+              },
+              "zipCode": {
+                "type": "string",
+                "example": "77889"
+              }
+            },
+            "example": {
+              "street": "456 Sample Ave",
+              "city": "MockCity",
+              "country": "TestCountry",
+              "zipCode": "77889"
+            }
+          },
+          "payment": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "type": "string",
+                "example": "bank_transfer"
+              },
+              "status": {
+                "type": "string",
+                "example": "shipped"
+              }
+            },
+            "example": {
+              "method": "bank_transfer",
+              "status": "shipped"
+            }
+          },
+          "status": {
+            "type": "string",
+            "example": "cancelled"
+          },
+          "createdAt": {
+            "type": "integer",
+            "example": 1762406642107
+          },
+          "modifiedAt": {
+            "type": "integer",
+            "example": 1762406642107
+          }
+        }
+      },
+      "UserTotalSpent": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "example": 12
+          },
+          "ordersCount": {
+            "type": "integer",
+            "example": 3
+          },
+          "total": {
+            "type": "number",
+            "format": "float",
+            "example": 1599.42
+          }
+        }
+      }
+    }
+  }
+}

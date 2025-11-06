@@ -1,46 +1,38 @@
+import { DeepPartial } from "@/common/fakeApi/Types";
 import ApiService from "../ApiService";
 import { uniqueEmail, randomPassword } from "@/common/fakeApi/Utils";
 import { AxiosResponse } from "axios";
+import { merge } from "lodash";
+import addUserJSON from "@api/body/fakeApi/addUser.json";
+import { orderService } from "./OrderService";
 
 class UserService {
-    /**
-     * Create a user. `userData` will be deep-merged onto the default template.
-     * Use a unique email in tests (timestamp/uuid).
-     */
-    // public async addUser(userData: DeepPartial<typeof addUserJSON> = {}) {
-    //     const overrides = userData;
-    //     const body = merge({}, addUserJSON, overrides);
-    //     const res = await ApiService.getInstance().instance.post("/users", body);
-    //     return res;
-    // }
-
-    // /**
-    //  * Create user with auto-generated email/password (can still override).
-    //  */
-    // public async addUserRandom(userData: DeepPartial<typeof addUserJSON> = {}) {
-
-    //     const creds = { email: uniqueEmail("user"), password: randomPassword() };
-    //     const body = merge({}, addUserJSON, creds, userData);
-    //     const res = await ApiService.getInstance().instance.post("/users", body);
-    //     return res.data;
-    // }
 
 
-    // public async createUserThenOrderThenGetUserTotalSpent(
-    //     totalAmount: number | string
-    // ): Promise<number> {
-    //     const createdUserRes = await this.addUserRandom();
-    //     const createdUser = createdUserRes && createdUserRes.data ? createdUserRes.data : createdUserRes;
-    //     const userId = createdUser?.id;
+    public async addUser(userData: DeepPartial<typeof addUserJSON> = {}) {
+        const overrides = userData;
+        const body = merge({}, addUserJSON, overrides);
+        const res = await ApiService.getInstance().instance.post("/users", body);
+        return res;
+    }
+    public async addUserRandom(userData: DeepPartial<typeof addUserJSON> = {}) {
+        const creds = { email: uniqueEmail("user"), password: randomPassword() };
+        const body = merge({}, addUserJSON, creds, userData);
+        const res = await ApiService.getInstance().instance.post("/users", body);
+        return res.data;
+    }
 
-    //     await orderService.addOrder({ userId, totalAmount: String(totalAmount) });
 
-    //     const res = await ApiService.getInstance().instance.get(`/users/${userId}/total-spent`);
-    //     const payload = res && res.data ? res.data : {};
-
-    //     const totalSpent = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
-    //     return isNaN(totalSpent) ? -1 : totalSpent;
-    // }
+    public async createUserThenOrderThenGetUserTotalSpent(totalAmount: number): Promise<number> {
+        const createdUserRes = await this.addUserRandom();
+        const createdUser = createdUserRes && createdUserRes.data ? createdUserRes.data : createdUserRes;
+        const userId = createdUser?.id;
+        await orderService.addOrder({ userId, totalAmount: totalAmount });
+        const res = await ApiService.getInstance().instance.get(`/users/${userId}/total-spent`);
+        const payload = res && res.data ? res.data : {};
+        const totalSpent = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
+        return isNaN(totalSpent) ? -1 : totalSpent;
+    }
 
     public async getAllUsers() {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users`);
