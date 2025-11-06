@@ -1,6 +1,5 @@
 import { expect } from "chai";
 import { categoryService } from "../src/api/fakeApi/CategoryService";
-import ApiService from "../src/api/ApiService";
 
 describe("CategoryService (fakeapi) - basic CRUD", function () {
   this.timeout(20000);

@@ -9,6 +9,7 @@
     "report:open": "allure open",
     "test": "node ./node_modules/mocha/bin/mocha.js --environment=SEL --timeout 20000",
     "test:fake": "npx mocha --require ts-node/register --require tsconfig-paths/register --file ./fake-api-tests/bootstrap.ts \"fake-api-tests/**/*.ts\" --timeout 20000 -- --environment=FakeAPI",
+    "seed:fake": "npx ts-node -r tsconfig-paths/register fake-api-tests/seedDatabase.ts -- --environment=FakeAPI",
     "allInOne": "npm run runner --reporter=allure && npm run report:generate && npm run report:open",
     "runner": "ts-node -r tsconfig-paths/register src/conf/runner.ts",
     "socketServer": "ts-node -r tsconfig-paths/register src/conf/widget.ts",

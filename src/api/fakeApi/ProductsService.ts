@@ -1,9 +1,7 @@
-import addProduct from '@/api/body/fakeApi/addProduct.json'
 import { categoryService } from './CategoryService';
 import { randomInt } from 'crypto';
 import { userService } from './UserService';
 import ConfigUtils from '@/common/ConfigUtils';
-import merge from "lodash.merge";
 import { AxiosResponse } from 'axios';
 import ApiService from '../ApiService';
 
@@ -19,7 +17,7 @@ class ProductService {
         const sellerId = allUsersIdx[randomInt(allUsersIdx.length)]
         const name = ConfigUtils.generateUniqueWord();
         const description = ConfigUtils.generateUniqueWord3();
-        const price = Number((Math.random() * 100).toFixed(2));
+        const price = Number((Math.random() * 100).toFixed(2))
         const stock = randomInt(1000);
         const variant = []
         for (let i = 0; i < 2; i++) {
@@ -54,9 +52,8 @@ class ProductService {
     }
 
     public async createNewProduct() {
-        let data = await this.createData();
-        //data = JSON.parse(JSON.stringify(data));
-        const addData = merge({}, addProduct, data);
+        const data = await this.createData();
+        const addData = JSON.parse(JSON.stringify(data));
         const response: AxiosResponse = await ApiService.getInstance().instance.post(`/products`, JSON.parse(JSON.stringify(addData)));
         return response;
     }

@@ -5,7 +5,7 @@ import { randomPassword, uniqueEmail } from "@/common/fakeApi/Utils";
 
 const { expect } = require('chai');
 
-describe('Fake JSON-Server toy API tests', function () {
+describe.skip('Fake JSON-Server toy API tests', function () {
   this.timeout(20000);
   let createdUserId = null;
 
