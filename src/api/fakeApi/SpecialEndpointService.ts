@@ -293,6 +293,96 @@ class SpecialEndpointService {
             return false;
         return response;
     }
+
+    // 16. Product Reviews Summary
+    public async getProductReviewsSummaryOnlyByID(productId: number) {
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/${productId}/reviews-summary`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.productId !== productId)
+            return false;
+        return response;
+    }
+
+    public async getProductReviewsSummaryByID() {
+        const product = await productService.randomProduct();
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/${product.id}/reviews-summary`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.productId !== product.id)
+            return false;
+        return response;
+    }
+
+    // 17. User Reviews History
+    public async getUserReviewsHistoryOnlyByID(userId: number) {
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users/${userId}/reviews-history`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.userId !== userId)
+            return false;
+        return response;
+    }
+
+    public async getUserReviewsHistoryByID() {
+        const user = await userService.getRandomUser();
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users/${user.id}/reviews-history`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.userId !== user.id)
+            return false;
+        return response;
+    }
+
+    // 18. Top Reviewed Products
+    public async getTopReviewedProducts(limit?: number) {
+        const params: any = {};
+        if (limit !== undefined) params.limit = limit;
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/top-reviewed`, { params });
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        return response;
+    }
+
+    // 19. Category Reviews Statistics
+    public async getCategoryReviewsStatisticsOnlyByID(categoryId: number) {
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/categories/${categoryId}/reviews-statistics`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.categoryId !== categoryId)
+            return false;
+        return response;
+    }
+
+    public async getCategoryReviewsStatisticsByID() {
+        const category = await categoryService.getRandomCategory();
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/categories/${category.id}/reviews-statistics`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.categoryId !== category.id)
+            return false;
+        return response;
+    }
+
+    // 20. Product Review and Sales Correlation
+    public async getProductReviewSalesCorrelationOnlyByID(productId: number) {
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/${productId}/review-sales-correlation`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.productId !== productId)
+            return false;
+        return response;
+    }
+
+    public async getProductReviewSalesCorrelationByID() {
+        const product = await productService.randomProduct();
+        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/${product.id}/review-sales-correlation`);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        if (response.data.productId !== product.id)
+            return false;
+        return response;
+    }
 }
 
 export const specialEndpointService = new SpecialEndpointService();

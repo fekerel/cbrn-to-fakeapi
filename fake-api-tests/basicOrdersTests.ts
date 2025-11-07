@@ -1,7 +1,7 @@
 import { expect } from "chai"
 import { orderService } from "@/api/fakeApi/OrderService";
 
-describe("Order Test", async () => {
+describe.only("Order Test", async () => {
     it("Create New Order", async () => {
         const response = await orderService.createNewOrder();
 

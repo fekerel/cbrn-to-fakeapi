@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { categoryService } from "../src/api/fakeApi/CategoryService";
 
-describe("CategoryService (fakeapi) - basic CRUD", function () {
+describe.only("CategoryService (fakeapi) - basic CRUD", function () {
   this.timeout(20000);
 
   it("Create New Category", async () => {

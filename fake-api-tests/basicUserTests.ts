@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { userService } from "../src/api/fakeApi/UserService";
 
 
-describe("UserService (fakeapi) - basic CRUD", function () {
+describe.only("UserService (fakeapi) - basic CRUD", function () {
   this.timeout(20000);
 
   it("Get User By ID", async () => {

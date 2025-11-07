@@ -2,7 +2,7 @@ import { expect } from "chai"
 import { productService } from "@/api/fakeApi/ProductsService";
 
 
-describe("Products Test", async () => {
+describe.only("Products Test", async () => {
     it("Create New Product", async () => {
         const response = await productService.createNewProduct();
         expect(response.status).to.be.equal(201)

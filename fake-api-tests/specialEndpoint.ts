@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { specialEndpointService } from "@/api/fakeApi/SpecialEndpointService";
 
-describe("Special Endpoint Tests", function () {
+describe.only("Special Endpoint Tests", function () {
     this.timeout(20000);
 
     it("Get Product Sales Stats By ID", async () => {
@@ -651,5 +651,215 @@ describe("Special Endpoint Tests", function () {
             });
         }
     });
+
+
+
+    it("Get Product Reviews Summary By ID", async () => {
+        const response = await specialEndpointService.getProductReviewsSummaryByID();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('productId').that.is.a('number');
+        expect(response.data).to.have.property('productName').that.is.a('string');
+        expect(response.data).to.have.property('totalReviews').that.is.a('number');
+        expect(response.data).to.have.property('averageRating').that.is.a('number');
+        expect(response.data).to.have.property('ratingDistribution').that.is.an('object');
+        expect(response.data).to.have.property('recentReviews').that.is.an('array');
+
+        expect(response.data.totalReviews).to.be.at.least(0);
+        expect(response.data.averageRating).to.be.at.least(0).and.at.most(5);
+
+        // Rating distribution kontrolü
+        expect(response.data.ratingDistribution).to.have.property('1').that.is.a('number');
+        expect(response.data.ratingDistribution).to.have.property('2').that.is.a('number');
+        expect(response.data.ratingDistribution).to.have.property('3').that.is.a('number');
+        expect(response.data.ratingDistribution).to.have.property('4').that.is.a('number');
+        expect(response.data.ratingDistribution).to.have.property('5').that.is.a('number');
+
+        Object.keys(response.data.ratingDistribution).forEach(rating => {
+            expect(response.data.ratingDistribution[rating]).to.be.at.least(0);
+        });
+
+        expect(response.data.recentReviews.length).to.be.at.most(5);
+
+        if (response.data.recentReviews.length > 0) {
+            const recentReview = response.data.recentReviews[0];
+            expect(recentReview).to.be.an("object");
+            expect(recentReview).to.have.property('reviewId').that.is.a('number');
+            expect(recentReview).to.have.property('userId').that.is.a('number');
+            expect(recentReview).to.have.property('userName').that.is.a('string');
+            expect(recentReview).to.have.property('rating').that.is.a('number');
+            expect(recentReview.rating).to.be.at.least(1).and.at.most(5);
+            expect(recentReview).to.have.property('createdAt').that.is.a('number');
+
+            if (recentReview.comment !== null && recentReview.comment !== undefined) {
+                expect(recentReview.comment).to.be.a('string');
+            }
+        }
+    });
+
+    it("Get User Reviews History By ID", async () => {
+        const response = await specialEndpointService.getUserReviewsHistoryByID();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('userId').that.is.a('number');
+        expect(response.data).to.have.property('userName').that.is.a('string');
+        expect(response.data).to.have.property('totalReviews').that.is.a('number');
+        expect(response.data).to.have.property('averageRating').that.is.a('number');
+        expect(response.data).to.have.property('reviewsByProductCount').that.is.a('number');
+        expect(response.data).to.have.property('reviews').that.is.an('array');
+
+        expect(response.data.totalReviews).to.be.at.least(0);
+        expect(response.data.averageRating).to.be.at.least(0).and.at.most(5);
+        expect(response.data.reviewsByProductCount).to.be.at.least(0);
+        expect(response.data.reviews.length).to.be.equal(response.data.totalReviews);
+
+        if (response.data.reviews.length > 0) {
+            const firstReview = response.data.reviews[0];
+            expect(firstReview).to.be.an("object");
+            expect(firstReview).to.have.property('reviewId').that.is.a('number');
+            expect(firstReview).to.have.property('productId').that.is.a('number');
+            expect(firstReview).to.have.property('productName').that.is.a('string');
+            expect(firstReview).to.have.property('rating').that.is.a('number');
+            expect(firstReview.rating).to.be.at.least(1).and.at.most(5);
+            expect(firstReview).to.have.property('createdAt').that.is.a('number');
+
+            if (firstReview.comment !== null && firstReview.comment !== undefined) {
+                expect(firstReview.comment).to.be.a('string');
+            }
+        }
+    });
+
+    it("Get Top Reviewed Products", async () => {
+        const response = await specialEndpointService.getTopReviewedProducts(10);
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('totalProducts').that.is.a('number');
+        expect(response.data).to.have.property('limit').that.is.a('number');
+        expect(response.data).to.have.property('topReviewedProducts').that.is.an('array');
+
+        expect(response.data.totalProducts).to.be.at.least(0);
+        expect(response.data.limit).to.be.equal(10);
+        expect(response.data.topReviewedProducts.length).to.be.at.most(response.data.limit);
+
+        if (response.data.topReviewedProducts.length > 0) {
+            const topProduct = response.data.topReviewedProducts[0];
+            expect(topProduct).to.be.an("object");
+            expect(topProduct).to.have.property('productId').that.is.a('number');
+            expect(topProduct).to.have.property('productName').that.is.a('string');
+            expect(topProduct).to.have.property('categoryId').that.is.a('number');
+            expect(topProduct).to.have.property('categoryName').that.is.a('string');
+            expect(topProduct).to.have.property('totalReviews').that.is.a('number');
+            expect(topProduct).to.have.property('averageRating').that.is.a('number');
+            expect(topProduct).to.have.property('latestReviewDate').that.is.a('number');
+
+            expect(topProduct.totalReviews).to.be.at.least(0);
+            expect(topProduct.averageRating).to.be.at.least(0).and.at.most(5);
+        }
+    });
+
+    it("Get Category Reviews Statistics By ID", async () => {
+        const response = await specialEndpointService.getCategoryReviewsStatisticsByID();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('categoryId').that.is.a('number');
+        expect(response.data).to.have.property('categoryName').that.is.a('string');
+        expect(response.data).to.have.property('totalProducts').that.is.a('number');
+        expect(response.data).to.have.property('totalReviews').that.is.a('number');
+        expect(response.data).to.have.property('averageRating').that.is.a('number');
+        expect(response.data).to.have.property('productsWithReviews').that.is.a('number');
+        expect(response.data).to.have.property('topReviewedProducts').that.is.an('array');
+
+        expect(response.data.totalProducts).to.be.at.least(0);
+        expect(response.data.totalReviews).to.be.at.least(0);
+        expect(response.data.averageRating).to.be.at.least(0).and.at.most(5);
+        expect(response.data.productsWithReviews).to.be.at.least(0);
+        expect(response.data.productsWithReviews).to.be.at.most(response.data.totalProducts);
+
+        expect(response.data.topReviewedProducts.length).to.be.at.most(5);
+
+        if (response.data.topReviewedProducts.length > 0) {
+            const topProduct = response.data.topReviewedProducts[0];
+            expect(topProduct).to.be.an("object");
+            expect(topProduct).to.have.property('productId').that.is.a('number');
+            expect(topProduct).to.have.property('productName').that.is.a('string');
+            expect(topProduct).to.have.property('totalReviews').that.is.a('number');
+            expect(topProduct).to.have.property('averageRating').that.is.a('number');
+
+            expect(topProduct.totalReviews).to.be.at.least(0);
+            expect(topProduct.averageRating).to.be.at.least(0).and.at.most(5);
+        }
+    });
+
+    it("Get Product Review and Sales Correlation By ID", async () => {
+        const response = await specialEndpointService.getProductReviewSalesCorrelationByID();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('productId').that.is.a('number');
+        expect(response.data).to.have.property('productName').that.is.a('string');
+        expect(response.data).to.have.property('categoryId').that.is.a('number');
+        expect(response.data).to.have.property('categoryName').that.is.a('string');
+        expect(response.data).to.have.property('reviewStats').that.is.an('object');
+        expect(response.data).to.have.property('salesStats').that.is.an('object');
+        expect(response.data).to.have.property('correlation').that.is.an('object');
+
+        expect(response.data.reviewStats).to.have.property('totalReviews').that.is.a('number');
+        expect(response.data.reviewStats).to.have.property('averageRating').that.is.a('number');
+        expect(response.data.reviewStats.totalReviews).to.be.at.least(0);
+        expect(response.data.reviewStats.averageRating).to.be.at.least(0).and.at.most(5);
+
+        expect(response.data.salesStats).to.have.property('totalSales').that.is.a('number');
+        expect(response.data.salesStats).to.have.property('totalRevenue').that.is.a('number');
+        expect(response.data.salesStats).to.have.property('ordersCount').that.is.a('number');
+        expect(response.data.salesStats.totalSales).to.be.at.least(0);
+        expect(response.data.salesStats.totalRevenue).to.be.at.least(0);
+        expect(response.data.salesStats.ordersCount).to.be.at.least(0);
+
+        expect(response.data.correlation).to.have.property('salesByRating').that.is.an('object');
+        expect(response.data.correlation).to.have.property('hasReviews').that.is.a('boolean');
+        expect(response.data.correlation).to.have.property('hasSales').that.is.a('boolean');
+
+        // Sales by rating kontrolü
+        expect(response.data.correlation.salesByRating).to.have.property('1').that.is.an('object');
+        expect(response.data.correlation.salesByRating).to.have.property('2').that.is.an('object');
+        expect(response.data.correlation.salesByRating).to.have.property('3').that.is.an('object');
+        expect(response.data.correlation.salesByRating).to.have.property('4').that.is.an('object');
+        expect(response.data.correlation.salesByRating).to.have.property('5').that.is.an('object');
+
+        Object.keys(response.data.correlation.salesByRating).forEach(rating => {
+            const ratingData = response.data.correlation.salesByRating[rating];
+            expect(ratingData).to.have.property('sales').that.is.a('number');
+            expect(ratingData).to.have.property('revenue').that.is.a('number');
+            expect(ratingData.sales).to.be.at.least(0);
+            expect(ratingData.revenue).to.be.at.least(0);
+        });
+    });
 });
+
 

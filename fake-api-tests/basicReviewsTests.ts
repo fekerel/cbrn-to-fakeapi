@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { reviewService } from "../src/api/fakeApi/ReviewService";
 
-describe("ReviewService (fakeapi) - basic CRUD", function () {
+describe.only("ReviewService (fakeapi) - basic CRUD", function () {
     this.timeout(20000);
 
     it("Create New Review", async () => {
