@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { specialEndpointService } from "@/api/fakeApi/SpecialEndpointService";
 
-describe.only("Special Endpoint Tests", function () {
+describe("Special Endpoint Tests", function () {
     this.timeout(20000);
 
     it("Get Product Sales Stats By ID", async () => {

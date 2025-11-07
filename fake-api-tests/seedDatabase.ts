@@ -2,6 +2,7 @@ import { userService } from "@/api/fakeApi/UserService";
 import { categoryService } from "@/api/fakeApi/CategoryService";
 import { productService } from "@/api/fakeApi/ProductsService";
 import { orderService } from "@/api/fakeApi/OrderService";
+import { reviewService } from "@/api/fakeApi/ReviewService";
 
 const COUNT = 50;
 
@@ -92,6 +93,23 @@ async function seedDatabase() {
         }
         await Promise.all(orderPromises);
         console.log(`✓ ${COUNT} adet Order başarıyla oluşturuldu.\n`);
+
+        console.log("5. Review oluşturma (50 adet) - User ve Product'lara ihtiyaç var");
+        const reviewPromises = [];
+        for (let i = 0; i < COUNT; i++) {
+            reviewPromises.push(
+                reviewService.createReview()
+                    .then(() => {
+                        if ((i + 1) % 10 === 0)
+                            console.log(`   ${i + 1}/${COUNT} review oluşturuldu`);
+                    })
+                    .catch((error) => {
+                        console.error(`   Review ${i + 1} oluşturulurken hata:`, error.message);
+                    })
+            )
+        }
+        await Promise.all(reviewPromises);
+        console.log(`✓ ${COUNT} adet Review başarıyla oluşturuldu.\n`);
 
         console.log("=".repeat(50));
         console.log("Tüm veriler başarıyla eklendi!");
