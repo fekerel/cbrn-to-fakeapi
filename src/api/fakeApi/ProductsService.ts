@@ -8,10 +8,10 @@ import ApiService from '../ApiService';
 class ProductService {
 
     public async createData() {
-        const allCategoryList = await categoryService.getAllCategories();
+        const allCategoryList = (await categoryService.getAllCategories()).data;
         const allCategoryIdx = Array.from(new Set(allCategoryList.map((category) => category.id)))
         const categoryId = allCategoryIdx[randomInt(allCategoryIdx.length)]
-        const allUsers = await userService.getAllUsers();
+        const allUsers = (await userService.getAllUsers()).data;
         const allUsersIdx = Array.from(new Set(allUsers.map((user) => user.id)))
 
         const sellerId = allUsersIdx[randomInt(allUsersIdx.length)]
@@ -60,11 +60,11 @@ class ProductService {
 
     public async getAllProducts() {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products`);
-        return response.data;
+        return response;
     }
 
     public async randomProduct() {
-        const allProducts = await this.getAllProducts();
+        const allProducts = (await this.getAllProducts()).data;
         return allProducts[Math.floor(Math.random() * allProducts.length)];
 
     }
@@ -74,7 +74,7 @@ class ProductService {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/${product.id}`);
         const isTrue = response.data.id === product.id;
         if (isTrue)
-            return response.data;
+            return response;
         return false;
     }
 
@@ -82,7 +82,7 @@ class ProductService {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/products/${id}`);
         const isTrue = response.data.id === id;
         if (isTrue)
-            return response.data;
+            return response;
         return false;
     }
 
@@ -94,10 +94,13 @@ class ProductService {
         const response: AxiosResponse = await ApiService.getInstance().instance.put(`/products/${product.id}`, product);
         if (response.status !== 200 || typeof response.data !== "object")
             return false;
-        const updatedData = await this.getProductOnlyByID(product.id);
-        if (updatedData.id !== product.id || updatedData.name !== newName)
+        const updatedData = (await this.getProductOnlyByID(product.id));
+        if (typeof updatedData !== "object") {
             return false;
-        return response.data;
+        }
+        if (updatedData.data.id !== product.id || updatedData.data.name !== newName)
+            return false;
+        return updatedData;
 
 
     }
@@ -108,11 +111,11 @@ class ProductService {
         const response: AxiosResponse = await ApiService.getInstance().instance.delete(`/products/${product.id}`);
         if (response.status !== 200)
             return false;
-        const allProducts = await this.getAllProducts();
+        const allProducts = (await this.getAllProducts()).data;
         const isFalse = allProducts.some((p) => p.id === product.id);
         if (isFalse)
             return false;
-        return response.status;
+        return response;
 
 
     }

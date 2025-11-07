@@ -18,7 +18,7 @@ class OrderService {
 
 
     public async addOrderData() {
-        const userList = await userService.getAllUsers();
+        const userList = (await userService.getAllUsers()).data;
         const userID = userList[randomInt(userList.length)].id;
         const randomProduct = await productService.randomProduct();
         const items = [{
@@ -51,11 +51,11 @@ class OrderService {
     }
 
     public async getAllOrders() {
-        return (await ApiService.getInstance().instance.get(`/orders`)).data;
+        return (await ApiService.getInstance().instance.get(`/orders`));
     }
 
     public async randomOrder() {
-        const allOrders = await this.getAllOrders();
+        const allOrders = (await this.getAllOrders()).data;
         return allOrders[Math.floor(Math.random() * allOrders.length)];
 
     }
@@ -66,7 +66,7 @@ class OrderService {
             return false;
         if (response.data.id !== id)
             return false;
-        return response.data;
+        return response;
     }
 
 
@@ -77,7 +77,7 @@ class OrderService {
             return false;
         if (response.data.id !== randomOrder.id)
             return false;
-        return response.data;
+        return response;
     }
 
     public async updateOrderByID() {
@@ -87,8 +87,11 @@ class OrderService {
         const response: AxiosResponse = await ApiService.getInstance().instance.put(`/orders/${randomOrderData.id}`, randomOrderData);
         if (response.status !== 200 || typeof response.data !== "object")
             return false;
-        const updatedData = await this.getOrderOnlyByID(randomOrderData.id);
-        if (updatedData.id !== randomOrderData.id || updatedData.items[0].variantId !== newID)
+        const updatedData = (await this.getOrderOnlyByID(randomOrderData.id));
+        if (typeof updatedData !== "object") {
+            return false;
+        }
+        if (updatedData.data.id !== randomOrderData.id || updatedData.data.items[0].variantId !== newID)
             return false;
         return updatedData;
     }
@@ -98,11 +101,11 @@ class OrderService {
         const response: AxiosResponse = await ApiService.getInstance().instance.delete(`/orders/${randomOrder.id}`);
         if (response.status !== 200)
             return false;
-        const allOrders = await this.getAllOrders();
+        const allOrders = (await this.getAllOrders()).data;
         const isFalse = allOrders.some((o) => o.id === randomOrder.id);
         if (isFalse)
             return false;
-        return response.status;
+        return response;
 
     }
 }

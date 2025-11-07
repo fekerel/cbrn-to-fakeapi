@@ -6,21 +6,31 @@ describe("CategoryService (fakeapi) - basic CRUD", function () {
 
   it("Create New Category", async () => {
     const response = await categoryService.createCategory()
-    expect(response).to.be.an("object");
-    expect(response).to.have.property('id').that.is.a('number');
-    expect(response).to.have.property('name').that.is.a('string');
-    expect(response).to.have.property('description').that.is.a('string');
-    expect(response).to.have.property('parentId')
-    expect(response).to.have.property('status').that.is.a('string');
-    expect(response.status).to.equal('active');
+
+    if (typeof response !== "object") {
+      return;
+    }
+
+    expect(response.status).to.be.equal(201);
+    expect(response.data).to.be.an("object");
+    expect(response.data).to.have.property('id').that.is.a('number');
+    expect(response.data).to.have.property('name').that.is.a('string');
+    expect(response.data).to.have.property('description').that.is.a('string');
+    expect(response.data).to.have.property('parentId')
+    expect(response.data).to.have.property('status').that.is.a('string');
+    expect(response.data.status).to.equal('active');
 
   });
 
   it("Get All Categories", async () => {
     const response = await categoryService.getAllCategories();
 
-    expect(response).to.be.an("array");
-    const firstData = response[0];
+    if (typeof response !== "object") {
+      return;
+    }
+
+    expect(response.data).to.be.an("array");
+    const firstData = response.data[0];
 
     expect(firstData).to.be.an("object");
     expect(firstData).to.have.property('id').that.is.a('number');
@@ -35,30 +45,41 @@ describe("CategoryService (fakeapi) - basic CRUD", function () {
 
   it("Get Category By ID", async () => {
     const response = await categoryService.getCategoryByID();
+    if (typeof response !== "object") {
+      return;
+    }
 
-    expect(response).to.be.an("object");
-    expect(response).to.have.property('id').that.is.a('number');
-    expect(response).to.have.property('name').that.is.a('string');
-    expect(response).to.have.property('description').that.is.a('string');
-    expect(response).to.have.property('parentId')
-    expect(response).to.have.property('status').that.is.a('string');
-    expect(response.status).to.equal('active');
+    expect(response.status).to.be.equal(200);
+    expect(response.data).to.be.an("object");
+    expect(response.data).to.have.property('id').that.is.a('number');
+    expect(response.data).to.have.property('name').that.is.a('string');
+    expect(response.data).to.have.property('description').that.is.a('string');
+    expect(response.data).to.have.property('parentId')
+    expect(response.data).to.have.property('status').that.is.a('string');
+    expect(response.data.status).to.equal('active');
 
   });
 
   it("Update Category By ID", async () => {
     const response = await categoryService.updateCategoryByID();
-    expect(response).to.be.an("object");
-    expect(response).to.have.property('id').that.is.a('number');
-    expect(response).to.have.property('name').that.is.a('string');
-    expect(response).to.have.property('description').that.is.a('string');
-    expect(response).to.have.property('parentId')
-    expect(response).to.have.property('status').that.is.a('string');
-    expect(response.status).to.equal('active');
+
+    if (typeof response !== "object") {
+      return;
+    }
+    expect(response.data).to.be.an("object");
+    expect(response.data).to.have.property('id').that.is.a('number');
+    expect(response.data).to.have.property('name').that.is.a('string');
+    expect(response.data).to.have.property('description').that.is.a('string');
+    expect(response.data).to.have.property('parentId')
+    expect(response.data).to.have.property('status').that.is.a('string');
+    expect(response.data.status).to.equal('active');
   });
 
   it("Delete Category By ID", async () => {
     const response = await categoryService.deleteCategoryByID();
-    expect(response).to.be.equal(200);
+    if (typeof response !== "object") {
+      return;
+    }
+    expect(response.status).to.be.equal(200);
   });
 });

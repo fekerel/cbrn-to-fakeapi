@@ -36,22 +36,21 @@ class UserService {
 
     public async getAllUsers() {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users`);
-        return response.data;
+        return response;
     }
 
     public async getUserOnlyByID(id: number) {
         const response = await ApiService.getInstance().instance.get(`/users/${id}`);
         const isTrue = response.data.id === id;
         if (isTrue)
-            return response.data;
+            return response;
         return false;
     }
 
-    public getRandomUser() {
-        return this.getAllUsers().then((users) => {
-            const randomIndex = Math.floor(Math.random() * users.length);
-            return users[randomIndex];
-        });
+    public async getRandomUser() {
+        const users = (await this.getAllUsers()).data;
+        const randomIndex = Math.floor(Math.random() * users.length);
+        return users[randomIndex];
     }
 
     public async getUserByID() {
@@ -60,7 +59,7 @@ class UserService {
         if (response.data.id !== user.id || response.status !== 200) {
             return false;
         }
-        return response.data;
+        return response;
     }
 
     public async updateUser() {
@@ -71,8 +70,11 @@ class UserService {
         if (response.status !== 200)
             return false;
         const updatedUser = await this.getUserOnlyByID(user.id);
-        if (updatedUser.id === user.id && updatedUser.firstName === user.firstName)
-            return response.data;
+        if (typeof updatedUser !== "object") {
+            return false;
+        }
+        if (updatedUser.data.id === user.id && updatedUser.data.firstName === user.firstName)
+            return updatedUser;
         return false;
     }
 
@@ -81,11 +83,11 @@ class UserService {
         const response = await ApiService.getInstance().instance.delete(`/users/${user.id}`, user);
         if (response.status !== 200)
             return false;
-        const deletedUserList = await this.getAllUsers();
+        const deletedUserList = (await this.getAllUsers()).data;
         const isFalse = deletedUserList.some((userr) => userr.id === user.id);
         if (isFalse)
             return false;
-        return response.status
+        return response
 
 
     }
@@ -121,7 +123,7 @@ class UserService {
         if (response.status !== 201) {
             throw new Error(`Failed to create user. Status code: ${response.status}`);
         }
-        return response.data
+        return response
     }
 }
 

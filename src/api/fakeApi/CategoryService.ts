@@ -14,7 +14,7 @@ class CategoryService {
   public async deleteCategoryByID() {
     const category = await this.getRandomCategory();
     const response = await ApiService.getInstance().instance.delete(`/categories/${category.id}`);
-    return response.status;
+    return response;
   }
 
   public async getCategoryOnlyByID(id: number) {
@@ -32,7 +32,7 @@ class CategoryService {
       return false;
     const isTrue = response.data.id === category.id;
     if (isTrue)
-      return response.data;
+      return response;
     return false;
   }
 
@@ -44,12 +44,12 @@ class CategoryService {
       return false;
     const isTrue = response.data.id === category.id && response.data.name === category.name;
     if (isTrue)
-      return response.data;
+      return response;
     return false;
   }
 
   public async getRandomCategory() {
-    const allCategories = await this.getAllCategories();
+    const allCategories = (await this.getAllCategories()).data;
     return allCategories[Math.floor(Math.random() * allCategories.length)];
   }
 
@@ -78,12 +78,12 @@ class CategoryService {
     };
 
     const response = await ApiService.getInstance().instance.post("/categories", JSON.parse(JSON.stringify(body)));
-    return response.data;
+    return response;
   }
 
   public async getAllCategories() {
     const response = await ApiService.getInstance().instance.get(`/categories`);
-    return response.data;
+    return response;
   }
 
 }

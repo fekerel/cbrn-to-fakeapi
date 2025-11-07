@@ -14,7 +14,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.productId !== productId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getProductSalesStatsByID() {
@@ -24,7 +24,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.productId !== product.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 2. Category Products Summary
@@ -34,7 +34,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== categoryId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getCategoryProductsSummaryByID() {
@@ -44,7 +44,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== category.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 3. User Order History
@@ -54,7 +54,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.userId !== userId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getUserOrderHistoryByID() {
@@ -64,7 +64,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.userId !== user.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 4. Seller Dashboard
@@ -74,7 +74,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.sellerId !== sellerId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getSellerDashboardByID() {
@@ -84,7 +84,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.sellerId !== user.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 5. Category Subcategories
@@ -94,7 +94,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== categoryId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getCategorySubcategoriesByID() {
@@ -104,7 +104,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== category.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 6. Order Details
@@ -114,7 +114,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.orderId !== orderId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getOrderDetailsByID() {
@@ -124,7 +124,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.orderId !== order.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 7. Product Variants Summary
@@ -134,7 +134,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.productId !== productId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getProductVariantsSummaryByID() {
@@ -144,7 +144,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.productId !== product.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 8. User Purchase Summary
@@ -154,7 +154,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.userId !== userId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getUserPurchaseSummaryByID() {
@@ -164,7 +164,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.userId !== user.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 9. Category Sales Stats
@@ -174,7 +174,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== categoryId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getCategorySalesStatsByID() {
@@ -184,7 +184,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== category.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 10. Recent Orders
@@ -195,7 +195,7 @@ class SpecialEndpointService {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/orders/recent`, { params });
         if (response.status !== 200 || typeof response.data !== "object")
             return false;
-        return response.data;
+        return response;
     }
 
     // 11. Product Recommendations
@@ -207,7 +207,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.productId !== productId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getProductRecommendationsByID(limit?: number) {
@@ -219,7 +219,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.productId !== product.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 12. User Activity
@@ -229,7 +229,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.userId !== userId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getUserActivityByID() {
@@ -239,7 +239,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.userId !== user.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 13. Order Statistics
@@ -247,7 +247,7 @@ class SpecialEndpointService {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/orders/statistics`);
         if (response.status !== 200 || typeof response.data !== "object")
             return false;
-        return response.data;
+        return response;
     }
 
     // 14. Category Trending Products
@@ -259,7 +259,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== categoryId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getCategoryTrendingProductsByID(limit?: number) {
@@ -271,7 +271,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.categoryId !== category.id)
             return false;
-        return response.data;
+        return response;
     }
 
     // 15. Seller Analytics
@@ -281,7 +281,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.sellerId !== sellerId)
             return false;
-        return response.data;
+        return response;
     }
 
     public async getSellerAnalyticsByID() {
@@ -291,7 +291,7 @@ class SpecialEndpointService {
             return false;
         if (response.data.sellerId !== user.id)
             return false;
-        return response.data;
+        return response;
     }
 }
 
