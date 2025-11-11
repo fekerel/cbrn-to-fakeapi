@@ -1,112 +1,31 @@
-import addOrderJSON from "@api/body/fakeApi/addOrder.json";
 import ApiService from "../ApiService";
-import { DeepPartial } from "../../common/fakeApi/Types";
-import merge from "lodash.merge";
-import { userService } from "./UserService";
-import { randomInt } from "crypto";
-import { AxiosResponse } from "axios";
-import ConfigUtils from "@/common/ConfigUtils";
-import { productService } from "./ProductsService";
 
 class OrderService {
-    public async addOrder(orderData: DeepPartial<typeof addOrderJSON> = {}) {
-        const overrides = orderData;
-        const body = merge({}, addOrderJSON, overrides);
-        const res = await ApiService.getInstance().instance.post("/orders", body);
-        return res;
-    }
+    // CRUD stubs only for experiment.
 
-
-    public async addOrderData() {
-        const userList = (await userService.getAllUsers()).data;
-        const userID = userList[randomInt(userList.length)].id;
-        const randomProduct = await productService.randomProduct();
-        const items = [{
-            productId: randomProduct.id,
-            variantId: randomProduct.variants[0].id,
-            quantity: 1,
-            price: randomProduct.price
-        }];
-        const totalAmount = Math.random() * 100;
-        const shippingAddress = userList.find((u) => u.id === userID)?.address;
-        const paymentMethod = ["credit_card", "paypal", "bank_transfer"][randomInt(3)];
-        const status = ["pending", "processing", "shipped", "delivered", "cancelled"][randomInt(5)];
-        const lastStatus = ["delivered", "cancelled", "returned", "failed"][randomInt(4)];
-        const addData = {
-            id: null,
-            userId: userID,
-            items: items,
-            totalAmount: totalAmount,
-            shippingAddress: shippingAddress,
-            payment: { method: paymentMethod, status: status },
-            status: lastStatus
-        }
-        return addData
-    }
-
-    public async createNewOrder() {
-        const addData = await this.addOrderData();
-        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/orders`, JSON.parse(JSON.stringify(addData)));
-        return response;
+    public async createOrder(body?: any) {
+        // AI: POST /orders
+        throw new Error("NOT_IMPLEMENTED");
     }
 
     public async getAllOrders() {
-        return (await ApiService.getInstance().instance.get(`/orders`));
+        // AI: GET /orders
+        throw new Error("NOT_IMPLEMENTED");
     }
 
-    public async randomOrder() {
-        const allOrders = (await this.getAllOrders()).data;
-        return allOrders[Math.floor(Math.random() * allOrders.length)];
-
+    public async getOrderById(id: number) {
+        // AI: GET /orders/{id}
+        throw new Error("NOT_IMPLEMENTED");
     }
 
-    public async getOrderOnlyByID(id: number) {
-        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/orders/${id}`);
-        if (response.status !== 200 || typeof response.data !== "object")
-            return false;
-        if (response.data.id !== id)
-            return false;
-        return response;
+    public async updateOrderById(id: number, body: any) {
+        // AI: PUT /orders/{id}
+        throw new Error("NOT_IMPLEMENTED");
     }
 
-
-    public async getOrderByID() {
-        const randomOrder = await this.randomOrder();
-        const response: AxiosResponse = await ApiService.getInstance().instance.get(`/orders/${randomOrder.id}`);
-        if (response.status !== 200 || typeof response.data !== "object")
-            return false;
-        if (response.data.id !== randomOrder.id)
-            return false;
-        return response;
-    }
-
-    public async updateOrderByID() {
-        const randomOrderData = await this.randomOrder();
-        const newID = await ConfigUtils.generateUniqueWord2();
-        randomOrderData.items[0].variantId = newID;
-        const response: AxiosResponse = await ApiService.getInstance().instance.put(`/orders/${randomOrderData.id}`, randomOrderData);
-        if (response.status !== 200 || typeof response.data !== "object")
-            return false;
-        const updatedData = (await this.getOrderOnlyByID(randomOrderData.id));
-        if (typeof updatedData !== "object") {
-            return false;
-        }
-        if (updatedData.data.id !== randomOrderData.id || updatedData.data.items[0].variantId !== newID)
-            return false;
-        return updatedData;
-    }
-
-    public async deleteOrderByID() {
-        const randomOrder = await this.randomOrder();
-        const response: AxiosResponse = await ApiService.getInstance().instance.delete(`/orders/${randomOrder.id}`);
-        if (response.status !== 200)
-            return false;
-        const allOrders = (await this.getAllOrders()).data;
-        const isFalse = allOrders.some((o) => o.id === randomOrder.id);
-        if (isFalse)
-            return false;
-        return response;
-
+    public async deleteOrderById(id: number) {
+        // AI: DELETE /orders/{id}
+        throw new Error("NOT_IMPLEMENTED");
     }
 }
 
