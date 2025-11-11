@@ -1,0 +1,47 @@
+# Master Experiment Prompt (for AI IDEs)
+
+Use this prompt verbatim inside your AI IDE. GUIDE.md is the single source of truth—do not restate rules here or ask for clarifications.
+
+---
+
+You are working in repository "cbrn-to-fakeapi" on branch "experiment-sanitized". Follow GUIDE.md exactly (especially sections 0, 2, 3.1–3.3, 4.1, 7, 8, 9, 11). Do not ask for clarifications.
+
+1) Branch
+- Create and switch to a new branch named ai-<tool-name>-<YYYYMMDD> (example: ai-copilot-20251111).
+
+```powershell
+git checkout -b ai-<tool-name>-<YYYYMMDD>
+```
+
+2) Read and prepare
+- Read GUIDE.md end-to-end and adhere to all constraints (Sanitized Mode, naming, title convention, file layout).
+- Ensure the Fake API is running at http://localhost:8000.
+- Refresh OpenAPI per GUIDE (openapi:fetch).
+
+3) Implement per GUIDE
+- Implement/complete missing CRUD methods only in the core services under src/api/fakeApi (HTTP wrappers only via ApiService.getInstance().instance).
+- For each test case, create a scenario service under src/api/fakeApi named <Domain>ScenarioService.ts exposing exactly one parameterless public method that does setup → calls exactly one endpoint → returns the Axios response.
+- Tests must live under fake-api-tests/, be named *.spec.ts, and call exactly one parameterless scenario method.
+- Every `it` title must follow: METHOD PATH - expectation (see GUIDE 4.1).
+
+4) Run and deliver
+- Run tests exactly as documented in GUIDE and fix failures.
+- Deliverables:
+  - List of files created/modified.
+  - Short summary of endpoints covered.
+- Note: coverage/summary.json is generated automatically after the run; no extra work needed.
+
+Constraints / Don’ts
+- Do not call axios/fetch directly in tests; go through ApiService within services.
+- Do not pass parameters from tests to scenario methods.
+- One test = one scenario call (one endpoint).
+- Do not create non-.spec.ts tests.
+- Do not reintroduce SpecialEndpointService; use modular *ScenarioService files.
+
+Acceptance
+- Repo compiles; tests pass via the provided scripts.
+- Tests live in fake-api-tests/*.spec.ts and follow the title convention.
+- Scenario services exist under src/api/fakeApi/*ScenarioService.ts and expose parameterless methods.
+- HTTP calls go through ApiService only.
+- coverage/summary.json is present after the run.
+- Provide endpoints covered + files changed in your final output.
