@@ -148,6 +148,20 @@ npm run openapi:fetch
 
 - Use `openapi.json` to list endpoints and schemas. Implement missing core service methods before writing scenario methods/tests.
 
+### 6.1 Required endpoint coverage (MANDATORY)
+
+- Every endpoint defined in `openapi.json` MUST be covered by at least one test. Coverage is defined as an actual HTTP call recorded during the test run that matches the OpenAPI path (path templating like `{id}` is handled automatically).
+- The standard flow for each endpoint is:
+  1. Ensure the core service method exists under `src/api/fakeApi/*Service.ts` that can call the endpoint (create it if missing).
+ 2. Create a `*ScenarioService.ts` exposing exactly one parameterless public method that performs any setup and calls the endpoint.
+ 3. Create a `.spec.ts` test under `fake-api-tests/` that calls the scenario method and asserts results using the OpenAPI schema (see 5.1).
+- If an endpoint is impossible to exercise in this test environment (external auth-only, requires special partner data, or is deprecated), you MUST:
+  - Leave a single `.spec.ts` test file for that endpoint containing a failing-skipped-style TODO: a short comment explaining why it's unreachable and a clearly labeled `it("<METHOD> <PATH> - TODO: unreachable in current test env", async () => { /* TODO: reason */ });` entry. Do not use `it.skip` or `describe.skip`—we need visible TODOs for manual review.
+  - Document the exemption in your PR description and in the test file header comment.
+- The test bootstrap collects coverage and writes `coverage/summary.json` which contains an `openapi.untested` list. Aim for `untestedCount: 0` before finishing your run.
+
+Note: For the automated experiment runs we may set an environment flag to enforce zero untested endpoints (see section 11 and the `fake-api-tests/bootstrap.ts` behavior). If enforced, the test run will fail when any endpoint is untested.
+
 ## 7) What NOT to do
 - Do not import or use `axios`/`fetch` directly in tests.
 - Do not put setup (entity creation/selection) logic inside the test; keep it in service methods.

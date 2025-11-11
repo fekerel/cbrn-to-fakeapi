@@ -168,6 +168,28 @@ after(function () {
     writeFileSync(outFile, JSON.stringify(summary, null, 2), { encoding: "utf8" });
     // eslint-disable-next-line no-console
     console.log(`[bootstrap] coverage summary written to ${outFile}`);
+    // Optionally enforce that all OpenAPI endpoints are tested. Set FAIL_ON_UNTESTED=true (or '1') in the environment
+    // to make the test run fail when any endpoint from openapi.json is untested.
+
+    const failOnUntested = "false";
+
+    try {
+      const failFlag = (process.env.FAIL_ON_UNTESTED || failOnUntested || "").toLowerCase();
+      if ((failFlag === '1' || failFlag === 'true') && openapiSummary && Array.isArray(openapiSummary.untested) && openapiSummary.untested.length > 0) {
+        const list = openapiSummary.untested.map((u: any) => `${u.method} ${u.path}`).join('\n');
+        // write a short file for CI visibility
+        try {
+          const errFile = path.join(outDir, "untested_endpoints.txt");
+          writeFileSync(errFile, list, { encoding: "utf8" });
+        } catch (e) {
+          // ignore write errors
+        }
+        throw new Error(`[bootstrap] FAIL_ON_UNTESTED is set and ${openapiSummary.untested.length} endpoint(s) are untested:\n${list}`);
+      }
+    } catch (e) {
+      // rethrow so Mocha marks the run as failed
+      throw e;
+    }
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error("[bootstrap] failed to write coverage summary", err);

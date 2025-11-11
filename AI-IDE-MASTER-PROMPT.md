@@ -25,6 +25,10 @@ git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
 - Every `it` title must follow: METHOD PATH - expectation (see GUIDE 4.1).
  - Assertions must be schema-driven per GUIDE 5.1 (assert required fields, types, enums, nested object fields, array item shape, numeric bounds, ordering, and pagination when applicable).
 
+Additional mandate (must follow): Cover every endpoint in `openapi.json`
+- For this experiment you MUST cover every endpoint listed in `openapi.json`. For each endpoint, add a core service method (if missing), a scenario method, and a single `.spec.ts` test. If an endpoint cannot be exercised in this environment, add a short TODO test explaining why (see GUIDE.md for the exemption format).
+- After running tests, ensure `coverage/summary.json` shows `openapi.untestedCount: 0`. If not, add/adjust tests until coverage is complete. The bootstrap supports an enforcement flag `FAIL_ON_UNTESTED=true` to make the run fail when untested endpoints remain — use that in CI runs when comparing AI IDE outputs.
+
 4) Run and deliver
 - Run tests exactly as documented in GUIDE and fix failures.
 - Deliverables:
