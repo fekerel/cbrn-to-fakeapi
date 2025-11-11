@@ -4,6 +4,7 @@ import { productService } from "./ProductsService";
 import { categoryService } from "./CategoryService";
 import { userService } from "./UserService";
 import { orderService } from "./OrderService";
+import { reviewService } from "./ReviewService";
 
 class SpecialEndpointService {
 
@@ -1081,6 +1082,558 @@ class SpecialEndpointService {
             return false;
         return response;
     }
+
+
+
+
+
+
+    // 51. User Search
+    public async searchUsers() {
+        const allUsers = (await userService.getAllUsers()).data;
+        if (allUsers.length === 0) {
+            return false;
+        }
+
+        // Random field selection
+        const randomUser = allUsers[Math.floor(Math.random() * allUsers.length)];
+        const randomChoice = Math.floor(Math.random() * 4); // 0-3
+
+        let body: any = {};
+
+        if (randomChoice === 0) {
+            // Only email (unique - returns object)
+            body = { email: randomUser.email };
+        } else if (randomChoice === 1) {
+            // Only firstName (returns array)
+            body = { firstName: randomUser.firstName };
+        } else if (randomChoice === 2) {
+            // Only lastName (returns array)
+            body = { lastName: randomUser.lastName };
+        } else {
+            // Multiple fields
+            const includeEmail = Math.random() > 0.5;
+            const includeFirstName = Math.random() > 0.5;
+            const includeLastName = Math.random() > 0.5;
+
+            if (includeEmail) body.email = randomUser.email;
+            if (includeFirstName) body.firstName = randomUser.firstName;
+            if (includeLastName) body.lastName = randomUser.lastName;
+
+            // Ensure at least one field
+            if (Object.keys(body).length === 0) {
+                body.firstName = randomUser.firstName;
+            }
+        }
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/users/search`, JSON.parse(JSON.stringify(body)));
+        if (response.status !== 200 || (typeof response.data !== "object" && !Array.isArray(response.data)))
+            return false;
+        return response;
+    }
+
+    // 52. Product Search
+    public async searchProducts() {
+        const allProducts = (await productService.getAllProducts()).data;
+        if (allProducts.length === 0) {
+            return false;
+        }
+
+        const randomProduct = allProducts[Math.floor(Math.random() * allProducts.length)];
+        const randomChoice = Math.floor(Math.random() * 4); // 0-3
+
+        let body: any = {};
+
+        if (randomChoice === 0) {
+            // Only productId (unique - returns object)
+            body = { productId: randomProduct.id };
+        } else if (randomChoice === 1) {
+            // Only name (returns array)
+            body = { name: randomProduct.name };
+        } else if (randomChoice === 2) {
+            // Only categoryId (returns array)
+            body = { categoryId: randomProduct.categoryId };
+        } else {
+            // Multiple fields with random nulls
+            const includeProductId = Math.random() > 0.5 ? randomProduct.id : null;
+            const includeName = Math.random() > 0.5 ? randomProduct.name : null;
+            const includeCategoryId = Math.random() > 0.5 ? randomProduct.categoryId : null;
+
+            if (includeProductId !== null) body.productId = includeProductId;
+            if (includeName !== null) body.name = includeName;
+            if (includeCategoryId !== null) body.categoryId = includeCategoryId;
+
+            // Ensure at least one field
+            if (Object.keys(body).length === 0) {
+                body.name = randomProduct.name;
+            }
+        }
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/products/search`, JSON.parse(JSON.stringify(body)));
+        if (response.status !== 200 || (typeof response.data !== "object" && !Array.isArray(response.data)))
+            return false;
+        return response;
+    }
+
+    // 53. Order Search
+    public async searchOrders() {
+        const allOrders = (await orderService.getAllOrders()).data;
+        if (allOrders.length === 0) {
+            return false;
+        }
+
+        const randomOrder = allOrders[Math.floor(Math.random() * allOrders.length)];
+        const randomChoice = Math.floor(Math.random() * 4); // 0-3
+
+        let body: any = {};
+
+        if (randomChoice === 0) {
+            // Only orderId (unique - returns object)
+            body = { orderId: randomOrder.id };
+        } else if (randomChoice === 1) {
+            // Only userId (returns array)
+            body = { userId: randomOrder.userId };
+        } else if (randomChoice === 2) {
+            // Only status (returns array)
+            body = { status: randomOrder.status };
+        } else {
+            // Multiple fields with random nulls
+            const includeOrderId = Math.random() > 0.5 ? randomOrder.id : null;
+            const includeUserId = Math.random() > 0.5 ? randomOrder.userId : null;
+            const includeStatus = Math.random() > 0.5 ? randomOrder.status : null;
+
+            if (includeOrderId !== null) body.orderId = includeOrderId;
+            if (includeUserId !== null) body.userId = includeUserId;
+            if (includeStatus !== null) body.status = includeStatus;
+
+            // Ensure at least one field
+            if (Object.keys(body).length === 0) {
+                body.userId = randomOrder.userId;
+            }
+        }
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/orders/search`, JSON.parse(JSON.stringify(body)));
+        if (response.status !== 200 || (typeof response.data !== "object" && !Array.isArray(response.data)))
+            return false;
+        return response;
+    }
+
+    // 54. Review Search
+    public async searchReviews() {
+        const allReviews = (await reviewService.getAllReviews()).data;
+        if (allReviews.length === 0) {
+            return false;
+        }
+
+        const randomReview = allReviews[Math.floor(Math.random() * allReviews.length)];
+        const randomChoice = Math.floor(Math.random() * 5); // 0-4
+
+        let body: any = {};
+
+        if (randomChoice === 0) {
+            // Only reviewId (unique - returns object)
+            body = { reviewId: randomReview.id };
+        } else if (randomChoice === 1) {
+            // Only productId (returns array)
+            body = { productId: randomReview.productId };
+        } else if (randomChoice === 2) {
+            // Only userId (returns array)
+            body = { userId: randomReview.userId };
+        } else if (randomChoice === 3) {
+            // Only rating (returns array)
+            body = { rating: randomReview.rating };
+        } else {
+            // Multiple fields with random nulls
+            const includeReviewId = Math.random() > 0.5 ? randomReview.id : null;
+            const includeProductId = Math.random() > 0.5 ? randomReview.productId : null;
+            const includeUserId = Math.random() > 0.5 ? randomReview.userId : null;
+            const includeRating = Math.random() > 0.5 ? randomReview.rating : null;
+
+            if (includeReviewId !== null) body.reviewId = includeReviewId;
+            if (includeProductId !== null) body.productId = includeProductId;
+            if (includeUserId !== null) body.userId = includeUserId;
+            if (includeRating !== null) body.rating = includeRating;
+
+            // Ensure at least one field
+            if (Object.keys(body).length === 0) {
+                body.productId = randomReview.productId;
+            }
+        }
+
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/reviews/search`, JSON.parse(JSON.stringify(body)));
+        if (response.status !== 200 || (typeof response.data !== "object" && !Array.isArray(response.data)))
+            return false;
+        return response;
+    }
+
+    // 55. Category Search
+    public async searchCategories() {
+        const allCategories = (await categoryService.getAllCategories()).data;
+        if (allCategories.length === 0) {
+            return false;
+        }
+
+        const randomCategory = allCategories[Math.floor(Math.random() * allCategories.length)];
+        const randomChoice = Math.floor(Math.random() * 4); // 0-3
+
+        let body: any = {};
+
+        if (randomChoice === 0) {
+            // Only categoryId (unique - returns object)
+            body = { categoryId: randomCategory.id };
+        } else if (randomChoice === 1) {
+            // Only name (returns array)
+            body = { name: randomCategory.name };
+        } else if (randomChoice === 2) {
+            // Only status (returns array)
+            body = { status: randomCategory.status };
+        } else {
+            // Multiple fields with random nulls
+            const includeCategoryId = Math.random() > 0.5 ? randomCategory.id : null;
+            const includeName = Math.random() > 0.5 ? randomCategory.name : null;
+            const includeStatus = Math.random() > 0.5 ? randomCategory.status : null;
+
+            if (includeCategoryId !== null) body.categoryId = includeCategoryId;
+            if (includeName !== null) body.name = includeName;
+            if (includeStatus !== null) body.status = includeStatus;
+
+            // Ensure at least one field
+            if (Object.keys(body).length === 0) {
+                body.name = randomCategory.name;
+            }
+        }
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/categories/search`, JSON.parse(JSON.stringify(body)));
+        if (response.status !== 200 || (typeof response.data !== "object" && !Array.isArray(response.data)))
+            return false;
+        return response;
+    }
+
+
+
+
+
+
+
+
+    // 56. Order Creation with Validation
+    public async createOrderWithValidation() {
+        const user = await userService.getRandomUser();
+        const allProducts = (await productService.getAllProducts()).data;
+
+        if (allProducts.length === 0) {
+            return false;
+        }
+
+        // Random number of items (1-3)
+        const itemCount = Math.floor(Math.random() * 3) + 1;
+        const items = [];
+        const selectedProductIds = new Set();
+
+        for (let i = 0; i < itemCount; i++) {
+            let product;
+            let attempts = 0;
+            do {
+                product = allProducts[Math.floor(Math.random() * allProducts.length)];
+                attempts++;
+            } while (selectedProductIds.has(product.id) && attempts < 10);
+
+            selectedProductIds.add(product.id);
+            const quantity = Math.floor(Math.random() * 3) + 1;
+            items.push({
+                productId: product.id,
+                quantity: quantity
+            });
+        }
+
+        // Random optional fields
+        const body: any = {
+            userId: user.id,
+            items: items
+        };
+
+        if (Math.random() > 0.5) {
+            body.shippingAddress = `Address ${Math.floor(Math.random() * 1000)}`;
+        }
+
+        if (Math.random() > 0.5) {
+            const paymentMethods = ['credit_card', 'paypal', 'bank_transfer'];
+            body.paymentMethod = paymentMethods[Math.floor(Math.random() * paymentMethods.length)];
+        }
+
+        const bodyString = JSON.stringify(body);
+        const parsedBody = JSON.parse(bodyString);
+
+
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/orders/create`, parsedBody);
+        if (response.status !== 201 || typeof response.data !== "object")
+            return false;
+        return response;
+    }
+
+    // 57. Bulk Product Inventory Update
+    public async bulkUpdateProducts() {
+        const allProducts = (await productService.getAllProducts()).data;
+
+        if (allProducts.length === 0) {
+            return false;
+        }
+
+        // Random number of products to update (1-3)
+        const updateCount = Math.floor(Math.random() * 3) + 1;
+        const updates = [];
+        const selectedProductIds = new Set();
+
+        for (let i = 0; i < updateCount; i++) {
+            let product;
+            let attempts = 0;
+            do {
+                product = allProducts[Math.floor(Math.random() * allProducts.length)];
+                attempts++;
+            } while (selectedProductIds.has(product.id) && attempts < 10);
+
+            selectedProductIds.add(product.id);
+
+            const update: any = {
+                productId: product.id
+            };
+
+            // Random field selection
+            if (Math.random() > 0.5) {
+                update.stock = Math.floor(Math.random() * 200) + 10;
+            }
+
+            if (Math.random() > 0.5) {
+                update.price = Number((Math.random() * 100 + 10).toFixed(2));
+            }
+
+            if (Math.random() > 0.5) {
+                const statuses = ['active', 'inactive', 'out_of_stock'];
+                update.status = statuses[Math.floor(Math.random() * statuses.length)];
+            }
+
+            if (Math.random() > 0.5) {
+                update.discount = Math.floor(Math.random() * 30) + 5;
+            }
+
+            updates.push(update);
+        }
+
+        const body: any = {
+            updates: updates
+        };
+
+        if (Math.random() > 0.5) {
+            const operations = ['update', 'add', 'subtract'];
+            body.operation = operations[Math.floor(Math.random() * operations.length)];
+        }
+
+        const bodyString = JSON.stringify(body);
+        const parsedBody = JSON.parse(bodyString);
+
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/products/bulk-update`, parsedBody);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        return response;
+    }
+
+    // 58. User Purchase Analysis
+    public async getUserPurchaseAnalysis() {
+        const user = await userService.getRandomUser();
+        const allCategories = (await categoryService.getAllCategories()).data;
+        const allProducts = (await productService.getAllProducts()).data;
+
+        const body: any = {
+            userId: user.id
+        };
+
+        // Random filter selection
+        if (Math.random() > 0.5) {
+            const daysAgo = Math.floor(Math.random() * 90) + 30;
+            body.startDate = Date.now() - (daysAgo * 24 * 60 * 60 * 1000);
+        }
+
+        if (Math.random() > 0.5) {
+            body.endDate = Date.now();
+        }
+
+        if (Math.random() > 0.5) {
+            body.minAmount = Number((Math.random() * 50 + 10).toFixed(2));
+        }
+
+        if (Math.random() > 0.5) {
+            body.maxAmount = Number((Math.random() * 500 + 100).toFixed(2));
+        }
+
+        if (Math.random() > 0.5 && allCategories.length > 0) {
+            const categoryCount = Math.floor(Math.random() * Math.min(3, allCategories.length)) + 1;
+            body.categoryIds = [];
+            for (let i = 0; i < categoryCount; i++) {
+                const category = allCategories[Math.floor(Math.random() * allCategories.length)];
+                if (!body.categoryIds.includes(category.id)) {
+                    body.categoryIds.push(category.id);
+                }
+            }
+        }
+
+        if (Math.random() > 0.5 && allProducts.length > 0) {
+            const productCount = Math.floor(Math.random() * Math.min(3, allProducts.length)) + 1;
+            body.productIds = [];
+            for (let i = 0; i < productCount; i++) {
+                const product = allProducts[Math.floor(Math.random() * allProducts.length)];
+                if (!body.productIds.includes(product.id)) {
+                    body.productIds.push(product.id);
+                }
+            }
+        }
+
+        if (Math.random() > 0.5) {
+            const statuses = ['pending', 'completed', 'shipped', 'cancelled'];
+            body.status = statuses[Math.floor(Math.random() * statuses.length)];
+        }
+
+        const bodyString = JSON.stringify(body);
+        const parsedBody = JSON.parse(bodyString);
+
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/users/purchase-analysis`, parsedBody);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        return response;
+    }
+
+    // 59. Product Bundle Creation
+    public async createProductBundle() {
+        const allProducts = (await productService.getAllProducts()).data;
+
+        if (allProducts.length < 2) {
+            return false;
+        }
+
+        // Random number of products in bundle (2-4)
+        const productCount = Math.floor(Math.random() * 3) + 2;
+        const products = [];
+        const selectedProductIds = new Set();
+
+        for (let i = 0; i < productCount; i++) {
+            let product;
+            let attempts = 0;
+            do {
+                product = allProducts[Math.floor(Math.random() * allProducts.length)];
+                attempts++;
+            } while (selectedProductIds.has(product.id) && attempts < 10);
+
+            selectedProductIds.add(product.id);
+            const quantity = Math.floor(Math.random() * 2) + 1;
+            products.push({
+                productId: product.id,
+                quantity: quantity
+            });
+        }
+
+        const body: any = {
+            name: `Bundle ${Math.floor(Math.random() * 1000)}`,
+            products: products
+        };
+
+        if (Math.random() > 0.5) {
+            body.description = `Custom bundle description ${Math.floor(Math.random() * 100)}`;
+        }
+
+        // Either discount or bundlePrice, not both
+        if (Math.random() > 0.5) {
+            body.discount = Math.floor(Math.random() * 30) + 10;
+        } else {
+            body.bundlePrice = Number((Math.random() * 200 + 50).toFixed(2));
+        }
+
+        if (Math.random() > 0.5) {
+            const statuses = ['active', 'inactive'];
+            body.status = statuses[Math.floor(Math.random() * statuses.length)];
+        }
+
+        const bodyString = JSON.stringify(body);
+        const parsedBody = JSON.parse(bodyString);
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/products/create-bundle`, parsedBody);
+        if (response.status !== 201 || typeof response.data !== "object")
+            return false;
+        return response;
+    }
+
+    // 60. Order Fulfillment Processing
+    public async fulfillOrder() {
+        const allOrders = (await orderService.getAllOrders()).data;
+        const allProducts = (await productService.getAllProducts()).data;
+
+        if (allOrders.length === 0) {
+            return false;
+        }
+
+        // Helper function to check if all products in order exist
+        const hasValidProducts = (order: any) => {
+            if (!order.items || !Array.isArray(order.items) || order.items.length === 0) {
+                return false;
+            }
+            const productIdSet = new Set(allProducts.map(p => Number(p.id)));
+            return order.items.every((item: any) => {
+                const productId = Number(item.productId);
+                return productIdSet.has(productId);
+            });
+        };
+
+        // Find an order that's not completed or shipped and has valid products
+        let order = allOrders.find(o =>
+            o.status !== 'completed' &&
+            o.status !== 'shipped' &&
+            hasValidProducts(o)
+        );
+
+        if (!order) {
+            // If no pending order with valid products, try to find any order with valid products
+            order = allOrders.find(o => hasValidProducts(o));
+        }
+
+        if (!order) {
+            // If still no valid order, return false
+            return false;
+        }
+
+        const body: any = {
+            orderId: order.id
+        };
+
+        // Random field selection
+        if (Math.random() > 0.5) {
+            const paymentStatuses = ['pending', 'paid', 'refunded'];
+            body.paymentStatus = paymentStatuses[Math.floor(Math.random() * paymentStatuses.length)];
+        }
+
+        if (Math.random() > 0.5) {
+            const shippingMethods = ['standard', 'express', 'overnight'];
+            body.shippingMethod = shippingMethods[Math.floor(Math.random() * shippingMethods.length)];
+        }
+
+        if (Math.random() > 0.5) {
+            body.trackingNumber = `TRACK${Math.floor(Math.random() * 1000000)}`;
+        }
+
+        if (Math.random() > 0.5) {
+            body.autoUpdateStock = Math.random() > 0.5;
+        }
+
+        const bodyString = JSON.stringify(body);
+        const parsedBody = JSON.parse(bodyString);
+
+        const response: AxiosResponse = await ApiService.getInstance().instance.post(`/orders/fulfill`, parsedBody);
+        if (response.status !== 200 || typeof response.data !== "object")
+            return false;
+        return response;
+    }
+
 }
 
 export const specialEndpointService = new SpecialEndpointService();

@@ -1810,6 +1810,250 @@ describe.only("Special Endpoint Tests", function () {
         expect(response.data.demandAnalysis.daysUntilStockout).to.be.at.least(0);
     });
 
+
+
+
+    it("Search Users - POST", async () => {
+        const response = await specialEndpointService.searchUsers();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.satisfy((data: any) => {
+            return typeof data === "object" || Array.isArray(data);
+        });
+
+        if (Array.isArray(response.data)) {
+            expect(response.data.length).to.be.at.least(1);
+            expect(response.data[0]).to.have.property('id').that.is.a('number');
+            expect(response.data[0]).to.have.property('email').that.is.a('string');
+        } else {
+            expect(response.data).to.have.property('id').that.is.a('number');
+            expect(response.data).to.have.property('email').that.is.a('string');
+        }
+    });
+
+    it("Search Products - POST", async () => {
+        const response = await specialEndpointService.searchProducts();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.satisfy((data: any) => {
+            return typeof data === "object" || Array.isArray(data);
+        });
+
+        if (Array.isArray(response.data)) {
+            expect(response.data.length).to.be.at.least(1);
+            expect(response.data[0]).to.have.property('id').that.is.a('number');
+            expect(response.data[0]).to.have.property('name').that.is.a('string');
+        } else {
+            expect(response.data).to.have.property('id').that.is.a('number');
+            expect(response.data).to.have.property('name').that.is.a('string');
+        }
+    });
+
+    it("Search Orders - POST", async () => {
+        const response = await specialEndpointService.searchOrders();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.satisfy((data: any) => {
+            return typeof data === "object" || Array.isArray(data);
+        });
+
+        if (Array.isArray(response.data)) {
+            expect(response.data.length).to.be.at.least(1);
+            expect(response.data[0]).to.have.property('id').that.is.a('number');
+            expect(response.data[0]).to.have.property('userId').that.is.a('number');
+        } else {
+            expect(response.data).to.have.property('id').that.is.a('number');
+            expect(response.data).to.have.property('userId').that.is.a('number');
+        }
+    });
+
+    it("Search Reviews - POST", async () => {
+        const response = await specialEndpointService.searchReviews();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.satisfy((data: any) => {
+            return typeof data === "object" || Array.isArray(data);
+        });
+
+        if (Array.isArray(response.data)) {
+            expect(response.data.length).to.be.at.least(1);
+            expect(response.data[0]).to.have.property('id').that.is.a('number');
+            expect(response.data[0]).to.have.property('productId').that.is.a('number');
+        } else {
+            expect(response.data).to.have.property('id').that.is.a('number');
+            expect(response.data).to.have.property('productId').that.is.a('number');
+        }
+    });
+
+    it("Search Categories - POST", async () => {
+        const response = await specialEndpointService.searchCategories();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.satisfy((data: any) => {
+            return typeof data === "object" || Array.isArray(data);
+        });
+
+        if (Array.isArray(response.data)) {
+            expect(response.data.length).to.be.at.least(1);
+            expect(response.data[0]).to.have.property('id').that.is.a('number');
+            expect(response.data[0]).to.have.property('name').that.is.a('string');
+        } else {
+            expect(response.data).to.have.property('id').that.is.a('number');
+            expect(response.data).to.have.property('name').that.is.a('string');
+        }
+    });
+
+
+
+
+
+    it("Create Order with Validation - POST", async () => {
+        const response = await specialEndpointService.createOrderWithValidation();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+        expect(response.status).to.be.equal(201);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('order').that.is.an('object');
+        expect(response.data).to.have.property('summary').that.is.an('object');
+
+        expect(response.data.order).to.have.property('id').that.is.a('number');
+        expect(response.data.order).to.have.property('userId').that.is.a('number');
+        expect(response.data.order).to.have.property('items').that.is.an('array');
+        expect(response.data.order.items.length).to.be.at.least(1);
+        expect(response.data.order).to.have.property('totalAmount').that.is.a('number');
+        expect(response.data.order.totalAmount).to.be.at.least(0);
+        expect(response.data.order).to.have.property('status').that.is.a('string');
+
+        expect(response.data.summary).to.have.property('totalItems').that.is.a('number');
+        expect(response.data.summary.totalItems).to.be.at.least(1);
+        expect(response.data.summary).to.have.property('totalAmount').that.is.a('number');
+    });
+
+    it("Bulk Update Products - POST", async () => {
+        const response = await specialEndpointService.bulkUpdateProducts();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('success').that.is.a('boolean');
+        expect(response.data.success).to.be.true;
+        expect(response.data).to.have.property('totalProcessed').that.is.a('number');
+        expect(response.data.totalProcessed).to.be.at.least(1);
+        expect(response.data).to.have.property('successful').that.is.a('number');
+        expect(response.data.successful).to.be.at.least(1);
+        expect(response.data).to.have.property('results').that.is.an('array');
+        expect(response.data.results.length).to.be.at.least(1);
+
+        expect(response.data.results[0]).to.have.property('productId').that.is.a('number');
+        expect(response.data.results[0]).to.have.property('changes').that.is.an('object');
+    });
+
+    it("Get User Purchase Analysis - POST", async () => {
+        const response = await specialEndpointService.getUserPurchaseAnalysis();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('userId').that.is.a('number');
+        expect(response.data).to.have.property('analysis').that.is.an('object');
+        expect(response.data).to.have.property('topCategories').that.is.an('array');
+        expect(response.data).to.have.property('topProducts').that.is.an('array');
+        expect(response.data).to.have.property('filters').that.is.an('object');
+
+        expect(response.data.analysis).to.have.property('totalOrders').that.is.a('number');
+        expect(response.data.analysis.totalOrders).to.be.at.least(0);
+        expect(response.data.analysis).to.have.property('totalSpent').that.is.a('number');
+        expect(response.data.analysis.totalSpent).to.be.at.least(0);
+        expect(response.data.analysis).to.have.property('averageOrderValue').that.is.a('number');
+    });
+
+    it("Create Product Bundle - POST", async () => {
+        const response = await specialEndpointService.createProductBundle();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(201);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('bundle').that.is.an('object');
+        expect(response.data).to.have.property('summary').that.is.an('object');
+
+        expect(response.data.bundle).to.have.property('id').that.is.a('number');
+        expect(response.data.bundle).to.have.property('name').that.is.a('string');
+        expect(response.data.bundle).to.have.property('type').that.is.equal('bundle');
+        expect(response.data.bundle).to.have.property('products').that.is.an('array');
+        expect(response.data.bundle.products.length).to.be.at.least(2);
+        expect(response.data.bundle).to.have.property('originalPrice').that.is.a('number');
+        expect(response.data.bundle).to.have.property('price').that.is.a('number');
+        expect(response.data.bundle.price).to.be.at.most(response.data.bundle.originalPrice);
+
+        expect(response.data.summary).to.have.property('totalProducts').that.is.a('number');
+        expect(response.data.summary.totalProducts).to.be.at.least(2);
+        expect(response.data.summary).to.have.property('savings').that.is.a('number');
+        expect(response.data.summary.savings).to.be.at.least(0);
+    });
+
+    it("Fulfill Order - POST", async () => {
+
+        const response = await specialEndpointService.fulfillOrder();
+
+        if (typeof response !== "object") {
+            return;
+        }
+
+
+        expect(response.status).to.be.equal(200);
+        expect(response.data).to.be.an("object");
+        expect(response.data).to.have.property('success').that.is.a('boolean');
+        expect(response.data.success).to.be.true;
+        expect(response.data).to.have.property('order').that.is.an('object');
+        expect(response.data).to.have.property('fulfillment').that.is.an('object');
+
+        expect(response.data.order).to.have.property('id').that.is.a('number');
+        expect(response.data.order).to.have.property('status').that.is.a('string');
+        expect(response.data.fulfillment).to.have.property('previousStatus').that.is.a('string');
+        expect(response.data.fulfillment).to.have.property('newStatus').that.is.a('string');
+        expect(response.data.fulfillment).to.have.property('stockUpdated').that.is.a('boolean');
+    });
+
 });
 
 
