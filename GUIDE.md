@@ -5,7 +5,7 @@ This repository is an API test project targeting a json-server based REST API ca
 Read this guide carefully and follow all rules strictly. Do not ask clarifying questions—assume defaults below and proceed.
 
 ## 0) Quick checklist (must follow)
-- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD>` (e.g., `ai-copilot-20251111`) and keep all your work on this branch.
+- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>` (e.g., `ai-copilot-20251111-1430`) and keep all your work on this branch.
 - Use the existing ApiService and service files under `src/api/fakeApi`. Never call axios/fetch directly in tests.
 - Each test must call exactly one public "test-specific service function" with no arguments, then perform validations on the returned response.
 - Any setup (creating/selecting IDs, building request params/body) must be encapsulated inside that service function.
@@ -13,6 +13,7 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - Do not use `describe.only` or `it.only`.
 - Before generating endpoints/tests, run `npm run openapi:fetch` to refresh `openapi.json`.
 - Tests are TypeScript and run with Mocha via `npm run test:fake`. The bootstrap file handles per-file DB reset; do NOT reset DB in tests.
+- Use the OpenAPI schema to drive assertions beyond basic type checks (see 5.1 Schema-driven assertions).
 
 ## 1) Environment and scripts
 - Node.js 18+ required.
@@ -115,7 +116,28 @@ Why: This drives a readable mapping from titles to endpoints and enhances the ge
   - Non-negative numeric fields (`totalSales`, `totalRevenue`, counts).
   - Ranges: `min <= max`.
   - Array lengths consistent with counts or limits.
-- Optional: add additional detailed checks if the OpenAPI schema specifies constraints.
+- Mandatory: add schema-driven checks using `openapi.json` (see 5.1).
+
+### 5.1) Schema-driven assertions (mandatory)
+Use `openapi.json` as the source of truth for response shapes and constraints. Your tests must assert key schema elements, not just that `data` is an object. Aim for concise but meaningful coverage:
+
+- Required vs optional fields
+  - Assert all `required` properties exist.
+  - For optional fields present, assert their types.
+- Types and enums
+  - Assert primitive types (string/number/boolean/integer).
+  - For enums, assert value ∈ allowed set.
+- Arrays and items
+  - Assert arrays when the schema says `type: array`.
+  - Assert item object shape (key fields and their types) for a representative element.
+  - If `minItems`/`maxItems` are known or a `limit` param is used, assert the length.
+- Numeric constraints
+  - Non-negative values; if `minimum`/`maximum` present, assert bounds.
+  - If schema implies ordering (e.g., ranking by score), assert sort order on the relevant field.
+- Path/query consistency
+- Nested objects
+  - For nested object properties (e.g., `user.address.city`), assert presence and primitive types for key nested fields per schema.
+  - For nested arrays of objects (e.g., `items: [{ product: {...}, quantity }]`), assert the shape for a representative element: `items` is array, first item has `quantity` as number and `product.id` as number, `product.name` as string, etc.
 
 ## 6) OpenAPI usage
 - Start every generation cycle by refreshing OpenAPI:
@@ -145,11 +167,11 @@ npm run test:fake
 
 ## 9) Experiment procedure (how we will compare AI IDEs)
 1. Preparation (common for all AIs)
-  - Create and checkout a dedicated branch: `ai-<tool-name>-<YYYYMMDD>` (e.g., `ai-copilot-20251111`).
+  - Create and checkout a dedicated branch: `ai-<tool-name>-<YYYYMMDD-HHmm>` (e.g., `ai-copilot-20251111-1430`).
     Optional commands:
 
 ```powershell
-git checkout -b ai-<tool-name>-<YYYYMMDD>
+git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
 ```
    - Ensure Fake API is running at `http://localhost:8000`.
    - Run `npm run openapi:fetch` to update `openapi.json`.
@@ -162,17 +184,22 @@ git checkout -b ai-<tool-name>-<YYYYMMDD>
      c) Add a test in `fake-api-tests/` that calls exactly one scenario method and asserts results.
 
 3. Execution per AI IDE
-   - Work on a dedicated branch named `ai-<tool-name>-<date>`.
+  - Work on a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>`.
    - Generate/modify files according to this guide only.
    - Run `npm run test:fake` and ensure tests execute.
   - Produce artifacts: list of files changed, summary of endpoints covered.
-  - Coverage artifact (auto): After tests, a file `coverage/summary.json` is generated containing unique endpoints hit (METHOD + path), per-file breakdown, and parsed test titles (`testsWithTitles`) following the convention in 4.1. You don’t need to write this manually; it is collected via HTTP interceptors during tests.
+  - Coverage artifact (auto): After tests, a file `coverage/summary.json` is generated containing:
+    - unique endpoints hit (METHOD + path)
+    - per-file breakdown
+    - parsed test titles (`testsWithTitles`) following the convention in 4.1
+    - OpenAPI-aware coverage: total defined endpoints, per-endpoint hit counts, and an explicit `untested` list of endpoints not hit by any test. This is derived automatically from `openapi.json` and recorded HTTP calls.
+    You don’t need to write this manually; it is collected via HTTP interceptors during tests.
 
 4. Collection
    - We will collect branches and compare:
      - Structure conformance (this guide’s rules).
-     - Endpoint coverage (fraction of paths with at least one test).
-     - Assertion quality (breadth of checks vs. schema).
+  - Endpoint coverage (fraction of paths with at least one test).
+  - Assertion quality (depth against OpenAPI schema; shallow type-only checks are insufficient).
      - Build/lint status.
 
 ## 10) Reference: existing patterns in this repo

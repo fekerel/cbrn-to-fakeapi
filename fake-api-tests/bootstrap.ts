@@ -1,5 +1,5 @@
 import { stateService } from "@/api/fakeApi/StateService";
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, readFileSync } from "fs";
 import * as path from "path";
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -94,12 +94,75 @@ after(function () {
       }
     }
 
+    // Build OpenAPI-based endpoint coverage (tested/untested)
+    let openapiSummary: any = undefined;
+    try {
+      const openapiPath = path.resolve(process.cwd(), "openapi.json");
+      const openapiRaw = readFileSync(openapiPath, { encoding: "utf8" });
+      const openapi = JSON.parse(openapiRaw);
+
+      type OAEndpoint = { method: string; path: string; regex: RegExp };
+      const oaEndpoints: OAEndpoint[] = [];
+
+      const toRegex = (p: string) => new RegExp("^" + p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\\\{[^}]+\\\}/g, "[^/]+") + "$");
+
+      const PATH_METHODS = ["get", "post", "put", "patch", "delete"];
+      if (openapi && openapi.paths) {
+        for (const p of Object.keys(openapi.paths)) {
+          const obj = openapi.paths[p] || {};
+          for (const m of PATH_METHODS) {
+            if (obj[m]) {
+              oaEndpoints.push({ method: m.toUpperCase(), path: p, regex: toRegex(p) });
+            }
+          }
+        }
+      }
+
+      // Normalize recorded calls (strip query) and count hits per OA endpoint
+      const hitCounts: Record<string, number> = {};
+      const testedSet: Set<string> = new Set();
+      for (const c of calls) {
+        const method = (c.method || '').toUpperCase();
+        if (!method) continue;
+        const raw = (c.url || '');
+        const pathOnly = raw.split('?')[0];
+        // Find matching OA endpoint by regex
+        const match = oaEndpoints.find(ep => ep.method === method && ep.regex.test(pathOnly));
+        if (match) {
+          const key = `${match.method} ${match.path}`;
+          testedSet.add(key);
+          hitCounts[key] = (hitCounts[key] || 0) + 1;
+        }
+      }
+
+      const allKeys = oaEndpoints.map(ep => `${ep.method} ${ep.path}`);
+      const untested = allKeys.filter(k => !testedSet.has(k)).map(k => {
+        const [method, ...rest] = k.split(' ');
+        return { method, path: rest.join(' ') };
+      });
+
+      openapiSummary = {
+        totalDefined: oaEndpoints.length,
+        testedCount: testedSet.size,
+        untestedCount: untested.length,
+        untested,
+        hitCounts: Object.entries(hitCounts).map(([k, count]) => {
+          const [method, ...rest] = k.split(' ');
+          return { method, path: rest.join(' '), count };
+        })
+      };
+    } catch (e) {
+      // ignore openapi coverage if file is missing or invalid
+      openapiSummary = { error: "openapi.json not available or invalid" };
+    }
+
     const summary = {
       totalCalls: calls.length,
       uniqueEndpoints: Object.keys(unique).length,
       endpoints: Object.entries(unique).map(([k, count]) => ({ endpoint: k, count })),
       byFile,
       testsWithTitles,
+      openapi: openapiSummary,
     };
 
     writeFileSync(outFile, JSON.stringify(summary, null, 2), { encoding: "utf8" });
