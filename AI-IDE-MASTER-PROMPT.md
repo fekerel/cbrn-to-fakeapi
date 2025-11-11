@@ -7,11 +7,22 @@ Use this prompt verbatim inside your AI IDE. GUIDE.md is the single source of tr
 You are working in repository "cbrn-to-fakeapi" on branch "experiment-sanitized". Follow GUIDE.md exactly (especially sections 0, 2, 3.1–3.3, 4.1, 7, 8, 9, 11). Do not ask for clarifications.
 
 1) Branch
-- Create and switch to a new branch named ai-<tool-name>-<YYYYMMDD-HHmm> (example: ai-copilot-20251111-1430).
+- Create and switch to a new branch named `ai-<tool-name>-<YYYYMMDD-HHmm>`. The timestamp MUST be the current date and time at branch creation; do not hard-code or reuse an existing timestamp. Use the PowerShell snippet below to generate the branch name automatically.
 
 ```powershell
-git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
+# PowerShell (recommended) - creates branch ai-<tool-name>-YYYYMMDD-HHmm using current time
+$now = Get-Date -Format "yyyyMMdd-HHmm"
+$tool = "<tool-name>"  # replace with your ai tool id, e.g. 'cursor'
+git checkout -b "ai-$tool-$now"
 ```
+
+One-liner variant (pasteable into PowerShell):
+
+```powershell
+git checkout -b ("ai-" + "<tool-name>" + "-" + (Get-Date -Format "yyyyMMdd-HHmm"))
+```
+
+Make sure you actually run the command in the workspace — do not create the branch by manually typing a fixed timestamp. This ensures every experiment branch is timestamped at creation and is unique.
 
 2) Read and prepare
 - Read GUIDE.md end-to-end and adhere to all constraints (Sanitized Mode, naming, title convention, file layout).
@@ -24,6 +35,8 @@ git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
 - Tests must live under fake-api-tests/, be named *.spec.ts, and call exactly one parameterless scenario method.
 - Every `it` title must follow: METHOD PATH - expectation (see GUIDE 4.1).
  - Assertions must be schema-driven per GUIDE 5.1 (assert required fields, types, enums, nested object fields, array item shape, numeric bounds, ordering, and pagination when applicable).
+
+Note on server-managed timestamps: If schemas show `createdAt` and `modifiedAt` (or similar) in `openapi.json`, do NOT include those fields in request bodies. They are server-handled. Scenario services must not set `createdAt`/`modifiedAt` in request payloads; you may assert their presence/format in responses but avoid exact equality checks with client-side times.
 
 Additional mandate (must follow): Cover every endpoint in `openapi.json`
 - For this experiment you MUST cover every endpoint listed in `openapi.json`. For each endpoint, add a core service method (if missing), a scenario method, and a single `.spec.ts` test. If an endpoint cannot be exercised in this environment, add a short TODO test explaining why (see GUIDE.md for the exemption format).

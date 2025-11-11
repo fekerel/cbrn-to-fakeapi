@@ -5,7 +5,26 @@ This repository is an API test project targeting a json-server based REST API ca
 Read this guide carefully and follow all rules strictly. Do not ask clarifying questions—assume defaults below and proceed.
 
 ## 0) Quick checklist (must follow)
-- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>` (e.g., `ai-copilot-20251111-1430`) and keep all your work on this branch.
+- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>` and keep all your work on this branch. IMPORTANT: the timestamp must be the current date and time when you start the experiment — do not hard-code or reuse a previous timestamp.
+
+  Examples (PowerShell) - run these in the workspace root to produce a branch with the current timestamp:
+
+  ```powershell
+  # create branch with current date+hour+minute (yyyyMMdd-HHmm)
+  $now = Get-Date -Format "yyyyMMdd-HHmm"
+  $tool = "<tool-name>"  # replace with ai tool id, e.g. 'cursor'
+  git checkout -b "ai-$tool-$now"
+  ```
+
+  Example one-liner you can paste (PowerShell):
+
+  ```powershell
+  git checkout -b ("ai-" + "<tool-name>" + "-" + (Get-Date -Format "yyyyMMdd-HHmm"))
+  ```
+
+  Notes:
+  - Replace `<tool-name>` with the short identifier used for the experiment (e.g., `cursor`, `copilot`).
+  - The AI must run the command in the new chat/session; do NOT manually type a fixed timestamp into the branch name. This ensures traceability and prevents accidental reuse of previous branches.
 - Use the existing ApiService and service files under `src/api/fakeApi`. Never call axios/fetch directly in tests.
 - Each test must call exactly one public "test-specific service function" with no arguments, then perform validations on the returned response.
 - Any setup (creating/selecting IDs, building request params/body) must be encapsulated inside that service function.
@@ -117,6 +136,13 @@ Why: This drives a readable mapping from titles to endpoints and enhances the ge
   - Ranges: `min <= max`.
   - Array lengths consistent with counts or limits.
 - Mandatory: add schema-driven checks using `openapi.json` (see 5.1).
+
+### 5.2 Server-handled timestamp fields
+
+- Many request/response schemas include `createdAt` and `modifiedAt` (or similar timestamp fields). These fields are handled by the server and MUST NOT be supplied in request bodies constructed by tests or scenario services.
+- When building request payloads inside scenario services, do not set `createdAt` or `modifiedAt`. The server will populate them. Tests should not assert that these fields are present in the request payload — assert only on the response where appropriate.
+- In assertions, you may check that `createdAt`/`modifiedAt` exist in responses (and that they are valid ISO timestamps) but avoid strict equality comparisons with client-side times. Prefer format/parse checks or relative checks (e.g., `createdAt` is recent) rather than exact matches.
+- If an endpoint's schema documents server-managed timestamp fields as `readOnly` in `openapi.json`, use that as the canonical source: do not include `readOnly` properties in request bodies.
 
 ### 5.1) Schema-driven assertions (mandatory)
 Use `openapi.json` as the source of truth for response shapes and constraints. Your tests must assert key schema elements, not just that `data` is an object. Aim for concise but meaningful coverage:
