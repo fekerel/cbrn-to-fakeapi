@@ -169,6 +169,22 @@ abstract class HttpClient {
             else
                 HttpClient.log += `${config.data}\n`;
 
+        // Record endpoint coverage for test analytics (used by bootstrap.ts)
+        try {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const g: any = globalThis as any;
+            if (g && g.__endpointCoverage) {
+                g.__endpointCoverage.push({
+                    method: (config.method || '').toUpperCase(),
+                    url: config.url,
+                    file: g.__currentTestFile,
+                    title: g.__currentTestTitle,
+                });
+            }
+        } catch (e) {
+            // ignore
+        }
+
         const configuration = config;
         if (param.token) // @ts-ignore
             if (TestConstants.suite === SuiteEnum.DATACREATION)

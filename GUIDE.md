@@ -8,7 +8,7 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - Use the existing ApiService and service files under `src/api/fakeApi`. Never call axios/fetch directly in tests.
 - Each test must call exactly one public "test-specific service function" with no arguments, then perform validations on the returned response.
 - Any setup (creating/selecting IDs, building request params/body) must be encapsulated inside that service function.
-- Place tests under `fake-api-tests/` and name them meaningfully (e.g., `products.analytics.tests.ts`).
+- Place tests under `fake-api-tests/` and name them with the `.spec.ts` suffix (e.g., `users.crud.spec.ts`, `products.analytics.spec.ts`).
 - Do not use `describe.only` or `it.only`.
 - Before generating endpoints/tests, run `npm run openapi:fetch` to refresh `openapi.json`.
 - Tests are TypeScript and run with Mocha via `npm run test:fake`. The bootstrap file handles per-file DB reset; do NOT reset DB in tests.
@@ -19,26 +19,24 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - Important scripts:
   - `npm run openapi:fetch` → writes latest OpenAPI spec to `./openapi.json`.
   - `npm run test:fake` → runs Mocha with TS support and loads `fake-api-tests/bootstrap.ts`.
-  - `npm run seed:fake` → optional; creates sample data via a script if needed.
 
 ## 2) Project structure you must conform to
 - Core HTTP layer:
   - `src/api/HttpClient.ts` provides Axios instances and interceptors.
   - `src/api/ApiService.ts` extends `HttpClient` and exposes `ApiService.getInstance().instance` for HTTP calls.
 - Core resource services (one per domain):
-  - `src/api/fakeApi/UsersService.ts`, `ProductsService.ts`, `OrdersService.ts`, `CategoriesService.ts`, `ReviewService.ts`, etc.
+  - `src/api/fakeApi/UserService.ts`, `ProductService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`, etc.
   - These wrap a single REST endpoint per method and return the Axios response.
 - Scenario/composite services:
-  - `src/api/fakeApi/SpecialEndpointService.ts` already contains many scenario-style methods that handle setup + target calls.
-  - For new composite endpoints, add a new public method here or in a new scenario service file under the same folder.
+  - Create new scenario service files under `src/api/fakeApi/` (suffix with `...ScenarioService.ts`) to encapsulate setup + the single target call.
 - Tests:
-  - `fake-api-tests/**/*.ts` (TypeScript, Mocha + Chai). `fake-api-tests/bootstrap.ts` enforces a per-file DB reset using `StateService.resetDb()`.
+  - `fake-api-tests/**/*.spec.ts` (TypeScript, Mocha + Chai). `fake-api-tests/bootstrap.ts` enforces a per-file DB reset using `StateService.resetDb()`.
 
 ## 3) What to generate (rules and patterns)
 
 ### 3.1 Core service methods (if missing)
 - Implement missing CRUD or specialized endpoint calls in the appropriate core service under `src/api/fakeApi/`.
-- Method signature: prefer descriptive names (e.g., `getUserOnlyByID(id: number)` or `createNewOrder()`), return `AxiosResponse` where possible.
+- Method signature: prefer descriptive names (e.g., `getUserOnlyByID(id: number)` or `createNewOrder()`).
 - Use `ApiService.getInstance().instance.<method>(path, ...)` for all HTTP calls.
 - Keep logic minimal: no test assertions here. Only HTTP and necessary small integrity checks (e.g., ID match) as seen in existing files.
 
@@ -46,15 +44,15 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - For each test scenario, expose a single public method that:
   - Performs required setup (e.g., pick or create IDs, compute params/body) internally.
   - Calls exactly one target endpoint.
-  - Returns the Axios response (or `false` if preconditions fail). Prefer returning the response.
-- Place these as new methods in `SpecialEndpointService.ts` if they are composite/analytics-type endpoints, or in a new scenario service file under the same folder if you need logical separation.
-- Ensure a second method variant exists that accepts explicit IDs when needed (pattern: `getXOnlyByID(id: number)`) for flexibility, mirroring the existing style.
+  - Returns the Axios response.
+- Create a new scenario service file under `src/api/fakeApi/` and suffix it with `...ScenarioService.ts` (e.g., `UsersScenarioService.ts`, `OrdersScenarioService.ts`). Do not add these to `SpecialEndpointService.ts` (it has been removed in this branch).
+- Optionally provide a second variant that accepts explicit IDs when needed (pattern: `getXOnlyByID(id: number)`) for flexibility.
 
 ### 3.3 Test files
 - Location: `fake-api-tests/`.
 - Structure per test case:
-  - Import the scenario service instance (e.g., `specialEndpointService`).
-  - In the `it` block, call one scenario method with no parameters (e.g., `await specialEndpointService.getProductSalesStatsByID()`).
+  - Import the scenario service instance (e.g., `usersScenarioService`).
+  - In the `it` block, call one scenario method with no parameters (e.g., `await usersScenarioService.exampleScenario()`).
   - Validate response: `status` code, `data` type, presence and types of required fields, and basic consistency checks (counts, min/max, non-negativity, ID equality).
 - Do not embed setup or additional API calls inside the test—the scenario service must hide that complexity.
 - Avoid guards that swallow failures; tests should fail if the response is invalid.
@@ -63,28 +61,49 @@ Example skeleton:
 
 ```ts
 import { expect } from "chai";
-import { specialEndpointService } from "@/api/fakeApi/SpecialEndpointService";
+// Implement your own scenario service first, e.g., src/api/fakeApi/UsersScenarioService.ts
+// import { usersScenarioService } from "@/api/fakeApi/UsersScenarioService";
 
-describe("Product Sales Stats", function () {
+describe("Example Scenario", function () {
   this.timeout(20000);
 
-  it("Get Product Sales Stats By ID", async () => {
-    const response = await specialEndpointService.getProductSalesStatsByID();
+  it("Runs a parameterless scenario and validates", async () => {
+    const response = await usersScenarioService.exampleScenario();
     expect(response).to.be.an("object");
     expect(response.status).to.equal(200);
     const data = response.data;
     expect(data).to.be.an("object");
-    expect(data).to.have.property("productId").that.is.a("number");
-    expect(data).to.have.property("totalSales").that.is.a("number");
-    expect(data.totalSales).to.be.at.least(0);
+    // add field/type assertions and invariants here
   });
 });
 ```
 
 ## 4) Naming and placement rules
-- Core services: keep/extend existing files, e.g., `UserService.ts`, `ProductsService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`.
-- Scenario/composite endpoints: prefer adding to `SpecialEndpointService.ts`; if creating a new scenario file, place it under `src/api/fakeApi/` and suffix with `...ScenarioService.ts`.
-- Test file naming: group by resource or analytics theme, e.g., `basicUsersTests.ts`, `analyticsOrdersTests.ts`, `specialEndpoint.ts` (existing).
+- Core services: keep/extend existing files, e.g., `UserService.ts`, `ProductService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`.
+- Scenario/composite endpoints: create a new scenario file under `src/api/fakeApi/` and suffix with `...ScenarioService.ts`.
+- Test file naming: end with `.spec.ts` and group by resource or analytics theme, e.g., `users.crud.spec.ts`, `orders.analytics.spec.ts`.
+
+### 4.1 Test title convention (mandatory)
+Each `it` title must begin with an HTTP verb and the logical path, then a hyphen and the expectation. Pattern:
+
+`<METHOD> <PATH> - <expectation statement>`
+
+Rules:
+- METHOD must be one of: GET, POST, PUT, PATCH, DELETE.
+- PATH should mirror the actual endpoint path with placeholders for IDs: `/users/{id}`, `/orders/{id}/details`, `/products/{id}/reviews-summary`.
+- Use `{id}` (or `{userId}`, `{productId}` if clearer) for dynamic segments—not concrete numbers.
+- Expectation statement is a short English phrase (or Turkish if required) describing the core success criteria: `should return 200`, `creates new user with id`, `returns non-empty array`, `returns stats fields`.
+- No extra punctuation at the end (avoid trailing period).
+
+Examples:
+```ts
+it("GET /users/{id} - should return 200", async () => { /* ... */ });
+it("POST /users - creates new user with id", async () => { /* ... */ });
+it("GET /products/{id}/reviews-summary - returns aggregation fields", async () => { /* ... */ });
+it("DELETE /orders/{id} - removes order (200)", async () => { /* ... */ });
+```
+
+Why: This drives a readable mapping from titles to endpoints and enhances the generated `coverage/summary.json` artifact for human comparison.
 
 ## 5) Assertions (minimum expectations)
 - Always check `response.status` matches the expected success code (typically 200; 201 for creations).
@@ -139,7 +158,8 @@ npm run test:fake
    - Work on a dedicated branch named `ai-<tool-name>-<date>`.
    - Generate/modify files according to this guide only.
    - Run `npm run test:fake` and ensure tests execute.
-   - Produce artifacts: list of files changed, summary of endpoints covered.
+  - Produce artifacts: list of files changed, summary of endpoints covered.
+  - Coverage artifact (auto): After tests, a file `coverage/summary.json` is generated containing unique endpoints hit (METHOD + path), per-file breakdown, and parsed test titles (`testsWithTitles`) following the convention in 4.1. You don’t need to write this manually; it is collected via HTTP interceptors during tests.
 
 4. Collection
    - We will collect branches and compare:
@@ -149,14 +169,27 @@ npm run test:fake
      - Build/lint status.
 
 ## 10) Reference: existing patterns in this repo
-- Scenario methods with internal setup: `src/api/fakeApi/SpecialEndpointService.ts` (e.g., `getProductSalesStatsByID()`).
-- Core services with simple wrappers: `UserService.ts`, `ProductsService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`.
-- Test file example with only one scenario call per test: `fake-api-tests/specialEndpoint.ts`.
+- Core services with simple wrappers: `UserService.ts`, `ProductService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`.
+- Test reset logic: `fake-api-tests/bootstrap.ts` performs per-file DB reset.
 
-## 11) Optional enhancements (not required but allowed)
-- Shared assertion helpers under `fake-api-tests/helpers/` (e.g., `assertNonNegativeFields`, `assertRange`).
-- JSON Schema/Zod checks aligned to `openapi.json`.
-- Negative tests (404/400) in separate `it` cases, still calling a scenario function that arranges an invalid ID internally.
+## 11) Sanitized Mode (this branch)
+This branch is prepared for the AI IDE experiment with a minimal scaffold and strict conventions:
+
+- `SpecialEndpointService.ts` and any prior composite endpoint logic have been removed.
+- Core services under `src/api/fakeApi` currently expose only CRUD stub methods that throw `NOT_IMPLEMENTED`.
+- Your first step is to implement missing CRUD methods (simple wrappers over HTTP) using `ApiService.getInstance().instance`.
+- For higher-level flows or derived analytics calls, create new scenario service files (e.g., `UsersScenarioService.ts`) that expose parameterless public methods encapsulating setup + exactly one HTTP call.
+- Do NOT recreate a monolithic “special endpoint” service; keep scenarios modular per domain.
+- Test files MUST end with `.spec.ts` — only these are executed.
+- Each test must call exactly one parameterless scenario method, then perform assertions.
+
+Additional Sanitized Mode Title Rule:
+- Follow the test title convention in 4.1 strictly; do not invent alternative formats (e.g., avoid `Should get user` without METHOD/PATH).
+
+Recommended naming patterns:
+- Core: `UserService.ts` with methods like `createUser(...)`, `getUserById(id)`, etc.
+- Scenario: `UsersScenarioService.ts` with methods like `createAndFetchUser()` or `fetchRandomActiveUser()` (no params).
+- Optional explicit-ID variants (not used directly by tests): `fetchUserOnlyByID(id: number)`.
 
 ---
 By following this guide exactly, your generated tests will be comparable to others and will integrate cleanly with the current codebase and tooling.

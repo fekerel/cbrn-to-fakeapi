@@ -5,13 +5,13 @@
 import { expect } from "chai";
 
 // Example-only placeholders. AI should implement scenario services first under src/api/fakeApi/.
-// import { someScenarioService } from "@/api/fakeApi/SomeScenarioService";
+// import { usersScenarioService } from "@/api/fakeApi/UsersScenarioService";
 
 describe("Example Pattern", function () {
   this.timeout(20000);
 
   it("Example - replace with real test", async () => {
-    // const res = await someScenarioService.exampleScenario();
+    // const res = await usersScenarioService.exampleScenario();
     // expect(res.status).to.equal(200);
     // const data = res.data;
     // expect(data).to.be.an("object");
