@@ -5,6 +5,7 @@ This repository is an API test project targeting a json-server based REST API ca
 Read this guide carefully and follow all rules strictly. Do not ask clarifying questions—assume defaults below and proceed.
 
 ## 0) Quick checklist (must follow)
+- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD>` (e.g., `ai-copilot-20251111`) and keep all your work on this branch.
 - Use the existing ApiService and service files under `src/api/fakeApi`. Never call axios/fetch directly in tests.
 - Each test must call exactly one public "test-specific service function" with no arguments, then perform validations on the returned response.
 - Any setup (creating/selecting IDs, building request params/body) must be encapsulated inside that service function.
@@ -144,6 +145,12 @@ npm run test:fake
 
 ## 9) Experiment procedure (how we will compare AI IDEs)
 1. Preparation (common for all AIs)
+  - Create and checkout a dedicated branch: `ai-<tool-name>-<YYYYMMDD>` (e.g., `ai-copilot-20251111`).
+    Optional commands:
+
+```powershell
+git checkout -b ai-<tool-name>-<YYYYMMDD>
+```
    - Ensure Fake API is running at `http://localhost:8000`.
    - Run `npm run openapi:fetch` to update `openapi.json`.
    - Provide this `GUIDE.md` and repository to the AI IDE. Do not provide extra instructions beyond this guide.
