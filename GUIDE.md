@@ -5,7 +5,26 @@ This repository is an API test project targeting a json-server based REST API ca
 Read this guide carefully and follow all rules strictly. Do not ask clarifying questions—assume defaults below and proceed.
 
 ## 0) Quick checklist (must follow)
-- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>` (e.g., `ai-copilot-20251111-1430`) and keep all your work on this branch.
+- Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>` and keep all your work on this branch. IMPORTANT: the timestamp must be the current date and time when you start the experiment — do not hard-code or reuse a previous timestamp.
+
+  Examples (PowerShell) - run these in the workspace root to produce a branch with the current timestamp:
+
+  ```powershell
+  # create branch with current date+hour+minute (yyyyMMdd-HHmm)
+  $now = Get-Date -Format "yyyyMMdd-HHmm"
+  $tool = "<tool-name>"  # replace with ai tool id, e.g. 'cursor'
+  git checkout -b "ai-$tool-$now"
+  ```
+
+  Example one-liner you can paste (PowerShell):
+
+  ```powershell
+  git checkout -b ("ai-" + "<tool-name>" + "-" + (Get-Date -Format "yyyyMMdd-HHmm"))
+  ```
+
+  Notes:
+  - Replace `<tool-name>` with the short identifier used for the experiment (e.g., `cursor`, `copilot`).
+  - The AI must run the command in the new chat/session; do NOT manually type a fixed timestamp into the branch name. This ensures traceability and prevents accidental reuse of previous branches.
 - Use the existing ApiService and service files under `src/api/fakeApi`. Never call axios/fetch directly in tests.
 - Each test must call exactly one public "test-specific service function" with no arguments, then perform validations on the returned response.
 - Any setup (creating/selecting IDs, building request params/body) must be encapsulated inside that service function.
