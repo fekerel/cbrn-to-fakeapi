@@ -34,6 +34,12 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - Tests are TypeScript and run with Mocha via `npm run test:fake`. The bootstrap file handles per-file DB reset; do NOT reset DB in tests.
 - Use the OpenAPI schema to drive assertions beyond basic type checks (see 5.1 Schema-driven assertions).
 
+TL;DR: Critical rules (don’t miss)
+- Use existing CRUD services/tests shipped in this branch; don’t duplicate or rewrite them. Extend only where missing.
+- For EVERY non-nullable (no `nullable: true`) response field, assert presence AND type — top-level, nested, and representative array item fields. No skipping.
+- Use the exact success status code from OpenAPI (no generic "200 or 201").
+- Cover every endpoint from `openapi.json` (see 6.1). If unreachable, add a TODO test as specified.
+
 ## 1) Environment and scripts
 - Node.js 18+ required.
 - Fake API should be running at `http://localhost:8000` (outside of this repo).
@@ -56,7 +62,8 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 ## 3) What to generate (rules and patterns)
 
 ### 3.1 Core service methods (if missing)
-- Implement missing CRUD or specialized endpoint calls in the appropriate service under `src/api/fakeApi/`.
+- Basic CRUD service methods are pre-implemented in this branch. Review and use them; do not re-implement or duplicate.
+- Implement only the missing or non-CRUD/specialized endpoint calls in the appropriate service under `src/api/fakeApi/`.
 - Method signature: prefer descriptive names (e.g., `getUserOnlyByID(id: number)` or `createNewOrder()`).
 - Use `ApiService.getInstance().instance.<method>(path, ...)` for all HTTP calls.
 - Keep logic minimal: no test assertions here. Only HTTP and necessary small integrity checks (e.g., ID match) as seen in existing files. Expect statements should be included in the corresponding "it" blocks.
@@ -81,6 +88,9 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
   - Validate response: `status` code, `data` type, presence and types of required fields, and basic consistency checks (counts, min/max, non-negativity, ID equality).
 - Do not embed setup or additional API calls inside the test—the scenario service must hide that complexity.
 - Avoid guards that swallow failures; tests should fail if the response is invalid.
+
+Pre-existing CRUD tests
+- Base CRUD tests may already exist in `fake-api-tests/*.crud.spec.ts`. Do not duplicate them. Add or adjust tests only to achieve full endpoint coverage and the strict assertion depth required in section 5.1.
 
 Example skeleton:
 
@@ -290,12 +300,16 @@ git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
 This branch is prepared for the AI IDE experiment with a minimal scaffold and strict conventions:
 
 - `SpecialEndpointService.ts` and any prior composite endpoint logic have been removed.
-- Core services under `src/api/fakeApi` currently expose only CRUD stub methods that throw `NOT_IMPLEMENTED`.
-- Your first step is to implement missing CRUD methods (simple wrappers over HTTP) using `ApiService.getInstance().instance`.
+- Core services under `src/api/fakeApi` already expose working CRUD methods for the basic resources; use them.
+- Only implement missing methods for non-CRUD or specialized endpoints if they are absent.
 - For higher-level flows or derived analytics calls, create new scenario service files (e.g., `UsersScenarioService.ts`) that expose parameterless public methods encapsulating setup + exactly one HTTP call.
 - Do NOT recreate a monolithic “special endpoint” service; keep scenarios modular per domain.
 - Test files MUST end with `.spec.ts` — only these are executed.
 - Each test must call exactly one parameterless scenario method, then perform assertions.
+
+Hard acceptance for assertions
+- Tests are INVALID if they do not assert presence AND type for every non-nullable response field (including nested and representative array items) of the tested endpoint.
+- Tests must assert the exact success status code as documented in OpenAPI for that endpoint.
 
 Additional Sanitized Mode Title Rule:
 - Follow the test title convention in 4.1 strictly; do not invent alternative formats (e.g., avoid `Should get user` without METHOD/PATH).
