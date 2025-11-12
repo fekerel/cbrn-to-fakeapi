@@ -159,10 +159,11 @@ Important: You MUST validate nested fields
 ### 5.1) Schema-driven assertions (mandatory)
 Use `openapi.json` as the source of truth for response shapes and constraints. Your tests must assert key schema elements, not just that `data` is an object. Aim for concise but meaningful coverage:
 
-- Required vs optional/non-nullable fields
-  - Assert all fields that the schema documents as required or non-nullable are present in the response with correct types.
-  - For nullable or optional fields, if present, assert their types; avoid assuming presence when `nullable: true` (or similar) is indicated.
-  - If the schema/example in OpenAPI depicts fields without `nullable: true`, treat them as expected in responses and validate them.
+STRICT: Non-nullable field assertions (MANDATORY)
+  - For EVERY field defined in the response schema that does NOT have `nullable: true`, include an explicit `expect(...)` asserting its presence AND type. Do not skip any non-nullable field.
+  - This rule applies to top-level fields, nested object fields, and representative array item fields.
+  - Fields marked `nullable: true` (or genuinely optional) should have type asserted only when present; presence is not required.
+  - If the OpenAPI schema/example shows a field without `nullable: true`, treat it as expected in the response and assert it.
 - Types and enums
   - Assert primitive types (string/number/boolean/integer).
   - For enums, assert value ∈ allowed set.
