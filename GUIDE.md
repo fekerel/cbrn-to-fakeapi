@@ -2,7 +2,7 @@
 
 This repository is an API test project targeting a json-server based REST API called "fakeapi" running at http://localhost:8000. Your task is to generate tests in a consistent structure and placement so we can compare AI IDEs fairly.
 
-Read this guide carefully and follow all rules strictly. Do not ask clarifying questions—assume defaults below and proceed.
+Read this guide carefully and follow all rules strictly. Do not ask clarifying questions. Assume defaults below and proceed.
 
 ## 0) Quick checklist (must follow)
 - Before any change, create and switch to a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>` and keep all your work on this branch. IMPORTANT: the timestamp must be the current date and time when you start the experiment — do not hard-code or reuse a previous timestamp.
@@ -28,7 +28,7 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - Use the existing ApiService and service files under `src/api/fakeApi`. Never call axios/fetch directly in tests.
 - Each test must call exactly one public "test-specific service function" with no arguments, then perform validations on the returned response.
 - Any setup (creating/selecting IDs, building request params/body) must be encapsulated inside that service function.
-- Place tests under `fake-api-tests/` and name them with the `.spec.ts` suffix (e.g., `users.crud.spec.ts`, `products.analytics.spec.ts`).
+- Place tests under `fake-api-tests/` and name them with the `.spec.ts` suffix (e.g., `users.crud.spec.ts`, `products.analytics.spec.ts`). You must decide which endpoint should be tested at which file.
 - Do not use `describe.only` or `it.only`.
 - Before generating endpoints/tests, run `npm run openapi:fetch` to refresh `openapi.json`.
 - Tests are TypeScript and run with Mocha via `npm run test:fake`. The bootstrap file handles per-file DB reset; do NOT reset DB in tests.
@@ -46,7 +46,7 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
   - `src/api/HttpClient.ts` provides Axios instances and interceptors.
   - `src/api/ApiService.ts` extends `HttpClient` and exposes `ApiService.getInstance().instance` for HTTP calls.
 - Core resource services (one per domain):
-  - `src/api/fakeApi/UserService.ts`, `ProductService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`, etc.
+  - `src/api/fakeApi/UserService.ts`, `ProductService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`.
   - These wrap a single REST endpoint per method and return the Axios response.
 - Scenario/composite services:
   - Create new scenario service files under `src/api/fakeApi/` (suffix with `...ScenarioService.ts`) to encapsulate setup + the single target call.
@@ -56,10 +56,15 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 ## 3) What to generate (rules and patterns)
 
 ### 3.1 Core service methods (if missing)
-- Implement missing CRUD or specialized endpoint calls in the appropriate core service under `src/api/fakeApi/`.
+- Implement missing CRUD or specialized endpoint calls in the appropriate service under `src/api/fakeApi/`.
 - Method signature: prefer descriptive names (e.g., `getUserOnlyByID(id: number)` or `createNewOrder()`).
 - Use `ApiService.getInstance().instance.<method>(path, ...)` for all HTTP calls.
-- Keep logic minimal: no test assertions here. Only HTTP and necessary small integrity checks (e.g., ID match) as seen in existing files.
+- Keep logic minimal: no test assertions here. Only HTTP and necessary small integrity checks (e.g., ID match) as seen in existing files. Expect statements should be included in the corresponding "it" blocks.
+
+### 3.4 Request payload helpers (recommended)
+- When creating resources in scenario/core services, prefer using the body builder helpers in `src/common/fakeApi/Utils.ts` (e.g., `buildRandomUserBody`, `buildRandomProductBody`, `buildRandomOrderBody`, `buildRandomCategoryBody`, `buildRandomReviewBody`).
+- These builders avoid server-managed fields and generate valid, schema-aligned payloads so tests focus on endpoint behavior rather than handcrafting data.
+- You may override any field by passing an `overrides` object when needed.
 
 ### 3.2 Scenario (test-specific) service methods
 - For each test scenario, expose a single public method that:
@@ -67,7 +72,6 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
   - Calls exactly one target endpoint.
   - Returns the Axios response.
 - Create a new scenario service file under `src/api/fakeApi/` and suffix it with `...ScenarioService.ts` (e.g., `UsersScenarioService.ts`, `OrdersScenarioService.ts`). Do not add these to `SpecialEndpointService.ts` (it has been removed in this branch).
-- Optionally provide a second variant that accepts explicit IDs when needed (pattern: `getXOnlyByID(id: number)`) for flexibility.
 
 ### 3.3 Test files
 - Location: `fake-api-tests/`.
@@ -137,6 +141,11 @@ Why: This drives a readable mapping from titles to endpoints and enhances the ge
   - Array lengths consistent with counts or limits.
 - Mandatory: add schema-driven checks using `openapi.json` (see 5.1).
 
+Important: You MUST validate nested fields
+- Do not stop at top-level fields. If the response includes nested objects or arrays of objects, validate representative nested fields according to the schema (e.g., `address.city` as string, `items[0].quantity` as integer, `items[0].productId` as integer).
+- Study the target endpoint’s response schema in `openapi.json` carefully (Swagger UI or the JSON file) and mirror key nested fields in your assertions.
+- For arrays, assert it is an array and validate the shape of at least one representative element.
+
 ### 5.2 Server-handled timestamp fields
 
 - Many request/response schemas include `createdAt` and `modifiedAt` (or similar timestamp fields). These fields are handled by the server and MUST NOT be supplied in request bodies constructed by tests or scenario services.
@@ -165,6 +174,27 @@ Use `openapi.json` as the source of truth for response shapes and constraints. Y
   - For nested object properties (e.g., `user.address.city`), assert presence and primitive types for key nested fields per schema.
   - For nested arrays of objects (e.g., `items: [{ product: {...}, quantity }]`), assert the shape for a representative element: `items` is array, first item has `quantity` as number and `product.id` as number, `product.name` as string, etc.
 
+Example (concise, without extra helpers):
+
+```ts
+import { expect } from "chai";
+
+// Example: GET /orders/{id}
+expect(response.status).to.equal(200);
+const o = response.data;
+expect(o).to.be.an("object");
+expect(o.shippingAddress).to.be.an("object");
+expect(o.shippingAddress.city).to.be.a("string");
+expect(o.payment).to.be.an("object");
+expect(o.payment.method).to.be.a("string");
+expect(o.items).to.be.an("array");
+if (o.items.length > 0) {
+  const it = o.items[0];
+  expect(it.productId).to.be.a("number");
+  expect(it.quantity).to.be.a("number");
+}
+```
+
 ## 6) OpenAPI usage
 - Start every generation cycle by refreshing OpenAPI:
 
@@ -173,6 +203,7 @@ npm run openapi:fetch
 ```
 
 - Use `openapi.json` to list endpoints and schemas. Implement missing core service methods before writing scenario methods/tests.
+ - Before writing assertions, inspect the endpoint's response schema (including nested properties) and plan validations that cover key nested fields and representative array items.
 
 ### 6.1 Required endpoint coverage (MANDATORY)
 

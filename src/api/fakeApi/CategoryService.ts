@@ -1,31 +1,34 @@
 import ApiService from "../ApiService";
+import { buildRandomCategoryBody } from "@common/fakeApi/Utils";
 
 class CategoryService {
-  // CRUD stubs only for experiment.
+  private api = ApiService.getInstance().instance;
 
   public async createCategory(body?: any) {
-    // AI: POST /categories
-    throw new Error("NOT_IMPLEMENTED");
+    // POST /categories
+    const payload = body ?? buildRandomCategoryBody();
+    return this.api.post("/categories", payload);
   }
 
   public async getAllCategories() {
-    // AI: GET /categories
-    throw new Error("NOT_IMPLEMENTED");
+    // GET /categories
+    return this.api.get("/categories");
   }
 
   public async getCategoryById(id: number) {
-    // AI: GET /categories/{id}
-    throw new Error("NOT_IMPLEMENTED");
+    // GET /categories/{id}
+    return this.api.get(`/categories/${id}`);
   }
 
   public async updateCategoryById(id: number, body: any) {
-    // AI: PUT /categories/{id}
-    throw new Error("NOT_IMPLEMENTED");
+    // PUT /categories/{id}
+    const payload = body ?? buildRandomCategoryBody();
+    return this.api.put(`/categories/${id}`, payload);
   }
 
   public async deleteCategoryById(id: number) {
-    // AI: DELETE /categories/{id}
-    throw new Error("NOT_IMPLEMENTED");
+    // DELETE /categories/{id}
+    return this.api.delete(`/categories/${id}`);
   }
 }
 
