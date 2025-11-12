@@ -320,22 +320,22 @@
                 },
                 "example": [
                   {
-                    "id": 1,
-                    "email": "Jesse.Hamill14@example.com",
-                    "password": "noM7QGpIaxWI",
-                    "firstName": "Ashley",
-                    "lastName": "Kovacek",
-                    "role": "superadmin",
+                    "email": "Verdie.Beatty-Hettinger35@example.com",
+                    "password": "mUAQ8f18w_nP",
+                    "firstName": "Hunter",
+                    "lastName": "Anderson",
+                    "role": "support",
                     "address": {
-                      "street": "834 Littel Key",
-                      "city": "Leolaton",
-                      "country": "Luxembourg",
-                      "zipCode": "29660-2487"
+                      "street": "270 Maye Shore",
+                      "city": "Port Danport",
+                      "country": "Isle of Man",
+                      "zipCode": "93712-2805"
                     },
-                    "phone": "+12613395527",
+                    "phone": "+19263784140",
                     "status": "pending",
-                    "createdAt": 1762757812304,
-                    "modifiedAt": 1762757812304
+                    "createdAt": 1762924919764,
+                    "modifiedAt": 1762924919764,
+                    "id": 1
                   }
                 ]
               }
@@ -352,21 +352,19 @@
                 "$ref": "#/components/schemas/users"
               },
               "example": {
-                "email": "Jesse.Hamill14@example.com",
-                "password": "noM7QGpIaxWI",
-                "firstName": "Ashley",
-                "lastName": "Kovacek",
-                "role": "superadmin",
+                "email": "Verdie.Beatty-Hettinger35@example.com",
+                "password": "mUAQ8f18w_nP",
+                "firstName": "Hunter",
+                "lastName": "Anderson",
+                "role": "support",
                 "address": {
-                  "street": "834 Littel Key",
-                  "city": "Leolaton",
-                  "country": "Luxembourg",
-                  "zipCode": "29660-2487"
+                  "street": "270 Maye Shore",
+                  "city": "Port Danport",
+                  "country": "Isle of Man",
+                  "zipCode": "93712-2805"
                 },
-                "phone": "+12613395527",
-                "status": "pending",
-                "createdAt": 1762757812304,
-                "modifiedAt": 1762757812304
+                "phone": "+19263784140",
+                "status": "pending"
               }
             }
           }
@@ -380,22 +378,22 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "id": 1,
-                  "email": "Jesse.Hamill14@example.com",
-                  "password": "noM7QGpIaxWI",
-                  "firstName": "Ashley",
-                  "lastName": "Kovacek",
-                  "role": "superadmin",
+                  "email": "Verdie.Beatty-Hettinger35@example.com",
+                  "password": "mUAQ8f18w_nP",
+                  "firstName": "Hunter",
+                  "lastName": "Anderson",
+                  "role": "support",
                   "address": {
-                    "street": "834 Littel Key",
-                    "city": "Leolaton",
-                    "country": "Luxembourg",
-                    "zipCode": "29660-2487"
+                    "street": "270 Maye Shore",
+                    "city": "Port Danport",
+                    "country": "Isle of Man",
+                    "zipCode": "93712-2805"
                   },
-                  "phone": "+12613395527",
+                  "phone": "+19263784140",
                   "status": "pending",
-                  "createdAt": 1762757812304,
-                  "modifiedAt": 1762757812304
+                  "createdAt": 1762924919764,
+                  "modifiedAt": 1762924919764,
+                  "id": 1
                 }
               }
             }
@@ -425,22 +423,22 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "id": 1,
-                  "email": "Jesse.Hamill14@example.com",
-                  "password": "noM7QGpIaxWI",
-                  "firstName": "Ashley",
-                  "lastName": "Kovacek",
-                  "role": "superadmin",
+                  "email": "Verdie.Beatty-Hettinger35@example.com",
+                  "password": "mUAQ8f18w_nP",
+                  "firstName": "Hunter",
+                  "lastName": "Anderson",
+                  "role": "support",
                   "address": {
-                    "street": "834 Littel Key",
-                    "city": "Leolaton",
-                    "country": "Luxembourg",
-                    "zipCode": "29660-2487"
+                    "street": "270 Maye Shore",
+                    "city": "Port Danport",
+                    "country": "Isle of Man",
+                    "zipCode": "93712-2805"
                   },
-                  "phone": "+12613395527",
+                  "phone": "+19263784140",
                   "status": "pending",
-                  "createdAt": 1762757812304,
-                  "modifiedAt": 1762757812304
+                  "createdAt": 1762924919764,
+                  "modifiedAt": 1762924919764,
+                  "id": 1
                 }
               }
             }
@@ -466,21 +464,19 @@
                 "$ref": "#/components/schemas/users"
               },
               "example": {
-                "email": "Jesse.Hamill14@example.com",
-                "password": "noM7QGpIaxWI",
-                "firstName": "Ashley",
-                "lastName": "Kovacek",
-                "role": "superadmin",
+                "email": "Verdie.Beatty-Hettinger35@example.com",
+                "password": "mUAQ8f18w_nP",
+                "firstName": "Hunter",
+                "lastName": "Anderson",
+                "role": "support",
                 "address": {
-                  "street": "834 Littel Key",
-                  "city": "Leolaton",
-                  "country": "Luxembourg",
-                  "zipCode": "29660-2487"
+                  "street": "270 Maye Shore",
+                  "city": "Port Danport",
+                  "country": "Isle of Man",
+                  "zipCode": "93712-2805"
                 },
-                "phone": "+12613395527",
-                "status": "pending",
-                "createdAt": 1762757812304,
-                "modifiedAt": 1762757812304
+                "phone": "+19263784140",
+                "status": "pending"
               }
             }
           }
@@ -494,22 +490,22 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "id": 1,
-                  "email": "Jesse.Hamill14@example.com",
-                  "password": "noM7QGpIaxWI",
-                  "firstName": "Ashley",
-                  "lastName": "Kovacek",
-                  "role": "superadmin",
+                  "email": "Verdie.Beatty-Hettinger35@example.com",
+                  "password": "mUAQ8f18w_nP",
+                  "firstName": "Hunter",
+                  "lastName": "Anderson",
+                  "role": "support",
                   "address": {
-                    "street": "834 Littel Key",
-                    "city": "Leolaton",
-                    "country": "Luxembourg",
-                    "zipCode": "29660-2487"
+                    "street": "270 Maye Shore",
+                    "city": "Port Danport",
+                    "country": "Isle of Man",
+                    "zipCode": "93712-2805"
                   },
-                  "phone": "+12613395527",
+                  "phone": "+19263784140",
                   "status": "pending",
-                  "createdAt": 1762757812304,
-                  "modifiedAt": 1762757812304
+                  "createdAt": 1762924919764,
+                  "modifiedAt": 1762924919764,
+                  "id": 1
                 }
               }
             }
@@ -733,13 +729,13 @@
                 },
                 "example": [
                   {
-                    "id": 1,
-                    "name": "Computers IIQPH51F",
-                    "description": "Our spicy-inspired Bacon brings a taste of luxury to your favorite lifestyle",
+                    "name": "Outdoors HSJxFnQ7",
+                    "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
                     "parentId": null,
                     "status": "active",
-                    "createdAt": 1762757812306,
-                    "modifiedAt": 1762757812306
+                    "createdAt": 1762924919766,
+                    "modifiedAt": 1762924919766,
+                    "id": 1
                   }
                 ]
               }
@@ -756,12 +752,10 @@
                 "$ref": "#/components/schemas/categories"
               },
               "example": {
-                "name": "Computers IIQPH51F",
-                "description": "Our spicy-inspired Bacon brings a taste of luxury to your favorite lifestyle",
+                "name": "Outdoors HSJxFnQ7",
+                "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
                 "parentId": null,
-                "status": "active",
-                "createdAt": 1762757812306,
-                "modifiedAt": 1762757812306
+                "status": "active"
               }
             }
           }
@@ -775,13 +769,13 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "id": 1,
-                  "name": "Computers IIQPH51F",
-                  "description": "Our spicy-inspired Bacon brings a taste of luxury to your favorite lifestyle",
+                  "name": "Outdoors HSJxFnQ7",
+                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
                   "parentId": null,
                   "status": "active",
-                  "createdAt": 1762757812306,
-                  "modifiedAt": 1762757812306
+                  "createdAt": 1762924919766,
+                  "modifiedAt": 1762924919766,
+                  "id": 1
                 }
               }
             }
@@ -811,13 +805,13 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "id": 1,
-                  "name": "Computers IIQPH51F",
-                  "description": "Our spicy-inspired Bacon brings a taste of luxury to your favorite lifestyle",
+                  "name": "Outdoors HSJxFnQ7",
+                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
                   "parentId": null,
                   "status": "active",
-                  "createdAt": 1762757812306,
-                  "modifiedAt": 1762757812306
+                  "createdAt": 1762924919766,
+                  "modifiedAt": 1762924919766,
+                  "id": 1
                 }
               }
             }
@@ -843,12 +837,10 @@
                 "$ref": "#/components/schemas/categories"
               },
               "example": {
-                "name": "Computers IIQPH51F",
-                "description": "Our spicy-inspired Bacon brings a taste of luxury to your favorite lifestyle",
+                "name": "Outdoors HSJxFnQ7",
+                "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
                 "parentId": null,
-                "status": "active",
-                "createdAt": 1762757812306,
-                "modifiedAt": 1762757812306
+                "status": "active"
               }
             }
           }
@@ -862,13 +854,13 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "id": 1,
-                  "name": "Computers IIQPH51F",
-                  "description": "Our spicy-inspired Bacon brings a taste of luxury to your favorite lifestyle",
+                  "name": "Outdoors HSJxFnQ7",
+                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
                   "parentId": null,
                   "status": "active",
-                  "createdAt": 1762757812306,
-                  "modifiedAt": 1762757812306
+                  "createdAt": 1762924919766,
+                  "modifiedAt": 1762924919766,
+                  "id": 1
                 }
               }
             }
@@ -1140,36 +1132,36 @@
                 },
                 "example": [
                   {
-                    "id": 1,
                     "sellerId": null,
                     "categoryId": null,
-                    "name": "api-test 11/9/2025, 8:05:06 AM",
-                    "description": "The Herbert Towels is the latest in a series of common products from Zemlak Inc",
-                    "price": 7.05,
-                    "stock": 624,
+                    "name": "api-test 11.11.2025 10:35:05",
+                    "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
+                    "price": 98.6,
+                    "stock": 32,
                     "variants": [
                       {
-                        "id": "VAR-KuKYoYtDlhXz",
-                        "color": "yellow",
+                        "id": "VAR-rBfMH8oSchNR",
+                        "color": "gold",
                         "size": "XL",
-                        "price": 38.05,
-                        "stock": 462
+                        "price": 64.65,
+                        "stock": 325
                       },
                       {
-                        "id": "VAR-PI3CHyGiHwAc",
-                        "color": "yellow",
-                        "size": "S",
-                        "price": 27.79,
-                        "stock": 400
+                        "id": "VAR-xqv6FeKRLy0L",
+                        "color": "pink",
+                        "size": "L",
+                        "price": 35.85,
+                        "stock": 729
                       }
                     ],
                     "tags": [
                       "premium",
-                      "recommended"
+                      "exclusive"
                     ],
                     "status": "active",
-                    "createdAt": 1762757812347,
-                    "modifiedAt": 1762757812347
+                    "createdAt": 1762924919784,
+                    "modifiedAt": 1762924919784,
+                    "id": 1
                   }
                 ]
               }
@@ -1188,33 +1180,31 @@
               "example": {
                 "sellerId": null,
                 "categoryId": null,
-                "name": "api-test 11/9/2025, 8:05:06 AM",
-                "description": "The Herbert Towels is the latest in a series of common products from Zemlak Inc",
-                "price": 7.05,
-                "stock": 624,
+                "name": "api-test 11.11.2025 10:35:05",
+                "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
+                "price": 98.6,
+                "stock": 32,
                 "variants": [
                   {
-                    "id": "VAR-KuKYoYtDlhXz",
-                    "color": "yellow",
+                    "id": "VAR-rBfMH8oSchNR",
+                    "color": "gold",
                     "size": "XL",
-                    "price": 38.05,
-                    "stock": 462
+                    "price": 64.65,
+                    "stock": 325
                   },
                   {
-                    "id": "VAR-PI3CHyGiHwAc",
-                    "color": "yellow",
-                    "size": "S",
-                    "price": 27.79,
-                    "stock": 400
+                    "id": "VAR-xqv6FeKRLy0L",
+                    "color": "pink",
+                    "size": "L",
+                    "price": 35.85,
+                    "stock": 729
                   }
                 ],
                 "tags": [
                   "premium",
-                  "recommended"
+                  "exclusive"
                 ],
-                "status": "active",
-                "createdAt": 1762757812347,
-                "modifiedAt": 1762757812347
+                "status": "active"
               }
             }
           }
@@ -1228,36 +1218,36 @@
                   "$ref": "#/components/schemas/products"
                 },
                 "example": {
-                  "id": 1,
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11/9/2025, 8:05:06 AM",
-                  "description": "The Herbert Towels is the latest in a series of common products from Zemlak Inc",
-                  "price": 7.05,
-                  "stock": 624,
+                  "name": "api-test 11.11.2025 10:35:05",
+                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
+                  "price": 98.6,
+                  "stock": 32,
                   "variants": [
                     {
-                      "id": "VAR-KuKYoYtDlhXz",
-                      "color": "yellow",
+                      "id": "VAR-rBfMH8oSchNR",
+                      "color": "gold",
                       "size": "XL",
-                      "price": 38.05,
-                      "stock": 462
+                      "price": 64.65,
+                      "stock": 325
                     },
                     {
-                      "id": "VAR-PI3CHyGiHwAc",
-                      "color": "yellow",
-                      "size": "S",
-                      "price": 27.79,
-                      "stock": 400
+                      "id": "VAR-xqv6FeKRLy0L",
+                      "color": "pink",
+                      "size": "L",
+                      "price": 35.85,
+                      "stock": 729
                     }
                   ],
                   "tags": [
                     "premium",
-                    "recommended"
+                    "exclusive"
                   ],
                   "status": "active",
-                  "createdAt": 1762757812347,
-                  "modifiedAt": 1762757812347
+                  "createdAt": 1762924919784,
+                  "modifiedAt": 1762924919784,
+                  "id": 1
                 }
               }
             }
@@ -1287,36 +1277,36 @@
                   "$ref": "#/components/schemas/products"
                 },
                 "example": {
-                  "id": 1,
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11/9/2025, 8:05:06 AM",
-                  "description": "The Herbert Towels is the latest in a series of common products from Zemlak Inc",
-                  "price": 7.05,
-                  "stock": 624,
+                  "name": "api-test 11.11.2025 10:35:05",
+                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
+                  "price": 98.6,
+                  "stock": 32,
                   "variants": [
                     {
-                      "id": "VAR-KuKYoYtDlhXz",
-                      "color": "yellow",
+                      "id": "VAR-rBfMH8oSchNR",
+                      "color": "gold",
                       "size": "XL",
-                      "price": 38.05,
-                      "stock": 462
+                      "price": 64.65,
+                      "stock": 325
                     },
                     {
-                      "id": "VAR-PI3CHyGiHwAc",
-                      "color": "yellow",
-                      "size": "S",
-                      "price": 27.79,
-                      "stock": 400
+                      "id": "VAR-xqv6FeKRLy0L",
+                      "color": "pink",
+                      "size": "L",
+                      "price": 35.85,
+                      "stock": 729
                     }
                   ],
                   "tags": [
                     "premium",
-                    "recommended"
+                    "exclusive"
                   ],
                   "status": "active",
-                  "createdAt": 1762757812347,
-                  "modifiedAt": 1762757812347
+                  "createdAt": 1762924919784,
+                  "modifiedAt": 1762924919784,
+                  "id": 1
                 }
               }
             }
@@ -1344,33 +1334,31 @@
               "example": {
                 "sellerId": null,
                 "categoryId": null,
-                "name": "api-test 11/9/2025, 8:05:06 AM",
-                "description": "The Herbert Towels is the latest in a series of common products from Zemlak Inc",
-                "price": 7.05,
-                "stock": 624,
+                "name": "api-test 11.11.2025 10:35:05",
+                "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
+                "price": 98.6,
+                "stock": 32,
                 "variants": [
                   {
-                    "id": "VAR-KuKYoYtDlhXz",
-                    "color": "yellow",
+                    "id": "VAR-rBfMH8oSchNR",
+                    "color": "gold",
                     "size": "XL",
-                    "price": 38.05,
-                    "stock": 462
+                    "price": 64.65,
+                    "stock": 325
                   },
                   {
-                    "id": "VAR-PI3CHyGiHwAc",
-                    "color": "yellow",
-                    "size": "S",
-                    "price": 27.79,
-                    "stock": 400
+                    "id": "VAR-xqv6FeKRLy0L",
+                    "color": "pink",
+                    "size": "L",
+                    "price": 35.85,
+                    "stock": 729
                   }
                 ],
                 "tags": [
                   "premium",
-                  "recommended"
+                  "exclusive"
                 ],
-                "status": "active",
-                "createdAt": 1762757812347,
-                "modifiedAt": 1762757812347
+                "status": "active"
               }
             }
           }
@@ -1384,36 +1372,36 @@
                   "$ref": "#/components/schemas/products"
                 },
                 "example": {
-                  "id": 1,
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11/9/2025, 8:05:06 AM",
-                  "description": "The Herbert Towels is the latest in a series of common products from Zemlak Inc",
-                  "price": 7.05,
-                  "stock": 624,
+                  "name": "api-test 11.11.2025 10:35:05",
+                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
+                  "price": 98.6,
+                  "stock": 32,
                   "variants": [
                     {
-                      "id": "VAR-KuKYoYtDlhXz",
-                      "color": "yellow",
+                      "id": "VAR-rBfMH8oSchNR",
+                      "color": "gold",
                       "size": "XL",
-                      "price": 38.05,
-                      "stock": 462
+                      "price": 64.65,
+                      "stock": 325
                     },
                     {
-                      "id": "VAR-PI3CHyGiHwAc",
-                      "color": "yellow",
-                      "size": "S",
-                      "price": 27.79,
-                      "stock": 400
+                      "id": "VAR-xqv6FeKRLy0L",
+                      "color": "pink",
+                      "size": "L",
+                      "price": 35.85,
+                      "stock": 729
                     }
                   ],
                   "tags": [
                     "premium",
-                    "recommended"
+                    "exclusive"
                   ],
                   "status": "active",
-                  "createdAt": 1762757812347,
-                  "modifiedAt": 1762757812347
+                  "createdAt": 1762924919784,
+                  "modifiedAt": 1762924919784,
+                  "id": 1
                 }
               }
             }
@@ -1724,13 +1712,18 @@
                 },
                 "example": [
                   {
-                    "id": 1,
                     "userId": null,
                     "items": [
                       {
                         "productId": null,
                         "variantId": null,
-                        "quantity": 1,
+                        "quantity": 4,
+                        "price": 0
+                      },
+                      {
+                        "productId": null,
+                        "variantId": null,
+                        "quantity": 3,
                         "price": 0
                       },
                       {
@@ -1742,18 +1735,19 @@
                     ],
                     "totalAmount": 0,
                     "shippingAddress": {
-                      "street": "896 Griffin Common",
-                      "city": "South Jillianfurt",
-                      "country": "Monaco",
-                      "zipCode": "17072-6243"
+                      "street": "614 Wilson Mountain",
+                      "city": "Littlefort",
+                      "country": "Falkland Islands (Malvinas)",
+                      "zipCode": "22848-2023"
                     },
                     "payment": {
-                      "method": "credit_card",
-                      "status": "processing"
+                      "method": "bank_transfer",
+                      "status": "delivered"
                     },
-                    "status": "pending",
-                    "createdAt": 1762757812348,
-                    "modifiedAt": 1762757812348
+                    "status": "cancelled",
+                    "createdAt": 1762924919785,
+                    "modifiedAt": 1762924919785,
+                    "id": 1
                   }
                 ]
               }
@@ -1775,7 +1769,13 @@
                   {
                     "productId": null,
                     "variantId": null,
-                    "quantity": 1,
+                    "quantity": 4,
+                    "price": 0
+                  },
+                  {
+                    "productId": null,
+                    "variantId": null,
+                    "quantity": 3,
                     "price": 0
                   },
                   {
@@ -1787,18 +1787,16 @@
                 ],
                 "totalAmount": 0,
                 "shippingAddress": {
-                  "street": "896 Griffin Common",
-                  "city": "South Jillianfurt",
-                  "country": "Monaco",
-                  "zipCode": "17072-6243"
+                  "street": "614 Wilson Mountain",
+                  "city": "Littlefort",
+                  "country": "Falkland Islands (Malvinas)",
+                  "zipCode": "22848-2023"
                 },
                 "payment": {
-                  "method": "credit_card",
-                  "status": "processing"
+                  "method": "bank_transfer",
+                  "status": "delivered"
                 },
-                "status": "pending",
-                "createdAt": 1762757812348,
-                "modifiedAt": 1762757812348
+                "status": "cancelled"
               }
             }
           }
@@ -1812,13 +1810,18 @@
                   "$ref": "#/components/schemas/orders"
                 },
                 "example": {
-                  "id": 1,
                   "userId": null,
                   "items": [
                     {
                       "productId": null,
                       "variantId": null,
-                      "quantity": 1,
+                      "quantity": 4,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
+                      "quantity": 3,
                       "price": 0
                     },
                     {
@@ -1830,18 +1833,19 @@
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "896 Griffin Common",
-                    "city": "South Jillianfurt",
-                    "country": "Monaco",
-                    "zipCode": "17072-6243"
+                    "street": "614 Wilson Mountain",
+                    "city": "Littlefort",
+                    "country": "Falkland Islands (Malvinas)",
+                    "zipCode": "22848-2023"
                   },
                   "payment": {
-                    "method": "credit_card",
-                    "status": "processing"
+                    "method": "bank_transfer",
+                    "status": "delivered"
                   },
-                  "status": "pending",
-                  "createdAt": 1762757812348,
-                  "modifiedAt": 1762757812348
+                  "status": "cancelled",
+                  "createdAt": 1762924919785,
+                  "modifiedAt": 1762924919785,
+                  "id": 1
                 }
               }
             }
@@ -1871,13 +1875,18 @@
                   "$ref": "#/components/schemas/orders"
                 },
                 "example": {
-                  "id": 1,
                   "userId": null,
                   "items": [
                     {
                       "productId": null,
                       "variantId": null,
-                      "quantity": 1,
+                      "quantity": 4,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
+                      "quantity": 3,
                       "price": 0
                     },
                     {
@@ -1889,18 +1898,19 @@
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "896 Griffin Common",
-                    "city": "South Jillianfurt",
-                    "country": "Monaco",
-                    "zipCode": "17072-6243"
+                    "street": "614 Wilson Mountain",
+                    "city": "Littlefort",
+                    "country": "Falkland Islands (Malvinas)",
+                    "zipCode": "22848-2023"
                   },
                   "payment": {
-                    "method": "credit_card",
-                    "status": "processing"
+                    "method": "bank_transfer",
+                    "status": "delivered"
                   },
-                  "status": "pending",
-                  "createdAt": 1762757812348,
-                  "modifiedAt": 1762757812348
+                  "status": "cancelled",
+                  "createdAt": 1762924919785,
+                  "modifiedAt": 1762924919785,
+                  "id": 1
                 }
               }
             }
@@ -1931,7 +1941,13 @@
                   {
                     "productId": null,
                     "variantId": null,
-                    "quantity": 1,
+                    "quantity": 4,
+                    "price": 0
+                  },
+                  {
+                    "productId": null,
+                    "variantId": null,
+                    "quantity": 3,
                     "price": 0
                   },
                   {
@@ -1943,18 +1959,16 @@
                 ],
                 "totalAmount": 0,
                 "shippingAddress": {
-                  "street": "896 Griffin Common",
-                  "city": "South Jillianfurt",
-                  "country": "Monaco",
-                  "zipCode": "17072-6243"
+                  "street": "614 Wilson Mountain",
+                  "city": "Littlefort",
+                  "country": "Falkland Islands (Malvinas)",
+                  "zipCode": "22848-2023"
                 },
                 "payment": {
-                  "method": "credit_card",
-                  "status": "processing"
+                  "method": "bank_transfer",
+                  "status": "delivered"
                 },
-                "status": "pending",
-                "createdAt": 1762757812348,
-                "modifiedAt": 1762757812348
+                "status": "cancelled"
               }
             }
           }
@@ -1968,13 +1982,18 @@
                   "$ref": "#/components/schemas/orders"
                 },
                 "example": {
-                  "id": 1,
                   "userId": null,
                   "items": [
                     {
                       "productId": null,
                       "variantId": null,
-                      "quantity": 1,
+                      "quantity": 4,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
+                      "quantity": 3,
                       "price": 0
                     },
                     {
@@ -1986,18 +2005,19 @@
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "896 Griffin Common",
-                    "city": "South Jillianfurt",
-                    "country": "Monaco",
-                    "zipCode": "17072-6243"
+                    "street": "614 Wilson Mountain",
+                    "city": "Littlefort",
+                    "country": "Falkland Islands (Malvinas)",
+                    "zipCode": "22848-2023"
                   },
                   "payment": {
-                    "method": "credit_card",
-                    "status": "processing"
+                    "method": "bank_transfer",
+                    "status": "delivered"
                   },
-                  "status": "pending",
-                  "createdAt": 1762757812348,
-                  "modifiedAt": 1762757812348
+                  "status": "cancelled",
+                  "createdAt": 1762924919785,
+                  "modifiedAt": 1762924919785,
+                  "id": 1
                 }
               }
             }
@@ -2198,12 +2218,12 @@
                 },
                 "example": [
                   {
-                    "id": 1,
                     "productId": null,
                     "userId": null,
-                    "rating": 5,
-                    "comment": "Demens vitium adaugeo decimus spiculum adulescens vesco ventito vitae stabilis.",
-                    "createdAt": 1762757812349
+                    "rating": 3,
+                    "comment": "Asperiores patruus summa deduco caritas voluntarius.",
+                    "createdAt": 1762924919785,
+                    "id": 1
                   }
                 ]
               }
@@ -2222,9 +2242,8 @@
               "example": {
                 "productId": null,
                 "userId": null,
-                "rating": 5,
-                "comment": "Demens vitium adaugeo decimus spiculum adulescens vesco ventito vitae stabilis.",
-                "createdAt": 1762757812349
+                "rating": 3,
+                "comment": "Asperiores patruus summa deduco caritas voluntarius."
               }
             }
           }
@@ -2238,12 +2257,12 @@
                   "$ref": "#/components/schemas/reviews"
                 },
                 "example": {
-                  "id": 1,
                   "productId": null,
                   "userId": null,
-                  "rating": 5,
-                  "comment": "Demens vitium adaugeo decimus spiculum adulescens vesco ventito vitae stabilis.",
-                  "createdAt": 1762757812349
+                  "rating": 3,
+                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
+                  "createdAt": 1762924919785,
+                  "id": 1
                 }
               }
             }
@@ -2273,12 +2292,12 @@
                   "$ref": "#/components/schemas/reviews"
                 },
                 "example": {
-                  "id": 1,
                   "productId": null,
                   "userId": null,
-                  "rating": 5,
-                  "comment": "Demens vitium adaugeo decimus spiculum adulescens vesco ventito vitae stabilis.",
-                  "createdAt": 1762757812349
+                  "rating": 3,
+                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
+                  "createdAt": 1762924919785,
+                  "id": 1
                 }
               }
             }
@@ -2306,9 +2325,8 @@
               "example": {
                 "productId": null,
                 "userId": null,
-                "rating": 5,
-                "comment": "Demens vitium adaugeo decimus spiculum adulescens vesco ventito vitae stabilis.",
-                "createdAt": 1762757812349
+                "rating": 3,
+                "comment": "Asperiores patruus summa deduco caritas voluntarius."
               }
             }
           }
@@ -2322,12 +2340,12 @@
                   "$ref": "#/components/schemas/reviews"
                 },
                 "example": {
-                  "id": 1,
                   "productId": null,
                   "userId": null,
-                  "rating": 5,
-                  "comment": "Demens vitium adaugeo decimus spiculum adulescens vesco ventito vitae stabilis.",
-                  "createdAt": 1762757812349
+                  "rating": 3,
+                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
+                  "createdAt": 1762924919785,
+                  "id": 1
                 }
               }
             }
@@ -2355,6 +2373,85 @@
           },
           "404": {
             "description": "Not found"
+          }
+        }
+      }
+    },
+    "/products/bulk-update": {
+      "post": {
+        "summary": "Bulk update product inventory, prices, and status",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "updates"
+                ],
+                "properties": {
+                  "updates": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "productId"
+                      ],
+                      "properties": {
+                        "productId": {
+                          "type": "integer",
+                          "example": 1
+                        },
+                        "stock": {
+                          "type": "integer",
+                          "nullable": true,
+                          "example": 100
+                        },
+                        "price": {
+                          "type": "number",
+                          "nullable": true,
+                          "example": 29.99
+                        },
+                        "status": {
+                          "type": "string",
+                          "nullable": true,
+                          "example": "active"
+                        },
+                        "discount": {
+                          "type": "number",
+                          "nullable": true,
+                          "example": 10
+                        }
+                      }
+                    }
+                  },
+                  "operation": {
+                    "type": "string",
+                    "enum": [
+                      "update",
+                      "add",
+                      "subtract"
+                    ],
+                    "example": "update"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Bulk update results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BulkUpdateResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Validation error"
           }
         }
       }
@@ -2584,6 +2681,130 @@
         }
       }
     },
+    "/categories/{id}/growth-rate": {
+      "get": {
+        "summary": "Get category growth rate analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Category growth rate",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryGrowthRate"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "categoryId": 1,
+                      "categoryName": "Category A",
+                      "growthRate": {
+                        "revenueGrowthRate": 25.5,
+                        "salesGrowthRate": 20.75,
+                        "ordersGrowthRate": 15,
+                        "growthTrend": "strong_growth"
+                      },
+                      "summary": {
+                        "totalProducts": 10,
+                        "totalRevenue": 4500.75,
+                        "totalSales": 150,
+                        "totalOrders": 30,
+                        "averageMonthlyRevenue": 1500.25,
+                        "monthsAnalyzed": 3
+                      },
+                      "monthlyBreakdown": [
+                        {
+                          "month": "2025-01",
+                          "revenue": 1200.5,
+                          "sales": 45,
+                          "orders": 10
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "category not found"
+          }
+        }
+      }
+    },
+    "/categories/{id}/market-share": {
+      "get": {
+        "summary": "Get category market share analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Category market share",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryMarketShare"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "categoryId": 1,
+                      "categoryName": "Category A",
+                      "marketShare": {
+                        "revenueShare": 25.5,
+                        "salesShare": 20.75,
+                        "orderShare": 22,
+                        "averageOrderValue": 150.25
+                      },
+                      "performance": {
+                        "totalRevenue": 4500.75,
+                        "totalSales": 150,
+                        "totalOrders": 30,
+                        "totalProducts": 10
+                      },
+                      "ranking": {
+                        "revenueRank": 2,
+                        "totalCategories": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "category not found"
+          }
+        }
+      }
+    },
     "/categories/performance-comparison": {
       "get": {
         "summary": "Compare performance metrics across categories",
@@ -2649,6 +2870,141 @@
         }
       }
     },
+    "/statistics/category-product": {
+      "get": {
+        "summary": "Get statistics for categories and products with variable parameters",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "categoryId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by category ID"
+          },
+          {
+            "in": "query",
+            "name": "status",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "active",
+                "inactive"
+              ]
+            },
+            "description": "Filter by status"
+          },
+          {
+            "in": "query",
+            "name": "includeProducts",
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Include products in response"
+          },
+          {
+            "in": "query",
+            "name": "includeSales",
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Include sales statistics"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Statistics based on parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryProductStatistics"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid parameters"
+          },
+          "404": {
+            "description": "category not found"
+          }
+        }
+      }
+    },
+    "/categories/{id}/revenue-trend": {
+      "get": {
+        "summary": "Get category revenue trend over time",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "daily",
+                "weekly",
+                "monthly"
+              ]
+            },
+            "description": "Grouping period",
+            "example": "monthly"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Category revenue trend",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryRevenueTrend"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "categoryId": 1,
+                      "categoryName": "Category A",
+                      "period": "monthly",
+                      "summary": {
+                        "totalRevenue": 4500.75,
+                        "totalOrders": 50,
+                        "totalItems": 150,
+                        "averageRevenue": 1500.25,
+                        "growthRate": 15.5,
+                        "periodsCount": 3
+                      },
+                      "trend": [
+                        {
+                          "period": "2025-01",
+                          "revenue": 1200.5,
+                          "orderCount": 15,
+                          "itemCount": 45
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "category not found"
+          }
+        }
+      }
+    },
     "/categories/{id}/reviews-statistics": {
       "get": {
         "summary": "Get category reviews statistics",
@@ -2704,53 +3060,195 @@
         }
       }
     },
-    "/multi-payload": {
+    "/categories/search": {
       "post": {
-        "summary": "Submit one of multiple payload types in a single endpoint",
-        "description": "Accepts different JSON shapes distinguished by a top-level \"type\" field.",
+        "summary": "Search categories by categoryId, name, or status",
         "requestBody": {
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MultiPayload"
+                "type": "object",
+                "properties": {
+                  "categoryId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1
+                  },
+                  "name": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "Electronics"
+                  },
+                  "status": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "active"
+                  }
+                }
               },
               "examples": {
-                "userActivity": {
-                  "summary": "User activity variant",
+                "byCategoryId": {
+                  "summary": "Search by categoryId (returns object)",
                   "value": {
-                    "type": "userActivity",
-                    "userId": 42,
-                    "actions": [
-                      {
-                        "action": "view_product",
-                        "at": 1762406642107
-                      },
-                      {
-                        "action": "add_to_cart"
-                      }
-                    ]
+                    "categoryId": 1
                   }
                 },
-                "orderEvent": {
-                  "summary": "Order event variant",
+                "byName": {
+                  "summary": "Search by name (returns array)",
                   "value": {
-                    "type": "orderEvent",
-                    "orderId": 987,
-                    "event": "shipped",
-                    "meta": {
-                      "carrier": "DHL",
-                      "tracking": "ABC123"
+                    "name": "Electronics"
+                  }
+                },
+                "byStatus": {
+                  "summary": "Search by status (returns array)",
+                  "value": {
+                    "status": "active"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Category(ies) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Category"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Category"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required"
+          },
+          "404": {
+            "description": "No categories found"
+          }
+        }
+      }
+    },
+    "/orders/cancellation-analysis": {
+      "get": {
+        "summary": "Get order cancellation analysis",
+        "responses": {
+          "200": {
+            "description": "Order cancellation analysis",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderCancellationAnalysis"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "summary": {
+                        "totalOrders": 100,
+                        "cancelledOrders": 10,
+                        "cancellationRate": 10,
+                        "totalCancelledAmount": 1500.5
+                      },
+                      "cancellationByReason": {
+                        "not_specified": 5,
+                        "out_of_stock": 3,
+                        "customer_request": 2
+                      },
+                      "cancellationByPaymentMethod": {
+                        "credit_card": 6,
+                        "paypal": 3,
+                        "bank_transfer": 1
+                      },
+                      "topCancellingUsers": [
+                        {
+                          "userId": 1,
+                          "userName": "John Doe",
+                          "cancellationCount": 3,
+                          "totalAmount": 450.75
+                        }
+                      ],
+                      "topCancelledCategories": [
+                        {
+                          "categoryId": 1,
+                          "categoryName": "Category A",
+                          "cancellationCount": 5,
+                          "totalAmount": 750.25
+                        }
+                      ],
+                      "timeline": [
+                        {
+                          "month": "2025-01",
+                          "cancellationCount": 5
+                        }
+                      ]
                     }
                   }
-                },
-                "feedback": {
-                  "summary": "Feedback variant",
-                  "value": {
-                    "type": "feedback",
-                    "userId": 42,
-                    "rating": 5,
-                    "comment": "Great service!"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/orders/create": {
+      "post": {
+        "summary": "Create order with product validation, stock check, and price calculation",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "userId",
+                  "items"
+                ],
+                "properties": {
+                  "userId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "productId",
+                        "quantity"
+                      ],
+                      "properties": {
+                        "productId": {
+                          "type": "integer",
+                          "example": 5
+                        },
+                        "quantity": {
+                          "type": "integer",
+                          "example": 2
+                        }
+                      }
+                    }
+                  },
+                  "shippingAddress": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "123 Main St"
+                  },
+                  "paymentMethod": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "credit_card"
                   }
                 }
               }
@@ -2759,53 +3257,155 @@
         },
         "responses": {
           "201": {
-            "description": "Payload accepted and stored",
+            "description": "Order created successfully",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MultiPayloadResponse"
-                },
-                "examples": {
-                  "stored": {
-                    "summary": "Stored record response",
-                    "value": {
-                      "id": 1699999999999,
-                      "receivedAt": 1699999999999,
-                      "payloadType": "feedback",
-                      "data": {
-                        "type": "feedback",
-                        "userId": 42,
-                        "rating": 5,
-                        "comment": "Great service!"
-                      }
-                    }
-                  }
+                  "$ref": "#/components/schemas/OrderCreationResponse"
                 }
               }
             }
           },
           "400": {
-            "description": "Validation errors",
+            "description": "Validation error"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/orders/filter": {
+      "get": {
+        "summary": "Filter orders with variable parameters",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "orderId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Get single order by ID"
+          },
+          {
+            "in": "query",
+            "name": "userId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by user ID"
+          },
+          {
+            "in": "query",
+            "name": "status",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filter by status"
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "description": "Start date timestamp"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "description": "End date timestamp"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Orders based on filter parameters",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errors": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                },
-                "example": {
-                  "errors": [
-                    "feedback.rating must be between 1 and 5"
-                  ]
+                  "$ref": "#/components/schemas/OrderFilterResult"
                 }
               }
             }
+          },
+          "400": {
+            "description": "invalid parameters"
+          },
+          "404": {
+            "description": "order or user not found"
+          }
+        }
+      }
+    },
+    "/orders/fulfill": {
+      "post": {
+        "summary": "Process order fulfillment with stock management and payment validation",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "orderId"
+                ],
+                "properties": {
+                  "orderId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "paymentStatus": {
+                    "type": "string",
+                    "enum": [
+                      "pending",
+                      "paid",
+                      "failed",
+                      "refunded"
+                    ],
+                    "nullable": true,
+                    "example": "paid"
+                  },
+                  "shippingMethod": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "express"
+                  },
+                  "trackingNumber": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "TRACK123456"
+                  },
+                  "autoUpdateStock": {
+                    "type": "boolean",
+                    "nullable": true,
+                    "example": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Order fulfilled successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FulfillmentResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Validation error"
+          },
+          "404": {
+            "description": "Order not found"
           }
         }
       }
@@ -2975,6 +3575,86 @@
         }
       }
     },
+    "/orders/search": {
+      "post": {
+        "summary": "Search orders by orderId, userId, or status",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "orderId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1
+                  },
+                  "userId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  },
+                  "status": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "completed"
+                  }
+                }
+              },
+              "examples": {
+                "byOrderId": {
+                  "summary": "Search by orderId (returns object)",
+                  "value": {
+                    "orderId": 1
+                  }
+                },
+                "byUserId": {
+                  "summary": "Search by userId (returns array)",
+                  "value": {
+                    "userId": 5
+                  }
+                },
+                "byStatus": {
+                  "summary": "Search by status (returns array)",
+                  "value": {
+                    "status": "completed"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Order(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Order"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Order"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required"
+          },
+          "404": {
+            "description": "No orders found"
+          }
+        }
+      }
+    },
     "/orders/recent": {
       "get": {
         "summary": "Get recent orders list",
@@ -3074,6 +3754,306 @@
         }
       }
     },
+    "/products/create-bundle": {
+      "post": {
+        "summary": "Create product bundles with discount calculation and validation",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "products"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Summer Bundle"
+                  },
+                  "description": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "Best summer products"
+                  },
+                  "products": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "productId",
+                        "quantity"
+                      ],
+                      "properties": {
+                        "productId": {
+                          "type": "integer",
+                          "example": 1
+                        },
+                        "quantity": {
+                          "type": "integer",
+                          "example": 2
+                        }
+                      }
+                    }
+                  },
+                  "discount": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 15
+                  },
+                  "bundlePrice": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 99.99
+                  },
+                  "status": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "active"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Bundle created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BundleCreationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/products/{id}/bundle-recommendations": {
+      "get": {
+        "summary": "Get product bundle recommendations",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Number of recommendations",
+            "example": 5
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product bundle recommendations",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductBundleRecommendations"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "productId": 1,
+                      "productName": "Product A",
+                      "categoryId": 1,
+                      "bundleRecommendations": [
+                        {
+                          "productId": 5,
+                          "productName": "Product B",
+                          "categoryId": 1,
+                          "categoryName": "Category A",
+                          "bundleFrequency": 15,
+                          "bundleRevenue": 450.75,
+                          "price": 29.99,
+                          "status": "active",
+                          "stock": 100
+                        }
+                      ],
+                      "summary": {
+                        "totalBundles": 8,
+                        "averageBundleValue": 225.38,
+                        "recommendedCount": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id or limit"
+          },
+          "404": {
+            "description": "product not found"
+          }
+        }
+      }
+    },
+    "/products/search": {
+      "get": {
+        "summary": "Search products with variable parameters",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "productId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Get single product by ID"
+          },
+          {
+            "in": "query",
+            "name": "categoryId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by category"
+          },
+          {
+            "in": "query",
+            "name": "status",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "active",
+                "inactive"
+              ]
+            },
+            "description": "Filter by status"
+          },
+          {
+            "in": "query",
+            "name": "minPrice",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            },
+            "description": "Minimum price"
+          },
+          {
+            "in": "query",
+            "name": "maxPrice",
+            "schema": {
+              "type": "number",
+              "format": "float"
+            },
+            "description": "Maximum price"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Products based on search parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid parameters"
+          },
+          "404": {
+            "description": "product or category not found"
+          }
+        }
+      },
+      "post": {
+        "summary": "Search products by productId, name, or categoryId",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "productId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1
+                  },
+                  "name": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "Product"
+                  },
+                  "categoryId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  }
+                }
+              },
+              "examples": {
+                "byProductId": {
+                  "summary": "Search by productId (returns object)",
+                  "value": {
+                    "productId": 1
+                  }
+                },
+                "byName": {
+                  "summary": "Search by name (returns array)",
+                  "value": {
+                    "name": "Product"
+                  }
+                },
+                "byCategoryId": {
+                  "summary": "Search by categoryId (returns array)",
+                  "value": {
+                    "categoryId": 5
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Product(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Product"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Product"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required"
+          },
+          "404": {
+            "description": "No products found"
+          }
+        }
+      }
+    },
     "/products/{id}/cross-sell": {
       "get": {
         "summary": "Get cross-sell opportunities for a product",
@@ -3141,6 +4121,64 @@
         }
       }
     },
+    "/products/{id}/demand-analysis": {
+      "get": {
+        "summary": "Get product demand analysis based on orders and stock",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product demand analysis",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductDemandAnalysis"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "productId": 1,
+                      "productName": "Product A",
+                      "currentStock": 100,
+                      "demandAnalysis": {
+                        "totalDemand": 50,
+                        "totalRevenue": 1500.75,
+                        "orderCount": 25,
+                        "averageDailyDemand": 1.67,
+                        "averageWeeklyDemand": 11.67,
+                        "demandLevel": "low",
+                        "demandTrend": "increasing",
+                        "daysUntilStockout": 60
+                      },
+                      "stockStatus": "adequate",
+                      "recommendations": [
+                        "restock_soon"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "product not found"
+          }
+        }
+      }
+    },
     "/products/low-stock": {
       "get": {
         "summary": "Get products with low stock levels",
@@ -3200,6 +4238,127 @@
           },
           "400": {
             "description": "invalid threshold or categoryId"
+          }
+        }
+      }
+    },
+    "/products/{id}/popularity-score": {
+      "get": {
+        "summary": "Get product popularity score",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product popularity score",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductPopularityScore"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "productId": 1,
+                      "productName": "Product A",
+                      "popularityScore": 75,
+                      "popularityLevel": "high",
+                      "scoreBreakdown": {
+                        "salesVolume": 30,
+                        "revenue": 25,
+                        "customerBase": 15,
+                        "reviews": 10,
+                        "rating": 8
+                      },
+                      "metrics": {
+                        "totalSales": 150,
+                        "totalRevenue": 4500.75,
+                        "orderCount": 50,
+                        "uniqueCustomers": 35,
+                        "reviewCount": 25,
+                        "averageRating": 4.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "product not found"
+          }
+        }
+      }
+    },
+    "/products/{id}/price-trend": {
+      "get": {
+        "summary": "Get product price trend analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product price trend",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductPriceTrend"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "productId": 1,
+                      "productName": "Product A",
+                      "currentPrice": 99.99,
+                      "priceRange": {
+                        "min": 79.99,
+                        "max": 99.99,
+                        "average": 89.5
+                      },
+                      "priceChange": {
+                        "absolute": 20,
+                        "percentage": 25,
+                        "trend": "increasing"
+                      },
+                      "priceHistoryCount": 15,
+                      "recentPrices": [
+                        {
+                          "price": 99.99,
+                          "date": 1738368000000
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "product not found"
           }
         }
       }
@@ -3346,6 +4505,69 @@
         }
       }
     },
+    "/products/{id}/sales-forecast": {
+      "get": {
+        "summary": "Get product sales forecast based on historical data",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product sales forecast",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductSalesForecast"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "productId": 1,
+                      "productName": "Product A",
+                      "analysisPeriod": {
+                        "days": 90,
+                        "startDate": 1735689600000,
+                        "endDate": 1738368000000
+                      },
+                      "historicalData": {
+                        "totalSales": 150,
+                        "totalRevenue": 4500.75,
+                        "averageDailySales": 1.67,
+                        "averageWeeklySales": 11.67,
+                        "averageMonthlySales": 50,
+                        "dataPoints": 25
+                      },
+                      "forecast": {
+                        "nextWeek": 11.67,
+                        "nextMonth": 50,
+                        "nextQuarter": 150
+                      },
+                      "trend": "increasing",
+                      "confidence": "high"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "product not found"
+          }
+        }
+      }
+    },
     "/products/{id}/recommendations": {
       "get": {
         "summary": "Get product recommendations",
@@ -3459,6 +4681,71 @@
         }
       }
     },
+    "/products/{id}/stock-movement": {
+      "get": {
+        "summary": "Get product stock movement analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product stock movement",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductStockMovement"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "productId": 1,
+                      "productName": "Product A",
+                      "currentStock": 100,
+                      "stockAnalysis": {
+                        "totalSold": 50,
+                        "totalReturned": 5,
+                        "netStockChange": -45,
+                        "estimatedCurrentStock": 55,
+                        "stockTurnoverRate": 0.5
+                      },
+                      "movementHistory": {
+                        "totalMovements": 20,
+                        "recentMovements": [
+                          {
+                            "type": "sale",
+                            "quantity": -2,
+                            "orderId": 100,
+                            "date": 1738368000000,
+                            "status": "delivered"
+                          }
+                        ]
+                      },
+                      "stockStatus": "high",
+                      "alerts": []
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "product not found"
+          }
+        }
+      }
+    },
     "/products/{id}/variants-summary": {
       "get": {
         "summary": "Get product variants summary",
@@ -3524,6 +4811,221 @@
           },
           "404": {
             "description": "product not found"
+          }
+        }
+      }
+    },
+    "/reviews/analysis": {
+      "get": {
+        "summary": "Analyze reviews with variable parameters",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "reviewId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Get single review by ID"
+          },
+          {
+            "in": "query",
+            "name": "productId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by product ID"
+          },
+          {
+            "in": "query",
+            "name": "userId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by user ID"
+          },
+          {
+            "in": "query",
+            "name": "rating",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "description": "Filter by rating"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Reviews based on analysis parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReviewAnalysisResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid parameters"
+          },
+          "404": {
+            "description": "review, product or user not found"
+          }
+        }
+      }
+    },
+    "/reviews/search": {
+      "post": {
+        "summary": "Search reviews by reviewId, productId, userId, or rating",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "reviewId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1
+                  },
+                  "productId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  },
+                  "userId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 10
+                  },
+                  "rating": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  }
+                }
+              },
+              "examples": {
+                "byReviewId": {
+                  "summary": "Search by reviewId (returns object)",
+                  "value": {
+                    "reviewId": 1
+                  }
+                },
+                "byProductId": {
+                  "summary": "Search by productId (returns array)",
+                  "value": {
+                    "productId": 5
+                  }
+                },
+                "byProductAndUser": {
+                  "summary": "Search by productId and userId (returns object)",
+                  "value": {
+                    "productId": 5,
+                    "userId": 10
+                  }
+                },
+                "byRating": {
+                  "summary": "Search by rating (returns array)",
+                  "value": {
+                    "rating": 5
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Review(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Review"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Review"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required"
+          },
+          "404": {
+            "description": "No reviews found"
+          }
+        }
+      }
+    },
+    "/sellers/{id}/customer-retention": {
+      "get": {
+        "summary": "Get seller customer retention analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Seller customer retention",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SellerCustomerRetention"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "sellerId": 1,
+                      "sellerName": "John Seller",
+                      "retention": {
+                        "totalCustomers": 50,
+                        "newCustomers": 20,
+                        "returningCustomers": 30,
+                        "retentionRate": 60,
+                        "repeatPurchaseRate": 60
+                      },
+                      "metrics": {
+                        "averageOrdersPerCustomer": 2.5,
+                        "averageCustomerValue": 150.25,
+                        "totalRevenue": 7512.5
+                      },
+                      "topCustomers": [
+                        {
+                          "userId": 10,
+                          "orderCount": 5,
+                          "totalSpent": 750.5,
+                          "firstOrderDate": 1735689600000,
+                          "lastOrderDate": 1738368000000
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "seller not found"
           }
         }
       }
@@ -3596,6 +5098,144 @@
           },
           "400": {
             "description": "invalid limit"
+          }
+        }
+      }
+    },
+    "/sellers/{id}/product-portfolio": {
+      "get": {
+        "summary": "Get seller product portfolio analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Seller product portfolio",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SellerProductPortfolio"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "sellerId": 1,
+                      "sellerName": "John Seller",
+                      "portfolio": {
+                        "totalProducts": 15,
+                        "activeProducts": 12,
+                        "inactiveProducts": 3,
+                        "totalStock": 1500,
+                        "totalInventoryValue": 45000,
+                        "averageProductPrice": 45.5
+                      },
+                      "sales": {
+                        "totalSales": 150,
+                        "totalRevenue": 4500.75,
+                        "averageOrderValue": 90.15
+                      },
+                      "categoryDistribution": [
+                        {
+                          "categoryId": 1,
+                          "categoryName": "Category A",
+                          "productCount": 5,
+                          "totalStock": 500,
+                          "totalValue": 15000
+                        }
+                      ],
+                      "topCategory": {
+                        "categoryId": 1,
+                        "categoryName": "Category A",
+                        "productCount": 5,
+                        "totalStock": 500,
+                        "totalValue": 15000
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "seller not found"
+          }
+        }
+      }
+    },
+    "/sellers/{id}/revenue-forecast": {
+      "get": {
+        "summary": "Get seller revenue forecast based on historical performance",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Seller revenue forecast",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SellerRevenueForecast"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "sellerId": 1,
+                      "sellerName": "John Seller",
+                      "historicalData": {
+                        "totalRevenue": 15000.75,
+                        "totalSales": 500,
+                        "averageMonthlyRevenue": 5000.25,
+                        "revenueGrowthRate": 15.5,
+                        "monthsAnalyzed": 3
+                      },
+                      "forecast": {
+                        "nextMonth": 5775.79,
+                        "nextQuarter": 17327.37,
+                        "nextYear": 69309.48
+                      },
+                      "topProducts": [
+                        {
+                          "productId": 5,
+                          "totalSales": 100,
+                          "totalRevenue": 3000.5
+                        }
+                      ],
+                      "portfolio": {
+                        "totalProducts": 15,
+                        "activeProducts": 12
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "seller not found"
           }
         }
       }
@@ -3812,6 +5452,134 @@
         }
       }
     },
+    "/users/{id}/churn-analysis": {
+      "get": {
+        "summary": "Get user churn analysis and risk assessment",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User churn analysis",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserChurnAnalysis"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "userId": 1,
+                      "userName": "John Doe",
+                      "churnRisk": "low",
+                      "churnScore": 30,
+                      "riskFactors": [
+                        "inactive_30_days"
+                      ],
+                      "metrics": {
+                        "totalOrders": 10,
+                        "totalSpent": 1500.5,
+                        "averageOrderValue": 150.05,
+                        "orderFrequency": 12.5,
+                        "daysSinceLastOrder": 15,
+                        "reviewCount": 5
+                      },
+                      "activity": {
+                        "firstOrderDate": 1735689600000,
+                        "lastOrderDate": 1738368000000,
+                        "isActive": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "user not found"
+          }
+        }
+      }
+    },
+    "/users/{id}/engagement-score": {
+      "get": {
+        "summary": "Get user engagement score",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User engagement score",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserEngagementScore"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "userId": 1,
+                      "userName": "John Doe",
+                      "engagementScore": 75,
+                      "engagementLevel": "high",
+                      "scoreBreakdown": {
+                        "orderActivity": 40,
+                        "spending": 25,
+                        "reviewActivity": 15,
+                        "recency": 10
+                      },
+                      "metrics": {
+                        "orderCount": 10,
+                        "totalSpent": 1500.5,
+                        "averageOrderValue": 150.05,
+                        "orderFrequency": 2.5,
+                        "reviewCount": 5,
+                        "averageRating": 4.5,
+                        "daysSinceFirstOrder": 120,
+                        "daysSinceLastOrder": 5
+                      },
+                      "activity": {
+                        "firstOrderDate": 1735689600000,
+                        "lastOrderDate": 1738368000000,
+                        "firstReviewDate": 1735776000000,
+                        "lastReviewDate": 1738281600000
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "user not found"
+          }
+        }
+      }
+    },
     "/users/{id}/lifetime-value": {
       "get": {
         "summary": "Get user lifetime value and segmentation",
@@ -3948,6 +5716,222 @@
         }
       }
     },
+    "/users/{id}/payment-methods-summary": {
+      "get": {
+        "summary": "Get user payment methods summary and preferences",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User payment methods summary",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserPaymentMethodsSummary"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "userId": 1,
+                      "userName": "John Doe",
+                      "totalOrders": 10,
+                      "totalAmount": 1500.5,
+                      "preferredMethod": "credit_card",
+                      "paymentMethods": {
+                        "credit_card": {
+                          "usageCount": 7,
+                          "totalSpent": 1050.35,
+                          "averageOrderValue": 150.05,
+                          "usagePercentage": 70
+                        },
+                        "paypal": {
+                          "usageCount": 2,
+                          "totalSpent": 300.15,
+                          "averageOrderValue": 150.08,
+                          "usagePercentage": 20
+                        },
+                        "bank_transfer": {
+                          "usageCount": 1,
+                          "totalSpent": 150,
+                          "averageOrderValue": 150,
+                          "usagePercentage": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "user not found"
+          }
+        }
+      }
+    },
+    "/users/purchase-analysis": {
+      "post": {
+        "summary": "Analyze user purchase history with filters and statistics",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "userId"
+                ],
+                "properties": {
+                  "userId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "startDate": {
+                    "type": "integer",
+                    "format": "int64",
+                    "nullable": true,
+                    "example": 1735689600000
+                  },
+                  "endDate": {
+                    "type": "integer",
+                    "format": "int64",
+                    "nullable": true,
+                    "example": 1738368000000
+                  },
+                  "minAmount": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 50
+                  },
+                  "maxAmount": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 500
+                  },
+                  "categoryIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "nullable": true,
+                    "example": [
+                      1,
+                      2
+                    ]
+                  },
+                  "productIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "nullable": true,
+                    "example": [
+                      5,
+                      10
+                    ]
+                  },
+                  "status": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "completed"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Purchase analysis results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PurchaseAnalysisResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "userId is required"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/users/{id}/return-rate": {
+      "get": {
+        "summary": "Get user return rate and repeat purchase analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User return rate",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserReturnRate"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "userId": 1,
+                      "userName": "John Doe",
+                      "returnRate": 75.5,
+                      "returnRateLevel": "high",
+                      "metrics": {
+                        "totalOrders": 10,
+                        "totalSpent": 1500.5,
+                        "averageOrderValue": 150.05,
+                        "orderFrequency": 12.5,
+                        "averageOrderInterval": 30.5,
+                        "daysSinceFirstOrder": 120,
+                        "daysSinceLastOrder": 15
+                      },
+                      "activity": {
+                        "firstOrderDate": 1735689600000,
+                        "lastOrderDate": 1738368000000,
+                        "isActive": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "user not found"
+          }
+        }
+      }
+    },
     "/users/{id}/reviews-history": {
       "get": {
         "summary": "Get user reviews history",
@@ -4051,6 +6035,209 @@
                       ],
                       "lastActivity": 1762406642107,
                       "isActive": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid id"
+          },
+          "404": {
+            "description": "user not found"
+          }
+        }
+      }
+    },
+    "/users/search": {
+      "post": {
+        "summary": "Search users by email, firstName, or lastName",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "user@example.com"
+                  },
+                  "firstName": {
+                    "type": "string",
+                    "example": "John"
+                  },
+                  "lastName": {
+                    "type": "string",
+                    "example": "Doe"
+                  }
+                }
+              },
+              "examples": {
+                "byEmail": {
+                  "summary": "Search by email (returns object)",
+                  "value": {
+                    "email": "user@example.com"
+                  }
+                },
+                "byFirstName": {
+                  "summary": "Search by first name (returns array)",
+                  "value": {
+                    "firstName": "John"
+                  }
+                },
+                "byMultiple": {
+                  "summary": "Search by multiple fields",
+                  "value": {
+                    "firstName": "John",
+                    "lastName": "Doe"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/User"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required"
+          },
+          "404": {
+            "description": "No users found"
+          }
+        }
+      }
+    },
+    "/analytics/user-seller": {
+      "get": {
+        "summary": "Get combined analytics for user and/or seller with variable parameters",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "userId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by user ID",
+            "example": 1
+          },
+          {
+            "in": "query",
+            "name": "sellerId",
+            "schema": {
+              "type": "integer"
+            },
+            "description": "Filter by seller ID",
+            "example": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Analytics data based on provided parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserSellerAnalytics"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "invalid parameters"
+          },
+          "404": {
+            "description": "user or seller not found"
+          }
+        }
+      }
+    },
+    "/users/{id}/shopping-patterns": {
+      "get": {
+        "summary": "Get user shopping patterns and behavior analysis",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User shopping patterns",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserShoppingPatterns"
+                },
+                "examples": {
+                  "normal": {
+                    "summary": "Normal response",
+                    "value": {
+                      "userId": 1,
+                      "userName": "John Doe",
+                      "summary": {
+                        "totalOrders": 10,
+                        "totalSpent": 1500.5,
+                        "averageOrderValue": 150.05,
+                        "averageOrderSize": 2.5
+                      },
+                      "patterns": {
+                        "preferredTimeOfDay": "evening",
+                        "preferredDayOfWeek": "friday",
+                        "timeOfDayDistribution": {
+                          "morning": 2,
+                          "afternoon": 3,
+                          "evening": 4,
+                          "night": 1
+                        },
+                        "dayOfWeekDistribution": {
+                          "monday": 1,
+                          "tuesday": 1,
+                          "wednesday": 2,
+                          "thursday": 2,
+                          "friday": 3,
+                          "saturday": 1,
+                          "sunday": 0
+                        }
+                      },
+                      "categoryPreferences": [
+                        {
+                          "categoryId": 1,
+                          "categoryName": "Category A",
+                          "purchaseCount": 5,
+                          "totalSpent": 750.25
+                        }
+                      ],
+                      "favoriteCategory": {
+                        "categoryId": 1,
+                        "categoryName": "Category A",
+                        "purchaseCount": 5,
+                        "totalSpent": 750.25
+                      }
                     }
                   }
                 }
@@ -4634,6 +6821,41 @@
           "createdAt"
         ]
       },
+      "BulkUpdateResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "operation": {
+            "type": "string"
+          },
+          "totalProcessed": {
+            "type": "integer"
+          },
+          "successful": {
+            "type": "integer"
+          },
+          "failed": {
+            "type": "integer"
+          },
+          "results": {
+            "type": "array"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
       "CategoryProductsSummary": {
         "type": "object",
         "properties": {
@@ -4844,6 +7066,178 @@
           }
         }
       },
+      "CategoryGrowthRate": {
+        "type": "object",
+        "properties": {
+          "categoryId": {
+            "type": "integer",
+            "example": 1
+          },
+          "categoryName": {
+            "type": "string",
+            "example": "Category A"
+          },
+          "growthRate": {
+            "type": "object",
+            "properties": {
+              "revenueGrowthRate": {
+                "type": "number",
+                "format": "float",
+                "example": 25.5
+              },
+              "salesGrowthRate": {
+                "type": "number",
+                "format": "float",
+                "example": 20.75
+              },
+              "ordersGrowthRate": {
+                "type": "number",
+                "format": "float",
+                "example": 15
+              },
+              "growthTrend": {
+                "type": "string",
+                "enum": [
+                  "strong_growth",
+                  "growth",
+                  "decline",
+                  "strong_decline"
+                ],
+                "example": "strong_growth"
+              }
+            }
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalProducts": {
+                "type": "integer",
+                "example": 10
+              },
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 4500.75
+              },
+              "totalSales": {
+                "type": "integer",
+                "example": 150
+              },
+              "totalOrders": {
+                "type": "integer",
+                "example": 30
+              },
+              "averageMonthlyRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.25
+              },
+              "monthsAnalyzed": {
+                "type": "integer",
+                "example": 3
+              }
+            }
+          },
+          "monthlyBreakdown": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "month": {
+                  "type": "string",
+                  "example": "2025-01"
+                },
+                "revenue": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 1200.5
+                },
+                "sales": {
+                  "type": "integer",
+                  "example": 45
+                },
+                "orders": {
+                  "type": "integer",
+                  "example": 10
+                }
+              }
+            }
+          }
+        }
+      },
+      "CategoryMarketShare": {
+        "type": "object",
+        "properties": {
+          "categoryId": {
+            "type": "integer",
+            "example": 1
+          },
+          "categoryName": {
+            "type": "string",
+            "example": "Category A"
+          },
+          "marketShare": {
+            "type": "object",
+            "properties": {
+              "revenueShare": {
+                "type": "number",
+                "format": "float",
+                "example": 25.5
+              },
+              "salesShare": {
+                "type": "number",
+                "format": "float",
+                "example": 20.75
+              },
+              "orderShare": {
+                "type": "number",
+                "format": "float",
+                "example": 22
+              },
+              "averageOrderValue": {
+                "type": "number",
+                "format": "float",
+                "example": 150.25
+              }
+            }
+          },
+          "performance": {
+            "type": "object",
+            "properties": {
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 4500.75
+              },
+              "totalSales": {
+                "type": "integer",
+                "example": 150
+              },
+              "totalOrders": {
+                "type": "integer",
+                "example": 30
+              },
+              "totalProducts": {
+                "type": "integer",
+                "example": 10
+              }
+            }
+          },
+          "ranking": {
+            "type": "object",
+            "properties": {
+              "revenueRank": {
+                "type": "integer",
+                "example": 2
+              },
+              "totalCategories": {
+                "type": "integer",
+                "example": 5
+              }
+            }
+          }
+        }
+      },
       "CategoryPerformanceComparison": {
         "type": "object",
         "properties": {
@@ -4898,6 +7292,132 @@
                   "type": "number",
                   "format": "float",
                   "example": 90.15
+                }
+              }
+            }
+          }
+        }
+      },
+      "CategoryProductStatistics": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "category_stats",
+                  "category_with_products",
+                  "category_sales_stats",
+                  "category_full_stats",
+                  "category_status_products"
+                ]
+              },
+              "category": {
+                "type": "object"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "sales": {
+                "type": "object"
+              },
+              "statistics": {
+                "type": "object"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "status_statistics",
+                  "general_statistics"
+                ]
+              },
+              "status": {
+                "type": "string"
+              },
+              "statistics": {
+                "type": "object"
+              }
+            }
+          }
+        ]
+      },
+      "CategoryRevenueTrend": {
+        "type": "object",
+        "properties": {
+          "categoryId": {
+            "type": "integer",
+            "example": 1
+          },
+          "categoryName": {
+            "type": "string",
+            "example": "Category A"
+          },
+          "period": {
+            "type": "string",
+            "example": "monthly"
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 4500.75
+              },
+              "totalOrders": {
+                "type": "integer",
+                "example": 50
+              },
+              "totalItems": {
+                "type": "integer",
+                "example": 150
+              },
+              "averageRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.25
+              },
+              "growthRate": {
+                "type": "number",
+                "format": "float",
+                "example": 15.5
+              },
+              "periodsCount": {
+                "type": "integer",
+                "example": 3
+              }
+            }
+          },
+          "trend": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "period": {
+                  "type": "string",
+                  "example": "2025-01"
+                },
+                "revenue": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 1200.5
+                },
+                "orderCount": {
+                  "type": "integer",
+                  "example": 15
+                },
+                "itemCount": {
+                  "type": "integer",
+                  "example": 45
                 }
               }
             }
@@ -4959,145 +7479,253 @@
           }
         }
       },
-      "MultiPayloadUserActivity": {
+      "Category": {
         "type": "object",
-        "required": [
-          "type",
-          "userId",
-          "actions"
-        ],
         "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "userActivity"
-            ],
-            "description": "Discriminator value"
-          },
-          "userId": {
+          "id": {
             "type": "integer"
           },
-          "actions": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "OrderCancellationAnalysis": {
+        "type": "object",
+        "properties": {
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalOrders": {
+                "type": "integer",
+                "example": 100
+              },
+              "cancelledOrders": {
+                "type": "integer",
+                "example": 10
+              },
+              "cancellationRate": {
+                "type": "number",
+                "format": "float",
+                "example": 10
+              },
+              "totalCancelledAmount": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.5
+              }
+            }
+          },
+          "cancellationByReason": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "cancellationByPaymentMethod": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "topCancellingUsers": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "action"
-              ],
               "properties": {
-                "action": {
-                  "type": "string"
-                },
-                "at": {
+                "userId": {
                   "type": "integer",
-                  "format": "int64",
-                  "description": "Unix timestamp (ms)",
-                  "nullable": true
+                  "example": 1
+                },
+                "userName": {
+                  "type": "string",
+                  "example": "John Doe"
+                },
+                "cancellationCount": {
+                  "type": "integer",
+                  "example": 3
+                },
+                "totalAmount": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 450.75
+                }
+              }
+            }
+          },
+          "topCancelledCategories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "categoryId": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "categoryName": {
+                  "type": "string",
+                  "example": "Category A"
+                },
+                "cancellationCount": {
+                  "type": "integer",
+                  "example": 5
+                },
+                "totalAmount": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 750.25
+                }
+              }
+            }
+          },
+          "timeline": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "month": {
+                  "type": "string",
+                  "example": "2025-01"
+                },
+                "cancellationCount": {
+                  "type": "integer",
+                  "example": 5
                 }
               }
             }
           }
         }
       },
-      "MultiPayloadOrderEvent": {
+      "OrderCreationResponse": {
         "type": "object",
-        "required": [
-          "type",
-          "orderId",
-          "event"
-        ],
         "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "orderEvent"
-            ],
-            "description": "Discriminator value"
+          "order": {
+            "$ref": "#/components/schemas/Order"
           },
-          "orderId": {
-            "type": "integer"
-          },
-          "event": {
-            "type": "string",
-            "description": "Event name (created|paid|shipped|delivered|cancelled|...)"
-          },
-          "meta": {
+          "summary": {
             "type": "object",
-            "additionalProperties": true,
-            "nullable": true
+            "properties": {
+              "totalItems": {
+                "type": "integer"
+              },
+              "totalAmount": {
+                "type": "number"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
-      "MultiPayloadFeedback": {
-        "type": "object",
-        "required": [
-          "type",
-          "userId",
-          "rating"
-        ],
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "feedback"
-            ],
-            "description": "Discriminator value"
-          },
-          "userId": {
-            "type": "integer"
-          },
-          "rating": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 5
-          },
-          "comment": {
-            "type": "string",
-            "nullable": true
-          }
-        }
-      },
-      "MultiPayload": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/MultiPayloadUserActivity"
-          },
-          {
-            "$ref": "#/components/schemas/MultiPayloadOrderEvent"
-          },
-          {
-            "$ref": "#/components/schemas/MultiPayloadFeedback"
-          }
-        ],
-        "discriminator": {
-          "propertyName": "type",
-          "mapping": {
-            "userActivity": "#/components/schemas/MultiPayloadUserActivity",
-            "orderEvent": "#/components/schemas/MultiPayloadOrderEvent",
-            "feedback": "#/components/schemas/MultiPayloadFeedback"
-          }
-        }
-      },
-      "MultiPayloadResponse": {
+      "Order": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer"
           },
-          "receivedAt": {
-            "type": "integer",
-            "format": "int64"
+          "userId": {
+            "type": "integer"
           },
-          "payloadType": {
-            "type": "string",
-            "enum": [
-              "userActivity",
-              "orderEvent",
-              "feedback"
-            ]
+          "items": {
+            "type": "array"
           },
-          "data": {
-            "$ref": "#/components/schemas/MultiPayload"
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "OrderFilterResult": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "single_order"
+                ]
+              },
+              "order": {
+                "type": "object"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "user_orders",
+                  "status_orders",
+                  "user_status_orders",
+                  "date_range_orders",
+                  "all_orders"
+                ]
+              },
+              "totalOrders": {
+                "type": "integer"
+              },
+              "orders": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FulfillmentResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "order": {
+            "type": "object"
+          },
+          "fulfillment": {
+            "type": "object",
+            "properties": {
+              "previousStatus": {
+                "type": "string"
+              },
+              "newStatus": {
+                "type": "string"
+              },
+              "paymentStatus": {
+                "type": "string"
+              },
+              "stockUpdated": {
+                "type": "boolean"
+              },
+              "stockUpdates": {
+                "type": "array"
+              }
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -5444,6 +8072,163 @@
           }
         }
       },
+      "BundleCreationResponse": {
+        "type": "object",
+        "properties": {
+          "bundle": {
+            "type": "object"
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalProducts": {
+                "type": "integer"
+              },
+              "originalPrice": {
+                "type": "number"
+              },
+              "bundlePrice": {
+                "type": "number"
+              },
+              "savings": {
+                "type": "number"
+              },
+              "savingsPercent": {
+                "type": "number"
+              }
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ProductBundleRecommendations": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Product A"
+          },
+          "categoryId": {
+            "type": "integer",
+            "example": 1
+          },
+          "bundleRecommendations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "productId": {
+                  "type": "integer",
+                  "example": 5
+                },
+                "productName": {
+                  "type": "string",
+                  "example": "Product B"
+                },
+                "categoryId": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "categoryName": {
+                  "type": "string",
+                  "example": "Category A"
+                },
+                "bundleFrequency": {
+                  "type": "integer",
+                  "example": 15
+                },
+                "bundleRevenue": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 450.75
+                },
+                "price": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 29.99
+                },
+                "status": {
+                  "type": "string",
+                  "example": "active"
+                },
+                "stock": {
+                  "type": "integer",
+                  "example": 100
+                }
+              }
+            }
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalBundles": {
+                "type": "integer",
+                "example": 8
+              },
+              "averageBundleValue": {
+                "type": "number",
+                "format": "float",
+                "example": 225.38
+              },
+              "recommendedCount": {
+                "type": "integer",
+                "example": 5
+              }
+            }
+          }
+        }
+      },
+      "ProductSearchResult": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "single_product"
+                ]
+              },
+              "product": {
+                "type": "object"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "category_products",
+                  "status_products",
+                  "category_status",
+                  "price_range",
+                  "all_products"
+                ]
+              },
+              "totalProducts": {
+                "type": "integer"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        ]
+      },
       "ProductCrossSell": {
         "type": "object",
         "properties": {
@@ -5511,6 +8296,93 @@
           }
         }
       },
+      "ProductDemandAnalysis": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Product A"
+          },
+          "currentStock": {
+            "type": "integer",
+            "example": 100
+          },
+          "demandAnalysis": {
+            "type": "object",
+            "properties": {
+              "totalDemand": {
+                "type": "integer",
+                "example": 50
+              },
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.75
+              },
+              "orderCount": {
+                "type": "integer",
+                "example": 25
+              },
+              "averageDailyDemand": {
+                "type": "number",
+                "format": "float",
+                "example": 1.67
+              },
+              "averageWeeklyDemand": {
+                "type": "number",
+                "format": "float",
+                "example": 11.67
+              },
+              "demandLevel": {
+                "type": "string",
+                "enum": [
+                  "very_low",
+                  "low",
+                  "medium",
+                  "high"
+                ],
+                "example": "low"
+              },
+              "demandTrend": {
+                "type": "string",
+                "enum": [
+                  "increasing",
+                  "decreasing",
+                  "stable"
+                ],
+                "example": "increasing"
+              },
+              "daysUntilStockout": {
+                "type": "integer",
+                "example": 60
+              }
+            }
+          },
+          "stockStatus": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "low",
+              "adequate",
+              "high"
+            ],
+            "example": "adequate"
+          },
+          "recommendations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "restock_soon"
+            ]
+          }
+        }
+      },
       "ProductInventoryAlert": {
         "type": "object",
         "properties": {
@@ -5568,6 +8440,174 @@
                   "type": "number",
                   "format": "float",
                   "example": 29.99
+                }
+              }
+            }
+          }
+        }
+      },
+      "ProductPopularityScore": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Product A"
+          },
+          "popularityScore": {
+            "type": "integer",
+            "example": 75
+          },
+          "popularityLevel": {
+            "type": "string",
+            "enum": [
+              "very_low",
+              "low",
+              "medium",
+              "high",
+              "very_high"
+            ],
+            "example": "high"
+          },
+          "scoreBreakdown": {
+            "type": "object",
+            "properties": {
+              "salesVolume": {
+                "type": "integer",
+                "example": 30
+              },
+              "revenue": {
+                "type": "integer",
+                "example": 25
+              },
+              "customerBase": {
+                "type": "integer",
+                "example": 15
+              },
+              "reviews": {
+                "type": "integer",
+                "example": 10
+              },
+              "rating": {
+                "type": "integer",
+                "example": 8
+              }
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "totalSales": {
+                "type": "integer",
+                "example": 150
+              },
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 4500.75
+              },
+              "orderCount": {
+                "type": "integer",
+                "example": 50
+              },
+              "uniqueCustomers": {
+                "type": "integer",
+                "example": 35
+              },
+              "reviewCount": {
+                "type": "integer",
+                "example": 25
+              },
+              "averageRating": {
+                "type": "number",
+                "format": "float",
+                "example": 4.5
+              }
+            }
+          }
+        }
+      },
+      "ProductPriceTrend": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Product A"
+          },
+          "currentPrice": {
+            "type": "number",
+            "format": "float",
+            "example": 99.99
+          },
+          "priceRange": {
+            "type": "object",
+            "properties": {
+              "min": {
+                "type": "number",
+                "format": "float",
+                "example": 79.99
+              },
+              "max": {
+                "type": "number",
+                "format": "float",
+                "example": 99.99
+              },
+              "average": {
+                "type": "number",
+                "format": "float",
+                "example": 89.5
+              }
+            }
+          },
+          "priceChange": {
+            "type": "object",
+            "properties": {
+              "absolute": {
+                "type": "number",
+                "format": "float",
+                "example": 20
+              },
+              "percentage": {
+                "type": "number",
+                "format": "float",
+                "example": 25
+              },
+              "trend": {
+                "type": "string",
+                "enum": [
+                  "increasing",
+                  "decreasing",
+                  "stable"
+                ],
+                "example": "increasing"
+              }
+            }
+          },
+          "priceHistoryCount": {
+            "type": "integer",
+            "example": 15
+          },
+          "recentPrices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "price": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 99.99
+                },
+                "date": {
+                  "type": "integer",
+                  "format": "int64",
+                  "example": 1738368000000
                 }
               }
             }
@@ -5795,6 +8835,129 @@
           }
         }
       },
+      "ProductSalesForecast": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Product A"
+          },
+          "analysisPeriod": {
+            "type": "object",
+            "properties": {
+              "days": {
+                "type": "integer",
+                "example": 90
+              },
+              "startDate": {
+                "type": "integer",
+                "format": "int64",
+                "example": 1735689600000
+              },
+              "endDate": {
+                "type": "integer",
+                "format": "int64",
+                "example": 1738368000000
+              }
+            }
+          },
+          "historicalData": {
+            "type": "object",
+            "properties": {
+              "totalSales": {
+                "type": "integer",
+                "example": 150
+              },
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 4500.75
+              },
+              "averageDailySales": {
+                "type": "number",
+                "format": "float",
+                "example": 1.67
+              },
+              "averageWeeklySales": {
+                "type": "number",
+                "format": "float",
+                "example": 11.67
+              },
+              "averageMonthlySales": {
+                "type": "number",
+                "format": "float",
+                "example": 50
+              },
+              "dataPoints": {
+                "type": "integer",
+                "example": 25
+              }
+            }
+          },
+          "forecast": {
+            "type": "object",
+            "properties": {
+              "nextWeek": {
+                "type": "number",
+                "format": "float",
+                "example": 11.67
+              },
+              "nextMonth": {
+                "type": "number",
+                "format": "float",
+                "example": 50
+              },
+              "nextQuarter": {
+                "type": "number",
+                "format": "float",
+                "example": 150
+              }
+            }
+          },
+          "trend": {
+            "type": "string",
+            "enum": [
+              "increasing",
+              "decreasing",
+              "stable"
+            ],
+            "example": "increasing"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "example": "high"
+          }
+        }
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "categoryId": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "integer"
+          }
+        }
+      },
       "ProductRecommendations": {
         "type": "object",
         "properties": {
@@ -5882,6 +9045,108 @@
             "type": "number",
             "format": "float",
             "example": 90.15
+          }
+        }
+      },
+      "ProductStockMovement": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Product A"
+          },
+          "currentStock": {
+            "type": "integer",
+            "example": 100
+          },
+          "stockAnalysis": {
+            "type": "object",
+            "properties": {
+              "totalSold": {
+                "type": "integer",
+                "example": 50
+              },
+              "totalReturned": {
+                "type": "integer",
+                "example": 5
+              },
+              "netStockChange": {
+                "type": "integer",
+                "example": -45
+              },
+              "estimatedCurrentStock": {
+                "type": "integer",
+                "example": 55
+              },
+              "stockTurnoverRate": {
+                "type": "number",
+                "format": "float",
+                "example": 0.5
+              }
+            }
+          },
+          "movementHistory": {
+            "type": "object",
+            "properties": {
+              "totalMovements": {
+                "type": "integer",
+                "example": 20
+              },
+              "recentMovements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "sale",
+                        "return",
+                        "cancellation"
+                      ],
+                      "example": "sale"
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "example": -2
+                    },
+                    "orderId": {
+                      "type": "integer",
+                      "example": 100
+                    },
+                    "date": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1738368000000
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "delivered"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "stockStatus": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "example": "high"
+          },
+          "alerts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": []
           }
         }
       },
@@ -5976,6 +9241,161 @@
           }
         }
       },
+      "ReviewAnalysisResult": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "single_review"
+                ]
+              },
+              "review": {
+                "type": "object"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "product_reviews",
+                  "user_reviews",
+                  "rating_reviews",
+                  "product_rating_reviews",
+                  "user_rating_reviews",
+                  "user_product_reviews",
+                  "all_reviews"
+                ]
+              },
+              "totalReviews": {
+                "type": "integer"
+              },
+              "reviews": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Review": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "productId": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "rating": {
+            "type": "integer"
+          },
+          "comment": {
+            "type": "string"
+          }
+        }
+      },
+      "SellerCustomerRetention": {
+        "type": "object",
+        "properties": {
+          "sellerId": {
+            "type": "integer",
+            "example": 1
+          },
+          "sellerName": {
+            "type": "string",
+            "example": "John Seller"
+          },
+          "retention": {
+            "type": "object",
+            "properties": {
+              "totalCustomers": {
+                "type": "integer",
+                "example": 50
+              },
+              "newCustomers": {
+                "type": "integer",
+                "example": 20
+              },
+              "returningCustomers": {
+                "type": "integer",
+                "example": 30
+              },
+              "retentionRate": {
+                "type": "number",
+                "format": "float",
+                "example": 60
+              },
+              "repeatPurchaseRate": {
+                "type": "number",
+                "format": "float",
+                "example": 60
+              }
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "averageOrdersPerCustomer": {
+                "type": "number",
+                "format": "float",
+                "example": 2.5
+              },
+              "averageCustomerValue": {
+                "type": "number",
+                "format": "float",
+                "example": 150.25
+              },
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 7512.5
+              }
+            }
+          },
+          "topCustomers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "integer",
+                  "example": 10
+                },
+                "orderCount": {
+                  "type": "integer",
+                  "example": 5
+                },
+                "totalSpent": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 750.5
+                },
+                "firstOrderDate": {
+                  "type": "integer",
+                  "format": "int64",
+                  "example": 1735689600000
+                },
+                "lastOrderDate": {
+                  "type": "integer",
+                  "format": "int64",
+                  "example": 1738368000000
+                }
+              }
+            }
+          }
+        }
+      },
       "SellerPerformanceRanking": {
         "type": "object",
         "properties": {
@@ -6047,6 +9467,220 @@
                   "type": "integer",
                   "example": 30
                 }
+              }
+            }
+          }
+        }
+      },
+      "SellerProductPortfolio": {
+        "type": "object",
+        "properties": {
+          "sellerId": {
+            "type": "integer",
+            "example": 1
+          },
+          "sellerName": {
+            "type": "string",
+            "example": "John Seller"
+          },
+          "portfolio": {
+            "type": "object",
+            "properties": {
+              "totalProducts": {
+                "type": "integer",
+                "example": 15
+              },
+              "activeProducts": {
+                "type": "integer",
+                "example": 12
+              },
+              "inactiveProducts": {
+                "type": "integer",
+                "example": 3
+              },
+              "totalStock": {
+                "type": "integer",
+                "example": 1500
+              },
+              "totalInventoryValue": {
+                "type": "number",
+                "format": "float",
+                "example": 45000
+              },
+              "averageProductPrice": {
+                "type": "number",
+                "format": "float",
+                "example": 45.5
+              }
+            }
+          },
+          "sales": {
+            "type": "object",
+            "properties": {
+              "totalSales": {
+                "type": "integer",
+                "example": 150
+              },
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 4500.75
+              },
+              "averageOrderValue": {
+                "type": "number",
+                "format": "float",
+                "example": 90.15
+              }
+            }
+          },
+          "categoryDistribution": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "categoryId": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "categoryName": {
+                  "type": "string",
+                  "example": "Category A"
+                },
+                "productCount": {
+                  "type": "integer",
+                  "example": 5
+                },
+                "totalStock": {
+                  "type": "integer",
+                  "example": 500
+                },
+                "totalValue": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 15000
+                }
+              }
+            }
+          },
+          "topCategory": {
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "categoryId": {
+                "type": "integer",
+                "example": 1
+              },
+              "categoryName": {
+                "type": "string",
+                "example": "Category A"
+              },
+              "productCount": {
+                "type": "integer",
+                "example": 5
+              },
+              "totalStock": {
+                "type": "integer",
+                "example": 500
+              },
+              "totalValue": {
+                "type": "number",
+                "format": "float",
+                "example": 15000
+              }
+            }
+          }
+        }
+      },
+      "SellerRevenueForecast": {
+        "type": "object",
+        "properties": {
+          "sellerId": {
+            "type": "integer",
+            "example": 1
+          },
+          "sellerName": {
+            "type": "string",
+            "example": "John Seller"
+          },
+          "historicalData": {
+            "type": "object",
+            "properties": {
+              "totalRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 15000.75
+              },
+              "totalSales": {
+                "type": "integer",
+                "example": 500
+              },
+              "averageMonthlyRevenue": {
+                "type": "number",
+                "format": "float",
+                "example": 5000.25
+              },
+              "revenueGrowthRate": {
+                "type": "number",
+                "format": "float",
+                "example": 15.5
+              },
+              "monthsAnalyzed": {
+                "type": "integer",
+                "example": 3
+              }
+            }
+          },
+          "forecast": {
+            "type": "object",
+            "properties": {
+              "nextMonth": {
+                "type": "number",
+                "format": "float",
+                "example": 5775.79
+              },
+              "nextQuarter": {
+                "type": "number",
+                "format": "float",
+                "example": 17327.37
+              },
+              "nextYear": {
+                "type": "number",
+                "format": "float",
+                "example": 69309.48
+              }
+            }
+          },
+          "topProducts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "productId": {
+                  "type": "integer",
+                  "example": 5
+                },
+                "totalSales": {
+                  "type": "integer",
+                  "example": 100
+                },
+                "totalRevenue": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 3000.5
+                }
+              }
+            }
+          },
+          "portfolio": {
+            "type": "object",
+            "properties": {
+              "totalProducts": {
+                "type": "integer",
+                "example": 15
+              },
+              "activeProducts": {
+                "type": "integer",
+                "example": 12
               }
             }
           }
@@ -6259,6 +9893,213 @@
           }
         }
       },
+      "UserChurnAnalysis": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "example": 1
+          },
+          "userName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "churnRisk": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "very_high"
+            ],
+            "example": "low"
+          },
+          "churnScore": {
+            "type": "integer",
+            "example": 30
+          },
+          "riskFactors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "inactive_30_days"
+            ]
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "totalOrders": {
+                "type": "integer",
+                "example": 10
+              },
+              "totalSpent": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.5
+              },
+              "averageOrderValue": {
+                "type": "number",
+                "format": "float",
+                "example": 150.05
+              },
+              "orderFrequency": {
+                "type": "number",
+                "format": "float",
+                "example": 12.5
+              },
+              "daysSinceLastOrder": {
+                "type": "integer",
+                "example": 15
+              },
+              "reviewCount": {
+                "type": "integer",
+                "example": 5
+              }
+            }
+          },
+          "activity": {
+            "type": "object",
+            "properties": {
+              "firstOrderDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1735689600000
+              },
+              "lastOrderDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1738368000000
+              },
+              "isActive": {
+                "type": "boolean",
+                "example": true
+              }
+            }
+          }
+        }
+      },
+      "UserEngagementScore": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "example": 1
+          },
+          "userName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "engagementScore": {
+            "type": "integer",
+            "example": 75
+          },
+          "engagementLevel": {
+            "type": "string",
+            "enum": [
+              "inactive",
+              "low",
+              "medium",
+              "high"
+            ],
+            "example": "high"
+          },
+          "scoreBreakdown": {
+            "type": "object",
+            "properties": {
+              "orderActivity": {
+                "type": "integer",
+                "example": 40
+              },
+              "spending": {
+                "type": "integer",
+                "example": 25
+              },
+              "reviewActivity": {
+                "type": "integer",
+                "example": 15
+              },
+              "recency": {
+                "type": "integer",
+                "example": 10
+              }
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "orderCount": {
+                "type": "integer",
+                "example": 10
+              },
+              "totalSpent": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.5
+              },
+              "averageOrderValue": {
+                "type": "number",
+                "format": "float",
+                "example": 150.05
+              },
+              "orderFrequency": {
+                "type": "number",
+                "format": "float",
+                "example": 2.5
+              },
+              "reviewCount": {
+                "type": "integer",
+                "example": 5
+              },
+              "averageRating": {
+                "type": "number",
+                "format": "float",
+                "example": 4.5
+              },
+              "daysSinceFirstOrder": {
+                "type": "integer",
+                "example": 120
+              },
+              "daysSinceLastOrder": {
+                "type": "integer",
+                "example": 5
+              }
+            }
+          },
+          "activity": {
+            "type": "object",
+            "properties": {
+              "firstOrderDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1735689600000
+              },
+              "lastOrderDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1738368000000
+              },
+              "firstReviewDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1735776000000
+              },
+              "lastReviewDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1738281600000
+              }
+            }
+          }
+        }
+      },
       "UserLifetimeValue": {
         "type": "object",
         "properties": {
@@ -6419,6 +10260,241 @@
           }
         }
       },
+      "UserPaymentMethodsSummary": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "example": 1
+          },
+          "userName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "totalOrders": {
+            "type": "integer",
+            "example": 10
+          },
+          "totalAmount": {
+            "type": "number",
+            "format": "float",
+            "example": 1500.5
+          },
+          "preferredMethod": {
+            "type": "string",
+            "enum": [
+              "credit_card",
+              "paypal",
+              "bank_transfer"
+            ],
+            "example": "credit_card"
+          },
+          "paymentMethods": {
+            "type": "object",
+            "properties": {
+              "credit_card": {
+                "type": "object",
+                "properties": {
+                  "usageCount": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "totalSpent": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 1050.35
+                  },
+                  "averageOrderValue": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 150.05
+                  },
+                  "usagePercentage": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 70
+                  }
+                }
+              },
+              "paypal": {
+                "type": "object",
+                "properties": {
+                  "usageCount": {
+                    "type": "integer",
+                    "example": 2
+                  },
+                  "totalSpent": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 300.15
+                  },
+                  "averageOrderValue": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 150.08
+                  },
+                  "usagePercentage": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 20
+                  }
+                }
+              },
+              "bank_transfer": {
+                "type": "object",
+                "properties": {
+                  "usageCount": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "totalSpent": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 150
+                  },
+                  "averageOrderValue": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 150
+                  },
+                  "usagePercentage": {
+                    "type": "number",
+                    "format": "float",
+                    "example": 10
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "PurchaseAnalysisResponse": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "analysis": {
+            "type": "object",
+            "properties": {
+              "totalOrders": {
+                "type": "integer"
+              },
+              "totalSpent": {
+                "type": "number"
+              },
+              "averageOrderValue": {
+                "type": "number"
+              },
+              "statusBreakdown": {
+                "type": "object"
+              },
+              "monthlySpending": {
+                "type": "array"
+              }
+            }
+          },
+          "topCategories": {
+            "type": "array"
+          },
+          "topProducts": {
+            "type": "array"
+          },
+          "filters": {
+            "type": "object"
+          }
+        }
+      },
+      "UserReturnRate": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "example": 1
+          },
+          "userName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "returnRate": {
+            "type": "number",
+            "format": "float",
+            "example": 75.5
+          },
+          "returnRateLevel": {
+            "type": "string",
+            "enum": [
+              "very_low",
+              "low",
+              "medium",
+              "high",
+              "very_high"
+            ],
+            "example": "high"
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "totalOrders": {
+                "type": "integer",
+                "example": 10
+              },
+              "totalSpent": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.5
+              },
+              "averageOrderValue": {
+                "type": "number",
+                "format": "float",
+                "example": 150.05
+              },
+              "orderFrequency": {
+                "type": "number",
+                "format": "float",
+                "example": 12.5
+              },
+              "averageOrderInterval": {
+                "type": "number",
+                "format": "float",
+                "example": 30.5
+              },
+              "daysSinceFirstOrder": {
+                "type": "integer",
+                "example": 120
+              },
+              "daysSinceLastOrder": {
+                "type": "integer",
+                "example": 15
+              }
+            }
+          },
+          "activity": {
+            "type": "object",
+            "properties": {
+              "firstOrderDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1735689600000
+              },
+              "lastOrderDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true,
+                "example": 1738368000000
+              },
+              "isActive": {
+                "type": "boolean",
+                "example": true
+              }
+            }
+          }
+        }
+      },
       "UserReviewsHistory": {
         "type": "object",
         "properties": {
@@ -6552,6 +10628,338 @@
           "isActive": {
             "type": "boolean",
             "example": true
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "email": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      },
+      "UserSellerAnalytics": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "user_only"
+                ]
+              },
+              "userId": {
+                "type": "integer"
+              },
+              "userName": {
+                "type": "string"
+              },
+              "analytics": {
+                "type": "object",
+                "properties": {
+                  "totalOrders": {
+                    "type": "integer"
+                  },
+                  "totalSpent": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "averageOrderValue": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "orders": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "seller_only"
+                ]
+              },
+              "sellerId": {
+                "type": "integer"
+              },
+              "sellerName": {
+                "type": "string"
+              },
+              "analytics": {
+                "type": "object",
+                "properties": {
+                  "totalProducts": {
+                    "type": "integer"
+                  },
+                  "totalSales": {
+                    "type": "integer"
+                  },
+                  "totalRevenue": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "products": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "user_seller_combined"
+                ]
+              },
+              "userId": {
+                "type": "integer"
+              },
+              "userName": {
+                "type": "string"
+              },
+              "sellerId": {
+                "type": "integer"
+              },
+              "sellerName": {
+                "type": "string"
+              },
+              "analytics": {
+                "type": "object",
+                "properties": {
+                  "orderCount": {
+                    "type": "integer"
+                  },
+                  "totalSpent": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "averageOrderValue": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "orders": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "general"
+                ]
+              },
+              "analytics": {
+                "type": "object",
+                "properties": {
+                  "totalUsers": {
+                    "type": "integer"
+                  },
+                  "totalSellers": {
+                    "type": "integer"
+                  },
+                  "totalOrders": {
+                    "type": "integer"
+                  },
+                  "totalProducts": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "UserShoppingPatterns": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "example": 1
+          },
+          "userName": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalOrders": {
+                "type": "integer",
+                "example": 10
+              },
+              "totalSpent": {
+                "type": "number",
+                "format": "float",
+                "example": 1500.5
+              },
+              "averageOrderValue": {
+                "type": "number",
+                "format": "float",
+                "example": 150.05
+              },
+              "averageOrderSize": {
+                "type": "number",
+                "format": "float",
+                "example": 2.5
+              }
+            }
+          },
+          "patterns": {
+            "type": "object",
+            "properties": {
+              "preferredTimeOfDay": {
+                "type": "string",
+                "enum": [
+                  "morning",
+                  "afternoon",
+                  "evening",
+                  "night"
+                ],
+                "example": "evening"
+              },
+              "preferredDayOfWeek": {
+                "type": "string",
+                "example": "friday"
+              },
+              "timeOfDayDistribution": {
+                "type": "object",
+                "properties": {
+                  "morning": {
+                    "type": "integer",
+                    "example": 2
+                  },
+                  "afternoon": {
+                    "type": "integer",
+                    "example": 3
+                  },
+                  "evening": {
+                    "type": "integer",
+                    "example": 4
+                  },
+                  "night": {
+                    "type": "integer",
+                    "example": 1
+                  }
+                }
+              },
+              "dayOfWeekDistribution": {
+                "type": "object",
+                "properties": {
+                  "monday": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "tuesday": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "wednesday": {
+                    "type": "integer",
+                    "example": 2
+                  },
+                  "thursday": {
+                    "type": "integer",
+                    "example": 2
+                  },
+                  "friday": {
+                    "type": "integer",
+                    "example": 3
+                  },
+                  "saturday": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "sunday": {
+                    "type": "integer",
+                    "example": 0
+                  }
+                }
+              }
+            }
+          },
+          "categoryPreferences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "categoryId": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "categoryName": {
+                  "type": "string",
+                  "example": "Category A"
+                },
+                "purchaseCount": {
+                  "type": "integer",
+                  "example": 5
+                },
+                "totalSpent": {
+                  "type": "number",
+                  "format": "float",
+                  "example": 750.25
+                }
+              }
+            }
+          },
+          "favoriteCategory": {
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "categoryId": {
+                "type": "integer",
+                "example": 1
+              },
+              "categoryName": {
+                "type": "string",
+                "example": "Category A"
+              },
+              "purchaseCount": {
+                "type": "integer",
+                "example": 5
+              },
+              "totalSpent": {
+                "type": "number",
+                "format": "float",
+                "example": 750.25
+              }
+            }
           }
         }
       },

@@ -1,6 +1,6 @@
 # Master Experiment Prompt (for AI IDEs)
 
-Use this prompt verbatim inside your AI IDE. GUIDE.md is the single source of truth—do not restate rules here or ask for clarifications.
+Use this prompt verbatim inside your AI IDE. GUIDE.md is the single source of truth. Do not restate rules here or ask for clarifications.
 
 ---
 
@@ -31,16 +31,17 @@ Make sure you actually run the command in the workspace — do not create the br
 
 3) Implement per GUIDE
 - Implement/complete missing CRUD methods only in the core services under src/api/fakeApi (HTTP wrappers only via ApiService.getInstance().instance).
+  When creating resources, prefer using the body builder helpers from `src/common/fakeApi/Utils.ts` (e.g., `buildRandomUserBody`, `buildRandomProductBody`, etc.) to generate valid payloads; override fields as needed per test scenario.
 - For each test case, create a scenario service under src/api/fakeApi named <Domain>ScenarioService.ts exposing exactly one parameterless public method that does setup → calls exactly one endpoint → returns the Axios response.
 - Tests must live under fake-api-tests/, be named *.spec.ts, and call exactly one parameterless scenario method.
 - Every `it` title must follow: METHOD PATH - expectation (see GUIDE 4.1).
- - Assertions must be schema-driven per GUIDE 5.1 (assert required fields, types, enums, nested object fields, array item shape, numeric bounds, ordering, and pagination when applicable).
+ - Assertions must be schema-driven per GUIDE 5.1 — assert required fields, types, enums, and critically, nested object fields and arrays' representative item shapes. Do not stop at top-level fields. Also cover numeric bounds, ordering, and pagination when applicable.
 
-Note on server-managed timestamps: If schemas show `createdAt` and `modifiedAt` (or similar) in `openapi.json`, do NOT include those fields in request bodies. They are server-handled. Scenario services must not set `createdAt`/`modifiedAt` in request payloads; you may assert their presence/format in responses but avoid exact equality checks with client-side times.
+Note on server-managed timestamps: If schemas show `createdAt` and `modifiedAt` (or similar) in `openapi.json`, do NOT include those fields in request bodies. They are server-handled. Scenario services must not set `createdAt`/`modifiedAt` in request payloads, these fields may be excluded from validations as well.
 
 Additional mandate (must follow): Cover every endpoint in `openapi.json`
 - For this experiment you MUST cover every endpoint listed in `openapi.json`. For each endpoint, add a core service method (if missing), a scenario method, and a single `.spec.ts` test. If an endpoint cannot be exercised in this environment, add a short TODO test explaining why (see GUIDE.md for the exemption format).
-- After running tests, ensure `coverage/summary.json` shows `openapi.untestedCount: 0`. If not, add/adjust tests until coverage is complete. The bootstrap supports an enforcement flag `FAIL_ON_UNTESTED=true` to make the run fail when untested endpoints remain — use that in CI runs when comparing AI IDE outputs.
+- After running tests, ensure `coverage/summary.json` shows `openapi.untestedCount: 0`. If not, add/adjust tests until coverage is complete. 
 
 4) Run and deliver
 - Run tests exactly as documented in GUIDE and fix failures.

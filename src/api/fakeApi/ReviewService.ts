@@ -1,31 +1,34 @@
 import ApiService from "../ApiService";
+import { buildRandomReviewBody } from "@common/fakeApi/Utils";
 
 class ReviewService {
-    // CRUD stubs only for experiment.
+    private api = ApiService.getInstance().instance;
 
     public async createReview(body?: any) {
-        // AI: POST /reviews
-        throw new Error("NOT_IMPLEMENTED");
+        // POST /reviews
+        const payload = body ?? buildRandomReviewBody();
+        return this.api.post('/reviews', payload);
     }
 
     public async getAllReviews() {
-        // AI: GET /reviews
-        throw new Error("NOT_IMPLEMENTED");
+        // GET /reviews
+        return this.api.get('/reviews');
     }
 
     public async getReviewById(id: number) {
-        // AI: GET /reviews/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // GET /reviews/{id}
+        return this.api.get(`/reviews/${id}`);
     }
 
     public async updateReviewById(id: number, body: any) {
-        // AI: PUT /reviews/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // PUT /reviews/{id}
+        const payload = body ?? buildRandomReviewBody();
+        return this.api.put(`/reviews/${id}`, payload);
     }
 
     public async deleteReviewById(id: number) {
-        // AI: DELETE /reviews/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // DELETE /reviews/{id}
+        return this.api.delete(`/reviews/${id}`);
     }
 }
 

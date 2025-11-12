@@ -1,31 +1,34 @@
 import ApiService from "../ApiService";
+import { buildRandomOrderBody } from "@common/fakeApi/Utils";
 
 class OrderService {
-    // CRUD stubs only for experiment.
+    private api = ApiService.getInstance().instance;
 
     public async createOrder(body?: any) {
-        // AI: POST /orders
-        throw new Error("NOT_IMPLEMENTED");
+        // POST /orders
+        const payload = body ?? buildRandomOrderBody();
+        return this.api.post('/orders', payload);
     }
 
     public async getAllOrders() {
-        // AI: GET /orders
-        throw new Error("NOT_IMPLEMENTED");
+        // GET /orders
+        return this.api.get('/orders');
     }
 
     public async getOrderById(id: number) {
-        // AI: GET /orders/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // GET /orders/{id}
+        return this.api.get(`/orders/${id}`);
     }
 
     public async updateOrderById(id: number, body: any) {
-        // AI: PUT /orders/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // PUT /orders/{id}
+        const payload = body ?? buildRandomOrderBody();
+        return this.api.put(`/orders/${id}`, payload);
     }
 
     public async deleteOrderById(id: number) {
-        // AI: DELETE /orders/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // DELETE /orders/{id}
+        return this.api.delete(`/orders/${id}`);
     }
 }
 

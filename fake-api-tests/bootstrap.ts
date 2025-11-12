@@ -156,6 +156,15 @@ after(function () {
       openapiSummary = { error: "openapi.json not available or invalid" };
     }
 
+    // Build a human-friendly snapshot to also persist into summary.json
+    let openapiHuman: any = undefined;
+    if (openapiSummary && !(openapiSummary as any).error) {
+      const { totalDefined, testedCount, untestedCount } = openapiSummary as any;
+      const untested = (openapiSummary as any).untested || [];
+      const untestedPreview = Array.isArray(untested) ? untested.slice(0, 10) : [];
+      openapiHuman = { totalDefined, testedCount, untestedCount, untestedPreview };
+    }
+
     const summary = {
       totalCalls: calls.length,
       uniqueEndpoints: Object.keys(unique).length,
@@ -163,11 +172,26 @@ after(function () {
       byFile,
       testsWithTitles,
       openapi: openapiSummary,
+      openapiHuman,
     };
 
     writeFileSync(outFile, JSON.stringify(summary, null, 2), { encoding: "utf8" });
     // eslint-disable-next-line no-console
     console.log(`[bootstrap] coverage summary written to ${outFile}`);
+
+    // Human-friendly console summary for quick visibility
+    if (summary.openapi && !summary.openapi.error) {
+      const { totalDefined, testedCount, untestedCount, untested } = summary.openapi as any;
+      // eslint-disable-next-line no-console
+      console.log(`[bootstrap] OpenAPI endpoints: total=${totalDefined}, tested=${testedCount}, untested=${untestedCount}`);
+      if (Array.isArray(untested) && untested.length > 0) {
+        const preview = untested.slice(0, 10).map((u: any) => `${u.method} ${u.path}`).join("\n  - ");
+        // eslint-disable-next-line no-console
+        console.log(`[bootstrap] Untested (first ${Math.min(10, untested.length)} of ${untested.length}):\n  - ${preview}`);
+        // eslint-disable-next-line no-console
+        console.log(`[bootstrap] See full list in ${outFile}`);
+      }
+    }
     // Optionally enforce that all OpenAPI endpoints are tested. Set FAIL_ON_UNTESTED=true (or '1') in the environment
     // to make the test run fail when any endpoint from openapi.json is untested.
 

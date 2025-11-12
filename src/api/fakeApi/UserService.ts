@@ -1,31 +1,34 @@
 import ApiService from "../ApiService";
+import { buildRandomUserBody } from "@common/fakeApi/Utils";
 
 class UserService {
-    // CRUD signatures only. Implementations intentionally removed for the experiment.
+    private api = ApiService.getInstance().instance;
 
+    // POST /users
     public async createUser(body?: any) {
-        // AI: Implement using ApiService.getInstance().instance.post("/users", body)
-        throw new Error("NOT_IMPLEMENTED");
+        const payload = body ?? buildRandomUserBody();
+        return this.api.post("/users", payload);
     }
 
+    // GET /users
     public async getAllUsers() {
-        // AI: Implement using ApiService.getInstance().instance.get("/users")
-        throw new Error("NOT_IMPLEMENTED");
+        return this.api.get("/users");
     }
 
+    // GET /users/{id}
     public async getUserById(id: number) {
-        // AI: Implement using ApiService.getInstance().instance.get(`/users/${id}`)
-        throw new Error("NOT_IMPLEMENTED");
+        return this.api.get(`/users/${id}`);
     }
 
+    // PUT /users/{id}
     public async updateUserById(id: number, body: any) {
-        // AI: Implement using ApiService.getInstance().instance.put(`/users/${id}`, body)
-        throw new Error("NOT_IMPLEMENTED");
+        const payload = body ?? buildRandomUserBody();
+        return this.api.put(`/users/${id}`, payload);
     }
 
+    // DELETE /users/{id}
     public async deleteUserById(id: number) {
-        // AI: Implement using ApiService.getInstance().instance.delete(`/users/${id}`)
-        throw new Error("NOT_IMPLEMENTED");
+        return this.api.delete(`/users/${id}`);
     }
 }
 

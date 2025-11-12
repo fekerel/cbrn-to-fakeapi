@@ -1,31 +1,34 @@
 import ApiService from '../ApiService';
+import { buildRandomProductBody } from '@common/fakeApi/Utils';
 
 class ProductService {
-    // CRUD stubs only for experiment.
+    private api = ApiService.getInstance().instance;
 
     public async createProduct(body?: any) {
-        // AI: POST /products
-        throw new Error("NOT_IMPLEMENTED");
+        // POST /products
+        const payload = body ?? buildRandomProductBody();
+        return this.api.post('/products', payload);
     }
 
     public async getAllProducts() {
-        // AI: GET /products
-        throw new Error("NOT_IMPLEMENTED");
+        // GET /products
+        return this.api.get('/products');
     }
 
     public async getProductById(id: number) {
-        // AI: GET /products/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // GET /products/{id}
+        return this.api.get(`/products/${id}`);
     }
 
     public async updateProductById(id: number, body: any) {
-        // AI: PUT /products/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // PUT /products/{id}
+        const payload = body ?? buildRandomProductBody();
+        return this.api.put(`/products/${id}`, payload);
     }
 
     public async deleteProductById(id: number) {
-        // AI: DELETE /products/{id}
-        throw new Error("NOT_IMPLEMENTED");
+        // DELETE /products/{id}
+        return this.api.delete(`/products/${id}`);
     }
 }
 
