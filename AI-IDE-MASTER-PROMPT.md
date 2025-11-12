@@ -35,7 +35,7 @@ Make sure you actually run the command in the workspace — do not create the br
 - For each test case, create a scenario service under src/api/fakeApi named <Domain>ScenarioService.ts exposing exactly one parameterless public method that does setup → calls exactly one endpoint → returns the Axios response.
 - Tests must live under fake-api-tests/, be named *.spec.ts, and call exactly one parameterless scenario method.
 - Every `it` title must follow: METHOD PATH - expectation (see GUIDE 4.1).
- - Assertions must be schema-driven per GUIDE 5.1 — assert required fields, types, enums, and critically, nested object fields and arrays' representative item shapes. Do not stop at top-level fields. Also cover numeric bounds, ordering, and pagination when applicable.
+ - Assertions must be schema-driven per GUIDE 5.1 — validate ALL documented non-nullable/required response fields (not just top-level), including nested object fields and representative array item shapes. Use the exact success status code from OpenAPI (do not write "200 or 201"). Also cover numeric bounds, ordering, and pagination when applicable.
 
 Note on server-managed timestamps: If schemas show `createdAt` and `modifiedAt` (or similar) in `openapi.json`, do NOT include those fields in request bodies. They are server-handled. Scenario services must not set `createdAt`/`modifiedAt` in request payloads, these fields may be excluded from validations as well.
 
@@ -48,6 +48,7 @@ Additional mandate (must follow): Cover every endpoint in `openapi.json`
 - Deliverables:
   - List of files created/modified.
   - Short summary of endpoints covered.
+  - Note any discrepancies observed between live responses and the OpenAPI documentation (endpoint + brief description of the mismatch, e.g., missing field, different status code, type mismatch).
 - Note: coverage/summary.json is generated automatically after the run; no extra work needed.
 
 Constraints / Don’ts

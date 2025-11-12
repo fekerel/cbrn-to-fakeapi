@@ -1,5 +1,5 @@
 import { stateService } from "@/api/fakeApi/StateService";
-import { writeFileSync, mkdirSync, readFileSync } from "fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync, unlinkSync } from "fs";
 import * as path from "path";
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -26,6 +26,23 @@ const g: any = globalThis as any;
 if (!g.__endpointCoverage) {
   g.__endpointCoverage = [] as Array<{ method?: string; url?: string; file?: string; title?: string }>;
 }
+
+// Clear previous coverage artifacts at the very beginning of the run
+before(function () {
+  try {
+    const outDir = path.resolve(process.cwd(), "coverage");
+    const outFile = path.join(outDir, "summary.json");
+    const errFile = path.join(outDir, "untested_endpoints.txt");
+    if (existsSync(outFile)) unlinkSync(outFile);
+    if (existsSync(errFile)) unlinkSync(errFile);
+    mkdirSync(outDir, { recursive: true });
+    // eslint-disable-next-line no-console
+    console.log("[bootstrap] cleared previous coverage artifacts");
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn("[bootstrap] could not clear previous coverage artifacts", e);
+  }
+});
 
 beforeEach(async function () {
   // this.timeout erişimi için normal function kullanılıyor

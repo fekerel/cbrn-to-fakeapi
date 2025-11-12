@@ -141,6 +141,9 @@ Why: This drives a readable mapping from titles to endpoints and enhances the ge
   - Array lengths consistent with counts or limits.
 - Mandatory: add schema-driven checks using `openapi.json` (see 5.1).
 
+Status code specificity (required)
+- Use the exact success status documented for the tested endpoint in OpenAPI (Swagger). Do not write generic checks like "200 or 201". For example: POST usually returns 201; GET 200; DELETE might be 200 or 204 depending on the spec — assert the one documented.
+
 Important: You MUST validate nested fields
 - Do not stop at top-level fields. If the response includes nested objects or arrays of objects, validate representative nested fields according to the schema (e.g., `address.city` as string, `items[0].quantity` as integer, `items[0].productId` as integer).
 - Study the target endpoint’s response schema in `openapi.json` carefully (Swagger UI or the JSON file) and mirror key nested fields in your assertions.
@@ -156,9 +159,10 @@ Important: You MUST validate nested fields
 ### 5.1) Schema-driven assertions (mandatory)
 Use `openapi.json` as the source of truth for response shapes and constraints. Your tests must assert key schema elements, not just that `data` is an object. Aim for concise but meaningful coverage:
 
-- Required vs optional fields
-  - Assert all `required` properties exist.
-  - For optional fields present, assert their types.
+- Required vs optional/non-nullable fields
+  - Assert all fields that the schema documents as required or non-nullable are present in the response with correct types.
+  - For nullable or optional fields, if present, assert their types; avoid assuming presence when `nullable: true` (or similar) is indicated.
+  - If the schema/example in OpenAPI depicts fields without `nullable: true`, treat them as expected in responses and validate them.
 - Types and enums
   - Assert primitive types (string/number/boolean/integer).
   - For enums, assert value ∈ allowed set.
@@ -204,6 +208,9 @@ npm run openapi:fetch
 
 - Use `openapi.json` to list endpoints and schemas. Implement missing core service methods before writing scenario methods/tests.
  - Before writing assertions, inspect the endpoint's response schema (including nested properties) and plan validations that cover key nested fields and representative array items.
+
+If observed behavior conflicts with OpenAPI
+- If an actual response during tests appears to conflict with the documented schema (missing field that is non-nullable/required, type mismatch, status code differs), keep your tests aligned with the observed behavior so the run is meaningful, but add a short note about the mismatch in your final output (see section 9 Deliverables) for human review.
 
 ### 6.1 Required endpoint coverage (MANDATORY)
 
@@ -272,6 +279,7 @@ git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
   - Endpoint coverage (fraction of paths with at least one test).
   - Assertion quality (depth against OpenAPI schema; shallow type-only checks are insufficient).
      - Build/lint status.
+  - Please include any observed discrepancies between live responses and OpenAPI documentation in your final output (short bullet list per endpoint: what differed and how).
 
 ## 10) Reference: existing patterns in this repo
 - Core services with simple wrappers: `UserService.ts`, `ProductService.ts`, `OrderService.ts`, `CategoryService.ts`, `ReviewService.ts`.
