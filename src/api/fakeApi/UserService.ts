@@ -21,18 +21,6 @@ class UserService {
         return res.data;
     }
 
-
-    public async createUserThenOrderThenGetUserTotalSpent(totalAmount: number): Promise<number> {
-        const createdUserRes = await this.addUserRandom();
-        const createdUser = createdUserRes && createdUserRes.data ? createdUserRes.data : createdUserRes;
-        const userId = createdUser?.id;
-        await orderService.addOrder({ userId, totalAmount: totalAmount });
-        const res = await ApiService.getInstance().instance.get(`/users/${userId}/total-spent`);
-        const payload = res && res.data ? res.data : {};
-        const totalSpent = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
-        return isNaN(totalSpent) ? -1 : totalSpent;
-    }
-
     public async getAllUsers() {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users`);
         return response;
