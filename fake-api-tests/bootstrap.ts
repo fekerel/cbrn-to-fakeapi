@@ -27,9 +27,11 @@ if (!g.__endpointCoverage) {
   g.__endpointCoverage = [] as Array<{ method?: string; url?: string; file?: string; title?: string }>;
 }
 
-// Clear previous coverage artifacts at the very beginning of the run
+// Clear previous coverage artifacts at the very beginning of the run (only if collection is enabled)
 before(function () {
   try {
+    const collectSummary = ((process.env.COLLECT_OPENAPI_SUMMARY || "").toLowerCase() === 'true') || ((process.env.COLLECT_OPENAPI_SUMMARY || "") === '1');
+    if (!collectSummary) return;
     const outDir = path.resolve(process.cwd(), "coverage");
     const outFile = path.join(outDir, "summary.json");
     const errFile = path.join(outDir, "untested_endpoints.txt");
@@ -76,8 +78,8 @@ beforeEach(async function () {
 
 after(function () {
   try {
+    const collectSummary = ((process.env.COLLECT_OPENAPI_SUMMARY || "").toLowerCase() === 'true') || ((process.env.COLLECT_OPENAPI_SUMMARY || "") === '1');
     const outDir = path.resolve(process.cwd(), "coverage");
-    mkdirSync(outDir, { recursive: true });
     const outFile = path.join(outDir, "summary.json");
 
     const calls = (g.__endpointCoverage || []) as Array<{ method?: string; url?: string; file?: string; title?: string }>;
@@ -111,112 +113,115 @@ after(function () {
       }
     }
 
-    // Build OpenAPI-based endpoint coverage (tested/untested)
+    // Decide whether to compute OpenAPI coverage (for enforcement and/or summary)
+    const failFlagRaw = (process.env.FAIL_ON_UNTESTED || "false").toLowerCase();
+    const enforceUntested = (failFlagRaw === '1' || failFlagRaw === 'true');
     let openapiSummary: any = undefined;
-    try {
-      const openapiPath = path.resolve(process.cwd(), "openapi.json");
-      const openapiRaw = readFileSync(openapiPath, { encoding: "utf8" });
-      const openapi = JSON.parse(openapiRaw);
+    if (collectSummary || enforceUntested) {
+      try {
+        const openapiPath = path.resolve(process.cwd(), "openapi.json");
+        const openapiRaw = readFileSync(openapiPath, { encoding: "utf8" });
+        const openapi = JSON.parse(openapiRaw);
 
-      type OAEndpoint = { method: string; path: string; regex: RegExp };
-      const oaEndpoints: OAEndpoint[] = [];
+        type OAEndpoint = { method: string; path: string; regex: RegExp };
+        const oaEndpoints: OAEndpoint[] = [];
 
-      const toRegex = (p: string) => new RegExp("^" + p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\\\{[^}]+\\\}/g, "[^/]+") + "$");
+        const toRegex = (p: string) => new RegExp("^" + p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\\\{[^}]+\\\}/g, "[^/]+") + "$");
 
-      const PATH_METHODS = ["get", "post", "put", "patch", "delete"];
-      if (openapi && openapi.paths) {
-        for (const p of Object.keys(openapi.paths)) {
-          const obj = openapi.paths[p] || {};
-          for (const m of PATH_METHODS) {
-            if (obj[m]) {
-              oaEndpoints.push({ method: m.toUpperCase(), path: p, regex: toRegex(p) });
+        const PATH_METHODS = ["get", "post", "put", "patch", "delete"];
+        if (openapi && openapi.paths) {
+          for (const p of Object.keys(openapi.paths)) {
+            const obj = openapi.paths[p] || {};
+            for (const m of PATH_METHODS) {
+              if (obj[m]) {
+                oaEndpoints.push({ method: m.toUpperCase(), path: p, regex: toRegex(p) });
+              }
             }
           }
         }
-      }
 
-      // Normalize recorded calls (strip query) and count hits per OA endpoint
-      const hitCounts: Record<string, number> = {};
-      const testedSet: Set<string> = new Set();
-      for (const c of calls) {
-        const method = (c.method || '').toUpperCase();
-        if (!method) continue;
-        const raw = (c.url || '');
-        const pathOnly = raw.split('?')[0];
-        // Find matching OA endpoint by regex
-        const match = oaEndpoints.find(ep => ep.method === method && ep.regex.test(pathOnly));
-        if (match) {
-          const key = `${match.method} ${match.path}`;
-          testedSet.add(key);
-          hitCounts[key] = (hitCounts[key] || 0) + 1;
+        // Normalize recorded calls (strip query) and count hits per OA endpoint
+        const hitCounts: Record<string, number> = {};
+        const testedSet: Set<string> = new Set();
+        for (const c of calls) {
+          const method = (c.method || '').toUpperCase();
+          if (!method) continue;
+          const raw = (c.url || '');
+          const pathOnly = raw.split('?')[0];
+          // Find matching OA endpoint by regex
+          const match = oaEndpoints.find(ep => ep.method === method && ep.regex.test(pathOnly));
+          if (match) {
+            const key = `${match.method} ${match.path}`;
+            testedSet.add(key);
+            hitCounts[key] = (hitCounts[key] || 0) + 1;
+          }
         }
+
+        const allKeys = oaEndpoints.map(ep => `${ep.method} ${ep.path}`);
+        const untested = allKeys.filter(k => !testedSet.has(k)).map(k => {
+          const [method, ...rest] = k.split(' ');
+          return { method, path: rest.join(' ') };
+        });
+
+        openapiSummary = {
+          totalDefined: oaEndpoints.length,
+          testedCount: testedSet.size,
+          untestedCount: untested.length,
+          untested,
+          hitCounts: Object.entries(hitCounts).map(([k, count]) => {
+            const [method, ...rest] = k.split(' ');
+            return { method, path: rest.join(' '), count };
+          })
+        };
+      } catch (e) {
+        openapiSummary = { error: "openapi.json not available or invalid" };
+      }
+    }
+
+    if (collectSummary) {
+      // Build a human-friendly snapshot to also persist into summary.json
+      let openapiHuman: any = undefined;
+      if (openapiSummary && !(openapiSummary as any).error) {
+        const { totalDefined, testedCount, untestedCount } = openapiSummary as any;
+        const untested = (openapiSummary as any).untested || [];
+        const untestedPreview = Array.isArray(untested) ? untested.slice(0, 10) : [];
+        openapiHuman = { totalDefined, testedCount, untestedCount, untestedPreview };
       }
 
-      const allKeys = oaEndpoints.map(ep => `${ep.method} ${ep.path}`);
-      const untested = allKeys.filter(k => !testedSet.has(k)).map(k => {
-        const [method, ...rest] = k.split(' ');
-        return { method, path: rest.join(' ') };
-      });
-
-      openapiSummary = {
-        totalDefined: oaEndpoints.length,
-        testedCount: testedSet.size,
-        untestedCount: untested.length,
-        untested,
-        hitCounts: Object.entries(hitCounts).map(([k, count]) => {
-          const [method, ...rest] = k.split(' ');
-          return { method, path: rest.join(' '), count };
-        })
+      const summary = {
+        totalCalls: calls.length,
+        uniqueEndpoints: Object.keys(unique).length,
+        endpoints: Object.entries(unique).map(([k, count]) => ({ endpoint: k, count })),
+        byFile,
+        testsWithTitles,
+        openapi: openapiSummary,
+        openapiHuman,
       };
-    } catch (e) {
-      // ignore openapi coverage if file is missing or invalid
-      openapiSummary = { error: "openapi.json not available or invalid" };
-    }
 
-    // Build a human-friendly snapshot to also persist into summary.json
-    let openapiHuman: any = undefined;
-    if (openapiSummary && !(openapiSummary as any).error) {
-      const { totalDefined, testedCount, untestedCount } = openapiSummary as any;
-      const untested = (openapiSummary as any).untested || [];
-      const untestedPreview = Array.isArray(untested) ? untested.slice(0, 10) : [];
-      openapiHuman = { totalDefined, testedCount, untestedCount, untestedPreview };
-    }
-
-    const summary = {
-      totalCalls: calls.length,
-      uniqueEndpoints: Object.keys(unique).length,
-      endpoints: Object.entries(unique).map(([k, count]) => ({ endpoint: k, count })),
-      byFile,
-      testsWithTitles,
-      openapi: openapiSummary,
-      openapiHuman,
-    };
-
-    writeFileSync(outFile, JSON.stringify(summary, null, 2), { encoding: "utf8" });
-    // eslint-disable-next-line no-console
-    console.log(`[bootstrap] coverage summary written to ${outFile}`);
-
-    // Human-friendly console summary for quick visibility
-    if (summary.openapi && !summary.openapi.error) {
-      const { totalDefined, testedCount, untestedCount, untested } = summary.openapi as any;
+      mkdirSync(outDir, { recursive: true });
+      writeFileSync(outFile, JSON.stringify(summary, null, 2), { encoding: "utf8" });
       // eslint-disable-next-line no-console
-      console.log(`[bootstrap] OpenAPI endpoints: total=${totalDefined}, tested=${testedCount}, untested=${untestedCount}`);
-      if (Array.isArray(untested) && untested.length > 0) {
-        const preview = untested.slice(0, 10).map((u: any) => `${u.method} ${u.path}`).join("\n  - ");
+      console.log(`[bootstrap] coverage summary written to ${outFile}`);
+
+      // Human-friendly console summary for quick visibility
+      if (summary.openapi && !summary.openapi.error) {
+        const { totalDefined, testedCount, untestedCount, untested } = summary.openapi as any;
         // eslint-disable-next-line no-console
-        console.log(`[bootstrap] Untested (first ${Math.min(10, untested.length)} of ${untested.length}):\n  - ${preview}`);
-        // eslint-disable-next-line no-console
-        console.log(`[bootstrap] See full list in ${outFile}`);
+        console.log(`[bootstrap] OpenAPI endpoints: total=${totalDefined}, tested=${testedCount}, untested=${untestedCount}`);
+        if (Array.isArray(untested) && untested.length > 0) {
+          const preview = untested.slice(0, 10).map((u: any) => `${u.method} ${u.path}`).join("\n  - ");
+          // eslint-disable-next-line no-console
+          console.log(`[bootstrap] Untested (first ${Math.min(10, untested.length)} of ${untested.length}):\n  - ${preview}`);
+          // eslint-disable-next-line no-console
+          console.log(`[bootstrap] See full list in ${outFile}`);
+        }
       }
     }
     // Optionally enforce that all OpenAPI endpoints are tested. Set FAIL_ON_UNTESTED=true (or '1') in the environment
     // to make the test run fail when any endpoint from openapi.json is untested.
 
-    const failOnUntested = "false";
-
     try {
-      const failFlag = (process.env.FAIL_ON_UNTESTED || failOnUntested || "").toLowerCase();
-      if ((failFlag === '1' || failFlag === 'true') && openapiSummary && Array.isArray(openapiSummary.untested) && openapiSummary.untested.length > 0) {
+      if (enforceUntested && openapiSummary && Array.isArray(openapiSummary.untested) && openapiSummary.untested.length > 0) {
         const list = openapiSummary.untested.map((u: any) => `${u.method} ${u.path}`).join('\n');
         // write a short file for CI visibility
         try {

@@ -138,7 +138,7 @@ it("GET /products/{id}/reviews-summary - returns aggregation fields", async () =
 it("DELETE /orders/{id} - removes order (200)", async () => { /* ... */ });
 ```
 
-Why: This drives a readable mapping from titles to endpoints and enhances the generated `coverage/summary.json` artifact for human comparison.
+Why: This drives a readable mapping from titles to endpoints.
 
 ## 5) Assertions (minimum expectations)
 - Always check `response.status` matches the expected success code (typically 200; 201 for creations).
@@ -233,8 +233,6 @@ If observed behavior conflicts with OpenAPI
 - If an endpoint is impossible to exercise in this test environment (external auth-only, requires special partner data, or is deprecated), you MUST:
   - Leave a single `.spec.ts` test file for that endpoint containing a failing-skipped-style TODO: a short comment explaining why it's unreachable and a clearly labeled `it("<METHOD> <PATH> - TODO: unreachable in current test env", async () => { /* TODO: reason */ });` entry. Do not use `it.skip` or `describe.skip`—we need visible TODOs for manual review.
   - Document the exemption in your PR description and in the test file header comment.
-- The test bootstrap collects coverage and writes `coverage/summary.json` which contains an `openapi.untested` list. Aim for `untestedCount: 0` before finishing your run.
-
 Note: For the automated experiment runs we may set an environment flag to enforce zero untested endpoints (see section 11 and the `fake-api-tests/bootstrap.ts` behavior). If enforced, the test run will fail when any endpoint is untested.
 
 ## 7) What NOT to do
@@ -277,12 +275,6 @@ git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
    - Generate/modify files according to this guide only.
    - Run `npm run test:fake` and ensure tests execute.
   - Produce artifacts: list of files changed, summary of endpoints covered.
-  - Coverage artifact (auto): After tests, a file `coverage/summary.json` is generated containing:
-    - unique endpoints hit (METHOD + path)
-    - per-file breakdown
-    - parsed test titles (`testsWithTitles`) following the convention in 4.1
-    - OpenAPI-aware coverage: total defined endpoints, per-endpoint hit counts, and an explicit `untested` list of endpoints not hit by any test. This is derived automatically from `openapi.json` and recorded HTTP calls.
-    You don’t need to write this manually; it is collected via HTTP interceptors during tests.
 
 4. Collection
    - We will collect branches and compare:

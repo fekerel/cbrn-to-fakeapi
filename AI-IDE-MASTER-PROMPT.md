@@ -47,7 +47,7 @@ Note on server-managed timestamps: If schemas show `createdAt` and `modifiedAt` 
 
 Additional mandate (must follow): Cover every endpoint in `openapi.json`
 - For this experiment you MUST cover every endpoint listed in `openapi.json`. For each endpoint, add a core service method (if missing), a scenario method, and a single `.spec.ts` test. If an endpoint cannot be exercised in this environment, add a short TODO test explaining why (see GUIDE.md for the exemption format).
-- After running tests, ensure `coverage/summary.json` shows `openapi.untestedCount: 0`. If not, add/adjust tests until coverage is complete. 
+- After running tests, ensure every endpoint is actually exercised by at least one test; add or adjust tests until coverage is complete.
 
 4) Run and deliver
 - Run tests exactly as documented in GUIDE and fix failures.
@@ -55,7 +55,7 @@ Additional mandate (must follow): Cover every endpoint in `openapi.json`
   - List of files created/modified.
   - Short summary of endpoints covered.
   - Note any discrepancies observed between live responses and the OpenAPI documentation (endpoint + brief description of the mismatch, e.g., missing field, different status code, type mismatch).
-- Note: coverage/summary.json is generated automatically after the run; no extra work needed.
+ 
 
 Constraints / Don’ts
 - Do not call axios/fetch directly in tests; go through ApiService within services.
@@ -70,5 +70,4 @@ Acceptance
  - Assertions reflect OpenAPI schemas (including nested fields) — depth over shallow type-only checks.
 - Scenario services exist under src/api/fakeApi/*ScenarioService.ts and expose parameterless methods.
 - HTTP calls go through ApiService only.
-- coverage/summary.json is present after the run.
 - Provide endpoints covered + files changed in your final output.
