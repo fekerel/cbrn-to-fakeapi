@@ -10,8 +10,7 @@ API istekleri **ApiService** üzerinden yapılacaktır.
 
 1. 🔀 **Branch Oluştur**
    - Yeni bir branch oluştur:
-     git checkout -b yapay-zeka-<tarih>-<saat>
-   - Örnek: git checkout -b yapay-zeka-2025-11-14-00-40
+     git checkout -b `ai-<tool-name>-<YYYYMMDD-HHmm>`. (tool-name'den kastımız: cursor, windsurf, copilot, junie vb.)
    - Tüm işlemleri bu branch üzerinde gerçekleştir.
    - ⚠️ **Commit veya push yapma.**  
      Tüm testler başarıyla geçince yalnızca “BİTTİ” diyerek işlemi sonlandır.
