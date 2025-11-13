@@ -4,7 +4,8 @@ import EnvironmentEnum from '@/common/enum/EnvironmentEnum';
 import { UrlConfig } from '@common/Types';
 
 let urlConfig: UrlConfig;
-const ENVIRONMENT = Cli.get('environment') ? Cli.get('environment').toUpperCase() : EnvironmentEnum;
+// Default to FakeAPI when no CLI environment is provided so baseURL resolves to localhost:8000
+const ENVIRONMENT = Cli.get('environment') ? Cli.get('environment').toUpperCase() : EnvironmentEnum.FakeAPI;
 
 switch (ENVIRONMENT) {
     case EnvironmentEnum.FakeAPI:

@@ -48,6 +48,10 @@ class ApiService extends HttpClient {
     }
 
     public async autoLoginForGuestUser(userName?: string, password?: string, mode?: string) {
+        // Do not perform any login flow when targeting FakeAPI (json-server doesn't require auth)
+        if ((TestConstants.environment || '').toUpperCase() === 'FAKEAPI') {
+            return ApiService.classInstance || ApiService.getInstance();
+        }
         const data: ParamsData = {
             username: userName || TestConstants.username,
             password: password || TestConstants.password,
@@ -83,6 +87,10 @@ class ApiService extends HttpClient {
     }
 
     public async autoLogin(userName?: string, password?: string, mode?: string) {
+        // Do not perform any login flow when targeting FakeAPI (json-server doesn't require auth)
+        if ((TestConstants.environment || '').toUpperCase() === 'FAKEAPI') {
+            return ApiService.classInstance || ApiService.getInstance();
+        }
         const data: ParamsData = {
             username: userName || TestConstants.username,
             password: password || TestConstants.password,
