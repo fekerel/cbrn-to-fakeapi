@@ -28,10 +28,7 @@ API istekleri **ApiService** üzerinden yapılacaktır.
 ---
 
 3. 📘 **Swagger Verisini Oku**
-   - Swagger JSON dosyası şu konumda bulunuyor:
-     ```
-     F:\ApiTest\VS\cbrn-to-fakeapi\openapi.json
-     ```
+   - Swagger'ın güncel halini elde etmek için `npm run openapi:fetch` komutunu çalıştır. Bunu yaptığında güncel swagger spesifikasyonu proje root'undaki openapi.json dosyasında yer alacaktır.
    - Bu dosyayı doğrudan oku.  
    - Tüm endpoint’leri, HTTP metodlarını, request parametrelerini ve response yapılarını analiz et.
 
@@ -72,6 +69,12 @@ API istekleri **ApiService** üzerinden yapılacaktır.
      - Her test **tek tek** `it()` bloğu içinde yazılacak.  
      - **Kesinlikle** for, foreach, map veya benzeri döngü tabanlı otomatik test oluşturma yapılmayacak.  
      - Her endpoint için **ayrı bir `it()` tanımı** bulunacak.  
+     - `it()` başlık formatı ZORUNLU: `<METHOD> <PATH> - <expectation statement>` olmalıdır.  
+       - Dinamik segmentler placeholder ile yazılmalıdır: `/users/{id}`, `/orders/{id}` gibi; kesinlikle `/users/1` gibi somut değer kullanılmamalı.  
+       - Örnekler:  
+         - `GET /users/{id} - should return 200`  
+         - `POST /users - creates new user with id`  
+         - `DELETE /orders/{id} - removes order (200)`  
      - CRUD testlerindeki test yapısı, `describe` – `it` sırası, `expect` biçimi, `async` yapısı ve `await` kullanımı birebir korunacak.  
      - `it` ile test tanımlanırken **servis metoduna asla parametre yollanmayacak.**  
      - Eğer bir `data` gerekiyorsa bu `data`, **servis metodunun içinde** tanımlanacak.  
