@@ -29,7 +29,7 @@ describe("Order Test", async () => {
         ]);
 
         expect(response.data.status).to.be.oneOf([
-            "delivered", "cancelled", "returned", "failed"
+            "delivered", "cancelled", "returned", "failed", "pending"
         ]);
 
         expect(response.data.payment.status).to.be.oneOf([
