@@ -15,12 +15,12 @@ npm install
 
 - Testleri çalıştır:
 ```bash
-npm run test:fake
+yarn run runner
 ```
 
 ## Önemli Script’ler
 - `openapi:fetch`: OpenAPI JSON’ını `./openapi.json` olarak indirir. AI/araçlar için güncel şema sağlar.
-- `test:fake`: Mocha’yı TypeScript ile çalıştırır, `fake-api-tests/**/*.ts` altında tüm testleri yürütür ve bootstrap’i yükler.
+- `runner`: Mocha’yı TypeScript ile çalıştırır, `fake-api-tests/**/*.ts` altında tüm testleri yürütür ve bootstrap’i yükler.
 - `seed:fake`: Gerekirse veri tabanında veri üretimi tetikleyen komut.
 
 ## Test Yaşam Döngüsü ve Reset Stratejisi

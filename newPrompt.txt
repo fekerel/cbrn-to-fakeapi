@@ -113,7 +113,7 @@ API istekleri **ApiService** üzerinden yapılacaktır.
 7. ▶️ **Testleri Çalıştır**
    - Testleri şu komutla çalıştır:
      ```
-     npm run test:fake
+     yarn run runner
      ```
    - 5’erli test gruplarını sırayla yürüt.  
    - Eğer testlerden biri başarısız olursa önce o testleri düzeltip tekrar çalıştır.  

@@ -31,7 +31,7 @@ Read this guide carefully and follow all rules strictly. Do not ask clarifying q
 - Place tests under `fake-api-tests/` and name them with the `.spec.ts` suffix (e.g., `users.crud.spec.ts`, `products.analytics.spec.ts`). You must decide which endpoint should be tested at which file.
 - Do not use `describe.only` or `it.only`.
 - Before generating endpoints/tests, run `npm run openapi:fetch` to refresh `openapi.json`.
-- Tests are TypeScript and run with Mocha via `npm run test:fake`. The bootstrap file handles per-file DB reset; do NOT reset DB in tests.
+- Tests are TypeScript and run with Mocha via `yarn run runner`. The bootstrap file handles per-file DB reset; do NOT reset DB in tests.
 - Use the OpenAPI schema to drive assertions beyond basic type checks (see 5.1 Schema-driven assertions).
 
 TL;DR: Critical rules (don’t miss)
@@ -45,7 +45,7 @@ TL;DR: Critical rules (don’t miss)
 - Fake API should be running at `http://localhost:8000` (outside of this repo).
 - Important scripts:
   - `npm run openapi:fetch` → writes latest OpenAPI spec to `./openapi.json`.
-  - `npm run test:fake` → runs Mocha with TS support and loads `fake-api-tests/bootstrap.ts`.
+  - `yarn run runner` → runs Mocha with TS support and loads `fake-api-tests/bootstrap.ts`.
 
 ## 2) Project structure you must conform to
 - Core HTTP layer:
@@ -247,7 +247,7 @@ Note: For the automated experiment runs we may set an environment flag to enforc
 - Then run:
 
 ```powershell
-npm run test:fake
+yarn run runner
 ```
 
 - The `bootstrap.ts` will reset the DB once per test file by calling `StateService.resetDb()` which posts to `/_admin/reset-db`.
@@ -273,7 +273,7 @@ git checkout -b ai-<tool-name>-<YYYYMMDD-HHmm>
 3. Execution per AI IDE
   - Work on a dedicated branch named `ai-<tool-name>-<YYYYMMDD-HHmm>`.
    - Generate/modify files according to this guide only.
-   - Run `npm run test:fake` and ensure tests execute.
+   - Run `yarn run runner` and ensure tests execute.
   - Produce artifacts: list of files changed, summary of endpoints covered.
 
 4. Collection
