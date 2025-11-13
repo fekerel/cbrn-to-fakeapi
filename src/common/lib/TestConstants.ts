@@ -9,7 +9,8 @@ class TestConstants {
     private readonly params: ParamsData;
 
     constructor() {
-        const ENVIRONMENT = Cli.get('environment') ? Cli.get('environment').toUpperCase() : EnvironmentEnum.Dev;
+    // Default to FakeAPI when no CLI environment is provided so baseURL resolves to localhost:8000
+    const ENVIRONMENT = Cli.get('environment') ? Cli.get('environment').toUpperCase() : EnvironmentEnum.FakeAPI;
         const REPORTER = Cli.get('reporter') ? Cli.get('reporter').toUpperCase() : ReporterEnum.MOCHAWESOME.toUpperCase();
         const SUITE = Cli.get('suite') ? Cli.get('suite') : SuiteEnum.ROOT;
         const GREP = Cli.get('grep') ? Cli.get('grep') : '';

@@ -35,14 +35,29 @@ class Runner {
         const mocha = new MochaTest({
             reporter: 'spec',
             slow: 2000,
-            require: ['@common/lib/MochaHooks', 'mochawesome/register'],
+            // Ensure TypeScript tests and path aliases work when Mocha loads test files
+            require: ['ts-node/register', 'tsconfig-paths/register', '@common/lib/MochaHooks', 'mochawesome/register'],
             timeout: TestConstants.timeout * 2,
             jobs: 10,
             parallel: TestConstants.parallel === 'true',
         });
         this.setReporter(mocha, TestConstants.reporter!);
         TestConstants.environment = TestConstants.environment || 'SEL';
-        this.setTests(mocha, ConfigUtils.getTestsPath() + TestConstants.suite);
+        // Decide tests root: use fake-api-tests for FakeAPI environment; fallback to default tests root otherwise
+        const isFakeApiEnv = (TestConstants.environment || '').toUpperCase() === 'FAKEAPI';
+        const testsRoot = isFakeApiEnv
+            ? path.resolve(process.cwd(), 'fake-api-tests')
+            : path.resolve(process.cwd(), ConfigUtils.getTestsPath(), TestConstants.suite);
+
+        // Add bootstrap (per-file DB reset) first when running FakeAPI tests
+        if (isFakeApiEnv) {
+            const bootstrapPath = path.join(testsRoot, 'bootstrap.ts');
+            if (fs.existsSync(bootstrapPath)) {
+                mocha.addFile(bootstrapPath);
+            }
+        }
+
+        this.setTests(mocha, testsRoot);
         mocha.parallelMode(TestConstants.parallel === 'true');
         this.setGrep(mocha);
         mocha.rootHooks(mochaHooks);
@@ -292,8 +307,9 @@ class Runner {
         
         // await this.createServicesDataFiles();
         // await browserService.openBrowser();
-        if (TestConstants.suite === SuiteEnum.ROOT || TestConstants.suite === SuiteEnum.AWARENESS
-            || TestConstants.suite === SuiteEnum.ERG || TestConstants.suite === SuiteEnum.USERMANAGEMENT || TestConstants.suite === SuiteEnum.DATACREATION || TestConstants.suite === SuiteEnum.CBNRAWARENESS || TestConstants.suite === SuiteEnum.GROUPIMPORT)
+        const isFakeApiEnv = (TestConstants.environment || '').toUpperCase() === 'FAKEAPI';
+        if (!isFakeApiEnv && (TestConstants.suite === SuiteEnum.ROOT || TestConstants.suite === SuiteEnum.AWARENESS
+            || TestConstants.suite === SuiteEnum.ERG || TestConstants.suite === SuiteEnum.USERMANAGEMENT || TestConstants.suite === SuiteEnum.DATACREATION || TestConstants.suite === SuiteEnum.CBNRAWARENESS || TestConstants.suite === SuiteEnum.GROUPIMPORT))
             await ApiService.getInstance().autoLogin();
         // const publicLayerName = ConfigUtils.generateUniqueWord2();
         // process.env['SELECTEDLAYERID'] = await exampleService.method(publicLayerName);
@@ -342,8 +358,9 @@ class Runner {
             return;
         if (directory.includes('withoutName') && TestConstants.suite === SuiteEnum.ROOT)
             return;
+        // add .ts test files, skipping bootstrap.ts as it is added explicitly (when applicable)
         fs.readdirSync(directory)
-            .filter((file) => path.extname(file) === '.ts')
+            .filter((file) => path.extname(file) === '.ts' && file !== 'bootstrap.ts')
             .forEach((file) => {
                 mocha.addFile(path.join(directory, file));
             });

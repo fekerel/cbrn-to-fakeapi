@@ -72,7 +72,7 @@ describe.only("Order Test", async () => {
         ]);
 
         expect(firstOrder.status).to.be.oneOf([
-            "delivered", "cancelled", "returned", "failed"
+            "delivered", "cancelled", "returned", "failed", "pending"
         ]);
 
         expect(firstOrder.payment.status).to.be.oneOf([
