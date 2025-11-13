@@ -4,7 +4,6 @@ import { uniqueEmail, randomPassword } from "@/common/fakeApi/Utils";
 import { AxiosResponse } from "axios";
 import { merge } from "lodash";
 import addUserJSON from "@api/body/fakeApi/addUser.json";
-import { orderService } from "./OrderService";
 
 class UserService {
 
