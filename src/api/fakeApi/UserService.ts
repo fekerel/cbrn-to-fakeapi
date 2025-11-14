@@ -22,16 +22,16 @@ class UserService {
     }
 
 
-    public async createUserThenOrderThenGetUserTotalSpent(totalAmount: number): Promise<number> {
-        const createdUserRes = await this.addUserRandom();
-        const createdUser = createdUserRes && createdUserRes.data ? createdUserRes.data : createdUserRes;
-        const userId = createdUser?.id;
-        await orderService.addOrder({ userId, totalAmount: totalAmount });
-        const res = await ApiService.getInstance().instance.get(`/users/${userId}/total-spent`);
-        const payload = res && res.data ? res.data : {};
-        const totalSpent = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
-        return isNaN(totalSpent) ? -1 : totalSpent;
-    }
+    // public async createUserThenOrderThenGetUserTotalSpent(totalAmount: number): Promise<number> {
+    //     const createdUserRes = await this.addUserRandom();
+    //     const createdUser = createdUserRes && createdUserRes.data ? createdUserRes.data : createdUserRes;
+    //     const userId = createdUser?.id;
+    //     await orderService.addOrder({ userId, totalAmount: totalAmount });
+    //     const res = await ApiService.getInstance().instance.get(`/users/${userId}/total-spent`);
+    //     const payload = res && res.data ? res.data : {};
+    //     const totalSpent = payload && (typeof payload.total === "number" ? payload.total : parseFloat(String(payload.total || 0)));
+    //     return isNaN(totalSpent) ? -1 : totalSpent;
+    // }
 
     public async getAllUsers() {
         const response: AxiosResponse = await ApiService.getInstance().instance.get(`/users`);
@@ -123,6 +123,108 @@ class UserService {
             throw new Error(`Failed to create user. Status code: ${response.status}`);
         }
         return response
+    }
+
+    public async getUserTotalSpent() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/total-spent`);
+        return response;
+    }
+
+    public async getUserChurnAnalysis() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/churn-analysis`);
+        return response;
+    }
+
+    public async getUserEngagementScore() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/engagement-score`);
+        return response;
+    }
+
+    public async getUserLifetimeValue() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/lifetime-value`);
+        return response;
+    }
+
+    public async getUserOrderTimeline() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/order-timeline`);
+        return response;
+    }
+
+    public async getUserPaymentMethodsSummary() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/payment-methods-summary`);
+        return response;
+    }
+
+    public async getUserPurchaseAnalysis() {
+        const user = await this.getRandomUser();
+        const body = {
+            userId: user.id
+        };
+        const response = await ApiService.getInstance().instance.post("/users/purchase-analysis", body);
+        return response;
+    }
+
+    public async getUserReturnRate() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/return-rate`);
+        return response;
+    }
+
+    public async getUserReviewsHistory() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/reviews-history`);
+        return response;
+    }
+
+    public async getUserActivity() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/activity`);
+        return response;
+    }
+
+    public async searchUsers() {
+        const users = (await this.getAllUsers()).data;
+        if (!users || users.length === 0) {
+            throw new Error("No users found");
+        }
+        const user = users[0];
+        const body = {
+            firstName: user.firstName
+        };
+        try {
+            const response = await ApiService.getInstance().instance.post("/users/search", body);
+            return response;
+        } catch (error) {
+            // If 404, return a mock response
+            if (error.response && error.response.status === 404) {
+                return { status: 404, data: [] };
+            }
+            throw error;
+        }
+    }
+
+    public async getUserShoppingPatterns() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/shopping-patterns`);
+        return response;
+    }
+
+    public async getUserOrderHistory() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/order-history`);
+        return response;
+    }
+
+    public async getUserPurchaseSummary() {
+        const user = await this.getRandomUser();
+        const response = await ApiService.getInstance().instance.get(`/users/${user.id}/purchase-summary`);
+        return response;
     }
 }
 

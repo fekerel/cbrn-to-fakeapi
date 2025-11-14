@@ -320,21 +320,21 @@
                 },
                 "example": [
                   {
-                    "email": "Verdie.Beatty-Hettinger35@example.com",
-                    "password": "mUAQ8f18w_nP",
-                    "firstName": "Hunter",
-                    "lastName": "Anderson",
-                    "role": "support",
+                    "email": "Kenya.Kassulke-Strosin52@example.com",
+                    "password": "2MgY_Dw6fwRd",
+                    "firstName": "Tyrel",
+                    "lastName": "Block",
+                    "role": "admin",
                     "address": {
-                      "street": "270 Maye Shore",
-                      "city": "Port Danport",
-                      "country": "Isle of Man",
-                      "zipCode": "93712-2805"
+                      "street": "654 2nd Avenue",
+                      "city": "Jacksonville",
+                      "country": "Botswana",
+                      "zipCode": "20071-9279"
                     },
-                    "phone": "+19263784140",
-                    "status": "pending",
-                    "createdAt": 1762924919764,
-                    "modifiedAt": 1762924919764,
+                    "phone": "+16054288011",
+                    "status": "banned",
+                    "createdAt": 1763035082294,
+                    "modifiedAt": 1763035082294,
                     "id": 1
                   }
                 ]
@@ -352,19 +352,19 @@
                 "$ref": "#/components/schemas/users"
               },
               "example": {
-                "email": "Verdie.Beatty-Hettinger35@example.com",
-                "password": "mUAQ8f18w_nP",
-                "firstName": "Hunter",
-                "lastName": "Anderson",
-                "role": "support",
+                "email": "Kenya.Kassulke-Strosin52@example.com",
+                "password": "2MgY_Dw6fwRd",
+                "firstName": "Tyrel",
+                "lastName": "Block",
+                "role": "admin",
                 "address": {
-                  "street": "270 Maye Shore",
-                  "city": "Port Danport",
-                  "country": "Isle of Man",
-                  "zipCode": "93712-2805"
+                  "street": "654 2nd Avenue",
+                  "city": "Jacksonville",
+                  "country": "Botswana",
+                  "zipCode": "20071-9279"
                 },
-                "phone": "+19263784140",
-                "status": "pending"
+                "phone": "+16054288011",
+                "status": "banned"
               }
             }
           }
@@ -378,21 +378,21 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "email": "Verdie.Beatty-Hettinger35@example.com",
-                  "password": "mUAQ8f18w_nP",
-                  "firstName": "Hunter",
-                  "lastName": "Anderson",
-                  "role": "support",
+                  "email": "Kenya.Kassulke-Strosin52@example.com",
+                  "password": "2MgY_Dw6fwRd",
+                  "firstName": "Tyrel",
+                  "lastName": "Block",
+                  "role": "admin",
                   "address": {
-                    "street": "270 Maye Shore",
-                    "city": "Port Danport",
-                    "country": "Isle of Man",
-                    "zipCode": "93712-2805"
+                    "street": "654 2nd Avenue",
+                    "city": "Jacksonville",
+                    "country": "Botswana",
+                    "zipCode": "20071-9279"
                   },
-                  "phone": "+19263784140",
-                  "status": "pending",
-                  "createdAt": 1762924919764,
-                  "modifiedAt": 1762924919764,
+                  "phone": "+16054288011",
+                  "status": "banned",
+                  "createdAt": 1763035082294,
+                  "modifiedAt": 1763035082294,
                   "id": 1
                 }
               }
@@ -423,21 +423,21 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "email": "Verdie.Beatty-Hettinger35@example.com",
-                  "password": "mUAQ8f18w_nP",
-                  "firstName": "Hunter",
-                  "lastName": "Anderson",
-                  "role": "support",
+                  "email": "Kenya.Kassulke-Strosin52@example.com",
+                  "password": "2MgY_Dw6fwRd",
+                  "firstName": "Tyrel",
+                  "lastName": "Block",
+                  "role": "admin",
                   "address": {
-                    "street": "270 Maye Shore",
-                    "city": "Port Danport",
-                    "country": "Isle of Man",
-                    "zipCode": "93712-2805"
+                    "street": "654 2nd Avenue",
+                    "city": "Jacksonville",
+                    "country": "Botswana",
+                    "zipCode": "20071-9279"
                   },
-                  "phone": "+19263784140",
-                  "status": "pending",
-                  "createdAt": 1762924919764,
-                  "modifiedAt": 1762924919764,
+                  "phone": "+16054288011",
+                  "status": "banned",
+                  "createdAt": 1763035082294,
+                  "modifiedAt": 1763035082294,
                   "id": 1
                 }
               }
@@ -464,19 +464,19 @@
                 "$ref": "#/components/schemas/users"
               },
               "example": {
-                "email": "Verdie.Beatty-Hettinger35@example.com",
-                "password": "mUAQ8f18w_nP",
-                "firstName": "Hunter",
-                "lastName": "Anderson",
-                "role": "support",
+                "email": "Kenya.Kassulke-Strosin52@example.com",
+                "password": "2MgY_Dw6fwRd",
+                "firstName": "Tyrel",
+                "lastName": "Block",
+                "role": "admin",
                 "address": {
-                  "street": "270 Maye Shore",
-                  "city": "Port Danport",
-                  "country": "Isle of Man",
-                  "zipCode": "93712-2805"
+                  "street": "654 2nd Avenue",
+                  "city": "Jacksonville",
+                  "country": "Botswana",
+                  "zipCode": "20071-9279"
                 },
-                "phone": "+19263784140",
-                "status": "pending"
+                "phone": "+16054288011",
+                "status": "banned"
               }
             }
           }
@@ -490,21 +490,21 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "email": "Verdie.Beatty-Hettinger35@example.com",
-                  "password": "mUAQ8f18w_nP",
-                  "firstName": "Hunter",
-                  "lastName": "Anderson",
-                  "role": "support",
+                  "email": "Kenya.Kassulke-Strosin52@example.com",
+                  "password": "2MgY_Dw6fwRd",
+                  "firstName": "Tyrel",
+                  "lastName": "Block",
+                  "role": "admin",
                   "address": {
-                    "street": "270 Maye Shore",
-                    "city": "Port Danport",
-                    "country": "Isle of Man",
-                    "zipCode": "93712-2805"
+                    "street": "654 2nd Avenue",
+                    "city": "Jacksonville",
+                    "country": "Botswana",
+                    "zipCode": "20071-9279"
                   },
-                  "phone": "+19263784140",
-                  "status": "pending",
-                  "createdAt": 1762924919764,
-                  "modifiedAt": 1762924919764,
+                  "phone": "+16054288011",
+                  "status": "banned",
+                  "createdAt": 1763035082294,
+                  "modifiedAt": 1763035082294,
                   "id": 1
                 }
               }
@@ -729,12 +729,12 @@
                 },
                 "example": [
                   {
-                    "name": "Outdoors HSJxFnQ7",
-                    "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                    "name": "Movies pDMr8CZK",
+                    "description": "Our lion-friendly Tuna ensures fixed comfort for your pets",
                     "parentId": null,
-                    "status": "active",
-                    "createdAt": 1762924919766,
-                    "modifiedAt": 1762924919766,
+                    "status": "inactive",
+                    "createdAt": 1763035082298,
+                    "modifiedAt": 1763035082298,
                     "id": 1
                   }
                 ]
@@ -752,10 +752,10 @@
                 "$ref": "#/components/schemas/categories"
               },
               "example": {
-                "name": "Outdoors HSJxFnQ7",
-                "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                "name": "Movies pDMr8CZK",
+                "description": "Our lion-friendly Tuna ensures fixed comfort for your pets",
                 "parentId": null,
-                "status": "active"
+                "status": "inactive"
               }
             }
           }
@@ -769,12 +769,12 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "name": "Outdoors HSJxFnQ7",
-                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                  "name": "Movies pDMr8CZK",
+                  "description": "Our lion-friendly Tuna ensures fixed comfort for your pets",
                   "parentId": null,
-                  "status": "active",
-                  "createdAt": 1762924919766,
-                  "modifiedAt": 1762924919766,
+                  "status": "inactive",
+                  "createdAt": 1763035082298,
+                  "modifiedAt": 1763035082298,
                   "id": 1
                 }
               }
@@ -805,12 +805,12 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "name": "Outdoors HSJxFnQ7",
-                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                  "name": "Movies pDMr8CZK",
+                  "description": "Our lion-friendly Tuna ensures fixed comfort for your pets",
                   "parentId": null,
-                  "status": "active",
-                  "createdAt": 1762924919766,
-                  "modifiedAt": 1762924919766,
+                  "status": "inactive",
+                  "createdAt": 1763035082298,
+                  "modifiedAt": 1763035082298,
                   "id": 1
                 }
               }
@@ -837,10 +837,10 @@
                 "$ref": "#/components/schemas/categories"
               },
               "example": {
-                "name": "Outdoors HSJxFnQ7",
-                "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                "name": "Movies pDMr8CZK",
+                "description": "Our lion-friendly Tuna ensures fixed comfort for your pets",
                 "parentId": null,
-                "status": "active"
+                "status": "inactive"
               }
             }
           }
@@ -854,12 +854,12 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "name": "Outdoors HSJxFnQ7",
-                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                  "name": "Movies pDMr8CZK",
+                  "description": "Our lion-friendly Tuna ensures fixed comfort for your pets",
                   "parentId": null,
-                  "status": "active",
-                  "createdAt": 1762924919766,
-                  "modifiedAt": 1762924919766,
+                  "status": "inactive",
+                  "createdAt": 1763035082298,
+                  "modifiedAt": 1763035082298,
                   "id": 1
                 }
               }
@@ -1134,33 +1134,25 @@
                   {
                     "sellerId": null,
                     "categoryId": null,
-                    "name": "api-test 11.11.2025 10:35:05",
-                    "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                    "price": 98.6,
-                    "stock": 32,
+                    "name": "api-test 11/13/2025, 5:40:52 AM",
+                    "description": "Ergonomic Towels made with Gold for all-day caring support",
+                    "price": 16.49,
+                    "stock": 3,
                     "variants": [
                       {
-                        "id": "VAR-rBfMH8oSchNR",
-                        "color": "gold",
-                        "size": "XL",
-                        "price": 64.65,
-                        "stock": 325
-                      },
-                      {
-                        "id": "VAR-xqv6FeKRLy0L",
-                        "color": "pink",
-                        "size": "L",
-                        "price": 35.85,
-                        "stock": 729
+                        "id": "VAR-BCsi6SM5stBY",
+                        "color": "azure",
+                        "size": "M",
+                        "price": 24.69,
+                        "stock": 563
                       }
                     ],
                     "tags": [
-                      "premium",
-                      "exclusive"
+                      "limited"
                     ],
                     "status": "active",
-                    "createdAt": 1762924919784,
-                    "modifiedAt": 1762924919784,
+                    "createdAt": 1763035082324,
+                    "modifiedAt": 1763035082324,
                     "id": 1
                   }
                 ]
@@ -1180,29 +1172,21 @@
               "example": {
                 "sellerId": null,
                 "categoryId": null,
-                "name": "api-test 11.11.2025 10:35:05",
-                "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                "price": 98.6,
-                "stock": 32,
+                "name": "api-test 11/13/2025, 5:40:52 AM",
+                "description": "Ergonomic Towels made with Gold for all-day caring support",
+                "price": 16.49,
+                "stock": 3,
                 "variants": [
                   {
-                    "id": "VAR-rBfMH8oSchNR",
-                    "color": "gold",
-                    "size": "XL",
-                    "price": 64.65,
-                    "stock": 325
-                  },
-                  {
-                    "id": "VAR-xqv6FeKRLy0L",
-                    "color": "pink",
-                    "size": "L",
-                    "price": 35.85,
-                    "stock": 729
+                    "id": "VAR-BCsi6SM5stBY",
+                    "color": "azure",
+                    "size": "M",
+                    "price": 24.69,
+                    "stock": 563
                   }
                 ],
                 "tags": [
-                  "premium",
-                  "exclusive"
+                  "limited"
                 ],
                 "status": "active"
               }
@@ -1220,33 +1204,25 @@
                 "example": {
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11.11.2025 10:35:05",
-                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                  "price": 98.6,
-                  "stock": 32,
+                  "name": "api-test 11/13/2025, 5:40:52 AM",
+                  "description": "Ergonomic Towels made with Gold for all-day caring support",
+                  "price": 16.49,
+                  "stock": 3,
                   "variants": [
                     {
-                      "id": "VAR-rBfMH8oSchNR",
-                      "color": "gold",
-                      "size": "XL",
-                      "price": 64.65,
-                      "stock": 325
-                    },
-                    {
-                      "id": "VAR-xqv6FeKRLy0L",
-                      "color": "pink",
-                      "size": "L",
-                      "price": 35.85,
-                      "stock": 729
+                      "id": "VAR-BCsi6SM5stBY",
+                      "color": "azure",
+                      "size": "M",
+                      "price": 24.69,
+                      "stock": 563
                     }
                   ],
                   "tags": [
-                    "premium",
-                    "exclusive"
+                    "limited"
                   ],
                   "status": "active",
-                  "createdAt": 1762924919784,
-                  "modifiedAt": 1762924919784,
+                  "createdAt": 1763035082324,
+                  "modifiedAt": 1763035082324,
                   "id": 1
                 }
               }
@@ -1279,33 +1255,25 @@
                 "example": {
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11.11.2025 10:35:05",
-                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                  "price": 98.6,
-                  "stock": 32,
+                  "name": "api-test 11/13/2025, 5:40:52 AM",
+                  "description": "Ergonomic Towels made with Gold for all-day caring support",
+                  "price": 16.49,
+                  "stock": 3,
                   "variants": [
                     {
-                      "id": "VAR-rBfMH8oSchNR",
-                      "color": "gold",
-                      "size": "XL",
-                      "price": 64.65,
-                      "stock": 325
-                    },
-                    {
-                      "id": "VAR-xqv6FeKRLy0L",
-                      "color": "pink",
-                      "size": "L",
-                      "price": 35.85,
-                      "stock": 729
+                      "id": "VAR-BCsi6SM5stBY",
+                      "color": "azure",
+                      "size": "M",
+                      "price": 24.69,
+                      "stock": 563
                     }
                   ],
                   "tags": [
-                    "premium",
-                    "exclusive"
+                    "limited"
                   ],
                   "status": "active",
-                  "createdAt": 1762924919784,
-                  "modifiedAt": 1762924919784,
+                  "createdAt": 1763035082324,
+                  "modifiedAt": 1763035082324,
                   "id": 1
                 }
               }
@@ -1334,29 +1302,21 @@
               "example": {
                 "sellerId": null,
                 "categoryId": null,
-                "name": "api-test 11.11.2025 10:35:05",
-                "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                "price": 98.6,
-                "stock": 32,
+                "name": "api-test 11/13/2025, 5:40:52 AM",
+                "description": "Ergonomic Towels made with Gold for all-day caring support",
+                "price": 16.49,
+                "stock": 3,
                 "variants": [
                   {
-                    "id": "VAR-rBfMH8oSchNR",
-                    "color": "gold",
-                    "size": "XL",
-                    "price": 64.65,
-                    "stock": 325
-                  },
-                  {
-                    "id": "VAR-xqv6FeKRLy0L",
-                    "color": "pink",
-                    "size": "L",
-                    "price": 35.85,
-                    "stock": 729
+                    "id": "VAR-BCsi6SM5stBY",
+                    "color": "azure",
+                    "size": "M",
+                    "price": 24.69,
+                    "stock": 563
                   }
                 ],
                 "tags": [
-                  "premium",
-                  "exclusive"
+                  "limited"
                 ],
                 "status": "active"
               }
@@ -1374,33 +1334,25 @@
                 "example": {
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11.11.2025 10:35:05",
-                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                  "price": 98.6,
-                  "stock": 32,
+                  "name": "api-test 11/13/2025, 5:40:52 AM",
+                  "description": "Ergonomic Towels made with Gold for all-day caring support",
+                  "price": 16.49,
+                  "stock": 3,
                   "variants": [
                     {
-                      "id": "VAR-rBfMH8oSchNR",
-                      "color": "gold",
-                      "size": "XL",
-                      "price": 64.65,
-                      "stock": 325
-                    },
-                    {
-                      "id": "VAR-xqv6FeKRLy0L",
-                      "color": "pink",
-                      "size": "L",
-                      "price": 35.85,
-                      "stock": 729
+                      "id": "VAR-BCsi6SM5stBY",
+                      "color": "azure",
+                      "size": "M",
+                      "price": 24.69,
+                      "stock": 563
                     }
                   ],
                   "tags": [
-                    "premium",
-                    "exclusive"
+                    "limited"
                   ],
                   "status": "active",
-                  "createdAt": 1762924919784,
-                  "modifiedAt": 1762924919784,
+                  "createdAt": 1763035082324,
+                  "modifiedAt": 1763035082324,
                   "id": 1
                 }
               }
@@ -1717,12 +1669,6 @@
                       {
                         "productId": null,
                         "variantId": null,
-                        "quantity": 4,
-                        "price": 0
-                      },
-                      {
-                        "productId": null,
-                        "variantId": null,
                         "quantity": 3,
                         "price": 0
                       },
@@ -1735,18 +1681,18 @@
                     ],
                     "totalAmount": 0,
                     "shippingAddress": {
-                      "street": "614 Wilson Mountain",
-                      "city": "Littlefort",
-                      "country": "Falkland Islands (Malvinas)",
-                      "zipCode": "22848-2023"
+                      "street": "652 O'Reilly Lock",
+                      "city": "Jonasstead",
+                      "country": "Curacao",
+                      "zipCode": "28761-9673"
                     },
                     "payment": {
-                      "method": "bank_transfer",
-                      "status": "delivered"
+                      "method": "paypal",
+                      "status": "shipped"
                     },
-                    "status": "cancelled",
-                    "createdAt": 1762924919785,
-                    "modifiedAt": 1762924919785,
+                    "status": "delivered",
+                    "createdAt": 1763035082325,
+                    "modifiedAt": 1763035082325,
                     "id": 1
                   }
                 ]
@@ -1769,12 +1715,6 @@
                   {
                     "productId": null,
                     "variantId": null,
-                    "quantity": 4,
-                    "price": 0
-                  },
-                  {
-                    "productId": null,
-                    "variantId": null,
                     "quantity": 3,
                     "price": 0
                   },
@@ -1787,16 +1727,16 @@
                 ],
                 "totalAmount": 0,
                 "shippingAddress": {
-                  "street": "614 Wilson Mountain",
-                  "city": "Littlefort",
-                  "country": "Falkland Islands (Malvinas)",
-                  "zipCode": "22848-2023"
+                  "street": "652 O'Reilly Lock",
+                  "city": "Jonasstead",
+                  "country": "Curacao",
+                  "zipCode": "28761-9673"
                 },
                 "payment": {
-                  "method": "bank_transfer",
-                  "status": "delivered"
+                  "method": "paypal",
+                  "status": "shipped"
                 },
-                "status": "cancelled"
+                "status": "delivered"
               }
             }
           }
@@ -1815,12 +1755,6 @@
                     {
                       "productId": null,
                       "variantId": null,
-                      "quantity": 4,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
                       "quantity": 3,
                       "price": 0
                     },
@@ -1833,18 +1767,18 @@
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "614 Wilson Mountain",
-                    "city": "Littlefort",
-                    "country": "Falkland Islands (Malvinas)",
-                    "zipCode": "22848-2023"
+                    "street": "652 O'Reilly Lock",
+                    "city": "Jonasstead",
+                    "country": "Curacao",
+                    "zipCode": "28761-9673"
                   },
                   "payment": {
-                    "method": "bank_transfer",
-                    "status": "delivered"
+                    "method": "paypal",
+                    "status": "shipped"
                   },
-                  "status": "cancelled",
-                  "createdAt": 1762924919785,
-                  "modifiedAt": 1762924919785,
+                  "status": "delivered",
+                  "createdAt": 1763035082325,
+                  "modifiedAt": 1763035082325,
                   "id": 1
                 }
               }
@@ -1880,12 +1814,6 @@
                     {
                       "productId": null,
                       "variantId": null,
-                      "quantity": 4,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
                       "quantity": 3,
                       "price": 0
                     },
@@ -1898,18 +1826,18 @@
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "614 Wilson Mountain",
-                    "city": "Littlefort",
-                    "country": "Falkland Islands (Malvinas)",
-                    "zipCode": "22848-2023"
+                    "street": "652 O'Reilly Lock",
+                    "city": "Jonasstead",
+                    "country": "Curacao",
+                    "zipCode": "28761-9673"
                   },
                   "payment": {
-                    "method": "bank_transfer",
-                    "status": "delivered"
+                    "method": "paypal",
+                    "status": "shipped"
                   },
-                  "status": "cancelled",
-                  "createdAt": 1762924919785,
-                  "modifiedAt": 1762924919785,
+                  "status": "delivered",
+                  "createdAt": 1763035082325,
+                  "modifiedAt": 1763035082325,
                   "id": 1
                 }
               }
@@ -1941,12 +1869,6 @@
                   {
                     "productId": null,
                     "variantId": null,
-                    "quantity": 4,
-                    "price": 0
-                  },
-                  {
-                    "productId": null,
-                    "variantId": null,
                     "quantity": 3,
                     "price": 0
                   },
@@ -1959,16 +1881,16 @@
                 ],
                 "totalAmount": 0,
                 "shippingAddress": {
-                  "street": "614 Wilson Mountain",
-                  "city": "Littlefort",
-                  "country": "Falkland Islands (Malvinas)",
-                  "zipCode": "22848-2023"
+                  "street": "652 O'Reilly Lock",
+                  "city": "Jonasstead",
+                  "country": "Curacao",
+                  "zipCode": "28761-9673"
                 },
                 "payment": {
-                  "method": "bank_transfer",
-                  "status": "delivered"
+                  "method": "paypal",
+                  "status": "shipped"
                 },
-                "status": "cancelled"
+                "status": "delivered"
               }
             }
           }
@@ -1987,12 +1909,6 @@
                     {
                       "productId": null,
                       "variantId": null,
-                      "quantity": 4,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
                       "quantity": 3,
                       "price": 0
                     },
@@ -2005,18 +1921,18 @@
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "614 Wilson Mountain",
-                    "city": "Littlefort",
-                    "country": "Falkland Islands (Malvinas)",
-                    "zipCode": "22848-2023"
+                    "street": "652 O'Reilly Lock",
+                    "city": "Jonasstead",
+                    "country": "Curacao",
+                    "zipCode": "28761-9673"
                   },
                   "payment": {
-                    "method": "bank_transfer",
-                    "status": "delivered"
+                    "method": "paypal",
+                    "status": "shipped"
                   },
-                  "status": "cancelled",
-                  "createdAt": 1762924919785,
-                  "modifiedAt": 1762924919785,
+                  "status": "delivered",
+                  "createdAt": 1763035082325,
+                  "modifiedAt": 1763035082325,
                   "id": 1
                 }
               }
@@ -2220,9 +2136,9 @@
                   {
                     "productId": null,
                     "userId": null,
-                    "rating": 3,
-                    "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                    "createdAt": 1762924919785,
+                    "rating": 2,
+                    "comment": "Defendo atqui minus temperantia inflammatio.",
+                    "createdAt": 1763035082325,
                     "id": 1
                   }
                 ]
@@ -2242,8 +2158,8 @@
               "example": {
                 "productId": null,
                 "userId": null,
-                "rating": 3,
-                "comment": "Asperiores patruus summa deduco caritas voluntarius."
+                "rating": 2,
+                "comment": "Defendo atqui minus temperantia inflammatio."
               }
             }
           }
@@ -2259,9 +2175,9 @@
                 "example": {
                   "productId": null,
                   "userId": null,
-                  "rating": 3,
-                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                  "createdAt": 1762924919785,
+                  "rating": 2,
+                  "comment": "Defendo atqui minus temperantia inflammatio.",
+                  "createdAt": 1763035082325,
                   "id": 1
                 }
               }
@@ -2294,9 +2210,9 @@
                 "example": {
                   "productId": null,
                   "userId": null,
-                  "rating": 3,
-                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                  "createdAt": 1762924919785,
+                  "rating": 2,
+                  "comment": "Defendo atqui minus temperantia inflammatio.",
+                  "createdAt": 1763035082325,
                   "id": 1
                 }
               }
@@ -2325,8 +2241,8 @@
               "example": {
                 "productId": null,
                 "userId": null,
-                "rating": 3,
-                "comment": "Asperiores patruus summa deduco caritas voluntarius."
+                "rating": 2,
+                "comment": "Defendo atqui minus temperantia inflammatio."
               }
             }
           }
@@ -2342,9 +2258,9 @@
                 "example": {
                   "productId": null,
                   "userId": null,
-                  "rating": 3,
-                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                  "createdAt": 1762924919785,
+                  "rating": 2,
+                  "comment": "Defendo atqui minus temperantia inflammatio.",
+                  "createdAt": 1763035082325,
                   "id": 1
                 }
               }
@@ -2900,7 +2816,7 @@
             "schema": {
               "type": "boolean"
             },
-            "description": "Include products in response"
+            "description": "Include products in response (true/false)"
           },
           {
             "in": "query",
@@ -2908,7 +2824,7 @@
             "schema": {
               "type": "boolean"
             },
-            "description": "Include sales statistics"
+            "description": "Include sales statistics (true/false)"
           }
         ],
         "responses": {
@@ -2917,16 +2833,64 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CategoryProductStatistics"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/CategoryStatsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategoryWithProductsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategorySalesStatsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategoryFullStatsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/StatusStatisticsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategoryStatusProductsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/GeneralStatisticsResult"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "type",
+                    "mapping": {
+                      "category_stats": "#/components/schemas/CategoryStatsResult",
+                      "category_with_products": "#/components/schemas/CategoryWithProductsResult",
+                      "category_sales_stats": "#/components/schemas/CategorySalesStatsResult",
+                      "category_full_stats": "#/components/schemas/CategoryFullStatsResult",
+                      "status_statistics": "#/components/schemas/StatusStatisticsResult",
+                      "category_status_products": "#/components/schemas/CategoryStatusProductsResult",
+                      "general_statistics": "#/components/schemas/GeneralStatisticsResult"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "invalid parameters"
+            "description": "invalid parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "category not found"
+            "description": "category not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
@@ -3285,7 +3249,7 @@
             "schema": {
               "type": "integer"
             },
-            "description": "Get single order by ID"
+            "description": "Get single order by ID (only this returns a single_order result)"
           },
           {
             "in": "query",
@@ -3299,9 +3263,16 @@
             "in": "query",
             "name": "status",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "pending",
+                "failed",
+                "cancelled",
+                "returned",
+                "delivered"
+              ]
             },
-            "description": "Filter by status"
+            "description": "Filter by order status"
           },
           {
             "in": "query",
@@ -3310,7 +3281,7 @@
               "type": "integer",
               "format": "int64"
             },
-            "description": "Start date timestamp"
+            "description": "Start date (timestamp ms)"
           },
           {
             "in": "query",
@@ -3319,7 +3290,7 @@
               "type": "integer",
               "format": "int64"
             },
-            "description": "End date timestamp"
+            "description": "End date (timestamp ms)"
           }
         ],
         "responses": {
@@ -3328,7 +3299,37 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/OrderFilterResult"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/SingleOrderResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/UserOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/StatusOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/UserStatusOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/DateRangeOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/AllOrdersResult"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "type",
+                    "mapping": {
+                      "single_order": "#/components/schemas/SingleOrderResult",
+                      "user_orders": "#/components/schemas/UserOrdersResult",
+                      "status_orders": "#/components/schemas/StatusOrdersResult",
+                      "user_status_orders": "#/components/schemas/UserStatusOrdersResult",
+                      "date_range_orders": "#/components/schemas/DateRangeOrdersResult",
+                      "all_orders": "#/components/schemas/AllOrdersResult"
+                    }
+                  }
                 }
               }
             }
@@ -7298,57 +7299,457 @@
           }
         }
       },
-      "CategoryProductStatistics": {
-        "oneOf": [
+      "CategoryRef": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "CategoryFullRef": {
+        "allOf": [
           {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "category_stats",
-                  "category_with_products",
-                  "category_sales_stats",
-                  "category_full_stats",
-                  "category_status_products"
-                ]
-              },
-              "category": {
-                "type": "object"
-              },
-              "products": {
-                "type": "array",
-                "items": {
-                  "type": "object"
-                }
-              },
-              "sales": {
-                "type": "object"
-              },
-              "statistics": {
-                "type": "object"
-              }
-            }
+            "$ref": "#/components/schemas/CategoryRef"
           },
           {
             "type": "object",
             "properties": {
-              "type": {
+              "description": {
                 "type": "string",
-                "enum": [
-                  "status_statistics",
-                  "general_statistics"
-                ]
+                "nullable": true
               },
               "status": {
-                "type": "string"
-              },
-              "statistics": {
-                "type": "object"
+                "type": "string",
+                "enum": [
+                  "active",
+                  "inactive"
+                ]
               }
-            }
+            },
+            "required": [
+              "status"
+            ]
           }
         ]
+      },
+      "ProductSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "price",
+          "stock",
+          "status"
+        ]
+      },
+      "ProductMinimal": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "price",
+          "stock"
+        ]
+      },
+      "SalesStats": {
+        "type": "object",
+        "properties": {
+          "totalSales": {
+            "type": "integer"
+          },
+          "totalRevenue": {
+            "type": "number"
+          },
+          "orderCount": {
+            "type": "integer"
+          },
+          "averageOrderValue": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "totalSales",
+          "totalRevenue",
+          "orderCount",
+          "averageOrderValue"
+        ]
+      },
+      "CategoryCountStats": {
+        "type": "object",
+        "properties": {
+          "totalProducts": {
+            "type": "integer"
+          },
+          "activeProducts": {
+            "type": "integer"
+          },
+          "inactiveProducts": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "totalProducts",
+          "activeProducts",
+          "inactiveProducts"
+        ]
+      },
+      "CategoryCountStatsShort": {
+        "type": "object",
+        "properties": {
+          "totalProducts": {
+            "type": "integer"
+          },
+          "activeProducts": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "totalProducts",
+          "activeProducts"
+        ]
+      },
+      "StatusCategorySummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "productCount": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "productCount"
+        ]
+      },
+      "GlobalStats": {
+        "type": "object",
+        "properties": {
+          "totalCategories": {
+            "type": "integer"
+          },
+          "totalProducts": {
+            "type": "integer"
+          },
+          "activeProducts": {
+            "type": "integer"
+          },
+          "inactiveProducts": {
+            "type": "integer"
+          },
+          "totalOrders": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "totalCategories",
+          "totalProducts",
+          "activeProducts",
+          "inactiveProducts",
+          "totalOrders"
+        ]
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "error"
+        ]
+      },
+      "CategoryStatsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_stats"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryFullRef"
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/CategoryCountStats"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "statistics"
+        ]
+      },
+      "CategoryWithProductsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_with_products"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryFullRef"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductSummary"
+            }
+          },
+          "totalProducts": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "products",
+          "totalProducts"
+        ]
+      },
+      "CategorySalesStatsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_sales_stats"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryRef"
+          },
+          "sales": {
+            "$ref": "#/components/schemas/SalesStats"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "sales"
+        ]
+      },
+      "CategoryFullStatsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_full_stats"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryFullRef"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductSummary"
+            }
+          },
+          "sales": {
+            "$ref": "#/components/schemas/SalesStats"
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/CategoryCountStatsShort"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "products",
+          "sales",
+          "statistics"
+        ]
+      },
+      "StatusStatisticsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "status_statistics"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          },
+          "statistics": {
+            "type": "object",
+            "properties": {
+              "totalCategories": {
+                "type": "integer"
+              },
+              "totalProducts": {
+                "type": "integer"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StatusCategorySummary"
+                }
+              }
+            },
+            "required": [
+              "totalCategories",
+              "totalProducts",
+              "categories"
+            ]
+          }
+        },
+        "required": [
+          "type",
+          "status",
+          "statistics"
+        ]
+      },
+      "CategoryStatusProductsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_status_products"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryRef"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          },
+          "totalProducts": {
+            "type": "integer"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductMinimal"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "status",
+          "totalProducts",
+          "products"
+        ]
+      },
+      "GeneralStatisticsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "general_statistics"
+            ]
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/GlobalStats"
+          }
+        },
+        "required": [
+          "type",
+          "statistics"
+        ]
+      },
+      "CategoryProductStatistics": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/CategoryStatsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategoryWithProductsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategorySalesStatsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategoryFullStatsResult"
+          },
+          {
+            "$ref": "#/components/schemas/StatusStatisticsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategoryStatusProductsResult"
+          },
+          {
+            "$ref": "#/components/schemas/GeneralStatisticsResult"
+          }
+        ],
+        "discriminator": {
+          "propertyName": "type",
+          "mapping": {
+            "category_stats": "#/components/schemas/CategoryStatsResult",
+            "category_with_products": "#/components/schemas/CategoryWithProductsResult",
+            "category_sales_stats": "#/components/schemas/CategorySalesStatsResult",
+            "category_full_stats": "#/components/schemas/CategoryFullStatsResult",
+            "status_statistics": "#/components/schemas/StatusStatisticsResult",
+            "category_status_products": "#/components/schemas/CategoryStatusProductsResult",
+            "general_statistics": "#/components/schemas/GeneralStatisticsResult"
+          }
+        }
       },
       "CategoryRevenueTrend": {
         "type": "object",
@@ -7650,45 +8051,508 @@
           }
         }
       },
+      "OrderItem": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer"
+          },
+          "variantId": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "productId",
+          "variantId",
+          "quantity",
+          "price"
+        ]
+      },
+      "Payment": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "string",
+            "enum": [
+              "credit_card",
+              "paypal",
+              "bank_transfer"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "processing",
+              "shipped",
+              "delivered",
+              "cancelled"
+            ]
+          }
+        },
+        "required": [
+          "method",
+          "status"
+        ]
+      },
+      "OrderDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "payment": {
+            "$ref": "#/components/schemas/Payment",
+            "nullable": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderItem"
+            }
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "userName",
+          "totalAmount",
+          "status",
+          "items",
+          "createdAt"
+        ]
+      },
+      "UserOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "totalAmount",
+          "status",
+          "createdAt"
+        ]
+      },
+      "StatusOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "totalAmount",
+          "createdAt"
+        ]
+      },
+      "UserStatusOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "totalAmount",
+          "createdAt"
+        ]
+      },
+      "DateRangeOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "totalAmount",
+          "status",
+          "createdAt"
+        ]
+      },
+      "AllOrdersSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "totalAmount",
+          "status",
+          "createdAt"
+        ]
+      },
+      "SingleOrderResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "single_order"
+            ]
+          },
+          "order": {
+            "$ref": "#/components/schemas/OrderDetail"
+          }
+        },
+        "required": [
+          "type",
+          "order"
+        ]
+      },
+      "UserOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "user_orders"
+            ]
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalSpent": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "userId",
+          "userName",
+          "totalOrders",
+          "totalSpent",
+          "orders"
+        ]
+      },
+      "StatusOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "status_orders"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StatusOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "status",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
+      "UserStatusOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "user_status_orders"
+            ]
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserStatusOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "userId",
+          "userName",
+          "status",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
+      "DateRangeOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "date_range_orders"
+            ]
+          },
+          "filters": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "type": "integer",
+                "nullable": true
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "pending",
+                  "failed",
+                  "cancelled",
+                  "returned",
+                  "delivered"
+                ],
+                "nullable": true
+              },
+              "startDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true
+              },
+              "endDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true
+              }
+            },
+            "required": [
+              "userId",
+              "status",
+              "startDate",
+              "endDate"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DateRangeOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "filters",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
+      "AllOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "all_orders"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AllOrdersSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
       "OrderFilterResult": {
         "oneOf": [
           {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "single_order"
-                ]
-              },
-              "order": {
-                "type": "object"
-              }
-            }
+            "$ref": "#/components/schemas/SingleOrderResult"
           },
           {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "user_orders",
-                  "status_orders",
-                  "user_status_orders",
-                  "date_range_orders",
-                  "all_orders"
-                ]
-              },
-              "totalOrders": {
-                "type": "integer"
-              },
-              "orders": {
-                "type": "array",
-                "items": {
-                  "type": "object"
-                }
-              }
-            }
+            "$ref": "#/components/schemas/UserOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/StatusOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/UserStatusOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/DateRangeOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/AllOrdersResult"
           }
         ]
       },
@@ -8072,11 +8936,125 @@
           }
         }
       },
+      "BundleItem": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Phone X"
+          },
+          "quantity": {
+            "type": "integer",
+            "example": 2
+          },
+          "unitPrice": {
+            "type": "number",
+            "example": 499.99
+          },
+          "totalPrice": {
+            "type": "number",
+            "example": 999.98
+          }
+        },
+        "required": [
+          "productId",
+          "productName",
+          "quantity",
+          "unitPrice",
+          "totalPrice"
+        ]
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 101
+          },
+          "name": {
+            "type": "string",
+            "example": "Summer Bundle"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "example": "Bundle of 3 products"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "bundle"
+            ]
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BundleItem"
+            }
+          },
+          "originalPrice": {
+            "type": "number",
+            "example": 149.97
+          },
+          "price": {
+            "type": "number",
+            "example": 129.99
+          },
+          "discount": {
+            "type": "number",
+            "example": 19.98
+          },
+          "discountPercent": {
+            "type": "number",
+            "example": 13.34
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ],
+            "example": "active"
+          },
+          "stock": {
+            "type": "integer",
+            "example": 20
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1738368000000
+          },
+          "updatedAt": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1738368000000
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type",
+          "products",
+          "originalPrice",
+          "price",
+          "discount",
+          "discountPercent",
+          "status",
+          "stock",
+          "createdAt",
+          "updatedAt"
+        ]
+      },
       "BundleCreationResponse": {
         "type": "object",
         "properties": {
           "bundle": {
-            "type": "object"
+            "$ref": "#/components/schemas/Bundle"
           },
           "summary": {
             "type": "object",
@@ -8096,7 +9074,14 @@
               "savingsPercent": {
                 "type": "number"
               }
-            }
+            },
+            "required": [
+              "totalProducts",
+              "originalPrice",
+              "bundlePrice",
+              "savings",
+              "savingsPercent"
+            ]
           },
           "warnings": {
             "type": "array",
@@ -8104,7 +9089,11 @@
               "type": "string"
             }
           }
-        }
+        },
+        "required": [
+          "bundle",
+          "summary"
+        ]
       },
       "ProductBundleRecommendations": {
         "type": "object",
