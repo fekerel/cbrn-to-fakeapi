@@ -1,13 +1,16 @@
 import ApiService from "../ApiService";
+import { AxiosResponse } from "axios";
 
 class StateService {
     public async resetDb() {
-        const res = await ApiService.getInstance().instance.post('_admin/reset-db');
-        if(res.status !== 204) {
-            throw new Error(`reset-db failed: ${res.status} ${res.statusText}`)
+        const response: AxiosResponse = await ApiService.getInstance().instance.post("/_admin/reset-db");
+        if (response.status !== 204) {
+            throw new Error(`Failed to reset DB. Status code: ${response.status}`);
         }
-        console.log("reset başarılı");
+        return response;
     }
 }
 
 export const stateService = new StateService();
+
+

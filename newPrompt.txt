@@ -60,6 +60,9 @@ API istekleri **ApiService** üzerinden yapılacaktır.
 ---
 
 6. 🧪 **Testleri Yaz**
+   - İlk olarak CRUD (Create, Read, Update, Delete) işlemlerine ait endpoint testlerini yaz.  
+   - CRUD testleri tamamlanıp tümü başarıyla geçtiğinde, senaryosal veya özel amaçlı endpoint testlerine (örneğin `/special`, `/custom`, `/auth` vb.) geç.  
+   - Bu sıralamayı **kesinlikle** koru. Önce CRUD → sonra senaryosal endpointler yazılmalı.
    - Swagger’daki **tüm endpointler** için test oluştur (endpoint sayısı kadar).  
    - Testler 5’erli gruplar halinde yazılacak ve çalıştırılacak:
      1. İlk 5 testi yaz ve çalıştır.  
@@ -91,7 +94,10 @@ API istekleri **ApiService** üzerinden yapılacaktır.
    - Testlerde kontrol sırası şu şekilde olacak:
      1. İlk olarak `response.status` değeri doğru mu (örneğin 200, 201 vb.) kontrol edilecek.  
      2. Daha sonra `response.data` içeriği `expect` bloklarıyla kontrol edilecek.  
-     3. Nested (iç içe) objeler varsa:
+     3. Eğer istekte bir `id` alanı gönderildiyse ve response.data içinde de ilgili `id` alanı varsa, bu iki ID’nin eşleşip eşleşmediği kontrol edilecek.  
+        - Eğer ID’ler eşleşmiyorsa test **false (fail)** dönmeli.  
+        - Eğer ID’ler eşleşiyorsa test normal akışında devam etmeli.  
+     4. Nested (iç içe) objeler varsa:
         - Field tipleri (`string`, `number`, `array`, `object` vb.) doğrulanacak.  
         - Mantıksal doğrulamalar (`id > 0`, `count >= 0`, `name` boş olmamalı vb.) yapılacak.  
         - Array’ler varsa `length > 0` kontrolü yapılacak.  
