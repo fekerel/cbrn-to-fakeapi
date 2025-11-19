@@ -11,6 +11,7 @@
     "test:fake": "npx mocha --require ts-node/register --require tsconfig-paths/register --file ./fake-api-tests/bootstrap.ts \"fake-api-tests/**/*.spec.ts\" --timeout 20000 -- --environment=FakeAPI",
     "seed:fake": "npx ts-node -r tsconfig-paths/register fake-api-tests/seedDatabase.ts -- --environment=FakeAPI",
     "openapi:fetch": "ts-node -r tsconfig-paths/register tools/fetch-openapi.ts --url http://localhost:8000/openapi.json --out ./openapi.json --retries 5 --delay 1000",
+    "openapi:fetch-isSelect": "ts-node -r tsconfig-paths/register tools/fetch-openapi.ts --url http://localhost:8000/isSelect/openapi.json --out ./openapi-isSelect.json --retries 5 --delay 1000",
     "allInOne": "npm run runner --reporter=allure && npm run report:generate && npm run report:open",
     "runner": "ts-node -r tsconfig-paths/register src/conf/runner.ts",
     "socketServer": "ts-node -r tsconfig-paths/register src/conf/widget.ts",

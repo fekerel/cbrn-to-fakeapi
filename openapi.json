@@ -320,21 +320,21 @@
                 },
                 "example": [
                   {
-                    "email": "Verdie.Beatty-Hettinger35@example.com",
-                    "password": "mUAQ8f18w_nP",
-                    "firstName": "Hunter",
-                    "lastName": "Anderson",
+                    "email": "Freddy24@example.com",
+                    "password": "IhqN84qcSlSQ",
+                    "firstName": "Laurine",
+                    "lastName": "Rath",
                     "role": "support",
                     "address": {
-                      "street": "270 Maye Shore",
-                      "city": "Port Danport",
-                      "country": "Isle of Man",
-                      "zipCode": "93712-2805"
+                      "street": "923 Gleason Skyway",
+                      "city": "East Zachariah",
+                      "country": "El Salvador",
+                      "zipCode": "17793-7019"
                     },
-                    "phone": "+19263784140",
-                    "status": "pending",
-                    "createdAt": 1762924919764,
-                    "modifiedAt": 1762924919764,
+                    "phone": "+19365620258",
+                    "status": "active",
+                    "createdAt": 1763538081439,
+                    "modifiedAt": 1763538081439,
                     "id": 1
                   }
                 ]
@@ -352,19 +352,19 @@
                 "$ref": "#/components/schemas/users"
               },
               "example": {
-                "email": "Verdie.Beatty-Hettinger35@example.com",
-                "password": "mUAQ8f18w_nP",
-                "firstName": "Hunter",
-                "lastName": "Anderson",
+                "email": "Freddy24@example.com",
+                "password": "IhqN84qcSlSQ",
+                "firstName": "Laurine",
+                "lastName": "Rath",
                 "role": "support",
                 "address": {
-                  "street": "270 Maye Shore",
-                  "city": "Port Danport",
-                  "country": "Isle of Man",
-                  "zipCode": "93712-2805"
+                  "street": "923 Gleason Skyway",
+                  "city": "East Zachariah",
+                  "country": "El Salvador",
+                  "zipCode": "17793-7019"
                 },
-                "phone": "+19263784140",
-                "status": "pending"
+                "phone": "+19365620258",
+                "status": "active"
               }
             }
           }
@@ -378,21 +378,21 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "email": "Verdie.Beatty-Hettinger35@example.com",
-                  "password": "mUAQ8f18w_nP",
-                  "firstName": "Hunter",
-                  "lastName": "Anderson",
+                  "email": "Freddy24@example.com",
+                  "password": "IhqN84qcSlSQ",
+                  "firstName": "Laurine",
+                  "lastName": "Rath",
                   "role": "support",
                   "address": {
-                    "street": "270 Maye Shore",
-                    "city": "Port Danport",
-                    "country": "Isle of Man",
-                    "zipCode": "93712-2805"
+                    "street": "923 Gleason Skyway",
+                    "city": "East Zachariah",
+                    "country": "El Salvador",
+                    "zipCode": "17793-7019"
                   },
-                  "phone": "+19263784140",
-                  "status": "pending",
-                  "createdAt": 1762924919764,
-                  "modifiedAt": 1762924919764,
+                  "phone": "+19365620258",
+                  "status": "active",
+                  "createdAt": 1763538081439,
+                  "modifiedAt": 1763538081439,
                   "id": 1
                 }
               }
@@ -423,21 +423,21 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "email": "Verdie.Beatty-Hettinger35@example.com",
-                  "password": "mUAQ8f18w_nP",
-                  "firstName": "Hunter",
-                  "lastName": "Anderson",
+                  "email": "Freddy24@example.com",
+                  "password": "IhqN84qcSlSQ",
+                  "firstName": "Laurine",
+                  "lastName": "Rath",
                   "role": "support",
                   "address": {
-                    "street": "270 Maye Shore",
-                    "city": "Port Danport",
-                    "country": "Isle of Man",
-                    "zipCode": "93712-2805"
+                    "street": "923 Gleason Skyway",
+                    "city": "East Zachariah",
+                    "country": "El Salvador",
+                    "zipCode": "17793-7019"
                   },
-                  "phone": "+19263784140",
-                  "status": "pending",
-                  "createdAt": 1762924919764,
-                  "modifiedAt": 1762924919764,
+                  "phone": "+19365620258",
+                  "status": "active",
+                  "createdAt": 1763538081439,
+                  "modifiedAt": 1763538081439,
                   "id": 1
                 }
               }
@@ -464,19 +464,19 @@
                 "$ref": "#/components/schemas/users"
               },
               "example": {
-                "email": "Verdie.Beatty-Hettinger35@example.com",
-                "password": "mUAQ8f18w_nP",
-                "firstName": "Hunter",
-                "lastName": "Anderson",
+                "email": "Freddy24@example.com",
+                "password": "IhqN84qcSlSQ",
+                "firstName": "Laurine",
+                "lastName": "Rath",
                 "role": "support",
                 "address": {
-                  "street": "270 Maye Shore",
-                  "city": "Port Danport",
-                  "country": "Isle of Man",
-                  "zipCode": "93712-2805"
+                  "street": "923 Gleason Skyway",
+                  "city": "East Zachariah",
+                  "country": "El Salvador",
+                  "zipCode": "17793-7019"
                 },
-                "phone": "+19263784140",
-                "status": "pending"
+                "phone": "+19365620258",
+                "status": "active"
               }
             }
           }
@@ -490,21 +490,21 @@
                   "$ref": "#/components/schemas/users"
                 },
                 "example": {
-                  "email": "Verdie.Beatty-Hettinger35@example.com",
-                  "password": "mUAQ8f18w_nP",
-                  "firstName": "Hunter",
-                  "lastName": "Anderson",
+                  "email": "Freddy24@example.com",
+                  "password": "IhqN84qcSlSQ",
+                  "firstName": "Laurine",
+                  "lastName": "Rath",
                   "role": "support",
                   "address": {
-                    "street": "270 Maye Shore",
-                    "city": "Port Danport",
-                    "country": "Isle of Man",
-                    "zipCode": "93712-2805"
+                    "street": "923 Gleason Skyway",
+                    "city": "East Zachariah",
+                    "country": "El Salvador",
+                    "zipCode": "17793-7019"
                   },
-                  "phone": "+19263784140",
-                  "status": "pending",
-                  "createdAt": 1762924919764,
-                  "modifiedAt": 1762924919764,
+                  "phone": "+19365620258",
+                  "status": "active",
+                  "createdAt": 1763538081439,
+                  "modifiedAt": 1763538081439,
                   "id": 1
                 }
               }
@@ -729,12 +729,12 @@
                 },
                 "example": [
                   {
-                    "name": "Outdoors HSJxFnQ7",
-                    "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                    "name": "Garden a8ztPDC2",
+                    "description": "Featuring Selenium-enhanced technology, our Towels offers unparalleled remarkable performance",
                     "parentId": null,
                     "status": "active",
-                    "createdAt": 1762924919766,
-                    "modifiedAt": 1762924919766,
+                    "createdAt": 1763538081440,
+                    "modifiedAt": 1763538081440,
                     "id": 1
                   }
                 ]
@@ -752,8 +752,8 @@
                 "$ref": "#/components/schemas/categories"
               },
               "example": {
-                "name": "Outdoors HSJxFnQ7",
-                "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                "name": "Garden a8ztPDC2",
+                "description": "Featuring Selenium-enhanced technology, our Towels offers unparalleled remarkable performance",
                 "parentId": null,
                 "status": "active"
               }
@@ -769,12 +769,12 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "name": "Outdoors HSJxFnQ7",
-                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                  "name": "Garden a8ztPDC2",
+                  "description": "Featuring Selenium-enhanced technology, our Towels offers unparalleled remarkable performance",
                   "parentId": null,
                   "status": "active",
-                  "createdAt": 1762924919766,
-                  "modifiedAt": 1762924919766,
+                  "createdAt": 1763538081440,
+                  "modifiedAt": 1763538081440,
                   "id": 1
                 }
               }
@@ -805,12 +805,12 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "name": "Outdoors HSJxFnQ7",
-                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                  "name": "Garden a8ztPDC2",
+                  "description": "Featuring Selenium-enhanced technology, our Towels offers unparalleled remarkable performance",
                   "parentId": null,
                   "status": "active",
-                  "createdAt": 1762924919766,
-                  "modifiedAt": 1762924919766,
+                  "createdAt": 1763538081440,
+                  "modifiedAt": 1763538081440,
                   "id": 1
                 }
               }
@@ -837,8 +837,8 @@
                 "$ref": "#/components/schemas/categories"
               },
               "example": {
-                "name": "Outdoors HSJxFnQ7",
-                "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                "name": "Garden a8ztPDC2",
+                "description": "Featuring Selenium-enhanced technology, our Towels offers unparalleled remarkable performance",
                 "parentId": null,
                 "status": "active"
               }
@@ -854,12 +854,12 @@
                   "$ref": "#/components/schemas/categories"
                 },
                 "example": {
-                  "name": "Outdoors HSJxFnQ7",
-                  "description": "The Diverse attitude-oriented structure Shoes offers reliable performance and rubbery design",
+                  "name": "Garden a8ztPDC2",
+                  "description": "Featuring Selenium-enhanced technology, our Towels offers unparalleled remarkable performance",
                   "parentId": null,
                   "status": "active",
-                  "createdAt": 1762924919766,
-                  "modifiedAt": 1762924919766,
+                  "createdAt": 1763538081440,
+                  "modifiedAt": 1763538081440,
                   "id": 1
                 }
               }
@@ -893,6 +893,7 @@
       }
     },
     "/products": {
+      "isSelect": true,
       "get": {
         "summary": "Get all products",
         "parameters": [
@@ -1134,33 +1135,32 @@
                   {
                     "sellerId": null,
                     "categoryId": null,
-                    "name": "api-test 11.11.2025 10:35:05",
-                    "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                    "price": 98.6,
-                    "stock": 32,
+                    "name": "api-test 11/17/2025, 4:04:56 PM",
+                    "description": "Introducing the Lebanon-inspired Chips, blending ordinary style with local craftsmanship",
+                    "price": 48.18,
+                    "stock": 163,
                     "variants": [
                       {
-                        "id": "VAR-rBfMH8oSchNR",
-                        "color": "gold",
+                        "id": "VAR-tsq1AgdLg3Hs",
+                        "color": "turquoise",
                         "size": "XL",
-                        "price": 64.65,
-                        "stock": 325
+                        "price": 40.39,
+                        "stock": 382
                       },
                       {
-                        "id": "VAR-xqv6FeKRLy0L",
+                        "id": "VAR-zY9bqHf8aNIw",
                         "color": "pink",
-                        "size": "L",
-                        "price": 35.85,
-                        "stock": 729
+                        "size": "S",
+                        "price": 17.6,
+                        "stock": 625
                       }
                     ],
                     "tags": [
-                      "premium",
-                      "exclusive"
+                      "premium"
                     ],
                     "status": "active",
-                    "createdAt": 1762924919784,
-                    "modifiedAt": 1762924919784,
+                    "createdAt": 1763538081460,
+                    "modifiedAt": 1763538081460,
                     "id": 1
                   }
                 ]
@@ -1170,6 +1170,7 @@
         }
       },
       "post": {
+        "isSelect": true,
         "summary": "Create new products",
         "requestBody": {
           "content": {
@@ -1180,29 +1181,28 @@
               "example": {
                 "sellerId": null,
                 "categoryId": null,
-                "name": "api-test 11.11.2025 10:35:05",
-                "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                "price": 98.6,
-                "stock": 32,
+                "name": "api-test 11/17/2025, 4:04:56 PM",
+                "description": "Introducing the Lebanon-inspired Chips, blending ordinary style with local craftsmanship",
+                "price": 48.18,
+                "stock": 163,
                 "variants": [
                   {
-                    "id": "VAR-rBfMH8oSchNR",
-                    "color": "gold",
+                    "id": "VAR-tsq1AgdLg3Hs",
+                    "color": "turquoise",
                     "size": "XL",
-                    "price": 64.65,
-                    "stock": 325
+                    "price": 40.39,
+                    "stock": 382
                   },
                   {
-                    "id": "VAR-xqv6FeKRLy0L",
+                    "id": "VAR-zY9bqHf8aNIw",
                     "color": "pink",
-                    "size": "L",
-                    "price": 35.85,
-                    "stock": 729
+                    "size": "S",
+                    "price": 17.6,
+                    "stock": 625
                   }
                 ],
                 "tags": [
-                  "premium",
-                  "exclusive"
+                  "premium"
                 ],
                 "status": "active"
               }
@@ -1220,33 +1220,32 @@
                 "example": {
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11.11.2025 10:35:05",
-                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                  "price": 98.6,
-                  "stock": 32,
+                  "name": "api-test 11/17/2025, 4:04:56 PM",
+                  "description": "Introducing the Lebanon-inspired Chips, blending ordinary style with local craftsmanship",
+                  "price": 48.18,
+                  "stock": 163,
                   "variants": [
                     {
-                      "id": "VAR-rBfMH8oSchNR",
-                      "color": "gold",
+                      "id": "VAR-tsq1AgdLg3Hs",
+                      "color": "turquoise",
                       "size": "XL",
-                      "price": 64.65,
-                      "stock": 325
+                      "price": 40.39,
+                      "stock": 382
                     },
                     {
-                      "id": "VAR-xqv6FeKRLy0L",
+                      "id": "VAR-zY9bqHf8aNIw",
                       "color": "pink",
-                      "size": "L",
-                      "price": 35.85,
-                      "stock": 729
+                      "size": "S",
+                      "price": 17.6,
+                      "stock": 625
                     }
                   ],
                   "tags": [
-                    "premium",
-                    "exclusive"
+                    "premium"
                   ],
                   "status": "active",
-                  "createdAt": 1762924919784,
-                  "modifiedAt": 1762924919784,
+                  "createdAt": 1763538081460,
+                  "modifiedAt": 1763538081460,
                   "id": 1
                 }
               }
@@ -1257,6 +1256,7 @@
     },
     "/products/{id}": {
       "get": {
+        "isSelect": true,
         "summary": "Get products by id",
         "parameters": [
           {
@@ -1279,33 +1279,32 @@
                 "example": {
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11.11.2025 10:35:05",
-                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                  "price": 98.6,
-                  "stock": 32,
+                  "name": "api-test 11/17/2025, 4:04:56 PM",
+                  "description": "Introducing the Lebanon-inspired Chips, blending ordinary style with local craftsmanship",
+                  "price": 48.18,
+                  "stock": 163,
                   "variants": [
                     {
-                      "id": "VAR-rBfMH8oSchNR",
-                      "color": "gold",
+                      "id": "VAR-tsq1AgdLg3Hs",
+                      "color": "turquoise",
                       "size": "XL",
-                      "price": 64.65,
-                      "stock": 325
+                      "price": 40.39,
+                      "stock": 382
                     },
                     {
-                      "id": "VAR-xqv6FeKRLy0L",
+                      "id": "VAR-zY9bqHf8aNIw",
                       "color": "pink",
-                      "size": "L",
-                      "price": 35.85,
-                      "stock": 729
+                      "size": "S",
+                      "price": 17.6,
+                      "stock": 625
                     }
                   ],
                   "tags": [
-                    "premium",
-                    "exclusive"
+                    "premium"
                   ],
                   "status": "active",
-                  "createdAt": 1762924919784,
-                  "modifiedAt": 1762924919784,
+                  "createdAt": 1763538081460,
+                  "modifiedAt": 1763538081460,
                   "id": 1
                 }
               }
@@ -1314,6 +1313,7 @@
         }
       },
       "put": {
+        "isSelect": true,
         "summary": "Update products by id",
         "parameters": [
           {
@@ -1334,29 +1334,28 @@
               "example": {
                 "sellerId": null,
                 "categoryId": null,
-                "name": "api-test 11.11.2025 10:35:05",
-                "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                "price": 98.6,
-                "stock": 32,
+                "name": "api-test 11/17/2025, 4:04:56 PM",
+                "description": "Introducing the Lebanon-inspired Chips, blending ordinary style with local craftsmanship",
+                "price": 48.18,
+                "stock": 163,
                 "variants": [
                   {
-                    "id": "VAR-rBfMH8oSchNR",
-                    "color": "gold",
+                    "id": "VAR-tsq1AgdLg3Hs",
+                    "color": "turquoise",
                     "size": "XL",
-                    "price": 64.65,
-                    "stock": 325
+                    "price": 40.39,
+                    "stock": 382
                   },
                   {
-                    "id": "VAR-xqv6FeKRLy0L",
+                    "id": "VAR-zY9bqHf8aNIw",
                     "color": "pink",
-                    "size": "L",
-                    "price": 35.85,
-                    "stock": 729
+                    "size": "S",
+                    "price": 17.6,
+                    "stock": 625
                   }
                 ],
                 "tags": [
-                  "premium",
-                  "exclusive"
+                  "premium"
                 ],
                 "status": "active"
               }
@@ -1374,33 +1373,32 @@
                 "example": {
                   "sellerId": null,
                   "categoryId": null,
-                  "name": "api-test 11.11.2025 10:35:05",
-                  "description": "Swaniawski, Mante and Predovic's most advanced Chicken technology increases thrifty capabilities",
-                  "price": 98.6,
-                  "stock": 32,
+                  "name": "api-test 11/17/2025, 4:04:56 PM",
+                  "description": "Introducing the Lebanon-inspired Chips, blending ordinary style with local craftsmanship",
+                  "price": 48.18,
+                  "stock": 163,
                   "variants": [
                     {
-                      "id": "VAR-rBfMH8oSchNR",
-                      "color": "gold",
+                      "id": "VAR-tsq1AgdLg3Hs",
+                      "color": "turquoise",
                       "size": "XL",
-                      "price": 64.65,
-                      "stock": 325
+                      "price": 40.39,
+                      "stock": 382
                     },
                     {
-                      "id": "VAR-xqv6FeKRLy0L",
+                      "id": "VAR-zY9bqHf8aNIw",
                       "color": "pink",
-                      "size": "L",
-                      "price": 35.85,
-                      "stock": 729
+                      "size": "S",
+                      "price": 17.6,
+                      "stock": 625
                     }
                   ],
                   "tags": [
-                    "premium",
-                    "exclusive"
+                    "premium"
                   ],
                   "status": "active",
-                  "createdAt": 1762924919784,
-                  "modifiedAt": 1762924919784,
+                  "createdAt": 1763538081460,
+                  "modifiedAt": 1763538081460,
                   "id": 1
                 }
               }
@@ -1412,6 +1410,7 @@
         }
       },
       "delete": {
+        "isSelect": true,
         "summary": "Delete products by id",
         "parameters": [
           {
@@ -1717,36 +1716,36 @@
                       {
                         "productId": null,
                         "variantId": null,
+                        "quantity": 1,
+                        "price": 0
+                      },
+                      {
+                        "productId": null,
+                        "variantId": null,
+                        "quantity": 1,
+                        "price": 0
+                      },
+                      {
+                        "productId": null,
+                        "variantId": null,
                         "quantity": 4,
-                        "price": 0
-                      },
-                      {
-                        "productId": null,
-                        "variantId": null,
-                        "quantity": 3,
-                        "price": 0
-                      },
-                      {
-                        "productId": null,
-                        "variantId": null,
-                        "quantity": 5,
                         "price": 0
                       }
                     ],
                     "totalAmount": 0,
                     "shippingAddress": {
-                      "street": "614 Wilson Mountain",
-                      "city": "Littlefort",
-                      "country": "Falkland Islands (Malvinas)",
-                      "zipCode": "22848-2023"
+                      "street": "845 Walter Key",
+                      "city": "Romagueraworth",
+                      "country": "Saint Pierre and Miquelon",
+                      "zipCode": "84141"
                     },
                     "payment": {
                       "method": "bank_transfer",
-                      "status": "delivered"
+                      "status": "pending"
                     },
-                    "status": "cancelled",
-                    "createdAt": 1762924919785,
-                    "modifiedAt": 1762924919785,
+                    "status": "returned",
+                    "createdAt": 1763538081460,
+                    "modifiedAt": 1763538081460,
                     "id": 1
                   }
                 ]
@@ -1769,34 +1768,34 @@
                   {
                     "productId": null,
                     "variantId": null,
+                    "quantity": 1,
+                    "price": 0
+                  },
+                  {
+                    "productId": null,
+                    "variantId": null,
+                    "quantity": 1,
+                    "price": 0
+                  },
+                  {
+                    "productId": null,
+                    "variantId": null,
                     "quantity": 4,
-                    "price": 0
-                  },
-                  {
-                    "productId": null,
-                    "variantId": null,
-                    "quantity": 3,
-                    "price": 0
-                  },
-                  {
-                    "productId": null,
-                    "variantId": null,
-                    "quantity": 5,
                     "price": 0
                   }
                 ],
                 "totalAmount": 0,
                 "shippingAddress": {
-                  "street": "614 Wilson Mountain",
-                  "city": "Littlefort",
-                  "country": "Falkland Islands (Malvinas)",
-                  "zipCode": "22848-2023"
+                  "street": "845 Walter Key",
+                  "city": "Romagueraworth",
+                  "country": "Saint Pierre and Miquelon",
+                  "zipCode": "84141"
                 },
                 "payment": {
                   "method": "bank_transfer",
-                  "status": "delivered"
+                  "status": "pending"
                 },
-                "status": "cancelled"
+                "status": "returned"
               }
             }
           }
@@ -1815,36 +1814,36 @@
                     {
                       "productId": null,
                       "variantId": null,
+                      "quantity": 1,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
+                      "quantity": 1,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
                       "quantity": 4,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
-                      "quantity": 3,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
-                      "quantity": 5,
                       "price": 0
                     }
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "614 Wilson Mountain",
-                    "city": "Littlefort",
-                    "country": "Falkland Islands (Malvinas)",
-                    "zipCode": "22848-2023"
+                    "street": "845 Walter Key",
+                    "city": "Romagueraworth",
+                    "country": "Saint Pierre and Miquelon",
+                    "zipCode": "84141"
                   },
                   "payment": {
                     "method": "bank_transfer",
-                    "status": "delivered"
+                    "status": "pending"
                   },
-                  "status": "cancelled",
-                  "createdAt": 1762924919785,
-                  "modifiedAt": 1762924919785,
+                  "status": "returned",
+                  "createdAt": 1763538081460,
+                  "modifiedAt": 1763538081460,
                   "id": 1
                 }
               }
@@ -1880,36 +1879,36 @@
                     {
                       "productId": null,
                       "variantId": null,
+                      "quantity": 1,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
+                      "quantity": 1,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
                       "quantity": 4,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
-                      "quantity": 3,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
-                      "quantity": 5,
                       "price": 0
                     }
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "614 Wilson Mountain",
-                    "city": "Littlefort",
-                    "country": "Falkland Islands (Malvinas)",
-                    "zipCode": "22848-2023"
+                    "street": "845 Walter Key",
+                    "city": "Romagueraworth",
+                    "country": "Saint Pierre and Miquelon",
+                    "zipCode": "84141"
                   },
                   "payment": {
                     "method": "bank_transfer",
-                    "status": "delivered"
+                    "status": "pending"
                   },
-                  "status": "cancelled",
-                  "createdAt": 1762924919785,
-                  "modifiedAt": 1762924919785,
+                  "status": "returned",
+                  "createdAt": 1763538081460,
+                  "modifiedAt": 1763538081460,
                   "id": 1
                 }
               }
@@ -1941,34 +1940,34 @@
                   {
                     "productId": null,
                     "variantId": null,
+                    "quantity": 1,
+                    "price": 0
+                  },
+                  {
+                    "productId": null,
+                    "variantId": null,
+                    "quantity": 1,
+                    "price": 0
+                  },
+                  {
+                    "productId": null,
+                    "variantId": null,
                     "quantity": 4,
-                    "price": 0
-                  },
-                  {
-                    "productId": null,
-                    "variantId": null,
-                    "quantity": 3,
-                    "price": 0
-                  },
-                  {
-                    "productId": null,
-                    "variantId": null,
-                    "quantity": 5,
                     "price": 0
                   }
                 ],
                 "totalAmount": 0,
                 "shippingAddress": {
-                  "street": "614 Wilson Mountain",
-                  "city": "Littlefort",
-                  "country": "Falkland Islands (Malvinas)",
-                  "zipCode": "22848-2023"
+                  "street": "845 Walter Key",
+                  "city": "Romagueraworth",
+                  "country": "Saint Pierre and Miquelon",
+                  "zipCode": "84141"
                 },
                 "payment": {
                   "method": "bank_transfer",
-                  "status": "delivered"
+                  "status": "pending"
                 },
-                "status": "cancelled"
+                "status": "returned"
               }
             }
           }
@@ -1987,36 +1986,36 @@
                     {
                       "productId": null,
                       "variantId": null,
+                      "quantity": 1,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
+                      "quantity": 1,
+                      "price": 0
+                    },
+                    {
+                      "productId": null,
+                      "variantId": null,
                       "quantity": 4,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
-                      "quantity": 3,
-                      "price": 0
-                    },
-                    {
-                      "productId": null,
-                      "variantId": null,
-                      "quantity": 5,
                       "price": 0
                     }
                   ],
                   "totalAmount": 0,
                   "shippingAddress": {
-                    "street": "614 Wilson Mountain",
-                    "city": "Littlefort",
-                    "country": "Falkland Islands (Malvinas)",
-                    "zipCode": "22848-2023"
+                    "street": "845 Walter Key",
+                    "city": "Romagueraworth",
+                    "country": "Saint Pierre and Miquelon",
+                    "zipCode": "84141"
                   },
                   "payment": {
                     "method": "bank_transfer",
-                    "status": "delivered"
+                    "status": "pending"
                   },
-                  "status": "cancelled",
-                  "createdAt": 1762924919785,
-                  "modifiedAt": 1762924919785,
+                  "status": "returned",
+                  "createdAt": 1763538081460,
+                  "modifiedAt": 1763538081460,
                   "id": 1
                 }
               }
@@ -2220,9 +2219,9 @@
                   {
                     "productId": null,
                     "userId": null,
-                    "rating": 3,
-                    "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                    "createdAt": 1762924919785,
+                    "rating": 5,
+                    "comment": "Vinculum voluptate demonstro quisquam iure sponte.",
+                    "createdAt": 1763538081461,
                     "id": 1
                   }
                 ]
@@ -2242,8 +2241,8 @@
               "example": {
                 "productId": null,
                 "userId": null,
-                "rating": 3,
-                "comment": "Asperiores patruus summa deduco caritas voluntarius."
+                "rating": 5,
+                "comment": "Vinculum voluptate demonstro quisquam iure sponte."
               }
             }
           }
@@ -2259,9 +2258,9 @@
                 "example": {
                   "productId": null,
                   "userId": null,
-                  "rating": 3,
-                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                  "createdAt": 1762924919785,
+                  "rating": 5,
+                  "comment": "Vinculum voluptate demonstro quisquam iure sponte.",
+                  "createdAt": 1763538081461,
                   "id": 1
                 }
               }
@@ -2294,9 +2293,9 @@
                 "example": {
                   "productId": null,
                   "userId": null,
-                  "rating": 3,
-                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                  "createdAt": 1762924919785,
+                  "rating": 5,
+                  "comment": "Vinculum voluptate demonstro quisquam iure sponte.",
+                  "createdAt": 1763538081461,
                   "id": 1
                 }
               }
@@ -2325,8 +2324,8 @@
               "example": {
                 "productId": null,
                 "userId": null,
-                "rating": 3,
-                "comment": "Asperiores patruus summa deduco caritas voluntarius."
+                "rating": 5,
+                "comment": "Vinculum voluptate demonstro quisquam iure sponte."
               }
             }
           }
@@ -2342,9 +2341,9 @@
                 "example": {
                   "productId": null,
                   "userId": null,
-                  "rating": 3,
-                  "comment": "Asperiores patruus summa deduco caritas voluntarius.",
-                  "createdAt": 1762924919785,
+                  "rating": 5,
+                  "comment": "Vinculum voluptate demonstro quisquam iure sponte.",
+                  "createdAt": 1763538081461,
                   "id": 1
                 }
               }
@@ -2356,6 +2355,7 @@
         }
       },
       "delete": {
+        "isSelect": true,
         "summary": "Delete reviews by id",
         "parameters": [
           {
@@ -2379,7 +2379,8 @@
     },
     "/products/bulk-update": {
       "post": {
-        "summary": "Bulk update product inventory, prices, and status",
+        "isSelect": true,
+        "summary": "Bulk update product stock (supports update | subtract)",
         "requestBody": {
           "required": true,
           "content": {
@@ -2392,11 +2393,13 @@
                 "properties": {
                   "updates": {
                     "type": "array",
+                    "minItems": 1,
                     "items": {
                       "type": "object",
                       "required": [
                         "productId"
                       ],
+                      "additionalProperties": false,
                       "properties": {
                         "productId": {
                           "type": "integer",
@@ -2405,22 +2408,8 @@
                         "stock": {
                           "type": "integer",
                           "nullable": true,
-                          "example": 100
-                        },
-                        "price": {
-                          "type": "number",
-                          "nullable": true,
-                          "example": 29.99
-                        },
-                        "status": {
-                          "type": "string",
-                          "nullable": true,
-                          "example": "active"
-                        },
-                        "discount": {
-                          "type": "number",
-                          "nullable": true,
-                          "example": 10
+                          "example": 100,
+                          "minimum": 0
                         }
                       }
                     }
@@ -2429,10 +2418,61 @@
                     "type": "string",
                     "enum": [
                       "update",
-                      "add",
                       "subtract"
                     ],
+                    "default": "update",
                     "example": "update"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "examples": {
+                "fullSuccess": {
+                  "summary": "Full success example (update stock to fixed values)",
+                  "value": {
+                    "updates": [
+                      {
+                        "productId": 1,
+                        "stock": 50
+                      },
+                      {
+                        "productId": 2,
+                        "stock": 10
+                      }
+                    ],
+                    "operation": "update"
+                  }
+                },
+                "partialSuccess": {
+                  "summary": "Partial success example (subtract and unknown product)",
+                  "value": {
+                    "updates": [
+                      {
+                        "productId": 1,
+                        "stock": 5
+                      },
+                      {
+                        "productId": 99999,
+                        "stock": 10
+                      },
+                      {
+                        "productId": 2,
+                        "stock": 99999
+                      }
+                    ],
+                    "operation": "subtract"
+                  }
+                },
+                "invalidOperation": {
+                  "summary": "Invalid operation",
+                  "value": {
+                    "updates": [
+                      {
+                        "productId": 1,
+                        "stock": 5
+                      }
+                    ],
+                    "operation": "multiply"
                   }
                 }
               }
@@ -2441,7 +2481,7 @@
         },
         "responses": {
           "200": {
-            "description": "Bulk update results",
+            "description": "Full success",
             "content": {
               "application/json": {
                 "schema": {
@@ -2450,8 +2490,166 @@
               }
             }
           },
+          "207": {
+            "description": "Partial success (some items failed)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BulkUpdateResponse"
+                },
+                "examples": {
+                  "partial": {
+                    "value": {
+                      "success": false,
+                      "mode": "partial",
+                      "operation": "subtract",
+                      "meta": {
+                        "totalProcessed": 3,
+                        "successful": 2,
+                        "failed": 1,
+                        "hasWarnings": true,
+                        "hasErrors": true
+                      },
+                      "results": [
+                        {
+                          "productId": 1,
+                          "productName": "Product A",
+                          "changes": {
+                            "stock": 45,
+                            "updatedAt": 1711111111111
+                          },
+                          "previousStock": 50
+                        },
+                        {
+                          "productId": 2,
+                          "productName": "Product B",
+                          "changes": {
+                            "stock": 0,
+                            "updatedAt": 1711111111112
+                          },
+                          "previousStock": 20,
+                          "warnings": [
+                            {
+                              "code": "STOCK_DEPLETED",
+                              "message": "Stock depleted for product 2"
+                            }
+                          ]
+                        }
+                      ],
+                      "errors": [
+                        {
+                          "code": "PRODUCT_NOT_FOUND",
+                          "message": "Product not found: 99999",
+                          "productId": 99999
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
           "400": {
-            "description": "Validation error"
+            "description": "Validation / all failed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BulkUpdateResponse"
+                },
+                "examples": {
+                  "missingUpdates": {
+                    "summary": "updates yok/yanlış tip",
+                    "value": {
+                      "success": false,
+                      "mode": "failed",
+                      "operation": "update",
+                      "meta": {
+                        "totalProcessed": 0,
+                        "successful": 0,
+                        "failed": 0,
+                        "hasWarnings": false,
+                        "hasErrors": true
+                      },
+                      "errors": [
+                        {
+                          "code": "UPDATES_INVALID",
+                          "message": "updates must be an array"
+                        }
+                      ]
+                    }
+                  },
+                  "duplicateIds": {
+                    "summary": "Duplicate productId → strict 400",
+                    "value": {
+                      "success": false,
+                      "mode": "failed",
+                      "operation": "update",
+                      "meta": {
+                        "totalProcessed": 3,
+                        "successful": 0,
+                        "failed": 3,
+                        "hasWarnings": false,
+                        "hasErrors": true,
+                        "duplicateIds": [
+                          1
+                        ]
+                      },
+                      "errors": [
+                        {
+                          "code": "DUPLICATE_IDS",
+                          "message": "Duplicate productId(s) are not allowed: 1"
+                        }
+                      ]
+                    }
+                  },
+                  "invalidOperation": {
+                    "summary": "Geçersiz operation",
+                    "value": {
+                      "success": false,
+                      "mode": "failed",
+                      "operation": "update",
+                      "meta": {
+                        "totalProcessed": 1,
+                        "successful": 0,
+                        "failed": 1,
+                        "hasWarnings": false,
+                        "hasErrors": true
+                      },
+                      "errors": [
+                        {
+                          "code": "OPERATION_INVALID",
+                          "message": "Allowed: update, subtract"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Batch too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "type": "string"
+                    },
+                    "error": {
+                      "type": "string"
+                    },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/ErrorItem"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -2509,6 +2707,7 @@
     },
     "/categories/{id}/sales-stats": {
       "get": {
+        "isSelect": true,
         "summary": "Get category sales statistics",
         "parameters": [
           {
@@ -2807,6 +3006,7 @@
     },
     "/categories/performance-comparison": {
       "get": {
+        "isSelect": true,
         "summary": "Compare performance metrics across categories",
         "parameters": [
           {
@@ -2900,7 +3100,7 @@
             "schema": {
               "type": "boolean"
             },
-            "description": "Include products in response"
+            "description": "Include products in response (true/false)"
           },
           {
             "in": "query",
@@ -2908,7 +3108,7 @@
             "schema": {
               "type": "boolean"
             },
-            "description": "Include sales statistics"
+            "description": "Include sales statistics (true/false)"
           }
         ],
         "responses": {
@@ -2917,16 +3117,64 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CategoryProductStatistics"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/CategoryStatsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategoryWithProductsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategorySalesStatsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategoryFullStatsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/StatusStatisticsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CategoryStatusProductsResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/GeneralStatisticsResult"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "type",
+                    "mapping": {
+                      "category_stats": "#/components/schemas/CategoryStatsResult",
+                      "category_with_products": "#/components/schemas/CategoryWithProductsResult",
+                      "category_sales_stats": "#/components/schemas/CategorySalesStatsResult",
+                      "category_full_stats": "#/components/schemas/CategoryFullStatsResult",
+                      "status_statistics": "#/components/schemas/StatusStatisticsResult",
+                      "category_status_products": "#/components/schemas/CategoryStatusProductsResult",
+                      "general_statistics": "#/components/schemas/GeneralStatisticsResult"
+                    }
+                  }
                 }
               }
             }
           },
           "400": {
-            "description": "invalid parameters"
+            "description": "invalid parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "category not found"
+            "description": "category not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
@@ -3277,6 +3525,7 @@
     },
     "/orders/filter": {
       "get": {
+        "isSelect": true,
         "summary": "Filter orders with variable parameters",
         "parameters": [
           {
@@ -3285,7 +3534,7 @@
             "schema": {
               "type": "integer"
             },
-            "description": "Get single order by ID"
+            "description": "Get single order by ID (only this returns a single_order result)"
           },
           {
             "in": "query",
@@ -3299,9 +3548,16 @@
             "in": "query",
             "name": "status",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "pending",
+                "failed",
+                "cancelled",
+                "returned",
+                "delivered"
+              ]
             },
-            "description": "Filter by status"
+            "description": "Filter by order status"
           },
           {
             "in": "query",
@@ -3310,7 +3566,7 @@
               "type": "integer",
               "format": "int64"
             },
-            "description": "Start date timestamp"
+            "description": "Start date (timestamp ms)"
           },
           {
             "in": "query",
@@ -3319,7 +3575,7 @@
               "type": "integer",
               "format": "int64"
             },
-            "description": "End date timestamp"
+            "description": "End date (timestamp ms)"
           }
         ],
         "responses": {
@@ -3328,7 +3584,37 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/OrderFilterResult"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/SingleOrderResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/UserOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/StatusOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/UserStatusOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/DateRangeOrdersResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/AllOrdersResult"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "type",
+                    "mapping": {
+                      "single_order": "#/components/schemas/SingleOrderResult",
+                      "user_orders": "#/components/schemas/UserOrdersResult",
+                      "status_orders": "#/components/schemas/StatusOrdersResult",
+                      "user_status_orders": "#/components/schemas/UserStatusOrdersResult",
+                      "date_range_orders": "#/components/schemas/DateRangeOrdersResult",
+                      "all_orders": "#/components/schemas/AllOrdersResult"
+                    }
+                  }
                 }
               }
             }
@@ -3338,6 +3624,174 @@
           },
           "404": {
             "description": "order or user not found"
+          }
+        }
+      }
+    },
+    "/orders/flexible-search": {
+      "post": {
+        "isSelect": true,
+        "summary": "Flexible order search with alternative case scenarios",
+        "description": "\n                    Search orders with different behaviors based on provided fields:\n                    - orderId (unique): returns single order object\n                    - Only userId: returns array of all orders by that user\n                    - userId + status: returns array of orders matching both\n                    - status: returns array of all orders with that status\n                    - totalAmountMin + totalAmountMax: returns array of orders in amount range\n                    - dateFrom + dateTo: returns array of orders in date range (timestamp)\n                    - Complex combinations: returns array filtered by all provided criteria\n                ",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "orderId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1
+                  },
+                  "userId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  },
+                  "status": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "delivered"
+                  },
+                  "totalAmountMin": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 10
+                  },
+                  "totalAmountMax": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 500
+                  },
+                  "dateFrom": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1609459200000,
+                    "description": "Unix timestamp (ms)"
+                  },
+                  "dateTo": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 1704067200000,
+                    "description": "Unix timestamp (ms)"
+                  }
+                }
+              },
+              "examples": {
+                "byOrderId": {
+                  "summary": "Search by orderId (returns single object - unique)",
+                  "value": {
+                    "orderId": 1
+                  }
+                },
+                "byUserIdOnly": {
+                  "summary": "Search by userId only (returns array)",
+                  "value": {
+                    "userId": 5
+                  }
+                },
+                "byUserIdAndStatus": {
+                  "summary": "Search by userId and status (returns array)",
+                  "value": {
+                    "userId": 5,
+                    "status": "delivered"
+                  }
+                },
+                "byStatus": {
+                  "summary": "Search by status only (returns array)",
+                  "value": {
+                    "status": "delivered"
+                  }
+                },
+                "byAmountRange": {
+                  "summary": "Search by amount range (returns array)",
+                  "value": {
+                    "totalAmountMin": 10,
+                    "totalAmountMax": 500
+                  }
+                },
+                "byDateRange": {
+                  "summary": "Search by date range (returns array)",
+                  "value": {
+                    "dateFrom": 1609459200000,
+                    "dateTo": 1704067200000
+                  }
+                },
+                "complex": {
+                  "summary": "Complex search with multiple criteria (returns array)",
+                  "value": {
+                    "userId": 5,
+                    "status": "delivered",
+                    "totalAmountMin": 10,
+                    "totalAmountMax": 500
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Order(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Order"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Order"
+                      }
+                    }
+                  ]
+                },
+                "examples": {
+                  "singleOrder": {
+                    "summary": "Single order (orderId search)",
+                    "value": {
+                      "id": 1,
+                      "userId": 5,
+                      "status": "delivered",
+                      "totalAmount": 125.5,
+                      "items": [],
+                      "createdAt": 1609459200000
+                    }
+                  },
+                  "multipleOrders": {
+                    "summary": "Array of orders (other searches)",
+                    "value": [
+                      {
+                        "id": 1,
+                        "userId": 5,
+                        "status": "delivered",
+                        "totalAmount": 125.5,
+                        "items": [],
+                        "createdAt": 1609459200000
+                      },
+                      {
+                        "id": 2,
+                        "userId": 5,
+                        "status": "delivered",
+                        "totalAmount": 89.99,
+                        "items": [],
+                        "createdAt": 1609460000000
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required or invalid combination"
+          },
+          "404": {
+            "description": "No orders found"
           }
         }
       }
@@ -4179,6 +4633,152 @@
         }
       }
     },
+    "/products/flexible-search": {
+      "post": {
+        "isSelect": true,
+        "summary": "Flexible product search with alternative case scenarios",
+        "description": "\n                    Search products with different behaviors based on provided fields:\n                    - Only name: returns array of all products with that name (partial match)\n                    - name + categoryId: returns array of products matching both\n                    - sellerId: returns array of all products by that seller\n                    - priceMin + priceMax: returns array of products in price range\n                    - categoryId + priceMin + priceMax: returns array filtered by category and price\n                    - stockMin: returns array of products with minimum stock\n                    - Complex combinations: returns array filtered by all provided criteria\n                ",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "Product"
+                  },
+                  "categoryId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  },
+                  "sellerId": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 10
+                  },
+                  "priceMin": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 10
+                  },
+                  "priceMax": {
+                    "type": "number",
+                    "nullable": true,
+                    "example": 100
+                  },
+                  "stockMin": {
+                    "type": "integer",
+                    "nullable": true,
+                    "example": 5
+                  }
+                }
+              },
+              "examples": {
+                "byNameOnly": {
+                  "summary": "Search by name only (returns array)",
+                  "value": {
+                    "name": "Product"
+                  }
+                },
+                "byNameAndCategory": {
+                  "summary": "Search by name and categoryId (returns array)",
+                  "value": {
+                    "name": "Product",
+                    "categoryId": 5
+                  }
+                },
+                "bySellerId": {
+                  "summary": "Search by sellerId (returns array)",
+                  "value": {
+                    "sellerId": 10
+                  }
+                },
+                "byPriceRange": {
+                  "summary": "Search by price range (returns array)",
+                  "value": {
+                    "priceMin": 10,
+                    "priceMax": 100
+                  }
+                },
+                "byCategoryAndPrice": {
+                  "summary": "Search by categoryId and price range (returns array)",
+                  "value": {
+                    "categoryId": 5,
+                    "priceMin": 10,
+                    "priceMax": 100
+                  }
+                },
+                "byStockMin": {
+                  "summary": "Search by minimum stock (returns array)",
+                  "value": {
+                    "stockMin": 5
+                  }
+                },
+                "complex": {
+                  "summary": "Complex search with multiple criteria (returns array)",
+                  "value": {
+                    "name": "Product",
+                    "categoryId": 5,
+                    "priceMin": 10,
+                    "priceMax": 100
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Product(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                },
+                "examples": {
+                  "products": {
+                    "summary": "Array of products",
+                    "value": [
+                      {
+                        "id": 1,
+                        "name": "Product Name",
+                        "categoryId": 5,
+                        "sellerId": 10,
+                        "price": 25.99,
+                        "stock": 100,
+                        "status": "active"
+                      },
+                      {
+                        "id": 2,
+                        "name": "Another Product",
+                        "categoryId": 5,
+                        "sellerId": 10,
+                        "price": 45.5,
+                        "stock": 50,
+                        "status": "active"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required or invalid combination"
+          },
+          "404": {
+            "description": "No products found"
+          }
+        }
+      }
+    },
     "/products/low-stock": {
       "get": {
         "summary": "Get products with low stock levels",
@@ -4445,6 +5045,7 @@
     },
     "/products/{id}/reviews-summary": {
       "get": {
+        "isSelect": true,
         "summary": "Get product reviews summary",
         "parameters": [
           {
@@ -5576,6 +6177,139 @@
           },
           "404": {
             "description": "user not found"
+          }
+        }
+      }
+    },
+    "/users/flexible-search": {
+      "post": {
+        "isSelect": true,
+        "summary": "Flexible user search with alternative case scenarios",
+        "description": "\n                    Search users with different behaviors based on provided fields:\n                    - Only firstName: returns array of all users with that first name\n                    - firstName + lastName: returns array of users matching both\n                    - email (unique): returns single user object\n                    - phone (unique): returns single user object\n                    - phone + firstName/lastName: returns array filtered by phone and name\n                ",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstName": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "John"
+                  },
+                  "lastName": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "Doe"
+                  },
+                  "email": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "user@example.com"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "nullable": true,
+                    "example": "+1234567890"
+                  }
+                }
+              },
+              "examples": {
+                "byEmail": {
+                  "summary": "Search by email (returns single object - unique)",
+                  "value": {
+                    "email": "user@example.com"
+                  }
+                },
+                "byPhone": {
+                  "summary": "Search by phone (returns single object - unique)",
+                  "value": {
+                    "phone": "+1234567890"
+                  }
+                },
+                "byFirstNameOnly": {
+                  "summary": "Search by firstName only (returns array)",
+                  "value": {
+                    "firstName": "John"
+                  }
+                },
+                "byFirstNameAndLastName": {
+                  "summary": "Search by firstName and lastName (returns array)",
+                  "value": {
+                    "firstName": "John",
+                    "lastName": "Doe"
+                  }
+                },
+                "byPhoneAndName": {
+                  "summary": "Search by phone and firstName (returns array)",
+                  "value": {
+                    "phone": "+1234567890",
+                    "firstName": "John"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User(s) found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/User"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  ]
+                },
+                "examples": {
+                  "singleUser": {
+                    "summary": "Single user (email or phone search)",
+                    "value": {
+                      "id": 1,
+                      "email": "user@example.com",
+                      "firstName": "John",
+                      "lastName": "Doe",
+                      "role": "buyer",
+                      "status": "active"
+                    }
+                  },
+                  "multipleUsers": {
+                    "summary": "Array of users (name search)",
+                    "value": [
+                      {
+                        "id": 1,
+                        "email": "john1@example.com",
+                        "firstName": "John",
+                        "lastName": "Doe",
+                        "role": "buyer"
+                      },
+                      {
+                        "id": 2,
+                        "email": "john2@example.com",
+                        "firstName": "John",
+                        "lastName": "Smith",
+                        "role": "seller"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "At least one search field is required or invalid combination"
+          },
+          "404": {
+            "description": "No users found"
           }
         }
       }
@@ -6827,9 +7561,108 @@
           "success": {
             "type": "boolean"
           },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "full",
+              "partial",
+              "failed"
+            ]
+          },
           "operation": {
+            "type": "string",
+            "enum": [
+              "update",
+              "subtract"
+            ]
+          },
+          "meta": {
+            "$ref": "#/components/schemas/BulkUpdateMeta"
+          },
+          "results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResultItem"
+            }
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ErrorItem"
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            }
+          }
+        }
+      },
+      "ResultItem": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer"
+          },
+          "productName": {
             "type": "string"
           },
+          "changes": {
+            "type": "object",
+            "properties": {
+              "stock": {
+                "type": "integer"
+              },
+              "updatedAt": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          },
+          "previousStock": {
+            "type": "integer"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "ErrorItem": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "productId": {
+            "type": "integer",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WarningItem": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BulkUpdateMeta": {
+        "type": "object",
+        "properties": {
           "totalProcessed": {
             "type": "integer"
           },
@@ -6839,22 +7672,21 @@
           "failed": {
             "type": "integer"
           },
-          "results": {
-            "type": "array"
+          "hasWarnings": {
+            "type": "boolean"
           },
-          "errors": {
+          "hasErrors": {
+            "type": "boolean"
+          },
+          "duplicateIds": {
             "type": "array",
             "items": {
-              "type": "string"
-            }
-          },
-          "warnings": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+              "type": "integer"
+            },
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "CategoryProductsSummary": {
         "type": "object",
@@ -7298,57 +8130,457 @@
           }
         }
       },
-      "CategoryProductStatistics": {
-        "oneOf": [
+      "CategoryRef": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "CategoryFullRef": {
+        "allOf": [
           {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "category_stats",
-                  "category_with_products",
-                  "category_sales_stats",
-                  "category_full_stats",
-                  "category_status_products"
-                ]
-              },
-              "category": {
-                "type": "object"
-              },
-              "products": {
-                "type": "array",
-                "items": {
-                  "type": "object"
-                }
-              },
-              "sales": {
-                "type": "object"
-              },
-              "statistics": {
-                "type": "object"
-              }
-            }
+            "$ref": "#/components/schemas/CategoryRef"
           },
           {
             "type": "object",
             "properties": {
-              "type": {
+              "description": {
                 "type": "string",
-                "enum": [
-                  "status_statistics",
-                  "general_statistics"
-                ]
+                "nullable": true
               },
               "status": {
-                "type": "string"
-              },
-              "statistics": {
-                "type": "object"
+                "type": "string",
+                "enum": [
+                  "active",
+                  "inactive"
+                ]
               }
-            }
+            },
+            "required": [
+              "status"
+            ]
           }
         ]
+      },
+      "ProductSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "price",
+          "stock",
+          "status"
+        ]
+      },
+      "ProductMinimal": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "price",
+          "stock"
+        ]
+      },
+      "SalesStats": {
+        "type": "object",
+        "properties": {
+          "totalSales": {
+            "type": "integer"
+          },
+          "totalRevenue": {
+            "type": "number"
+          },
+          "orderCount": {
+            "type": "integer"
+          },
+          "averageOrderValue": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "totalSales",
+          "totalRevenue",
+          "orderCount",
+          "averageOrderValue"
+        ]
+      },
+      "CategoryCountStats": {
+        "type": "object",
+        "properties": {
+          "totalProducts": {
+            "type": "integer"
+          },
+          "activeProducts": {
+            "type": "integer"
+          },
+          "inactiveProducts": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "totalProducts",
+          "activeProducts",
+          "inactiveProducts"
+        ]
+      },
+      "CategoryCountStatsShort": {
+        "type": "object",
+        "properties": {
+          "totalProducts": {
+            "type": "integer"
+          },
+          "activeProducts": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "totalProducts",
+          "activeProducts"
+        ]
+      },
+      "StatusCategorySummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "productCount": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "productCount"
+        ]
+      },
+      "GlobalStats": {
+        "type": "object",
+        "properties": {
+          "totalCategories": {
+            "type": "integer"
+          },
+          "totalProducts": {
+            "type": "integer"
+          },
+          "activeProducts": {
+            "type": "integer"
+          },
+          "inactiveProducts": {
+            "type": "integer"
+          },
+          "totalOrders": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "totalCategories",
+          "totalProducts",
+          "activeProducts",
+          "inactiveProducts",
+          "totalOrders"
+        ]
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "error"
+        ]
+      },
+      "CategoryStatsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_stats"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryFullRef"
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/CategoryCountStats"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "statistics"
+        ]
+      },
+      "CategoryWithProductsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_with_products"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryFullRef"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductSummary"
+            }
+          },
+          "totalProducts": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "products",
+          "totalProducts"
+        ]
+      },
+      "CategorySalesStatsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_sales_stats"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryRef"
+          },
+          "sales": {
+            "$ref": "#/components/schemas/SalesStats"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "sales"
+        ]
+      },
+      "CategoryFullStatsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_full_stats"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryFullRef"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductSummary"
+            }
+          },
+          "sales": {
+            "$ref": "#/components/schemas/SalesStats"
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/CategoryCountStatsShort"
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "products",
+          "sales",
+          "statistics"
+        ]
+      },
+      "StatusStatisticsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "status_statistics"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          },
+          "statistics": {
+            "type": "object",
+            "properties": {
+              "totalCategories": {
+                "type": "integer"
+              },
+              "totalProducts": {
+                "type": "integer"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StatusCategorySummary"
+                }
+              }
+            },
+            "required": [
+              "totalCategories",
+              "totalProducts",
+              "categories"
+            ]
+          }
+        },
+        "required": [
+          "type",
+          "status",
+          "statistics"
+        ]
+      },
+      "CategoryStatusProductsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "category_status_products"
+            ]
+          },
+          "category": {
+            "$ref": "#/components/schemas/CategoryRef"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ]
+          },
+          "totalProducts": {
+            "type": "integer"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductMinimal"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "category",
+          "status",
+          "totalProducts",
+          "products"
+        ]
+      },
+      "GeneralStatisticsResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "general_statistics"
+            ]
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/GlobalStats"
+          }
+        },
+        "required": [
+          "type",
+          "statistics"
+        ]
+      },
+      "CategoryProductStatistics": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/CategoryStatsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategoryWithProductsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategorySalesStatsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategoryFullStatsResult"
+          },
+          {
+            "$ref": "#/components/schemas/StatusStatisticsResult"
+          },
+          {
+            "$ref": "#/components/schemas/CategoryStatusProductsResult"
+          },
+          {
+            "$ref": "#/components/schemas/GeneralStatisticsResult"
+          }
+        ],
+        "discriminator": {
+          "propertyName": "type",
+          "mapping": {
+            "category_stats": "#/components/schemas/CategoryStatsResult",
+            "category_with_products": "#/components/schemas/CategoryWithProductsResult",
+            "category_sales_stats": "#/components/schemas/CategorySalesStatsResult",
+            "category_full_stats": "#/components/schemas/CategoryFullStatsResult",
+            "status_statistics": "#/components/schemas/StatusStatisticsResult",
+            "category_status_products": "#/components/schemas/CategoryStatusProductsResult",
+            "general_statistics": "#/components/schemas/GeneralStatisticsResult"
+          }
+        }
       },
       "CategoryRevenueTrend": {
         "type": "object",
@@ -7650,45 +8882,508 @@
           }
         }
       },
+      "OrderItem": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer"
+          },
+          "variantId": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "productId",
+          "variantId",
+          "quantity",
+          "price"
+        ]
+      },
+      "Payment": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "string",
+            "enum": [
+              "credit_card",
+              "paypal",
+              "bank_transfer"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "processing",
+              "shipped",
+              "delivered",
+              "cancelled"
+            ]
+          }
+        },
+        "required": [
+          "method",
+          "status"
+        ]
+      },
+      "OrderDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "payment": {
+            "$ref": "#/components/schemas/Payment",
+            "nullable": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderItem"
+            }
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "userName",
+          "totalAmount",
+          "status",
+          "items",
+          "createdAt"
+        ]
+      },
+      "UserOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "totalAmount",
+          "status",
+          "createdAt"
+        ]
+      },
+      "StatusOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "totalAmount",
+          "createdAt"
+        ]
+      },
+      "UserStatusOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "totalAmount",
+          "createdAt"
+        ]
+      },
+      "DateRangeOrderSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "totalAmount",
+          "status",
+          "createdAt"
+        ]
+      },
+      "AllOrdersSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "required": [
+          "id",
+          "userId",
+          "totalAmount",
+          "status",
+          "createdAt"
+        ]
+      },
+      "SingleOrderResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "single_order"
+            ]
+          },
+          "order": {
+            "$ref": "#/components/schemas/OrderDetail"
+          }
+        },
+        "required": [
+          "type",
+          "order"
+        ]
+      },
+      "UserOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "user_orders"
+            ]
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalSpent": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "userId",
+          "userName",
+          "totalOrders",
+          "totalSpent",
+          "orders"
+        ]
+      },
+      "StatusOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "status_orders"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StatusOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "status",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
+      "UserStatusOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "user_status_orders"
+            ]
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "failed",
+              "cancelled",
+              "returned",
+              "delivered"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserStatusOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "userId",
+          "userName",
+          "status",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
+      "DateRangeOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "date_range_orders"
+            ]
+          },
+          "filters": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "type": "integer",
+                "nullable": true
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "pending",
+                  "failed",
+                  "cancelled",
+                  "returned",
+                  "delivered"
+                ],
+                "nullable": true
+              },
+              "startDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true
+              },
+              "endDate": {
+                "type": "integer",
+                "format": "int64",
+                "nullable": true
+              }
+            },
+            "required": [
+              "userId",
+              "status",
+              "startDate",
+              "endDate"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DateRangeOrderSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "filters",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
+      "AllOrdersResult": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "all_orders"
+            ]
+          },
+          "totalOrders": {
+            "type": "integer"
+          },
+          "totalAmount": {
+            "type": "number"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AllOrdersSummary"
+            }
+          }
+        },
+        "required": [
+          "type",
+          "totalOrders",
+          "totalAmount",
+          "orders"
+        ]
+      },
       "OrderFilterResult": {
         "oneOf": [
           {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "single_order"
-                ]
-              },
-              "order": {
-                "type": "object"
-              }
-            }
+            "$ref": "#/components/schemas/SingleOrderResult"
           },
           {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "user_orders",
-                  "status_orders",
-                  "user_status_orders",
-                  "date_range_orders",
-                  "all_orders"
-                ]
-              },
-              "totalOrders": {
-                "type": "integer"
-              },
-              "orders": {
-                "type": "array",
-                "items": {
-                  "type": "object"
-                }
-              }
-            }
+            "$ref": "#/components/schemas/UserOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/StatusOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/UserStatusOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/DateRangeOrdersResult"
+          },
+          {
+            "$ref": "#/components/schemas/AllOrdersResult"
           }
         ]
       },
@@ -8072,11 +9767,125 @@
           }
         }
       },
+      "BundleItem": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "productName": {
+            "type": "string",
+            "example": "Phone X"
+          },
+          "quantity": {
+            "type": "integer",
+            "example": 2
+          },
+          "unitPrice": {
+            "type": "number",
+            "example": 499.99
+          },
+          "totalPrice": {
+            "type": "number",
+            "example": 999.98
+          }
+        },
+        "required": [
+          "productId",
+          "productName",
+          "quantity",
+          "unitPrice",
+          "totalPrice"
+        ]
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 101
+          },
+          "name": {
+            "type": "string",
+            "example": "Summer Bundle"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "example": "Bundle of 3 products"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "bundle"
+            ]
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BundleItem"
+            }
+          },
+          "originalPrice": {
+            "type": "number",
+            "example": 149.97
+          },
+          "price": {
+            "type": "number",
+            "example": 129.99
+          },
+          "discount": {
+            "type": "number",
+            "example": 19.98
+          },
+          "discountPercent": {
+            "type": "number",
+            "example": 13.34
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ],
+            "example": "active"
+          },
+          "stock": {
+            "type": "integer",
+            "example": 20
+          },
+          "createdAt": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1738368000000
+          },
+          "updatedAt": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1738368000000
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "type",
+          "products",
+          "originalPrice",
+          "price",
+          "discount",
+          "discountPercent",
+          "status",
+          "stock",
+          "createdAt",
+          "updatedAt"
+        ]
+      },
       "BundleCreationResponse": {
         "type": "object",
         "properties": {
           "bundle": {
-            "type": "object"
+            "$ref": "#/components/schemas/Bundle"
           },
           "summary": {
             "type": "object",
@@ -8096,7 +9905,14 @@
               "savingsPercent": {
                 "type": "number"
               }
-            }
+            },
+            "required": [
+              "totalProducts",
+              "originalPrice",
+              "bundlePrice",
+              "savings",
+              "savingsPercent"
+            ]
           },
           "warnings": {
             "type": "array",
@@ -8104,7 +9920,11 @@
               "type": "string"
             }
           }
-        }
+        },
+        "required": [
+          "bundle",
+          "summary"
+        ]
       },
       "ProductBundleRecommendations": {
         "type": "object",
@@ -8380,6 +10200,32 @@
             "example": [
               "restock_soon"
             ]
+          }
+        }
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "categoryId": {
+            "type": "integer"
+          },
+          "sellerId": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string"
           }
         }
       },
@@ -8935,26 +10781,6 @@
               "high"
             ],
             "example": "high"
-          }
-        }
-      },
-      "Product": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer"
-          },
-          "name": {
-            "type": "string"
-          },
-          "categoryId": {
-            "type": "integer"
-          },
-          "price": {
-            "type": "number"
-          },
-          "stock": {
-            "type": "integer"
           }
         }
       },
@@ -10100,6 +11926,32 @@
           }
         }
       },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "email": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
       "UserLifetimeValue": {
         "type": "object",
         "properties": {
@@ -10628,26 +12480,6 @@
           "isActive": {
             "type": "boolean",
             "example": true
-          }
-        }
-      },
-      "User": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer"
-          },
-          "email": {
-            "type": "string"
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
           }
         }
       },
