@@ -1,0 +1,16 @@
+# Fix Failing API Tests
+
+The API tests in this project were passing before but are now failing due to API changes.
+
+## Steps
+1. Run tests to see failures: `yarn run runner`
+2. Fetch current API spec: `npm run openapi:fetch-isSelect` (creates `openapi-isSelect.json`)
+3. Compare spec with test expectations
+4. Fix service files (`src/api/fakeApi/*.ts`) and test files (`fake-api-tests/*.spec.ts`)
+
+## Project Structure
+- Tests: `fake-api-tests/**/*.spec.ts` (Mocha/Chai)
+- Services: `src/api/fakeApi/*.ts` (Axios HTTP clients)
+- API spec: `openapi-isSelect.json`
+
+Fix the tests to match the new API contract from the OpenAPI spec.
