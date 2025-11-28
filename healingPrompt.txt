@@ -14,3 +14,4 @@ The API tests in this project were passing before but are now failing due to API
 - API spec: `openapi-isSelect.json`
 
 Fix the tests to match the new API contract from the OpenAPI spec.
+Then, describe the changes you've made to the test in order to fix them with comment lines.
