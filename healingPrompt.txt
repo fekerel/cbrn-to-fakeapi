@@ -3,10 +3,19 @@
 The API tests in this project were passing before but are now failing due to API changes.
 
 ## Steps
-1. Run tests to see failures: `yarn run runner`
+1. **Create branch**
+   - Create a new branch:
+     ```
+     git checkout -b cursor-healing-<YYYYMMDD-HHmm>
+     ```  
+     Example:
+     ```powershell
+     git checkout -b ("cursor-" + healing" + "-" + (Get-Date -Format "yyyyMMdd-HHmm"))
+     ```
+2. Run tests to see failures: `yarn run runner`
 2. Fetch current API spec: `npm run openapi:fetch-isSelect` (creates `openapi-isSelect.json`)
-3. Compare spec with test expectations
-4. Fix service files (`src/api/fakeApi/*.ts`) and test files (`fake-api-tests/*.spec.ts`)
+4. Compare spec with test expectations
+5. Fix service files (`src/api/fakeApi/*.ts`) and test files (`fake-api-tests/*.spec.ts`)
 
 ## Project Structure
 - Tests: `fake-api-tests/**/*.spec.ts` (Mocha/Chai)
@@ -15,3 +24,4 @@ The API tests in this project were passing before but are now failing due to API
 
 Fix the tests to match the new API contract from the OpenAPI spec.
 Then, describe the changes you've made to the test in order to fix them with comment lines.
+Do not end answering until all tests are fixed and all pass. 
