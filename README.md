@@ -51,6 +51,6 @@ AI, `npm run openapi:fetch-isSelect` komutuyla güncel OpenAPI spec'ini alarak t
 
 | Branch | Açıklama |
 |--------|----------|
-| `main` | Ana branch, boş test yapısı |
-| `newTest` | Testlerin yazılı olmadığı temiz branch (AI test yazdırma deneyleri için) |
+| `main` | Testlerin yazılı olmadığı temiz yapı (AI test yazdırma deneyleri için) |
+| `with-tests` | Halihazırda yazılmış testleri içerir |
 | `healing` | Önceden yazılmış ve pass eden testler (AI healing deneyleri için) |
