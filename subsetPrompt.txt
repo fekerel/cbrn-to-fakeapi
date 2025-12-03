@@ -1,0 +1,208 @@
+" # GOAL
+Proje, JSON Server üzerinde çalışan fake bir API’ye test otomasyonu eklemek için hazırlanmıştır.
+Tüm endpoint’ler Swagger (OpenAPI) üzerinden alınacaktır.
+Testler TypeScript + Mocha + Chai kullanılarak yazılacaktır.
+API istekleri **ApiService** üzerinden yapılacaktır.
+
+---
+
+# TASKS
+
+1. 🔀 **Branch Oluştur**
+    - Yeni bir branch oluştur:
+      git checkout -b `ai-<tool-name>-<YYYYMMDD-HHmm>`. (tool-name'den kastımız: cursor, windsurf, copilot, junie vb.)
+      Örnek:
+      ```powershell
+      git checkout -b ("ai-" + "<tool-name>" + "-" + (Get-Date -Format "yyyyMMdd-HHmm"))
+      ```
+    - Tüm işlemleri bu branch üzerinde gerçekleştir.
+    - ⚠️ **Commit veya push yapma.**
+      Tüm testler başarıyla geçince yalnızca “BİTTİ” diyerek işlemi sonlandır.
+
+---
+
+2. 🔍 **Kod Analizi**
+    - `fake-api-test` klasörü altındaki mevcut CRUD testlerini incele.
+    - Bu testlerdeki `expect` bloklarının swagger’daki `response.data` yapısına göre yazıldığını fark et.
+    - Kodun genel test mantığını, import düzenini, test yazım stilini ve **şablon yapısını** kavra.
+    - CRUD testlerinde kullanılan test bloğu formatı **referans şablondur**.
+    - Yeni yazılacak tüm testler bu CRUD şablonuna **birebir sadık kalacaktır** (biçim, sıralama, `expect` tarzı dahil).
+
+---
+
+3. 📘 **Swagger Verisini Oku**
+    - Swagger'ın güncel halini elde etmek için `npm run openapi:fetch-isSelect` komutunu çalıştır. Bunu yaptığında güncel swagger spesifikasyonu <proje-root>/Swagger-isSelect-openapi.json dosyasında yer alacaktır.
+    - Bu dosyayı doğrudan oku.
+    - Tüm endpoint’leri, HTTP metodlarını, request parametrelerini ve response yapılarını analiz et.
+    - Eğer aradığın uzantıyı npm run openapi:fetch-isSelect komutunu çalıştırarak bulamazsan:
+      * npm run openapi:fetch komutunu çalıştırmayı dene.
+      * Çünkü npm run openapi:fetch-isSelect komutu yalnızca belirli endpointleri listeleyecektir.
+      * Öte yandan, npm run openapi:fetch komutu tüm endpointleri listeleyecektir, veri proje root'unda openapi.json dosyasına yazılacaktır.
+      * Eğer ihtiyaç duyduğun ama npm run openapi:fetch-isSelect sonucunda bulamadığın bir endpoint varsa, npm run openapi:fetch komutunu kullanarak tüm endpointleri çekebilir ve oradan incelemelerini yapabilirsin.
+      * npm run openapi:fetch komutu çalıştırıldığında, bulunduğun klasörde openapi.json adında bir JSON dosyası oluşturulacak ve tüm Swagger verisi bu dosyaya kaydedilecektir.
+    - Biz senden sadece npm run openapi:fetch-isSelect komutunun sonucu elde ettiğin Swagger’daki endpointleri test etmeni istiyoruz.
+      * Yani, sadece npm run openapi:fetch-isSelect ile elde edilen endpointler üzerinde test yapmanı bekliyoruz.
+      * Eğer npm run openapi:fetch-isSelect komutuyla bulduğun endpointler dışında bir endpoint test etmen gerekirse, önce npm run openapi:fetch komutuyla tüm Swagger verisini elde edebilir ve gerekli endpointleri buradan inceleyebilirsin, ancak ana hedefin yalnızca npm run openapi:fetch-isSelect ile elde ettiğin endpointleri test etmek olmalıdır.
+
+---
+
+4. ⚙️ **Servis Şablonlarını İncele**
+    - `src/api/fakeApi` klasöründeki mevcut servis dosyalarını tara.
+    - Servis fonksiyonlarının nasıl tanımlandığını, hangi HTTP methodlarını kullandığını ve nasıl değer döndürdüğünü incele.
+    - Tüm API istekleri şu yapı üzerinden yapılacak:
+      ```ts
+      await ApiService.getInstance().instance.<method>('/endpoint');
+      ```
+      > Burada `ApiService` zaten `http://localhost:8000` baseURL’ünü içerir.
+      > Testlerde veya servislerde sadece endpoint kısmı (`/users`, `/posts` vb.) yazılmalıdır.
+    - Gerekiyorsa swagger’daki endpoint’lere uygun **yeni metotlar** oluştur.
+
+---
+
+5. 🧩 **Eksik Endpointler için Kod Yaz**
+    - Swagger’da tanımlı olup proje içinde test veya servis dosyası bulunmayan endpointler için:
+      - Servis dosyası oluştur: `src/api/fakeApi/specialEndpointService.ts`
+      - Test dosyası oluştur: `fake-api-test/specialEndpoint.ts`
+    - Endpoint’lere uygun şekilde request işlemlerini bu servis dosyalarında tanımla.
+    - Gerekirse servis tarafına **ek metotlar** yazılabilir.
+
+---
+
+6. 🧪 **Testleri Yaz**
+    - Bu test otomasyonu boyunca, https://www.chaijs.com/api/bdd/ Dökümantasyonu referans alınacaktır. Test yazımında kullanılacak tüm expect blokları ve test yapıları bu dökümantasyona uygun olarak yazılacaktır.
+    - İlk olarak CRUD (Create, Read, Update, Delete) işlemlerine ait endpoint testlerini yaz.
+    - CRUD testleri tamamlanıp tümü başarıyla geçtiğinde, senaryosal veya özel amaçlı endpoint testlerine (örneğin `/special`, `/custom`, `/auth` vb.) geç.
+    - Bu sıralamayı **kesinlikle** koru. Önce CRUD → sonra senaryosal endpointler yazılmalı.
+    - Swagger’daki **tüm endpointler** için test oluştur (endpoint sayısı kadar).
+    - Testler 5’erli gruplar halinde yazılacak ve çalıştırılacak:
+      1. İlk 5 testi yaz ve çalıştır.
+      2. Eğer tümü **pass** geçerse sonraki 5 teste geç.
+      3. Eğer herhangi biri **fail** olursa, önce başarısız testleri düzelt ve tekrar dene.
+      4. Tüm testler sırasıyla geçtikçe diğer gruba geç.
+    - Sonunda swagger’daki endpoint sayısı ile yazılmış test sayısı eşitlendiğinde işlemi tamamla.
+
+    - Pozitif ve Negatif Test Senaryoları:
+        * Pozitif Testler: Swagger'da tanımlı tüm endpoint'ler için başarılı test senaryoları yazılacak. Başarı durumları, HTTP status kodu, response.data ve propertyler kontrol edilerek, endpoint'lerin doğru çalışıp çalışmadığı doğrulanacak.
+        * **💥 Negatif Testler (ZORUNLU ve Detaylı Kontrol):**
+            - Hatalı test senaryoları (Eksik veri, yanlış tip, boş body, geçersiz ID, çift silme vb.) yazılacaktır.
+            - **Çoklu Hata Testi:** Bir endpoint'in birden fazla negatif duruma (örneğin, hem 400 hem 422) sahip olması durumunda, her bir hata senaryosu (status kodu) **ayrı bir `it()` bloğunda** test edilmelidir.
+            - Her negatif test, hedeflediği HTTP status kodunu (400, 404, 422, 500 vb.) tetikleyecek şekilde **özel olarak hazırlanmış bir request** göndermelidir.
+            - Her negatif test için, dönen response'un hem HTTP status kodu hem de **status koduna karşılık gelen Swagger şemasındaki TÜM Fieldlar** (anahtar, değer, tip, nested yapı, hata mesajları/kodları) **kapsamlı ve birebir** doğrulanmalıdır.
+
+    - Kombinasyon Testleri ve Parametre Kontrolleri:
+
+      *Eğer Swagger JSON dosyasındaki bir field için ENUM değerleri belirtilmişse, bu değerlerle request body oluşturulacak ve test istekleri bu değerlerle yapılacaktır. Böylece, sadece geçerli değerlerle yapılan istekler kontrol edilmiş olacaktır.
+
+      *Ayrıca, bir POST isteği farklı parametreler aldığında endpoint’in farklı hesaplamalar yapıyorsa, bu kombinasyonları da test etmek gereklidir. Zorunlu parametreler her zaman sağlanacaktır, ancak zorunlu olmayan parametreler için farklı kombinasyonlar denenmelidir:
+
+        *Zorunlu olmayan parametreler tekli, ikili ve üçlü kombinasyon gibi farklı kombinasyonlarla test edilecektir.
+
+      *GET isteklerinde de eğer zorunlu query parametreleri varsa, bu parametreler sağlanacaktır. Zorunlu olmayan query parametreleri de yine tekli, ikili ve üçlü kombinasyon gibi farklı kombinasyonlarla test edilecektir.
+    
+    - ⚠️ **KURALLAR:**
+      - Her test **tek tek** `it()` bloğu içinde yazılacak.
+      - **Kesinlikle** for, foreach, map veya benzeri döngü tabanlı otomatik test oluşturma yapılmayacak.
+      - Her endpoint için **ayrı bir `it()` tanımı** bulunacak.
+      - `it()` başlık formatı ZORUNLU: `<METHOD> <PATH> - <expectation statement>` olmalıdır.
+        - Dinamik segmentler placeholder ile yazılmalıdır: `/users/{id}`, `/orders/{id}` gibi; kesinlikle `/users/1` gibi somut değer kullanılmamalı.
+        - Örnekler:
+          - `GET /users/{id} - should return 200`
+          - `POST /users - creates new user with id`
+          - `DELETE /orders/{id} - removes order (200)`
+      - CRUD testlerindeki test yapısı, `describe` – `it` sırası, `expect` biçimi, `async` yapısı ve `await` kullanımı birebir korunacak.
+      - `it` ile test tanımlanırken **servis metoduna asla parametre yollanmayacak.**
+      - Eğer bir `data` gerekiyorsa bu `data`, **servis metodunun içinde** tanımlanacak.
+      - Servis içindeki istekler:
+        ```ts
+        await ApiService.getInstance().instance.<method>('/endpoint');
+        ```
+        biçiminde olacak.
+      - Gerekirse servis tarafına **ek yardımcı metotlar** eklenebilir.
+
+      - Testlerde kontrol sırası şu şekilde olacak:
+        1. İlk olarak `response.status` değeri doğru mu (örneğin 200, 201 vb.) kontrol edilecek.
+        2. Daha sonra `response.data` içeriği `expect` bloklarıyla kontrol edilecek.
+        3. Eğer istekte bir `id` alanı gönderildiyse ve response.data içinde de ilgili `id` alanı varsa, bu iki ID’nin eşleşip eşleşmediği kontrol edilecek.
+           - Eğer ID’ler eşleşmiyorsa test **false (fail)** dönmeli.
+           - Eğer ID’ler eşleşiyorsa test normal akışında devam etmeli.
+        4. Nested (iç içe) objeler varsa:
+           - Field tipleri (`string`, `number`, `array`, `object` vb.) doğrulanacak.
+           - Mantıksal doğrulamalar (`id > 0`, `count >= 0`, `name` boş olmamalı vb.) yapılacak.
+           - Array’ler varsa `length > 0` kontrolü yapılacak.
+           - Tarih formatı olan alanlarda (`createdAt`, `updatedAt`) uygun format olup olmadığı doğrulanacak.
+
+      - CRUD testlerindeki kod formatı, import yapısı ve blok düzeni **zorunlu referans** olarak kabul edilecek.
+
+      - 💥 **HER TESTE ÖZEL DETAYLI EXPECTLER HAZIRLANACAK!**
+        - Swagger’daki `response.data` şemasına göre her endpoint için ayrı ayrı detaylı `expect` blokları yaz.
+        - Her field için tipi ve olası değeri kontrol et.
+        - Eğer bir endpoint nested veri döndürüyorsa, alt alanlarını da `expect` ile doğrula.
+        - Sayısal alanlar için mantıksal koşullar (`> 0`, `>= 0`) kontrol edilecek.
+        - Boolean alanlar için doğru/yanlış değerler test edilecek.
+        - Dizi dönen response’larda her elemanın yapısı doğrulanacak.
+        - Response yapısı swagger’daki ile birebir uyuşmalı.
+
+---
+
+7. ▶️ **Testleri Çalıştır**
+    - Testleri şu komutla çalıştır:
+      ```
+      yarn run runner
+      ```
+    - 5’erli test gruplarını sırayla yürüt.
+    - Eğer testlerden biri başarısız olursa önce o testleri düzeltip tekrar çalıştır.
+    - Tüm testler başarılı olduğunda diğer gruba geç.
+
+---
+
+8. ✅ **Tamamlanma**
+    - Swagger’daki her endpoint kapsanmalı.
+    - Tüm testler başarıyla geçmiş olmalı.
+    - **Commit veya push yapma.**
+    - Son olarak şu çıktıyı ver:
+      ```
+      BİTTİ
+      ```
+
+---
+
+# TECHNOLOGIES
+TypeScript · Mocha · Chai · JSON Server · Swagger (OpenAPI)
+Tüm istekler `ApiService.getInstance().instance` üzerinden gönderilecektir.
+
+---
+
+⚠️ NEGATİF TESTLER MUTLAKA YAZILACAKTIR — OPSİYONEL DEĞİLDİR
+
+Bu test otomasyonunda negatif testler zorunludur.
+Pozitif testler kadar önemlidir ve her endpoint için negatif test yazılmadan bir sonraki teste geçilemez.
+Cursor hiçbir koşulda negatif testleri atlayamaz veya “gerek yoktur” varsayımıyla es geçemez.
+
+- Negatif testler şunları zorunlu olarak kapsamalıdır:
+
+  * Eksik body ile istek gönderme
+
+  * Yanlış veri tipi gönderme
+
+  * Boş body gönderme
+
+  * Geçersiz ID ile GET / PUT / DELETE
+
+  * Çift silme işlemi (DELETE sonra tekrar DELETE)
+
+  * Swagger’da 4xx veya 5xx dönen her senaryo
+
+- **HER ENDPOİNT İÇİN TÜM HATA DURUMLARI TEST EDİLECEKTİR!**
+  * Eğer bir endpoint birden fazla HTTP hata status koduna (örneğin 400 ve 422) sahipse, bu hata status kodlarının her biri **ayrı ayrı** test edilmelidir.
+  * Test, doğrudan ilgili hata status kodunu tetikleyecek şekilde bir request oluşturmalıdır.
+
+- Her negatif test:
+
+  * HTTP status kodunu
+
+  * **Dönen HTTP Status koduna ait Swagger şemasındaki TÜM Fieldları (anahtar, değer ve tip) KAPSAMLI olarak kontrol etmelidir.**
+
+KESİNLİKLE içermelidir.
+
+Negatif test yazılmayan hiçbir endpoint tamamlanmış kabul edilmez.
+"

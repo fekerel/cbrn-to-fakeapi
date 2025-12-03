@@ -1,5 +1,0 @@
-GET /orders/statistics
-GET /products/search
-GET /products/low-stock
-GET /reviews/analysis
-GET /products/top-reviewed

@@ -31,19 +31,10 @@ API istekleri **ApiService** üzerinden yapılacaktır.
 ---
 
 3. 📘 **Swagger Verisini Oku**
-    - Swagger'ın güncel halini elde etmek için `npm run openapi:fetch-isSelect` komutunu çalıştır. Bunu yaptığında güncel swagger spesifikasyonu <proje-root>/Swagger-isSelect-openapi.json dosyasında yer alacaktır.
+    - Swagger'ın güncel halini elde etmek için `npm run openapi:fetch komutunu çalıştır. Bunu yaptığında güncel swagger spesifikasyonu <proje-root>/openapi.json dosyasında yer alacaktır.
     - Bu dosyayı doğrudan oku.
     - Tüm endpoint’leri, HTTP metodlarını, request parametrelerini ve response yapılarını analiz et.
-    - Eğer aradığın uzantıyı npm run openapi:fetch-isSelect komutunu çalıştırarak bulamazsan:
-      * npm run openapi:fetch komutunu çalıştırmayı dene.
-      * Çünkü npm run openapi:fetch-isSelect komutu yalnızca belirli endpointleri listeleyecektir.
-      * Öte yandan, npm run openapi:fetch komutu tüm endpointleri listeleyecektir.
-      * Eğer ihtiyaç duyduğun ama npm run openapi:fetch-isSelect sonucunda bulamadığın bir endpoint varsa, npm run openapi:fetch komutunu kullanarak tüm endpointleri çekebilir ve oradan incelemelerini yapabilirsin.
-      * npm run openapi:fetch komutu çalıştırıldığında, bulunduğun klasörde openapi.json adında bir JSON dosyası oluşturulacak ve tüm Swagger verisi bu dosyaya kaydedilecektir.
-    - Biz senden sadece npm run openapi:fetch-isSelect komutunun sonucu elde ettiğin Swagger’daki endpointleri test etmeni istiyoruz.
-      * Yani, sadece npm run openapi:fetch-isSelect ile elde edilen endpointler üzerinde test yapmanı bekliyoruz.
-      * Eğer npm run openapi:fetch-isSelect komutuyla bulduğun endpointler dışında bir endpoint test etmen gerekirse, önce npm run openapi:fetch komutuyla tüm Swagger verisini elde edebilir ve gerekli endpointleri buradan inceleyebilirsin, ancak ana hedefin yalnızca npm run openapi:fetch-isSelect ile elde ettiğin endpointleri test etmek olmalıdır.
-
+    
 ---
 
 4. ⚙️ **Servis Şablonlarını İncele**
@@ -156,7 +147,7 @@ API istekleri **ApiService** üzerinden yapılacaktır.
 ---
 
 8. ✅ **Tamamlanma**
-    - Swagger’daki toplam endpoint sayısı ile yazılmış test sayısı **birebir eşit** olmalı.
+    - Swagger’daki her endpoint kapsanmalı.
     - Tüm testler başarıyla geçmiş olmalı.
     - **Commit veya push yapma.**
     - Son olarak şu çıktıyı ver:
